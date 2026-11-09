@@ -1,0 +1,302 @@
+2480|Procurar ${exe}
+2481|Apontar para ${exe}
+2482|Encontrado automaticamente quando está na pasta do Špajz ou num lugar de instalação comum. Procurar emuladores de novo (Consoles) procura mais uma vez.
+2483|Versões
+2484|Qual versão do Eglantine abre os seus jogos de Switch 2: todas as versões que o Špajz encontrou (a mesma lista que o Jogar mostra), Perguntar sempre, e versões guardadas em outras pastas.
+2485|Perguntar sempre
+2486|Procurando versões…
+2487|${sw2b.length} [[${sw2b.length===1?"":"s"}|versão encontrada|versões encontradas]]
+2488|Nenhuma versão encontrada ainda · adicione uma aqui
+2489|Usar o emulador encontrado
+2490|O Špajz encontrou esta cópia. Use ela para esta estante.
+2491|Usar o Dolphin do ${twin==="gc"?"GameCube":"Wii"}
+2492|Pasta de jogos ${i+1}
+2493|Pasta de jogos
+2494|Onde estão os jogos deste console. As subpastas também são procuradas. Selecione duas vezes para remover da estante (nada é apagado).
+2497|Pasta removida desta estante (nada foi apagado)
+2498|Aperte de novo para remover esta pasta
+2499|Adicionar a pasta encontrada
+2500|O Špajz encontrou jogos para este console aqui.
+2501|Configurar o ${emu} para mim
+2502|Controle, atalhos do menu Home, uma pasta de BIOS e um perfil de gráficos para o ${emu}: com backup antes, e Desfazer volta tudo.
+2503|Adicionar outra pasta de jogos
+2504|Outra pasta onde procurar jogos deste console${def.hint?` (${def.hint})`:def.extensions?` (${def.extensions.slice(0,4).map(e=>"."+e).join(", ")}…)`:""}.
+2505|Escolha uma pasta de jogos de ${def.name}
+2506|Quando você aperta Jogar
+2507|Tela de abertura com a capa do jogo
+2508|O visual de inicialização do console com a capa do jogo e uma barra de progresso enquanto o emulador abre.
+2509|O seu vídeo de abertura antes dos jogos
+2510|Toca o vídeo de abertura que você adicionou para este console (Personalizar) antes do jogo, em vez da tela de abertura. Sem vídeo, a introdução embutida só toca quando a tela de abertura está desligada.
+2511|Abrir o emulador sozinho
+2512|Abre o emulador sem jogo para você mudar os gráficos ou os controles.
+2513|Baixar o ${emu}
+2514|Abre a página oficial de download do ${emu}.
+2515|Opções do emulador
+2516|O que o Špajz passa quando abre o emulador sozinho.
+2517|Inicialização do GameCube
+2518|Tocar a inicialização de verdade do GameCube
+2519|Pular os avisos do Dolphin
+2520|Tempo da animação de abertura
+2521|Quanto tempo a tela de carregamento fica por cima da inicialização de verdade do GameCube. Menor mostra mais dela, mas pode piscar o Dolphin.
+2522|Abrir os jogos pelo launcher do Kyty
+2523|Desligado: Jogar abre o jogo direto, com as configurações que você escolheu no launcher do Kyty (e o perfil KytyJets). Ligado: Jogar abre o launcher do Kyty e você abre o jogo lá (não dá para dizer a ele qual jogo abrir).
+2524|Abrindo
+2525|Tela de carregamento mais longa
+2526|Opções de abertura do jogo
+2527|Padrão:
+2528|Padrão: ${def.gameArgs||"(none)"}
+2529|Restaurar as opções de abertura padrão
+2530|Volta as opções de abertura para o padrão do Špajz.
+2531|Opções de abertura de volta ao padrão
+2532|Pasta de capas própria
+2533|(usa a biblioteca de capas)
+2534|Escolha uma pasta de capas
+2535|Capas (Estúdio de capas)
+2536|Vai para os jogos de ${def.name} no Estúdio de capas: o estilo da estante e todas as versões da arte de qualquer jogo (os manuais ficam a uma linha de distância).
+2537|Personalizar (3D, logo, vídeo de abertura)
+2538|O logo, o console 3D, os modelos de controle e de disco e o vídeo de abertura (a tela Personalizar).
+2539|Emulador e avançado
+2540|e a inicialização de verdade do GameCube
+2541|Abrir o ${emu} sozinho, opções de abertura, a tela de carregamento mais longa${id==="gc"&&iplCap()?" and the real GameCube startup":""}.
+2542|O ${emu} roda os jogos de ${def.name}.
+2543|As ferramentas do próprio ${emu}, como o Špajz abre ele, e as configurações raramente necessárias de ${def.name}.
+2544|A ordem das estantes na parte de cima. O Início sempre vem primeiro. Pegue uma, mova e solte.
+2545|Pegue e depois mova para cima ou para baixo na lista.
+2546|Voltar à ordem padrão
+2547|Volta as estantes para a ordem do próprio Špajz.
+2548|Ordem padrão
+2549|Aperte de novo para restaurar a ordem das estantes
+2550|Capas
+2551|Contracapas
+2552|Lombadas
+2553|Discos e cartuchos
+2554|Baixando capas
+2555|${dn} de ${tot}
+2556|Concluído
+2557|Agora:
+2558|Agora: ${p.game}
+2559|Esperando
+2560|Para depois dos jogos em andamento. As imagens já baixadas são mantidas.
+2561|Parando depois dos jogos em andamento…
+2562|Parando depois dos jogos em andamento
+2563|As capas não terminaram
+2564|Download cancelado
+2565|Tudo pronto
+2566|levou
+2567|${t.got} [[${t.got===1?"":"s"}|imagem nova|imagens novas]]
+2568|, ${t.up} mais nítidas
+2569|${t.miss} [[${t.miss===1?"":"s"}|jogo ainda tem|jogos ainda têm]] alguma coisa faltando
+2570|Tudo o que você escolheu foi encontrado
+2571|As capas novas aparecem na estante quando você fecha as Configurações.
+2572|Corrigir no Estúdio de capas
+2573|${parts.length?parts.join(", ")+" · ":""}Corrigir no Estúdio de capas
+2574|Nada novo
+2575|${miss} não encontrados${kinds?` (${kinds})`:""}
+2576|${x.upgraded} ficaram mais nítidas
+2577|Não encontrados em lugar nenhum:
+2579|Não foi possível acessar o LaunchBox
+2580|Desta vez só as capas do libretro foram tentadas
+2581|Voltar à lista
+2582|Os seus consoles e o que ainda falta neles.
+2583|Verificando o que você tem…
+2584|Ainda não há jogos
+2585|Adicione primeiro uma pasta de jogos para um console (Consoles)
+2586|${sys.filter(c=>(p[c.id]||[]).length).length} de ${sys.length} escolhidos
+2587|${c.front} de ${c.total} capas · ${miss} faltando
+2588|Todas as ${c.total} capas · faltam algumas contracapas, lombadas ou discos
+2589|Completo · ${c.total} jogos
+2590|· ${low} em baixa resolução
+2591|Ligado: este console está no download. Ele recebe as partes ligadas abaixo.
+2592|Selecionar todos
+2593|Todos os consoles neste download.
+2594|Desmarcar todos
+2595|Nenhum console neste download.
+2596|O que baixar
+2597|Arte do disco, ou o cartucho para jogos de Switch, Switch 2 e 3DS.
+2599|Iniciar o download
+2600|Rodando…
+2601|As imagens que você já tem são mantidas. A busca manda os títulos dos seus jogos para o LaunchBox, o libretro e o GameTDB. Na primeira vez também baixa o banco de dados do LaunchBox (cerca de 110 MB, uma vez só).
+2602|Ligue pelo menos um console
+2603|${s.n} [[${s.n>1?"s":""}|console|consoles]] · até ${s.missing} [[${s.missing===1?"":"s"}|imagem faltando|imagens faltando]]
+2604|e ${s.lowN} em baixa resolução
+2605|Digitalizações mais nítidas primeiro
+2606|Pega a versão mais nítida que existir e troca as imagens em baixa resolução que você já tem. Um jogo só com digitalizações pequenas fica com a melhor encontrada, e é melhorado quando aparecer uma mais nítida.
+2607|Um download já está rodando
+2608|Capas:
+2609|Capas: ${errMsg(e)}
+2610|Capas: ${AG.err}
+2611|Download das capas cancelado
+2612|Download das capas concluído
+2613|Verificando os seus manuais
+2614|${MC.done} de ${MC.total} consoles
+2615|Até agora
+2616|${MC.checked} verificados · ${MC.moved} deixados de lado
+2617|Para no próximo passo. O que foi deixado de lado até agora é procurado na próxima vez que a verificação em segundo plano rodar.
+2618|Parando
+2619|A verificação não terminou
+2620|${r.checked||0} verificados
+2621|${r.got||0} substituídos
+2622|${r.moved-(r.got||0)} deixados de lado ainda sem substituto
+2623|${r.shrunk} reduzidos
+2624|Verificação parada
+2625|Manuais verificados
+2626|Parado · ${bits.join(" · ")}
+2627|✓ Todos os ${r.checked||0} manuais parecem certos
+2628|Parado no meio
+2629|As mudanças aparecem quando você fecha as Configurações
+2630|Nada precisava ser corrigido
+2631|Os manuais deixados de lado ficam guardados na pasta .manual-originals do jogo, nunca são apagados.
+2632|Baixando manuais
+2633|Procurando manuais
+2634|Procurados
+2635|Para de procurar. Nada é baixado.
+2636|Os manuais não terminaram
+2637|${added} [[${added===1?"":"s"}|manual adicionado|manuais adicionados]]
+2638|${miss} [[${miss===1?"":"s"}|jogo ainda sem manual|jogos ainda sem manual]]
+2639|Todos os jogos que você escolheu têm um
+2640|Eles aparecem quando você fecha as Configurações.
+2641|${x.added.length} adicionados
+2642|${x.had} já tinham um
+2643|${x.unsure.length} incertos pulados
+2644|sem manual impresso
+2645|${x.failed.length} falharam
+2646|${sys.filter(c=>MG.pick.has(c.id)).length} de ${sys.length} escolhidos
+2647|Ligado: procurar os manuais deste console.
+2648|${c.have} de ${c.total} manuais · ${miss} faltando
+2649|Todos os ${c.total} manuais
+2650|· ${c.low} [[${c.low===1?"":"s"}|digitalização pequena|digitalizações pequenas]]
+2651|Os manuais que você já tem são mantidos. A busca manda os títulos dos seus jogos para o Internet Archive e o GamesDatabase.org.
+2652|${s.n} [[${s.n>1?"s":""}|console|consoles]] · até ${s.missing} [[${s.missing===1?"":"s"}|manual faltando|manuais faltando]]
+2653|Todos os jogos que você escolheu já têm um
+2654|Todos os consoles.
+2655|Nenhum console.
+2656|Desligado pega a melhor opção para cada jogo, mesmo as incertas.
+2657|Os seus manuais
+2658|Verificar os meus manuais
+2659|Todos os consoles · os manuais que já estão nas suas estantes
+2660|Manuais:
+2661|Manuais: ${MC.err}
+2662|Verificação de manuais parada
+2663|Verificação de manuais concluída
+2664|Manuais: ${errMsg(e)}
+2665|Baixando ${pick.length} [[${pick.length===1?"":"s"}|manual|manuais]]…
+2666|Nada para baixar
+2667|Manuais: ${MG.err}
+2668|Download dos manuais concluído
+2669|Resultados para “${query}”
+2670|Mostrando ${results.length} de ${resultTotal}
+2671|${results.length} [[${results.length===1?"":"s"}|configuração encontrada|configurações encontradas]]
+2673|Digite uma palavra, como “sombras”, “volume” ou “overscan”.
+2674|Contas
+2675|${pcSt[k]} instalados
+2676|Nenhum instalado
+2678|Mostrar os jogos do Quiver
+2679|O Špajz procura onde o Quiver normalmente guarda a biblioteca. Uma cópia portátil (extraída em qualquer lugar) é encontrada com Procurar, ou escolha a pasta dela.
+2680|Procurando o Quiver Launcher…
+2681|Quiver Launcher encontrado em
+2682|Quiver Launcher encontrado em ${folderName(d)}
+2683|Pasta do Quiver Launcher definida
+2684|Procurando…
+2685|Ainda não encontrado · aperte para procurar
+2686|Seus jogos (${pc.custom.length})
+2687|Seus jogos
+2688|Vários programas de uma vez, uma pasta inteira de jogos, a sua biblioteca do Playnite ou um programa.
+2689|Todos os jeitos de colocar jogos na estante Personalizados. Você vê o que foi encontrado antes de qualquer coisa ser adicionada.
+2690|Vários de uma vez, uma pasta, Playnite ou um programa
+2691|Escolher capas uma por uma
+2692|Passa por todos os jogos personalizados sem capa própria: as capas do SteamGridDB para cada um (com uma chave gratuita do SteamGridDB, Configurações → Contas e serviços) ou uma imagem sua. A usa uma, Pular passa para o próximo, B para.
+2693|${n} [[${n===1?"":"s"}|jogo sem capa|jogos sem capa]]
+2694|Todos os jogos têm uma
+2695|Usar a melhor capa para cada um
+2696|Escolhe a melhor capa do SteamGridDB para todos os jogos personalizados sem capa, de uma vez. Um recomp pode ter o mesmo nome de outro jogo: dê uma olhada, e Desfazer volta todas.
+2697|Procurando capas…
+2698|Precisa de uma chave do SteamGridDB
+2699|Desfazer as ${S.coverUndoCount()} capas que acabaram de ser encontradas
+2700|Volta as caixas inventadas que esses jogos tinham antes.
+2701|O nome dele na estante. Programa: ${c.exe}
+2702|Em qual estante este jogo fica: Personalizados (jogos que você adicionou) ou PC (com os seus jogos da Steam e das lojas). Aperte para mover.
+2703|O jogo
+2705|este jogo
+2706|Remover ${c.title||"this game"}
+2707|Tira da estante. Nada é apagado.
+2710|Removido da estante Personalizados (nada foi apagado)
+2711|Aperte de novo para remover
+2712|✓ Escolhida
+2713|O Jogar mostra a lista de versões, começando pela que você usou por último naquele jogo.
+2714|O Jogar mostra a lista
+2715|${L.length} [[${L.length===1?"":"s"}|versão encontrada|versões encontradas]]
+2716|Nenhuma versão encontrada ainda: adicione uma versão ou uma pasta de versões abaixo
+2717|✓ Sempre
+2718|Usar sempre
+2719|Sempre abrir os jogos de Switch 2 nesta versão. ${b.exe}
+2721|· abre .nup
+2722|· o Jogar oferece primeiro
+2723|Versões guardadas em outro lugar
+2724|Adicionar uma pasta de versões
+2725|Procurar…
+2726|Uma pasta com várias versões (os seus forks). O Špajz procura até quatro pastas para dentro dela.
+2727|Escolha uma pasta de versões do Eglantine
+2728|Essa pasta já está na lista
+2729|Procurando versões em
+2730|Procurando versões em ${folderName(d)}
+2731|Adicionar uma versão
+2732|Escolha uma versão do Eglantine
+2733|Essa versão já está na lista
+2734|Versão adicionada
+2735|removido da lista (nada foi apagado)
+2736|${what} removido da lista (nada foi apagado)
+2737|Pasta ·
+2738|Pasta · ${folderName(d)}
+2740|Versão ·
+2741|Versão · ${progName(x)}
+2743|Aperte de novo para remover esta versão
+2744|Jogos › Consoles
+2746|Contas e serviços › ${p.name}${grp?" › "+grp:""}
+2747|Consoles › ${c.name}${adv?" › "+p.name:""}${grp&&grp!==c.emulatorName?" › "+grp:""}
+2748|Abre a página deste console.
+2750|Tema:
+2751|Tema: ${o[i][1]}
+2752|Use ◀ ▶ para ajustar
+2753|Use ← → para ajustar
+2754|${r.label} de volta ao padrão
+2755|Não disponível aqui
+2756|${n} [[${n===1?"":"s"}|coisa nova encontrada e preenchida|coisas novas encontradas e preenchidas]]
+2757|Nada novo encontrado
+2758|O teste não está disponível aqui
+2759|RetroAchievements conectado
+2760|${SVC_N[s]||s} funciona
+2761|· ${st.left} consultas restantes hoje
+2762|Preencha a conta primeiro
+2763|Não funcionou:
+2764|Não funcionou: ${st.msg||""}
+2765|O Špajz inicia com o Windows
+2766|Removido da inicialização
+2767|Baixar ${upd.latest}
+2768|Atualizado
+2769|Verificar agora
+2770|Procurando um beta mais novo…
+2771|Não foi possível acessar a página do beta. Tente de novo mais tarde
+2772|Saiu o Špajz ${upd.latest}: aperte de novo para baixar
+2773|Você tem o beta mais novo
+2774|Nenhum beta publicado ainda
+2775|Salvo:
+2776|Salvo: ${String(r.file||"").split(/[\\/]/).pop()}
+2777|Configurações restauradas
+2778|Juntando o log…
+2779|Salvo na sua Área de Trabalho:
+2780|Salvo na sua Área de Trabalho: ${String(r.file||"").split(/[\\/]/).pop()}
+2781|Não foi possível criar
+2782|Não foi possível criar${r&&r.error?": "+r.error:""}
+2783|Não foi possível apagar
+2784|O Personalizar abre a partir da estante daquele console
+2785|De uma pasta antiga do Špajz
+2786|Trazer de ${o.root}
+2787|${readCopy.done} / ${readCopy.total} · Parar
+2788|Copiando… · Parar
+2789|Copiar
+2790|Parando a cópia…
+2795|tela principal
+2796|Automático (${prim.label||"main display"})
+2797|Tela ${i+1}${d.primary?" (main)":""}${d.width?` · ${d.width}×${d.height}`:""}
+2798|Padrão do Windows
+2799|O nome do jogo na estante, na caixa e nas pesquisas. As capas e manuais também são procurados por ele. O arquivo em si não é mexido. Enter salva.

@@ -1,0 +1,111 @@
+# (T)rustyShelf builds: Windows (portable exe), Linux (AppImage) and Android (APK), as the run's downloads. Called by
+# build-release-check.yml (a "For build" commit) and by release.yml (a release). Nothing is published here.
+name: Build
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        required: true
+      semver:
+        type: string
+        required: true
+      code:
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    name: Linux AppImage
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Build the AppImage
+        run: >
+          npx electron-builder --linux AppImage --publish never
+          -c.extraMetadata.version=${{ inputs.semver }}
+          -c.buildVersion=${{ inputs.version }}
+          -c.linux.artifactName=TrustyShelf-${{ inputs.version }}-linux.AppImage
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux
+          path: dist/TrustyShelf-${{ inputs.version }}-linux.AppImage
+          if-no-files-found: error
+          retention-days: 14
+
+  windows:
+    name: Windows portable exe
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Build the portable exe
+        shell: bash
+        run: >
+          npx electron-builder --win portable --publish never
+          -c.extraMetadata.version=${{ inputs.semver }}
+          -c.buildVersion=${{ inputs.version }}
+          -c.win.artifactName=TrustyShelf-${{ inputs.version }}-windows-portable.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/TrustyShelf-${{ inputs.version }}-windows-portable.exe
+          if-no-files-found: error
+          retention-days: 14
+
+  android:
+    name: Android APK
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: android-app/package-lock.json
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+      - name: Install Capacitor
+        working-directory: android-app
+        run: npm ci --no-audit --no-fund
+      - name: Set the version (the APK's versionName and the app's own build line)
+        working-directory: android-app
+        env:
+          VERSION: ${{ inputs.version }}
+        run: node -e "const f='package.json',fs=require('fs'),p=JSON.parse(fs.readFileSync(f));p.version=process.env.VERSION;fs.writeFileSync(f,JSON.stringify(p,null,2)+'\n')"
+      - name: Copy the shared UI into the Android app
+        working-directory: android-app
+        run: npm run sync
+      - name: Build the APK
+        working-directory: android-app/android
+        env:
+          TRUSTYSHELF_VERSION_CODE: ${{ inputs.code }}
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon --stacktrace
+          mv app/build/outputs/apk/debug/app-debug.apk "$GITHUB_WORKSPACE/TrustyShelf-${{ inputs.version }}-android.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: TrustyShelf-${{ inputs.version }}-android.apk
+          if-no-files-found: error
+          retention-days: 14

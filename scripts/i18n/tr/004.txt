@@ -1,0 +1,327 @@
+1420|Tijolo
+1421|Papel de parede
+1422|Verde
+1423|Vinho
+1424|Azul-marinho
+1425|Piso
+1426|Pedra
+1427|Tábuas de madeira
+1428|Carpete
+1429|Xadrez
+1430|Estantes
+1431|Nogueira
+1432|Preto
+1433|Branco
+1434|Peças da galeria
+1435|Pedestais de exposição
+1436|Cordas de veludo
+1437|Banco de museu
+1438|Pôsteres dos seus favoritos
+1439|Jogos novos chegam pelo correio
+1440|A partir da próxima visita
+1441|Nas estantes
+1442|Ajustar o console desta estante…
+1443|Procurar revistas e guias…
+1444|Lacrar de novo tudo o que você abriu
+1446|ok
+1447|Ocultar ‹
+1448|Abrir ›
+1449|Nada aberto
+1450|Aperte de novo para lacrar
+1451|${n} abertos ›
+1452|Nenhum modelo 3D aqui
+1455|Escolher
+1456|Pronto
+1457|${done} [[${done===1?"":"s"}|item lacrado|itens lacrados]] de novo: tudo voltou para o plástico
+1458|Adicione um modelo 3D para este console em Configurações → Personalizar
+1460|Ajustar console
+1461|Carregando o modelo…
+1462|Direção
+1463|· automático
+1464|Ângulo do controle
+1467|Visível
+1468|Voltar ao automático
+1469|(do modelo)
+1470|Seu controller.glb
+1471|Ajustar: console ${f.name}
+1472|Direcional: escolher · esquerda/direita: mudar · ${btnWord("back")}: pronto
+1473|↑↓ escolher · ←→ mudar · Esc: pronto
+1474|Não foi possível salvar:
+1475|Não foi possível salvar: ${e.message}
+1476|De volta ao ajuste automático
+1477|Ainda não há modelo 3D nessa estante
+1479|Página ${rdr.s+1} de ${rdr.n}
+1480|Capa · ${rdr.n} páginas
+1481|Página ${L+1} de ${rdr.n}
+1482|Páginas ${L+1}–${R+1} de ${rdr.n}
+1483|· Encarte
+1484|Abrindo…
+1485|Não foi possível abrir este:
+1486|Não foi possível abrir este: ${e&&e.message||e}
+1489|Esta página não carregou
+1494|eles aparecem
+1495|ele aparece
+1496|${n} [[${n>1?"s":""}|download continua|downloads continuam]]: [[${n>1?"they turn":"it turns"}|ele aparece|eles aparecem]] na prateleira quando terminar
+1497|O museu precisa de WebGL, que não está disponível aqui
+1498|Ainda não há nada nas estantes
+1501|Não foi possível abrir o museu (WebGL)
+1502|ligar
+1503|${c.wide.sub} · ${okWord()} para [[${c.wide.on?"watch":"turn it on"}|assistir|ligar]]
+1504|Cantinho de leitura
+1505|· ${okWord()} para aproximar
+1506|Caixa de guias
+1507|Caixa de revistas
+1508|${okWord()} para folhear
+1509|${f.i+1} de ${f.n}
+1510|Série
+1511|Filme
+1512|Na sua biblioteca do Stremio · ${okWord()} para pegar
+1513|Guia de estratégia
+1514|Revista
+1515|TV retrô ·
+1516|TV retrô · ${TV_NAMES[ch]}
+1517|Ainda sem trailers
+1518|Nada jogado ainda
+1519|${okWord()} para ver o trailer
+1520|${okWord()} para jogar
+1521|Os trailers vêm com os detalhes do LaunchBox dos seus jogos
+1522|Os jogos que você joga aparecem aqui
+1523|Nada passando ainda
+1524|Sintonizando…
+1525|do Internet Archive
+1526|Nenhum comercial encontrado ainda: o Špajz continua procurando em segundo plano (a primeira vez demora um pouco)
+1527|em ${v.shelf}
+1528|para a sua estante de ${v.shelf}
+1529|Novidades
+1530|Novidade
+1531|Chegou correio
+1532|Chegou uma coisa para a coleção…
+1533|Desembalando…
+1534|jogos novos
+1535|${v.n} jogos novos
+1536|Um jogo novo
+1538|Chegou uma caixa
+1539|Chegou um pacote
+1541|Console ${r.name}
+1542|· mais jogado:
+1543|· mais jogado: ${r.stats.top}
+1544|${r.games.length} jogos nesta estante · ${r.stats.hours}${r.stats.top?" · most played: "+r.stats.top:""}
+1545|Nova aquisição
+1546|Item nº
+1547|Item nº ${aq.no} ·
+1549|Ainda lacrado
+1550|ainda não jogado
+1551|♥ favorito
+1552|${st.pageLabel} · ${st.pages} páginas
+1553|Mover a página
+1554|Terminei de ler
+1555|Virar
+1556|Guardar o disco
+1557|Tirar o disco
+1558|Fechar a caixa
+1559|Segure para desembrulhar
+1560|Ver comercial na TV
+1561|Próximo comercial
+1562|Próximo
+1563|Ver o trailer
+1564|Jogar este jogo
+1565|Programação da TV
+1566|Desligar
+1567|Pular
+1568|Segure para abrir
+1571|Rolar
+1572|Seção
+1573|Esconder o teclado
+1574|Escolha uma seção
+1575|Procurar alguns
+1576|Aproximar
+1577|Procurar mais
+1578|Voltar à estante
+1579|Virar
+1580|Ano
+1581|Pular 10
+1582|Ler
+1583|Assistir no Stremio
+1584|Tirar o disco
+1585|Ler o encarte
+1586|Guardar o disco
+1587|Largar
+1588|Caixa
+1589|Folhear
+1590|Pegar
+1591|Segure ${okWord()} para abrir o seu pacote
+1592|Ainda no saquinho: segure ${okWord()} para abrir
+1593|Trailer aberto no seu navegador
+1594|Isso é um comercial de console: não há jogo para abrir
+1595|Esse jogo não está nas suas estantes
+1596|Adicione filmes e séries no Stremio: eles aparecem aqui
+1597|Ainda não há manual para este jogo
+1598|TV: não foi possível baixar
+1599|TV: não foi possível tocar
+1602|Trailer ·
+1603|para assistir
+1604|Trailer · ${okWord()} para assistir
+1605|trailer
+1607|Jogado ${fmtDay(h.last/1000)}
+1608|sessões
+1609|Comerciais
+1610|Comercial de console
+1611|Comercial
+1612|Embaralhar tudo
+1613|Comerciais, trailers e o que você jogou por último, misturados
+1614|★ Favoritos
+1615|Nenhum comercial encontrado ainda. O Špajz continua procurando em segundo plano (a primeira vez demora um pouco).
+1616|Procurando comerciais…
+1617|Ainda sem trailers. Eles vêm com os detalhes do LaunchBox dos seus jogos.
+1618|Nada jogado ainda. Os jogos que você joga aparecem aqui.
+1619|Colocar
+1620|Assistir
+1621|Favoritar
+1622|Passando agora: ${m.game||m.title} · ${TV_NAMES[tvS.ch]||""}
+1623|Ligue a TV retrô no menu Sala primeiro
+1625|Desembrulhando…
+1626|Iniciando…
+1627|Ligue o Stremio em Configurações → Stremio e Nuvio para assistir daqui
+1629|Jogos da Steam abrem na estante: aperte ${btnWord("back")} e depois Jogar
+1630|Iluminação: ${name}
+1631|erro no worker
+1632|Letra
+1633|♥ segurar
+1634|Museu segurar
+1635|Ordenar segurar
+1636|Abas
+1637|Menu
+1638|Ordenar
+1639|View
+1640|Options
+1641|Share
+1642|Círculo
+1643|Xis
+1644|o botão Xbox
+1645|o botão PS
+1646|sorteia de novo
+1647|${showPad()?padWord("L3"):"R"} sorteia de novo
+1648|Aperte Enter, Esc, ${okWord()} ou ${btnWord("back")} para pular
+1650|Configurar
+1651|Escolha um jogo
+1653|DualShock 4 (adaptador sem fio)
+1656|Controle Access
+1657|Controle de PlayStation
+1658|Controle Pro do Switch
+1659|Controle Pro do Switch 2
+1662|Par de Joy-Con
+1665|Controle de SNES
+1666|Controle de GameCube
+1667|Adaptador de GameCube
+1668|Wii Remote
+1669|Controle da Nintendo
+1670|Controle de Xbox
+1672|Controle estilo Xbox (XInput)
+1673|(pela Steam / DS4Windows)
+1674|${n} (pela Steam / DS4Windows)
+1675|Nenhum controle
+1676|${padName_(id)} conectado
+1677|sem mapeamento
+1678|Controle desconectado
+1679|${n} jogos · ${allShelves.filter(s=>s.kind!=="home").length} estantes
+1680|Menu Home aberto (por
+1681|Menu Home aberto (por ${mode})
+1682|Jogue alguma coisa ou dê ♥ num jogo para encher a sua estante Início
+1683|efeitos ligados
+1684|efeitos desligados
+1685|, já rodando
+1686|tela cheia, parado
+1687|tela cheia, rolando
+1688|tela cheia, caixas planas
+1689|janela maximizada, parado
+1690|janela maximizada, rolando
+1691|janela pela metade, parado
+1692|janela pela metade, rolando
+1693|tela cheia de novo, parado
+1694|tela cheia de novo, rolando
+1695|Teste de fluidez: medindo a tela… (qualquer botão para)
+1696|(auto)
+1698|Teste de fluidez ${i+1} de ${V.length}: ${name} (qualquer botão para)
+1699|Teste de fluidez parado
+1700|Teste de fluidez concluído: os resultados estão no log
+1706|Parando…
+1707|· pausado
+1708|${n(Math.min(ARTC.done,ARTC.total))} de ${n(ARTC.total)}${ARTC.paused?" · paused":""}
+1709|Preparando…
+1711|Menu: pausar ou cancelar
+1712|Não foi possível acessar os sites de capas. Tente de novo em Configurações → Capas
+1713|Capas: ${got.toLocaleString()} adicionadas
+1714|Nenhuma capa nova encontrada
+1716|menos de um minuto
+1717|Mostrar menos
+1720|Saída de áudio
+1721|Saída de áudio ${++n}
+1722|${title} voltou para a estante
+1723|Oculto: ${title}
+1724|Desfazer
+1725|${g.title} agora roda no ${emuLabel(own)}
+1726|${g.title} voltou a rodar no emulador da estante
+1727|Rodar este jogo numa versão de emulador diferente do resto da estante
+1728|Escolher as capas deste jogo: frente, verso, lombada e disco
+1730|Escolher a capa deste jogo
+1731|Renomear
+1732|Dar a este jogo o nome que você quer na estante
+1733|Todos os manuais encontrados para este jogo, lado a lado: escolha outro idioma, região ou digitalização, ou adicione o seu próprio PDF
+1734|Ocultar da estante
+1735|Ocultar este jogo de todas as estantes (desfaça em Configurações → Jogos ocultos)
+1736|Coleções
+1737|Colocar este jogo em estantes suas
+1738|Jogo de teste
+1741|jogos
+1743|Abrindo o app…
+1744|Não foi possível abrir esse app
+1748|Biblioteca
+1749|Erro ${r.status}
+1750|O PIN tem 6 dígitos.
+1752|Pareado como ${r.name}
+1753|Ainda não há jogos. Configure os seus consoles nas Configurações do Špajz na TV.
+1754|Nada corresponde a "${query}".
+1755|Mostrando 600 de ${list.length}. Pesquise para achar o resto.
+1756|Classificação etária
+1757|Ler o manual · ${n} [[${n===1?"":"s"}|página|páginas]]
+1758|Abrir na TV
+1759|Jogar na TV
+1760|{} / {} pts
+1761|Fechando o jogo e depois iniciando ${g.t}…
+1762|Iniciando ${g.t} na TV…
+1763|O jogo em andamento não fechou. Tente Sair de novo.
+1764|Um jogo
+1765|${r.title||"A game"} está rodando
+1766|Sair dele e iniciar ${g.t}? O progresso não salvo no jogo em andamento será perdido.
+1767|${g.manual.length} páginas
+1768|Página ${i+1}
+1769|Jogando ${running.title}
+1770|Um jogo está rodando
+1771|Sair de ${t}?
+1772|O progresso não salvo será perdido.
+1773|Sair
+1774|Sair e jogar
+1775|Fechando o jogo…
+1776|botões
+1777|Criar
+1778|Controle remoto
+1779|Pesquisar
+1780|Limpar
+1781|Teclado
+1782|Parear com o Špajz
+1783|Digite o PIN de 6 dígitos mostrado na TV em
+1784|Configurações → Celular como controle
+1785|Parear
+1786|Funciona na estante, em Detalhes, nas Configurações, no museu e no menu Home.
+1787|Digite aqui e o texto vai para a caixa de pesquisa na TV (pesquisa das Configurações, buscador do museu, buscador do arquivo).
+1788|⌫ Apagar
+1789|O manual deste jogo é um PDF: abra ele na TV (Inspecionar → Manual).
+1791|Dê um nome a este celular (opcional)
+1792|Nome do celular
+1793|Pesquise os seus jogos
+1794|Direcional
+1795|Baixo
+1796|Botões de ação
+1797|Digite…
+1798|Texto para a TV
+1799|Seções

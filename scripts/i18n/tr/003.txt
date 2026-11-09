@@ -1,0 +1,348 @@
+1050|${ss.length} [[${ss.length===1?"":"S"}|TEMPORADA|TEMPORADAS]] · ${ss.reduce((a,n)=>a+m.seasons[n].length,0)} EPISÓDIOS
+1051|DA SUA BIBLIOTECA DO STREMIO
+1052|DISCO BLU-RAY
+1053|Encarte feito pelo Špajz a partir dos dados do catálogo do título
+1054|ENCARTE DE COLECIONADOR · SÉRIE
+1055|ENCARTE DE COLECIONADOR
+1056|A história
+1057|Ainda não há descrição disponível para este título.
+1058|Duração
+1059|Nota no IMDb
+1060|País
+1061|Prêmios
+1062|Elenco e equipe
+1063|Dirigido por
+1064|Escrito por
+1065|Estrelando
+1066|Guia de episódios
+1067|Temporada
+1068|episódios
+1069|Temporada ${n} · ${e.length} episódios
+1070|Episódio
+1071|Episódio ${ep.n}
+1072|…e
+1073|mais
+1074|…e mais ${e.length-24}
+1075|Criando um livreto para este jogo…
+1076|Não foi possível criar um livreto para este jogo
+1077|Esperando o download dos manuais em segundo plano pausar…
+1078|Consertando o manual…
+1079|Procurando o manual certo para ${fixRun.g.title}…
+1080|Baixando o manual novo · página ${m[1]} de ${m[2]}
+1081|Consertado. Carregando as páginas…
+1082|✓ Manual consertado: ${r.what}
+1083|Nada para consertar neste manual. Se ele for de outro jogo, use Jogo errado
+1084|Não foi possível consertar o manual:
+1085|Não foi possível consertar o manual: ${(e&&e.message)||e}
+1086|Deixando esse manual de lado…
+1087|Encontrei. Carregando as páginas…
+1088|✓ Manual novo para ${g.title}
+1089|Não foi possível trocar o manual:
+1090|Não foi possível trocar o manual: ${(e&&e.message)||e}
+1091|Capa · ${n} páginas
+1092|Páginas ${rd.i+1}${right?"–"+(rd.i+2):""} de ${n}
+1095|Fechada
+1096|Disco fora
+1097|Abrir a caixa
+1098|Tirar o cartucho
+1099|Tirar o disco
+1100|Segure para jogar
+1101|Virar a página
+1102|Espaço
+1103|Próxima página
+1104|Guardar o manual
+1105|Jogo errado: procurar o certo
+1106|Consertar (capa, páginas)
+1107|Consertar manual…
+1108|Girar
+1109|Próximo lado
+1110|Zoom
+1111|Virar
+1112|Guardar
+1113|Fechar
+1114|, oculto
+1118|Ligando ${(WORDMARKS[s.id]||[s.name])[0]}
+1120|Iniciando no ${s.emulatorName}
+1123|Não foi possível usar o seu console 3D: ${ConsoleModel.error()||"unknown error"}
+1124|Iniciando ${s.emulatorName}
+1125|Adicione primeiro um jogo a esta estante e depois teste
+1126|Carregando o seu modelo 3D…
+1127|Configurações do ${s.emulatorName}
+1131|, durante o teste de fluidez
+1132|Iniciando pelo
+1133|Iniciando pelo ${L}
+1134|Rodando pelo
+1135|Rodando pelo ${L}. Aperte
+1136|para voltar à estante.
+1137|Iniciando pelo Quiver
+1138|Iniciando pelo GOG
+1139|Iniciando
+1141|Iniciando pela Steam
+1142|Rodando pela Steam. Aperte
+1143|Abrindo o app
+1144|Abrindo o ${s.emulatorName}
+1145|Configurações do emulador
+1147|Jogando · feche o jogo para voltar aqui
+1148|Jogando · aperte ${padWord("guide")} para o menu Home
+1149|Aperte
+1150|para voltar.
+1151|De volta do jogo
+1152|Não foi possível iniciar: ${info.error||"unknown error"}.
+1153|(código ${info.code})
+1154|O ${e} fechou na hora${info.code?` (code ${info.code})`:""}.
+1155|Abra o ${e} sozinho para conferir a configuração: falta de BIOS, chaves ou firmware é a causa mais comum.
+1156|Feche o jogo ou o app para voltar
+1157|Conquistas
+1158|Carregando do RetroAchievements…
+1159|As conquistas não carregaram
+1160|O RetroAchievements não respondeu.
+1161|Tentar de novo
+1162|O RetroAchievements não tem conquistas para este jogo (ou o nome dele não bateu com nenhum).
+1163|Ver todas
+1164|Dominado
+1165|Zerado
+1166|${p.earned} de ${p.total} desbloqueadas · ${p.pointsEarned} / ${p.points} pontos
+1167|Desbloqueadas
+1168|Bloqueadas
+1169|Carregando conquistas…
+1170|O RetroAchievements não respondeu
+1171|Nenhuma conquista para este jogo
+1172|${p.earned} de ${p.total} desbloqueadas · ${p.total-p.earned} ainda bloqueadas · ${p.pointsEarned} / ${p.points} pontos${p.mastered?" · "+p.mastered:""}
+1173|Todas · Desbloqueadas · Bloqueadas
+1174|Navegar
+1175|Nada desbloqueado ainda. Todas as conquistas estão em Bloqueadas.
+1176|Tudo desbloqueado. Não falta nada para ganhar aqui.
+1177|bloqueada
+1178|· hardcore
+1179|Desbloqueada ${a.date?a.date.slice(0,10):""}${a.hardcore?" · hardcore":""}
+1180|· ${a.rarity}% dos jogadores
+1181|Conquista desbloqueada ·
+1182|Conquista desbloqueada · ${a.points} pts
+1183|${r.file} instalado como o modelo de console do ${r.name}
+1184|e mais ${list.length-2}
+1185|Manuais mais nítidos ou em inglês para ${list.length} [[${list.length===1?"":"s"}|jogo|jogos]]: ${names}
+1186|Manuais novos e melhorados para ${list.length} jogos: ${names}
+1187|Manuais adicionados para ${list.length} [[${list.length===1?"":"s"}|jogo|jogos]]: ${names}
+1188|✓ Manuais verificados: ${info.rechecked.moved} deixados de lado e procurados de novo
+1189|Capas adicionadas para ${info.covers} [[${info.covers===1?"":"s"}|jogo novo|jogos novos]]
+1190|Manual embutido adicionado para ${info.manuals} [[${info.manuals===1?"":"s"}|jogo de Wii U|jogos de Wii U]]
+1191|Manuais adicionados para ${info.onlineManuals} [[${info.onlineManuals===1?"":"s"}|jogo|jogos]]
+1192|${n} [[${n===1?"":"s"}|jogo novo encontrado|jogos novos encontrados]]
+1193|· ele está
+1194|· eles estão
+1195|esperando por você no correio do museu
+1198|Procurando logos {}…
+1199|Nenhum logo encontrado para ${name} agora.
+1200|desativado
+1201|escuro
+1202|Salvando…
+1203|Logos oficiais do Wikimedia Commons, de uso livre.
+1204|Não foi possível procurar logos
+1205|Logo novo para ${name}. Restaurar anterior traz o antigo de volta
+1206|Não foi possível usar esse logo
+1208|Logo
+1209|Sua imagem
+1210|Logotipo embutido
+1211|Substituir
+1212|Adicionar imagem
+1213|Procurar um logo
+1214|Restaurar anterior
+1215|Remover
+1216|Procurar um logo: logos oficiais do Wikimedia Commons, de uso livre
+1217|Seu modelo 3D
+1218|Adicionar modelo
+1219|Procurar um modelo
+1220|Ajustar na estante
+1221|Testar
+1222|Aparece na animação de abertura e na estante dele no museu
+1223|Fica na estante dele no museu (Ajustar na estante leva você até lá)
+1224|Imagem do console
+1225|Nenhum
+1226|Uma imagem plana, usada quando não há modelo 3D
+1227|Não aparece em lugar nenhum no momento (era para a antiga animação de abertura)
+1228|Nenhum adicionado
+1229|Vídeo de abertura
+1230|Seu vídeo
+1231|Introdução embutida
+1232|Adicionar vídeo
+1233|Toca ao iniciar
+1234|Desligado ao iniciar
+1235|Nenhum vídeo adicionado: com a tela de abertura ligada (Configurações → este console), os jogos começam nela em vez da introdução embutida
+1236|PC gamer embutido
+1237|Arquivos
+1238|Abrir pasta
+1239|Escolha um logo para ${name}
+1240|Escolha uma imagem do console ${name} (PNG transparente funciona melhor)
+1241|Escolha um vídeo de abertura para ${name}
+1242|Logo definido para ${name}
+1243|Imagem do console definida para ${name}
+1244|Vídeo de abertura definido para ${name}
+1245|Escolha um modelo 3D de ${name} (.glb)
+1246|Logo anterior de volta para ${name}
+1247|Escolha um modelo de controle de ${name} (.glb)
+1248|Controle definido para ${name}. Ele fica na estante do museu, na frente da placa com o nome
+1249|Não foi possível iniciar
+1251|Modelo definido para ${name}. Inspecione um jogo para ver.
+1252|Configure ${name} nas Configurações primeiro
+1253|Clássico
+1254|Aero
+1255|Melodia
+1256|Caixinha de música
+1257|Deriva
+1258|Noite
+1259|Brilho
+1260|Silencioso
+1261|Suave
+1262|Cheio
+1263|Desfoque suave
+1264|Arte do jogo
+1265|Sino
+1266|Cristal
+1267|Pulso
+1268|Horizonte
+1269|Ondulação
+1270|Esmaecer
+1271|Logos, consoles 3D e vídeos de abertura
+1272|3D próprio
+1273|3D embutido
+1274|Sem 3D
+1275|Logo próprio
+1276|Logotipo
+1277|Menu rápido
+1278|Estúdio de capas
+1279|Este console
+1280|· todos os jogos
+1281|${shelfFor(g).name||"This console"} · todos os jogos
+1282|Volume
+1283|Personalizar
+1284|Tema
+1285|Sons
+1286|Música
+1287|Esta música
+1288|${(Sound.song()||{}).name||"This song"} · Próxima ›
+1289|Música do menu
+1290|Volume da música
+1291|Som de abertura
+1292|Ordenar e filtrar
+1293|Ordenar por
+1294|Mostrar
+1295|Troféus
+1296|Não conectado
+1297|· ${RA.profile.points.toLocaleString()} pts
+1298|${RA.profile.points.toLocaleString()} pontos
+1299|Entre uma vez e o Špajz acompanha cada desbloqueio.
+1300|Conectar o RetroAchievements ›
+1301|Ver as conquistas deste jogo ›
+1302|Museu
+1303|Passeie pela sua coleção
+1304|Download das capas
+1305|Continuar
+1306|Pausar
+1307|Atualizações
+1308|Energia
+1309|Sair do Špajz
+1310|Suspender
+1311|Reiniciar o PC
+1312|Desligar
+1313|· Música:
+1314|${qsName(QM_SOUNDS,ui.soundTheme||"aero")} · Música: ${qsName(QM_MUSIC,mmPick())}
+1315|Recursos
+1316|jogado por último
+1317|jogado por último ${fmtDay(h.last/1000)}
+1318|Favoritado
+1319|Favoritar
+1320|Capas
+1321|Ocultar
+1322|favoritado
+1323|Mudo
+1324|★ Dominado ·
+1325|${r.earned} de ${r.total} desbloqueadas
+1326|Ainda sem troféus para este jogo
+1327|Seus troféus
+1328|${pr.user} · ${pr.points.toLocaleString()} pontos
+1329|Conectado
+1331|· atual
+1334|Manter
+1335|Selecionar
+1336|Mover
+1337|Verificando…
+1338|Saiu a ${qsUpd.latest} · abrir a página
+1339|Atualizado · ${qsUpd.cur}
+1340|Não foi possível verificar · tente de novo
+1341|Procurar um beta mais novo
+1342|Abrindo a página de download da ${qsUpd.latest} no seu navegador
+1344|O Špajz vai iniciar sem o logo
+1345|Aparece na próxima vez que o Špajz iniciar
+1346|Capa nova para ${g.title}
+1347|Desligando…
+1348|Reiniciando…
+1349|trocam de sistema.
+1350|${showPad()?`${padWord("L1")} / ${padWord("R1")}`:"Q / E"} trocam de sistema.
+1351|Não foi possível ler esse arquivo
+1352|Use uma imagem (PNG, SVG, WebP) ou um vídeo (MP4, WebM)
+1353|Animações de abertura são para estantes de console
+1354|Logo definido para ${s.name}
+1355|Vídeo de abertura definido para ${s.name}
+1357|Adicionado por você em Configurações → Jogos personalizados. O Špajz abre ele a partir da própria pasta.
+1358|Abre pelo app da EA, então o login e os saves na nuvem funcionam normalmente.
+1359|App da EA
+1360|Nada para embaralhar nesta estante
+1361|Não foi possível abrir o jogo pelo celular: o Špajz estava ocupado
+1362|Esse jogo
+1363|${c.p.title||"That game"} não está na estante agora
+1364|Dia
+1365|Fim de tarde
+1366|Noite neon
+1367|Galeria com holofotes
+1368|Luzes apagadas
+1369|Iluminação
+1370|Cena
+1371|Clássico é o visual original. Luzes apagadas deixa só a TV e o brilho das próprias estantes.
+1372|Seguir a hora do dia
+1373|Dia de manhã, Clássico à tarde, Fim de tarde à noite
+1374|As luzes acendem quando você entra
+1375|Desligado: a sala abre com as luminárias já acesas
+1376|Brilho, temperatura, o holofote e a poeira, por cima da cena
+1377|Brilho
+1378|Temperatura
+1379|Quente ${Math.round(v*100)}%
+1380|Fria ${Math.round(-v*100)}%
+1381|Neutra
+1382|Holofote na caixa
+1383|Poeira na luz
+1384|TV retrô
+1385|Uma TV de tubo que passa comerciais antigos, os trailers dos seus jogos ou o que você jogou por último
+1386|O que está passando…
+1387|Leva você até a TV e abre a programação (ligando ela se estiver desligada)
+1388|Suporte
+1389|Carrinho de TV de madeira
+1390|Rack baixo
+1391|Modelo de chão
+1392|Suporte de parede
+1393|O rack baixo tem uns consoles dentro
+1394|Tamanho
+1395|Pequeno
+1396|Médio
+1397|Grande
+1398|Posição
+1399|Esquerda
+1400|Centro
+1401|Direita
+1402|Centro: entre as estantes e o cantinho de leitura, que se desloca para abrir espaço
+1403|Canal
+1404|Comerciais antigos
+1405|Trailers de jogos
+1406|Jogados recentemente
+1407|Embaralhar tudo
+1408|Na TV, para cima e para baixo também trocam de canal. Embaralhar tudo mistura os outros três
+1409|Por cima do volume do próprio Špajz
+1410|Mudo
+1411|Som só quando eu estiver olhando
+1412|Aumenta quando você vira para a TV ou chega perto, e diminui quando você se afasta
+1413|Efeito de TV de tubo
+1414|Linhas de varredura, vidro curvo e brilho
+1415|Animação de ligar e desligar
+1416|Sala
+1417|Paredes
+1418|Reboco escuro
+1419|Painéis de madeira

@@ -1,0 +1,314 @@
+1|Domů
+4|Vlastní
+5|Média
+8|Police
+11|Vybrat obal
+12|Zrušit
+13|Emulátor
+14|Obrázky
+17|Skryté
+18|jeho emulátor
+19|Nenastaveno
+20|Nenalezeno
+21|Vlastní hry
+22|Vlastní motivy
+23|Obrázky
+24|Zatím nezkontrolováno
+25|nenalezeno
+26|Programy
+27|Historie hraní vymazána
+29|hledání
+30|Pracuji
+33|Klíč API
+34|Připojeno
+35|Klíč funguje
+36|nepřijato
+38|$1 spárovaný telefon
+39|$1 telefon $3
+40|police
+41|pomocná stránka
+42|neznámá stránka
+49|(bez odpovědi)
+50|zpět na polici
+53|(muselo se vynutit)
+63|nic nevytvořeno
+64|Vybrat emulátor…
+65|Použít ${name(sugg)} (vytvořený pro tuto hru)
+66|Použít ${def.emulatorName} z police
+67|Tato hra běží v: ${cur}
+68|(nenastaveno)
+69|Tato hra běží v ${def.emulatorName} z police: ${shelfExe || '(not set up)'}
+70|Vyber jinou verzi jen pro tuto hru, např. fork vyladěný přímo pro ni.
+72|Emulátor pro tuto hru
+73|Jaký emulátor má tato hra používat?
+74|Emulátor pro tuto hru (${def.emulatorName} nebo jeho verze)
+75|Všechny soubory
+76|výchozí z police
+77|Této hry
+78|Přidáno
+81|(nejnovější aktualizace)
+82|Stahuji jádro ${nm} pro RetroArch…
+83|Stahuji jádro ${nm} pro RetroArch… ${p} %
+84|hra se nespustila
+85|emulátor ve vlastním okně
+86|aplikace v okně
+87|aplikace se nespustila
+88|Zkontroluj to v Quiver Launcheru.
+89|Zkontroluj to v GOG Galaxy.
+90|Odeber ji v Nastavení → Vlastní hry a přidej ji znovu.
+91|na vlastní název
+92|zpět na název souboru
+93|neočekávaná odpověď
+95|To logo se nepodařilo získat
+96|Nejdřív dokončuji stahování obalů na pozadí…
+99|Nejdřív dokončuji stahování návodů na pozadí…
+100|Obejít
+101|Zatím jen ve Windows
+102|žádný, který by Špajz uměl nastavit
+103|Převádím PDF návody na stránky…
+104|PDF se nepodařilo převést na stránky
+105|vyměněno za čistý sken z
+106|vyměněno za čistý sken z ${c.from}
+107|Kontroluji návody ·
+108|Kontroluji návody · ${p.system}
+109|Vyhledávám odložené hry…
+111|bez udání důvodu
+112|Vybrat obal krabice
+113|PDF návody
+114|Obrazovka ${i + 1} — ${w}×${h}
+115|Zálohovat nastavení Špajzu
+116|Nastavení Špajzu
+117|Tohle není záloha nastavení Špajzu.
+118|Ta záloha nemá verzi Špajzu.
+119|Ta záloha neobsahuje žádné nastavení.
+120|Historie hraní v té záloze je poškozená.
+121|Obnovit nastavení Špajzu
+122|Ten soubor je moc velký na zálohu nastavení.
+123|Ten soubor se nepodařilo přečíst jako zálohu nastavení.
+133|(běží hra)
+142|Hlášení o problému Špajzu ${stamp()}
+143|Špajz se nepodařilo spustit
+144|${e && e.message || e} Podrobnosti jsou v data\boxshelf.log. Špajz musí mít možnost zapisovat do své složky.
+145|emulátor nalezen
+146|žádný emulátor
+147|složky s hrami
+148|archive.org odpověděl
+150|Emulátor
+151|Soubor
+152|Hra
+153|Ta složka neexistuje
+155|Knihovnu Playnite se nepodařilo zkopírovat (
+157|stránek
+158|Zrušeno.
+164|archive.org je teď přetížený. Zkus to za minutu.
+165|archive.org neodpověděl (${e.message}).
+166|(jen text)
+168|(${Math.round(n / 1048576)} MB uloženo pro pokračování)
+169|Soubor se nepodařilo uložit (není plný disk?).
+170|Internet Archive tento soubor nedovolí stáhnout (může být omezený).
+171|Ten soubor na Internet Archive chybí.
+172|Stahování se zaseklo. Zkus to za minutu.
+173|Stahování nedoběhlo. Zkontroluj připojení a zkus to znovu.
+174|Bez názvu
+177|(už tam je)
+178|souborů,
+179|Nepodařilo se spojit s archive.org (${e.message}).
+180|souborů:
+182|Ten soubor má přes 2 GB.
+183|archive.org je přetížený
+184|žádné použitelné soubory
+185|Dřívější
+187|Není co vrátit
+188|Evropa
+189|Japonsko
+191|region:
+192|Nic se nemuselo měnit
+196|Současný
+198|Kazeta vytvořená z obalu
+200|Zadní strana vytvořená Špajzem
+201|Hřbet vytvořený Špajzem
+202|Dřívější${dateWord(r.stamp) ? ' · ' + dateWord(r.stamp) : ''}
+203|· kompletní
+204|${label} · kompletní
+205|Měním styl: ${def.name}
+206|Nenalezeno: ${notFound}
+207|Selhalo: ${failed}
+208|Chyby připojení: ${netErr}
+209|Nepodařilo se spojit se stránkami s obaly. Zkontroluj připojení k internetu a zkus to znovu.
+210|Změněno obrázků: ${changed}
+211|Není co měnit
+212|Nic se nezměnilo
+213|· přeskočeno zamčených her: ${j.locked}
+214|Kompletních sad: ${j.sets.full} · částečně: ${j.sets.partial} · přeskočeno (zamčeno): ${j.sets.skipped}
+215|Zpět ke stylu police
+216|Znovu vybráno částí: ${changed}
+217|Nové obrázky se nepodařilo stáhnout: současné zůstávají
+218|zadní strana
+219|Obrázek celé krabice, ze kterého se vyřízne hřbet: ${g.game.title}
+220|Vlastní ${PL} pro ${g.game.title}
+221|(hřbet vyříznutý z celé krabice)
+253|Nejdřív tento telefon spáruj.
+254|hra
+255|Telefon
+256|Telefon s Androidem
+257|Trochu zpomal.
+258|Použij adresu, kterou ukazuje Špajz.
+259|Špatný původ.
+260|Nenalezeno.
+261|Ta hra už tu není. Obnov stránku stažením dolů.
+262|Nepovoleno.
+263|Neznámé tlačítko.
+264|Neznámá klávesa.
+265|Není co napsat.
+266|Něco se pokazilo.
+267|Špajz je zaneprázdněný. Zkus to za chvíli.
+268|Příliš velké.
+269|Příliš mnoho špatných PINů. Zkus to za pár minut.
+270|Příliš mnoho špatných PINů. Párování je zamčené na ${min} min.
+271|Ten PIN nesedí. Zbývající pokusy: ${left}.
+272|Domácí síť nenalezena. Připoj tento počítač k routeru (Wi-Fi nebo kabelem).
+273|Port ${want} používá jiný program, proto se použije ${port}.
+274|Nepodařilo se spustit: ${e.message}
+275|Porty ${want}–${want + 9} jsou všechny obsazené. Vyber jiný port.
+276|zapnuto
+277|vypnuto
+278|Sbírka
+286|Arkády
+287|Kazeta
+288|Disk
+289|Hřbet
+290|Zpět
+291|Obal
+292|Svět
+293|Dokončuji…
+294|Severní Amerika
+295|Spojené státy
+297|Spojené království
+299|Stahuji databázi her LaunchBox (jednorázově, asi minutu)…
+300|Stahuji databázi her LaunchBox… ${pct} %
+301|Rozbaluji databázi her…
+302|Čtu databázi her… 0 %
+303|Čtu databázi her… ${pct} %
+306|Třídím databázi her podle konzolí…
+307|Čekám na sestavení, které už běží…
+308|Stahuji databázi her LaunchBox…
+309|Austrálie
+319|Vyříznuto z celé krabice
+320|Fanouškovský obrázek
+321|Čistá rekonstrukce
+322|Sken krabice
+323|Čistý obal
+327|Obal v HD
+328|Z celého obalu z GameTDB
+329|Vyříznuto z celého obalu
+330|Hledám obrázky pro ${def.name}…
+331|${def.name}: ${done} z ${games.length}
+334|Můj motiv
+335|Kopce při západu slunce
+336|Hluboký vesmír
+337|Oceán za soumraku
+338|Jen pro jednu konzoli přidej obrázek pojmenovaný podle její police: gc, wii, wiiu, sw, sw2, ps2, ps3, ps4, ps5, psp, x360, n3ds, pc.
+339|shade: o kolik se obrázek ztmaví (0 až 0.9), aby police zůstala dobře čitelná.
+340|blur: true obrázek rozmaže. glow: jak jasné je světlo pod policí (0 až 1).
+341|Pak ve Špajzu: Nastavení > Zobrazení > Znovu najít motivy. Motivy jsou jen obrázky a nastavení, nikdy programy.
+342|Start
+344|Konfigurace
+353|Piš
+354|Ovladač
+355|Nastavení
+356|Složky
+357|Klávesové zkratky menu Domů
+358|Složka BIOS
+359|Grafika
+360|Bez dotazů při ukončení
+361|Pokračovat, kde jsi skončil
+363|jeho systémová složka už soubory BIOS má
+364|nejdřív jednou otevři Dolphin
+365|ovladač už je namapovaný
+366|nejdřív jednou otevři DuckStation
+367|jeho složka BIOS už soubory má
+368|nejdřív jednou otevři PCSX2
+369|ve složce BIOS zatím není BIOS pro PS2
+370|nejdřív jednou otevři PPSSPP
+371|emulátor už tam není
+373|nepodařilo se zapsat ${path.basename(file)} (${e.code || e.message})
+374|není co měnit
+375|stahování selhalo
+376|jen
+377|her načteno
+379|Špajz – Domů
+382|(nepodařilo se pozastavit)
+384|Stav načten
+385|pořídit snímek obrazovky
+386|uložit stav
+387|načíst stav
+388|Nepodařilo se ${action === 'shot' ? 'take the screenshot' : action === 'save' ? 'save the state' : 'load the state'}
+389|Hru se nepodařilo znovu spustit
+390|· pozice ${k.slot}
+393|program
+394|${n} už běží. Nejdřív ho zavři.
+395|Už něco běží. Nejdřív to zavři.
+396|Vývojář
+397|Vydavatel
+398|Region
+399|Žánry
+400|Název
+401|Popis
+414|Časopisy
+415|Návody
+416|Nepodařilo se spojit s Wikimedia Commons. Zkontroluj připojení k internetu a zkus to znovu.
+418|Nápis GameCube
+419|Volné dílo
+420|Symbol kostky GameCube
+421|Logo Wii
+422|Logo Wii U
+423|Logo Switch, široké
+424|Logo Switch, pod sebou
+425|Logo Switch, červené
+426|Logo New 3DS
+427|Logo PS2
+428|Nápis PlayStation 2
+429|Logo PS3
+430|Logo PS3, široké
+431|Nápis PlayStation 3 z uvedení
+432|Logo PS4 se symbolem
+433|Logo PS4
+434|Logo PSP
+435|Logo Xbox 360
+436|Logo Xbox 360 s TM
+437|Logo Xbox 360, alternativní
+438|Wikimedia Commons odpověděl
+439|trvalo to moc dlouho
+442|žádné stránky
+443|málo detailů
+444|o moc ostřejší ne
+445|${cnt} z ${collCount} stránek
+449|malý sken vyměněn za ostřejší (${old.width}px -> ${neu.width}px)
+450|znovu staženo v plném rozlišení (${old.width}px -> ${neu.width}px)
+451|prázdné
+453|nahrazen neúplný návod (stránek: ${old.count}${old.junk ? ', ' + old.junk + ' blank' : ''})
+454|vylepšeno (${old.width}px -> ${neu.width}px)
+455|vyměněno za anglické vydání (${old.width}px -> ${neu.width}px)
+456|(skenů: ${n}, dvojstrany rozděleny)
+458|(dalších ${jobs.length - batch.length} příště)
+459|Návod
+491|Angličtina
+492|Francouzština
+493|Němčina
+494|Španělština
+495|Italština
+496|Japonština
+502|Hledám návody… ${done} z ${all.length}
+504|${base}: stránka ${done} z ${total}
+505|${base}: stránka ${i + 1} z ${imgs.length}
+506|Hotovo ${finished} z ${choices.length} ·
+507|„${seen.title}“ patří jinému vydání
+508|„${seen.title}“ nesedí (${s.toFixed(1)})
+509|Miniatur stránek: ${tiny}
+510|, zmenšeno: ${shrunk}
+513|Návod se nepodařilo odložit (
+514|). Není nějaká stránka otevřená v jiném programu?
+515|(neznámý zdroj)
+516|žádné stránky k opravě
+517|Odebráno miniatur stránek: ${tiny.length}
+518|Zmenšeno příliš velkých stránek: ${shrunk}

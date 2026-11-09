@@ -1,0 +1,269 @@
+1800|Controle remoto do Špajz no celular
+1804|Abra uma caixa de pesquisa na TV para digitar nela (pesquisa das Configurações, buscador do museu)
+1805|Console
+1806|Cartão de memória
+1807|Cabo
+1808|Peça extra
+1809|Peça extra ${n++}
+1815|ABRIR CONFIGURAÇÕES
+1816|Menu Home
+1817|Jogo pausado
+1820|Salvar estado
+1821|Carregar estado
+1822|Captura de tela
+1823|Sair para a estante
+1824|Estante Início
+1825|Reiniciar
+1826|Sair do Špajz
+1827|${m} min
+1828|Jogando há ${fmtFor(Date.now() - info.startedAt)}
+1829|fecha o jogo · segure ${glyph('ok')}
+1830|segure ${glyph('ok')}
+1831|slot ${info.slot}
+1832|salva e depois suspende
+1833|o jogo continua pausado
+1834|o jogo continua rodando
+1835|o jogo ainda está rodando
+1836|Guia
+1837|Jogando agora
+1838|Ferramentas de imagem
+1839|nenhum cartucho criado
+1840|nenhuma contracapa criada
+1841|nenhuma lombada criada
+1842|nenhuma contracapa encontrada
+1843|nenhuma lombada encontrada
+1849|Mais
+1850|Abrir emulador
+1851|Sistemas
+1853|Ainda não há nada na estante
+1854|Conecte os seus emuladores e pastas de jogos
+1855|A configuração encontra o que puder e deixa você procurar o resto.
+1856|Abrir a configuração
+1857|Organizar as suas estantes
+1858|Sua cópia
+1859|Informações do jogo
+1860|Comando de abertura
+1861|Ver o trailer em tela cheia
+1862|Ainda não há prévia, trailer ou capturas de tela para este jogo.
+1863|O visual dos seus consoles
+1864|Logos, consoles 3D e vídeos de abertura, um sistema de cada vez.
+1865|Q / E trocam de sistema.
+1866|Você também pode arrastar um arquivo para a estante: uma imagem vira o logo da estante, um vídeo vira a animação de abertura.
+1867|Aperte Enter, Esc, Xis ou Círculo para pular
+1868|Qualquer botão pula
+1869|Continue segurando para sair do Špajz
+1870|Ativar ou desativar o som
+1871|Ordenar e filtrar
+1872|Controles
+1873|Fechar (B / Esc)
+1874|Ler o manual
+1875|Segure a caixa: abra, leia o livreto
+1876|Mais: capas, renomear, coleções, emulador…
+1877|Controles de inspeção
+1878|Controles do museu
+1881|CARTÃO DE MEMÓRIA
+1884|WebGL não está disponível
+1885|${w} pegar · de novo para abrir
+1886|pegue para abrir
+1900|${n} [[${n === 1 ? 'game' : 'games'}|jogo|jogos]] · ${row.stats.played} jogados · ${row.stats.hours}
+1901|${n} [[${n === 1 ? 'game' : 'games'}|jogo|jogos]] · nada jogado ainda
+1902|Mais jogado: ${row.stats.top}
+1903|${row.stats.fav} [[${row.stats.fav === 1 ? '' : 's'}|favorito|favoritos]]
+1904|Adicione themes\${row.id}\console.glb para mostrar o seu console
+1906|comunidade
+1907|jogado por último ${g.last}
+1909|Na sua coleção desde
+1910|Na sua coleção desde ${d}
+1911|✓ Manual
+1912|Sem manual
+1913|✓ Arte completa da caixa
+1914|Capas incompletas
+1915|✓ Arte do disco
+1916|Sem arte do disco
+1917|(pronto com antecedência)
+1918|(lido agora)
+1921|${names.length} estantes
+1924|CAIXOTE DE COLECIONADOR
+1925|↑ ESTE LADO PARA CIMA ↑
+1926|LISTA DE CONTEÚDO
+1927|${n} jogos
+1928|ENTREGUE A
+1929|A Coleção
+1930|Lacrado de fábrica
+1931|Chegou
+1932|Chegou em ${date}
+1933|ENTREGA DE COLECIONADOR
+1934|Nº ${String(rec.no).padStart(4, '0')}
+1935|FRÁGIL
+1940|${hrs.toFixed(1)} h jogadas
+1941|${Math.round(ms / 6e4)} min jogados
+1942|${r.games.length} [[${r.games.length === 1 ? '' : 's'}|jogo|jogos]]
+1943|${mv} [[${mv === 1 ? '' : 's'}|filme|filmes]]
+1944|${u.shows} [[${u.shows === 1 ? '' : 's'}|série|séries]]
+1945|Nada ainda
+1946|SÉRIE
+1963|SÉRIES
+1964|Séries
+1965|Filmes
+1966|EM CARTAZ
+1967|JOGADOS RECENTEMENTE
+1968|GUIAS DE ESTRATÉGIA
+1969|Sem guias
+1970|Sem revistas
+1971|Selecione esta prateleira para
+1972|achar alguns no
+1973|Guias de estratégia
+1974|Página ${L + 1}
+1975|Páginas ${L + 1}–${R + 1}
+1976|(tempo esgotado)
+1982|Páginas do manual
+1983|sem WebGL
+1984|renderização por software
+1985|Portátil Android
+1986|Gráficos do Steam Deck
+1987|Gráficos Intel HD/UHD
+1988|gráficos integrados
+1989|núcleos
+1990|GB de memória
+1991|${mem} GB de memória
+1992|placa de vídeo dedicada
+2003|Estante oculta
+2004|Pronto · ${g} [[${g===1?"":"s"}|jogo|jogos]]
+2005|Pronto · ${n} [[${n===1?"":"s"}|pasta|pastas]]
+2006|Adicionar uma pasta de jogos
+2007|Precisa do ${c.emulatorName||"its emulator"}
+2012|Encontrado
+2013|Pasta encontrada
+2014|Não encontrado
+2015|Aberto no seu navegador
+2016|Abrir links precisa de um Špajz mais novo
+2017|Aperte de novo para confirmar
+2018|Alto
+2019|Equilibrado
+2020|O automático escolhe ${({high:"High",balanced:"Balanced",low:"Low",handheld:"Handheld"})[d.tier]||d.tier} para este PC${d.why?" ("+d.why+")":""}
+2021|Escolhas automáticas para este PC
+2023|Configurações do ${a.name}: se ele aparece na estante Mídia, como ele abre e onde está instalado.
+2024|Aberto pela estante Mídia.
+2025|Mostrar ${a.name}
+2026|Coloca o Stremio na estante Mídia, e a sua biblioteca do Stremio nas estantes de filmes do museu.
+2027|Coloca o ${a.name} na estante Mídia.
+2028|Tela cheia depois de abrir
+2029|Aperta a tecla de tela cheia do app quando a janela dele aparece.
+2030|Controle como mouse
+2031|O analógico esquerdo move um ponteiro e o A clica, para apps sem suporte a controle. Deixe desligado quando o app tem o próprio (Stremio: Settings → Enable gamepad support).
+2032|Encontrado automaticamente. Aponte para ${(a.exeNames||[a.name+".exe"])[0]} se ele estiver instalado num lugar diferente.
+2033|Baixar ${a.name}
+2034|Abrir o site
+2035|Abre a página de download do ${a.name} no seu navegador.
+2037|Consoles
+2038|Todos os consoles que o Špajz consegue rodar. Escolha um para definir o emulador, as pastas de jogos e como ele inicia.
+2039|Para todos os consoles
+2040|Procurar emuladores de novo
+2041|Procurando…
+2042|Procura nos lugares de instalação de sempre e na pasta do Špajz por emuladores e pastas de jogos que você ainda não configurou, e preenche qualquer console que não tenha nada definido.
+2043|Jogos de PC
+2044|Os seus jogos da Steam instalados, numa estante só deles.
+2045|Mostrar jogos instalados da Steam
+2046|Adiciona uma estante de PC com todos os jogos que a Steam tem instalados. Jogos desinstalados ficam de fora.
+2047|Ocultar ferramentas da Steam
+2048|Deixa o Proton, o Steamworks Common Redistributables e outras ferramentas fora da estante.
+2049|Pasta da Steam
+2051|Escolha a sua pasta da Steam
+2052|Baixar a Steam
+2053|Abre a página de download da Steam no seu navegador.
+2054|Mostrar jogos instalados da Epic Games
+2055|Adiciona à estante de PC os jogos que o Epic Games Launcher tem instalados. Eles abrem pelo launcher da Epic, então o login e os saves na nuvem funcionam normalmente.
+2056|Mostrar jogos instalados do GOG
+2057|Adiciona à estante de PC os jogos que o GOG Galaxy tem instalados. Jogos do GOG não têm proteção contra cópia, então o Špajz abre eles sozinho, com o menu Home e o atalho de sair como qualquer jogo.
+2058|Mostrar jogos instalados da Ubisoft
+2059|Adiciona à estante de PC os jogos que o Ubisoft Connect tem instalados. Eles abrem pelo Ubisoft Connect, então o login e os saves na nuvem funcionam normalmente.
+2060|Mostrar jogos instalados da EA
+2061|Adiciona à estante de PC os jogos que o app da EA tem instalados. Eles abrem pelo app da EA, então o login e os saves na nuvem funcionam normalmente.
+2062|Mostrar jogos instalados do Xbox
+2063|Adiciona à estante de PC os jogos que o app do Xbox tem instalados (incluindo o Game Pass). Eles abrem como qualquer jogo do app do Xbox, com a sua conta Microsoft.
+2064|Recomps, ports de PC e qualquer outro programa, numa estante Personalizados só deles.
+2065|Stremio e Nuvio, abertos pela estante Mídia.
+2066|Tela
+2067|Como a estante fica vista do sofá.
+2068|Tamanho da interface
+2069|Padrão
+2070|Extragrande
+2071|Textos e botões maiores para uma TV do outro lado da sala.
+2072|Grande serve para a maioria das TVs de 55" ou mais a 2–3 m. Extragrande para quem senta muito longe.
+2073|Crie um tema a partir de qualquer imagem, ou abra a pasta onde ficam os seus temas.
+2074|Uma imagem vira um tema atrás das suas estantes.
+2075|Criar um tema a partir de uma imagem
+2076|Escolha uma imagem para o seu tema
+2077|sua imagem
+2078|Tema novo: ${t?t.name:"your picture"}
+2079|Tema criado. Procure temas de novo para ver
+2080|Abrir a pasta de temas personalizados
+2081|Procurar temas de novo
+2082|Procurar
+2083|Procura de novo na pasta de temas personalizados depois que você adiciona, muda ou remove um tema.
+2084|${n} [[${n===1?"":"s"}|tema personalizado|temas personalizados]]
+2085|Ainda não há temas personalizados
+2086|Relógio
+2087|Dia, data e hora
+2088|Só a hora
+2089|O que aparece no canto de cima da estante.
+2090|Mostra 18:30 em vez de 6:30 PM.
+2091|Tela de baixo
+2092|A tela pequena embaixo da estante mostra o jogo selecionado: a caixa dele para virar e abrir com o dedo, os detalhes, troféus e botões grandes de toque. Enquanto um jogo está rodando, a tela de baixo fica sempre com o jogo, então os emuladores de DS e 3DS e os mods de tela de baixo ficam com ela toda.
+2093|não é um Thor
+2094|Uma segunda tela foi encontrada${s.name?` (${s.name})`:""}. Neste aparelho (${s.device||"not a Thor"}) ela fica desligada a menos que você ligue.
+2095|Ao iniciar
+2096|Animação de abertura
+2097|Logo + ondulação
+2098|Logo + esmaecer
+2099|O logo do Špajz aparece enquanto a estante carrega, depois os jogos entram: o que você estava selecionando primeiro, ondulando para os lados, ou a estante inteira surgindo junta. Desligado abre direto na estante.
+2100|Abrir em
+2101|Última estante
+2102|Para onde o Špajz vai quando inicia: a estante de console em que você estava da última vez, Início (continuar jogando e favoritos), ou direto para o museu.
+2103|Museu: depois do logo do Špajz, as luzes acendem na visão geral do museu (um pouco mais lento para abrir que a estante). O B continua levando você para a estante a qualquer hora.
+2104|Tela e movimento
+2105|Qual tela, tela cheia, ajuste da imagem à sua TV e redução de movimento.
+2106|Configure uma vez para a sua TV.
+2107|Iniciar em tela cheia
+2108|Abre o Špajz em tela cheia. Aperte F11 a qualquer hora para alternar.
+2109|Ocultar a barra de tarefas durante os jogos
+2110|Só o Špajz e o seu jogo na tela: a barra de tarefas do Windows some enquanto um jogo abre, roda e fecha, e volta na estante.
+2111|Tela
+2112|Em qual tela o Špajz abre, para um PC com monitor e TV. Os jogos abrem na mesma tela.
+2113|Ajustar à TV
+2114|Diminui tudo um pouco se a sua TV corta as bordas da imagem (overscan). Olhe os cantos da tela enquanto muda.
+2115|Reduzir movimento
+2116|Suaviza a ondulação da abertura, a entrada no museu e os fundos animados dos temas.
+2117|Desempenho
+2118|Uma configuração para o quanto o Špajz exige da sua placa de vídeo.
+2119|Automático
+2120|, e deixa o museu renderizar um pouco mais suave sempre que os quadros ficam lentos.
+2121|${perfWhy}, e deixa o museu renderizar um pouco mais suave sempre que os quadros ficam lentos.
+2122|Alto: tudo ligado (reflexos, brilho, sombras, resolução total). Equilibrado: sombras mais leves, fundo a 30 fps. Baixo: fundo parado, sem desfoque nem sombras, museu a 0,8×. Portátil (Android): sem reflexos nem pulsação de brilho, sem sombras no museu, fundo a 30 fps. Os efeitos visuais e as sombras do museu seguem esse nível.
+2123|Som
+2124|Sons da interface, música do menu, músicas e o som ambiente do museu.
+2125|Sons da interface
+2126|Cliques, sopros e sininhos enquanto você navega.
+2127|O volume dos sons do próprio Špajz. Jogos e apps não são afetados.
+2128|Timbre
+2129|Música ambiente baixinha embaixo da estante, como a tela inicial de um console. Deriva: arejada e calorosa. Noite: mais escura e lenta. Brilho: uma canção de ninar lenta de caixinha de música. Ela some quando um jogo começa.
+2130|O volume da música do menu, por baixo dos outros sons do Špajz.
+2131|O som que toca com a animação de abertura de um console.
+2132|Duração da tela de abertura
+2133|Curta
+2134|Normal
+2135|Longa
+2136|Dispositivo de saída
+2137|Onde os sons do Špajz tocam. Os jogos usam a configuração de áudio do próprio emulador.
+2138|Próxima música
+2139|Passa para a próxima música.
+2140|Tocando agora:
+2141|Tocando agora: ${s.name}
+2142|Som ambiente e músicas
+2143|O som ambiente do museu e (com Melodia) as suas próprias músicas.
+2144|O som baixinho da sala do museu e as músicas que a Melodia toca.
+2145|Som ambiente no museu
+2146|Um som baixinho de sala enquanto você passeia pelo museu.
+2147|Incluir as músicas embutidas
+2148|Com Melodia, as músicas do próprio Špajz tocam junto com os arquivos MIDI da sua pasta Músicas.
+2149|Pasta de músicas

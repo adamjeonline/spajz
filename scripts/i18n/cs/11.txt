@@ -1,0 +1,218 @@
+3273|Které návody pro ${nm}?
+3274|Jedno ťuknutí. Automatické stahování Špajzu se tím bude řídit, teď i u nových her.
+3275|Obaly a návody › ${nm} › ${truncEnd(full,40)} › Návod
+3276|Hledám všechny návody k této hře…
+3277|Všechny návody nalezené pro tuto hru vedle sebe. Ještě hledám online…
+3278|A jeden použije jako tvůj výběr a starý odloží (Vrátit ho vrátí).
+3279|Volba konzole
+3280|Vybrat návod
+3281|Odemknout
+3282|Zamknout
+3283|Filtr
+3284|Použít pro ${mName(st.sys)}
+3285|Vyber návod
+3286|Použít tento
+3287|Obaly a návody › ${nm}
+3288|Obrázky ${nm}
+3289|· bez obalu: ${nc}
+3290|· s výběry nebo zamčených: ${lk}
+3292|Obaly a návody › ${nm} › Styl police
+3293|Jak má ${nm} vypadat?
+3294|Obaly a návody › ${nm} › ${title}
+3295|Tato hra je zamčená, jak je: nic automatického ji nezmění. Tvoje vlastní změny tady fungují dál.
+3296|Hledám všechny verze: ${pl}…
+3298|Vybrat obrázek
+3299|Odemknout hru
+3300|Zamknout hru
+3301|Region nebo HD
+3302|Kompletní sady pro ${conName2(st.sys)}
+3303|Část
+3304|Styl
+3305|Změnit vzhled
+3306|Použít pro ${conName2(st.sys)}
+3307|Podle části
+3308|Zastavit stahování
+3309|Použít tuto sadu
+3310|Vyber sadu
+3311|Vyber verze
+3312|Filtry
+3313|Zpět ke stylu police
+3314|Verze
+3315|Filtry · zapnuté
+3316|Části
+3317|Zastavit
+3321|Hledat v nastavení
+3322|Špajz {}
+3323|· ${st.points} b.
+3324|Připojeno · ${st.user||gp("ra.user")}${st.points!=null?` · ${st.points} pts`:""}
+3325|Zatím nedostupné
+3326|Je potřeba vývojářské přihlášení
+3327|Přihlášení nepřijato
+3328|Klíč nepřijat
+3329|Nefungovalo to
+3330|Stiskni znovu pro odebrání
+3331|Přesouvání · ▲▼
+3339|(nebo Hotovo) a přejdeš na ně.
+3340|Prostě piš — výsledky se mění průběžně. Dolů nebo Enter přejde do výsledků, Esc vymaže.
+3341|Vpravo nebo
+3342|Vpravo nebo ${btnName("a")}
+3343|→ nebo Enter
+3344|{} otevře tuto stránku
+3345|Používá ${c.emulatorName||"its emulator"}. ${conStatus(c)}.
+3346|Zkontrolováno ${when(x.at)}
+3347|${btnLabel("a")} znovu otevře ${e.emulator||"the emulator"}
+3348|${btnLabel("a")} ukáže jak · pak otevře ${e.emulator||"the emulator"}
+3349|Náhledy jsou za touto stránkou
+3350|Police se aktualizují, až zavřeš Nastavení
+3351|Změněno · ${btnLabel("y")} vrátí na ${defLabel(R)}
+3352|Čtverec
+3353|Trojúhelník
+3354|Zavřít klávesnici
+3355|Vymazat hledání
+3356|Výsledky
+3357|Zapnout
+3358|Jak opravit
+3359|Upravit
+3360|Upravit
+3361|Přejít na nastavení
+3362|Vyhledávací pole
+3363|Méně
+3364|Zjistit víc
+3366|Vítej
+3367|Tvoje konzole
+3368|Dokončit nastavení
+3369|Stremio a Nuvio
+3370|Dokončit
+3371|Nastavení Špajzu
+3372|Špajz ${info.version}
+3373|Všechny konzole, které Špajz umí spustit. Vyber jednu a nastav její emulátor a složky s hrami.
+3374|Složek: ${(sc.romDirs||[]).length} · připraveno
+3375|Ukázat na emulátor
+3377|Připraveno: ${n}
+3378|Složek: ${n} · připraveno
+3379|Vyber aplikaci emulátoru
+3380|${c.emulatorName||"Emulator"} nenalezen
+3381|Tyto už na tomto zařízení můžou hrát. Vyber jednu, zkontroluj její emulátor a přidej složku s jejími hrami.
+3382|Zatím nenalezeny žádné aplikace emulátorů. Nainstaluj nějakou (třeba Dolphin, RetroArch nebo DuckStation) a stiskni Hledat znovu, nebo nastav konzoli ručně níže.
+3383|Další konzole (${others})
+3384|Tyto umí spustit RetroArch
+3385|Nenalezena žádná aplikace emulátoru
+3386|Otevřít Špajz
+3387|Hledat znovu
+3388|Teď přeskočit
+3389|‹ Všechny konzole
+3393|Oficiální web:
+3394|Získat ${n} ↗
+3396|Knihovna obrázků
+3397|Kde se uchovávají obaly a návody. Vyber jednu složku a každá konzole v ní dostane vlastní složku s obaly a návody, kterou snadno zálohuješ nebo znovu použiješ v nové instalaci. Obrázky, které už leží u her, se tam na pozadí zkopírují (nic se nepřesouvá, nemaže ani znovu nestahuje). Nech prázdné a obrázky zůstanou u her každé konzole.
+3398|Pojďme připojit tvoje emulátory a hry
+3399|Vítej ve Špajzu
+3400|Pojďme najít tvoje hry
+3401|Špajz najde tvoje emulátory, hry, knihovnu Steamu a streamovací aplikace. Pak vybereš, na kterých konzolích hraješ, a za minutu je hotovo.
+3402|Složka Špajzu
+3403|Najít moje emulátory a hry
+3404|Najít automaticky
+3405|Vyberu si je sám
+3406|Nastavit ručně
+3407|· složek s hrami: ${n}
+3408|${e} nalezen${n?` · ${n} game folder${n===1?"":"s"}`:""}
+3409|Hry nalezeny · ${e} zatím nenalezen
+3410|${e} nenalezen
+3411|Steam nalezen · tvoje hry pro PC
+3412|Steam nenalezen
+3413|${a.name} nalezeno · police Média
+3414|${a.name} nenalezeno
+3415|Retro a arkády
+3416|Xbox, PC a aplikace
+3417|Krok 1 ze 3
+3418|Na kterých konzolích hraješ?
+3419|Špajz zatím nenašel žádné emulátory. Zaškrtni konzole, na kterých hraješ, a pak ukážeš na jejich emulátor a hry.
+3420|Zaškrtni konzole, na kterých hraješ. Pak u každé ukážeš na její emulátor a hry.
+3421|Další konzole a aplikace (${rest.length})
+3422|RetroArch je nainstalovaný, takže umí spustit kteroukoli z retro konzolí tady. Zaškrtni jen ty, na kterých hraješ.
+3423|Tvoje hry z Playnite se přenesou najednou: ručně přidané hry na polici Vlastní, složky emulovaných her k jejich konzolím. Než se cokoli přidá, uvidíš, co se našlo.
+3424|Vybráno polic: ${n}.
+3425|Zatím nic nevybráno.
+3426|Krok 2 ze 3
+3427|Pár věcí na dokončení
+3428|Všechno je připravené
+3429|Jen to, co chybí pro police, které jsi vybral. Cokoli teď přeskočíš, uděláš později v Nastavení.
+3430|Každá vybraná police má svůj emulátor i hry. Teď obaly.
+3432|Zatím bez police
+3433|Najít ${def.exeNames[0]}
+3434|Najít…
+3435|Získat ${OFFICIAL[def.id][0][0]} ↗
+3436|Zatím nenalezeno
+3437|Vyber složku s hrami pro ${def.name}
+3438|Přidat další
+3439|Přidat složku
+3440|Složka s hrami pro ${def.name} (počítají se i podsložky)
+3441|Tady se našly hry
+3442|Použít ji
+3443|Získat ${def.name} ↗
+3444|Nastav mi emulátory
+3445|Doporučeno
+3446|${setupKinds().join(", ")}: namapovaný ovladač, klávesy Uložit a Načíst pro menu Domů, jedna složka BIOS a grafika vhodná pro tento počítač. Emulátory, které jsi už používal, zůstanou, jak jsou. Všechno se nejdřív zálohuje a v Nastavení → konzole → Nastavit za mě se to dá vrátit.
+3447|Původní krabice
+3448|Skutečná krabice z vlastního vydání každé hry.
+3449|Jeden region
+3450|Všechny krabice z regionu, který vybereš: USA, Evropa nebo Japonsko.
+3451|Nejostřejší obrázky
+3452|Obrázky v nejvyšším rozlišení a fanouškovské plakáty tam, kde sken krabice neexistuje.
+3453|Krok 3 ze 3
+3454|Stáhnout obaly?
+3455|Špajz umí online najít obaly, zadní strany, hřbety, disky a návody k tvým hrám. Aby je našel, posílá názvy tvých her (a ID disků GameCube / Wii) do LaunchBoxu, libretro, GameTDB a Super Mario Wiki. Nic dalšího o tobě ani o tvém počítači se neposílá.
+3456|Ano, stáhnout obaly
+3457|Kdykoli to změníš v Nastavení → Obaly a návody.
+3458|Jak mají tvoje krabice vypadat?
+3459|Špajz najde online obaly, zadní strany, hřbety a disky k tvým hrám.
+3460|Posílá názvy tvých her (a ID disků GameCube / Wii) do LaunchBoxu, libretro, GameTDB a Super Mario Wiki, aby našel obrázky (a do SteamGridDB, pokud později přidáš klíč). Nic dalšího o tobě ani o tvém počítači se neposílá.
+3462|I zadní strany, hřbety a disky. Ty, které nemá žádný zdroj, Špajz vytvoří, a až se objeví skutečný sken, vymění je.
+3463|Návody ke hrám, kde jsou k dispozici, ke čtení z krabičky hry.
+3464|Další možnosti
+3465|Kde uchovávat obaly a návody
+3466|Kteroukoli konzoli nebo jednotlivou hru můžeš později změnit v Art Studiu.
+3467|Achievementy a tvůj postup v podrobnostech každé hry a souhrn po hraní.
+3468|Přihlas se, pak Settings → Keys → Web API Key.
+3469|Plakáty od komunity pro tvoje hry v Art Studiu, vedle skutečných skenů krabic.
+3470|Přihlas se přes Steam (zdarma), pak Preferences → API.
+3471|Zadní strany krabic, hřbety a obrázky disků nebo kazet podle regionu v Art Studiu.
+3472|Vytvořit účet zdarma
+3473|Bezplatný účet dovoluje určitý počet vyhledávání denně.
+3474|Bezplatný osobní klíč.
+3475|Připojeno · ${Number(st.points).toLocaleString()} b.
+3476|Funguje · dnes zbývá vyhledávání: ${st.left}
+3477|Nepovinné
+3478|Připoj své účty
+3479|Bezplatná přihlášení, která do Špajzu přidají víc. Vyplň, které chceš, nebo tuto stránku přeskoč: všechny je později najdeš v Nastavení → Účty a služby.
+3480|Další služby
+3481|Klíče jsou na tomto PC uložené šifrovaně a posílají se jen jejich vlastní službě.
+3482|Skrýt klávesnici
+3483|Napiš: ${label.toLowerCase()}
+3484|⌨ Psát
+3485|Vlož: ${label.toLowerCase()}
+3486|Vložit
+3487|To nefungovalo: ${st.msg||"not accepted"}
+3488|Klávesnice na obrazovce
+3489|Malá písmena
+3490|Velká písmena a symboly
+3491|Není co vložit: nejdřív zkopíruj klíč
+3492|Nejdřív vyplň: ${s.fields.map(f=>f[0].toLowerCase()).join(" and ")}
+3493|${s.name} připojeno
+3494|Použít Dolphin z GameCube
+3495|Použít Dolphin z Wii
+3496|Program ${def.emulatorName}
+3497|Nalezen také: ${det.systems[def.id].emulator}
+3498|Zatím žádné složky. Přidej složku se svými hrami pro ${def.name} (${def.hint||def.extensions.slice(0,4).map(e=>"."+e).join(", ")+"…"}). Prohledávají se i podsložky.
+3499|Nalezeno:
+3500|Nalezeno: ${d}
+3501|Složky s hrami
+3502|Najít a stáhnout
+3503|Tvoje vlastní složka s obaly (nepovinné)
+3504|Přehraje úvodní video, které jsi přidal pro tuto konzoli (Přizpůsobit), místo úvodní obrazovky. Bez videa se vestavěné intro přehraje jen při vypnuté úvodní obrazovce.
+3505|Sekundy skrytí Dolphinu při zapnutém spuštění
+3506|Otevřít složku (USA)
+3507|Skrýt Dolphin na
+3508|Kolik sekund zůstane okno Dolphinu skryté, zatímco hraje spuštění. Nižší ukáže víc z něj, ale může probliknout Dolphin. Výchozí 2,5.
+3509|Třeba „IPL file is not a known good dump“.
+3510|Nalezeno: ${r.found.map(x=>x.region).join(", ")}

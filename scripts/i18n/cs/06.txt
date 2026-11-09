@@ -1,0 +1,164 @@
+2201|Dřevo (nebo barva) polic.
+2202|Tvoje oblíbené (nebo nejhranější) hry na osvětlených podstavcích.
+2203|Mosazné sloupky a sametový provaz.
+2204|Lavička před policemi.
+2205|Zarámované plakáty s obaly na stěnách.
+2206|Návštěvy
+2207|Doručování nových her
+2208|Nové hry přijdou v balíku, který rozbalíš, místo aby už byly na polici. Od příští návštěvy.
+2209|Vstup při příchodu
+2210|Světla se rozsvěcují police po polici. Vypnuto jde rovnou na přehled.
+2211|Obnovit místnost
+2212|Stiskni znovu
+2213|Obnovit
+2214|Vrátí všechna nastavení muzea do původního stavu.
+2215|Místnost je zpátky v původním stavu
+2216|Stiskni znovu pro obnovení místnosti
+2217|Ovladače, nápovědy tlačítek a menu Domů ve hře.
+2218|Používá se: ${n}
+2219|Zatím se nepoužívá žádný ovladač
+2220|Obnovit
+2221|Ovladač, na kterém Špajz naposledy viděl stisk, a tlačítka, která pro něj ukazuje. Stiskni tlačítko na jiném a přepne se.
+2222|Stiskni tlačítko na ovladači a Špajz tu ukáže, co to je.
+2223|Nápovědy tlačítek
+2224|Podle mého ovladače
+2225|Xbox (A B X Y)
+2226|PlayStation (symboly)
+2227|Nintendo (B A Y X)
+2228|Změní obrázky tlačítek na obrazovce.
+2229|Potvrzovací tlačítko
+2230|${L[0]} (dole)
+2231|${L[1]} (vpravo)
+2232|Rychlost posouvání
+2233|Pohodová
+2234|Rychlá
+2235|Jak rychle se police posouvá, když držíš páčku nebo kříž.
+2236|Vibrace ovladače
+2237|Krátké pulzy při hraní: spuštění hry, dopad náhodného výběru, oblíbení nebo skrytí hry, změna police a braní věcí do ruky v muzeu.
+2238|Wii ovladač na Mayflash DolphinBar: míř a hýbej rukou, A kliká. Zapnutí, vypnutí a jak ho držíš.
+2239|Wii ovladač na Mayflash DolphinBar jako ukazatel a ovladač.
+2240|Wii ovladač na Mayflash DolphinBar v režimu Dolphin (4): miř na obrazovku a hýbej rukou, A kliká, podržením A a pohybem táhneš polici. Kříž a tlačítka fungují jako ovladač a Home otevře menu Domů. Ve hrách ovladač dostane Dolphin.
+2241|Držení ovladače
+2242|Na výšku (míření)
+2243|Na šířku
+2244|Na výšku: A vybírá, B jde zpět. Na šířku, jako klasický ovladač: kříž otočený, 2 vybírá, 1 jde zpět.
+2245|Rychlost ukazatele
+2246|Jak daleko se ruka posune při otočení ovladače: vyšší pokryje obrazovku menším otočením.
+2247|Ve hře: stiskni Guide (nebo na vteřinu podrž View / Back) pro pozastavení, uložení, načtení, snímek obrazovky nebo ukončení. Na polici: stejné tlačítko otevře polici Domů, Muzeum, Nastavení a Napájení. Klávesnice: Home nebo P.
+2248|Pokud Guide místo toho otevře Xbox Game Bar, vypni v Nastavení Windows → Hraní volbu „Otevřít herní panel tímto tlačítkem na ovladači“.
+2249|Rozložení menu Domů
+2250|Boční průvodce
+2251|Karta uprostřed
+2252|Kde se menu Domů objeví.
+2253|Kombinace pro ukončení
+2254|Tlačítka k podržení
+2255|Tlačítka pro kombinaci ukončení. Na každém ovladači jsou to stejná tlačítka podle polohy.
+2256|Obaly a návody
+2257|Jak vypadají tvoje obaly, co ještě chybí a tvoje návody.
+2258|Styl police každé konzole (autentické skeny, nejostřejší HD, jeden region nebo speciální edice) a pak vlastní mix pro jednotlivé hry.
+2259|Vyber konzoli a urči, jak vypadají její obaly, pak dolaď jednotlivé hry.
+2260|Běžící opětovná stahování: ${L.length}
+2261|Obaly podle konzole a hry
+2262|Obnovit databázi obrázků
+2263|Bez obalu: ${n}
+2264|Vyber, jak vypadají obaly každé konzole, a oprav kteroukoli hru
+2265|Stahovat obaly pro nové hry
+2266|Vytvářet chybějící zadní strany a hřbety
+2267|Hra s obalem, ale bez naskenované zadní strany nebo hřbetu (zatím většina her pro Switch 2), je dostane vytvořené: zadní stranu z obrázků, snímků obrazovky, popisu a hodnocení, hřbet ve stylu její konzole s logem hry. Skutečný sken je nahradí, jakmile se nějaký najde.
+2268|Stáhnout obaly teď
+2269|Stáhnout chybějící obrázky teď
+2270|Vyber konzole a co stáhnout (obaly, zadní strany, hřbety, disky) a pak stahuj s průběhem a možností zrušit.
+2271|Vyber konzole a co stáhnout. Obrázky, které už máš, zůstanou a každá konzole se řídí svým stylem z Art Studia.
+2272|Návody
+2273|Stahovat návody pro nové hry
+2274|Najde návod ke hře (archive.org a GamesDatabase.org) a převede ho na stránky, které si přečteš v Prohlížení.
+2275|Jen jisté anglické návody
+2276|Při stahování níže přeskočí návody, kterými si Špajz není jistý. Vypnuto vezme pro každou hru nejlepší shodu.
+2277|Stáhnout návody teď
+2278|Stáhnout návody
+2279|Vyber konzole a pak stáhni jejich návody s průběhem a možností zrušit.
+2280|Vyber konzole, pro které se mají hledat návody. Návody, které už máš, zůstanou.
+2281|Návody podle konzole
+2282|Všechny návody nalezené pro každou hru podle konzole: jiný jazyk, region, ostřejší sken nebo vlastní PDF.
+2283|Vyber konzoli a pak libovolnou hru a uvidíš všechny návody, které se pro ni našly.
+2284|Složka knihovny obrázků
+2285|Jedna složka pro všechny obaly a návody, takže je nová instalace najde a nebude je stahovat znovu. Obrázky, které už leží u her, se tam na pozadí zkopírují (nic se nepřesouvá ani nemaže).
+2286|U her každé konzole (složka covers)
+2287|Vyber složku pro obaly a návody
+2288|Skryté hry
+2289|Hry, které jsi skryl v jejich Podrobnostech. Tady je můžeš vrátit.
+2290|Skryté ze všech polic, muzea, náhodného výběru i předváděcího režimu.
+2291|Skrytých: ${hidden.length}
+2292|Zastav se na hře a přehraje se její náhled. Nejdřív videa, která už máš, pak trailery ze Steamu pro hry ze Steamu a pak trailery konzolových her z YouTube.
+2293|Přehrávat náhledy
+2294|V Podrobnostech
+2295|V Podrobnostech i na polici
+2296|V Podrobnostech: pod obrázkem hry nebo na kartě Média. V Podrobnostech i na polici: navíc jemně za krabičkami, když se zastavíš na hře.
+2297|Trailery konzolových her
+2298|Přehrávat náhledy se zvukem
+2299|Vypnuto: náhledy hrají potichu (klipy trailerů ze Steamu jsou vždy bez zvuku).
+2300|Spustit náhled po
+2301|Půl vteřiny
+2302|Jak dlouho se na hře zastavíš, než se spustí její náhled (na polici o půl vteřiny déle, aby rychlé procházení zůstalo klidné).
+2303|Přehrávač YouTube v Podrobnostech
+2304|Trailer hry z YouTube se přehraje ve vlastním přehrávači YouTube v Podrobnostech → Média (streamuje se: potřebuje internet a YouTube občas může ukázat reklamu). Pokryje i čekání, než se vytvoří klip traileru.
+2305|Časopisy a průvodci
+2306|Čtenářský koutek muzea: kde jsou tvoje časopisy a strategičtí průvodci, a hledání dalších na Internet Archive.
+2307|Najít na Internet Archive
+2308|Vyhledej a stáhni klasické časopisy a strategické průvodce. Zobrazují se jen skeny, které smí stáhnout kdokoli.
+2309|Složka časopisů a průvodců
+2310|Magazines\ a Guides\ se ukládají do této složky. Změna nepřesune nic, co už je stažené: obě složky si zkopíruj sám.
+2311|Vedle Špajzu
+2312|Vyber složku pro časopisy a průvodce
+2313|Složka časopisů
+2314|Složka průvodců
+2315|Strategičtí průvodci pro čtenářský koutek, ve stejných formátech.
+2316|Účty a služby
+2317|Přihlášení a klíče, které přidávají další obrázky a funkce. Klíče jsou na tomto PC uložené šifrovaně.
+2318|Achievementy v podrobnostech každé hry a souhrn po hraní. Otevře tvůj účet, jeho klíč a přihlášení v každém emulátoru.
+2320|Zdroje obrázků
+2321|Oficiální obrázky disků a loga pro filmové police v muzeu.
+2323|Plakáty od komunity, nabízené v Art Studiu vedle skutečných skenů krabic.
+2325|Přední a zadní strany krabic, celé přebaly (pro hřbety) a obrázky disků / kazet podle regionu, nabízené v Art Studiu.
+2327|Telefon jako ovladač
+2328|Prohlížej hry v telefonu, spusť je na TV, čti jejich návody a používej telefon jako ovladač a klávesnici. Telefon musí být na stejné Wi-Fi jako tento počítač.
+2329|Nový PIN
+2330|Vytvoří nový PIN a kód. Už spárované telefony zůstanou spárované.
+2331|Port
+2332|Síťový port, který používá stránka pro telefon. Změň ho jen tehdy, když ho už používá jiný program (Špajz se sám přesune na další volný a napíše to výše).
+2333|Spárované telefony
+2334|Telefonů: ${n}
+2335|Zapomenout všechny telefony
+2336|Zapomenout vše
+2337|Zruší spárování všech telefonů. Každý bude muset znovu naskenovat kód, aby mohl Špajz používat.
+2338|Stiskni znovu pro zapomenutí všech spárovaných telefonů
+2339|Spouštění, složky a údržba.
+2340|Spouštět Špajz s Windows
+2341|Po přihlášení naběhne rovnou na polici. Spoj to se Spouštět na celou obrazovku a máš to jako konzoli.
+2342|Používat Špajz jako domovskou obrazovku
+2343|Zapnuto · změnit
+2344|Vypnuto · nastavit
+2345|Odejít na domovskou obrazovku zařízení
+2346|Otevřít ${homeApp.previousLabel}
+2347|Odejít
+2348|Otevře spouštěč, který jsi používal před Špajzem. Špajz zůstane připravený na pozadí.
+2349|Znovu prohledat hry
+2350|Prohledat
+2351|Teď hledá nové hry ve všech složkách.
+2352|Prohledávám…
+2353|Knihovna prohledána
+2354|Záloha a pomoc
+2355|Zálohovat nastavení
+2356|Uložit
+2357|Uloží tvoje nastavení, oblíbené a historii hraní do souboru, který můžeš později obnovit, i na novém PC. Klíče a hesla se neukládají.
+2358|Obnovit nastavení
+2359|Načte soubor se zálohou. Tvoje současné klíče a hesla zůstanou.
+2360|Test plynulosti
+2361|Nahlásit problém
+2362|Zabalí log a nastavení (bez klíčů) do jednoho souboru na ploše, připraveného k odeslání.
+2363|Nahlásit chybu online
+2364|Otevře v prohlížeči formulář pro chyby bety na GitHubu. Přilož soubor z Nahlásit problém a napiš, co jsi zrovna dělal.
+2365|O programu
+2366|Špajz ${info.version||""}
+2367|Špajz ${info.version||""}. Konzolové rozhraní pro tvoje emulátory, Steam a mediální aplikace.
+2368|Obaly: LaunchBox Games Database, libretro thumbnails, GameTDB, GamesDatabase.org. Návody, časopisy a reklamy: Internet Archive. Achievementy: RetroAchievements.

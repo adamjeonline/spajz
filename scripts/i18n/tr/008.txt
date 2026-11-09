@@ -1,0 +1,328 @@
+2800|Usar o nome do arquivo
+2801|De volta para "${s.file}".
+2802|De volta ao nome do arquivo
+2803|Renomeado para ${v}
+2804|Procurar por
+2805|Um nome para procurar no SteamGridDB em vez de "${s.title}". Enter pesquisa. O nome do jogo continua como está (Renomear muda isso).
+2806|Nenhum jogo encontrado ali
+2807|${n} [[${n===1?"":"s"}|jogo adicionado|jogos adicionados]] à estante Personalizados
+2808|Nada novo para adicionar
+2809|Escolha os programas dos jogos (segure Ctrl para escolher vários)
+2810|Escolha a pasta onde estão os seus jogos (como D:\Jogos)
+2811|Escolha o programa do jogo
+2812|Esse jogo já está na estante Personalizados
+2813|${title} adicionado. Renomeie em Jogos personalizados se quiser.
+2814|, ${dirs} [[${dirs===1?"":"s"}|pasta de jogos|pastas de jogos]] para os seus consoles
+2816|e ${d} [[${d===1?"":"s"}|pasta de jogos|pastas de jogos]]
+2818|Adicionar vários programas
+2819|Escolher…
+2820|Escolha os programas de vários jogos de uma vez (segure Ctrl ou Shift na janela de arquivos). Você confere os nomes antes de eles serem adicionados.
+2821|Procurar numa pasta
+2822|Escolher pasta…
+2823|Importar do Playnite (experimental)
+2824|Importar…
+2825|Procurar…
+2826|Traz a sua biblioteca do Playnite de uma vez: os jogos que você adicionou lá à mão, com as capas, para a estante Personalizados, e as pastas dos seus jogos emulados para a estante do console de cada um. Jogos da Steam, Epic, GOG Galaxy e de outras lojas ficam de fora: o Špajz lê essas lojas sozinho. Experimental: não deu para testar com todas as versões do Playnite, então avise se faltar alguma coisa.
+2827|Encontrado em
+2828|Encontrado em ${folderName(ADD.pnFound.app)}
+2829|Não encontrado · escolha a pasta dele
+2830|Procurando o Playnite…
+2831|Adicionar um programa
+2832|Qualquer programa: um recomp, um port de PC, um jogo de outro launcher. Ele ganha uma caixa na estante Personalizados e abre a partir da própria pasta.
+2833|${L.length} [[${L.length===1?"":"s"}|jogo encontrado|jogos encontrados]]
+2834|${L.filter(x=>x.on&&!x.have).length} marcados
+2835|Já está na estante Personalizados
+2836|Adicionar os jogos marcados
+2837|Adicionar ${n}
+2838|Coloca os jogos marcados na estante Personalizados. As capas são procuradas como para qualquer jogo de PC, e cada um pode ser renomeado ou ganhar outra capa nos Detalhes dele.
+2839|Limpar esta lista
+2840|Esquece esta lista sem adicionar nada.
+2841|Do Playnite
+2842|${P.total} jogos no Playnite
+2843|Jogos que você adicionou à mão no Playnite: cada um ganha uma caixa na estante Personalizados com o programa, as opções de abertura e a capa.
+2844|${P.pc.length} [[${P.pc.length===1?"":"s"}|jogo|jogos]]
+2845|Jogos de ${name(sys)}
+2846|, e o emulador do Playnite se ${name(sys)} ainda não tiver um
+2847|Adiciona ${c.dirs.join(", ")} como pastas de jogos de ${name(sys)}${c.emulatorDir?`, and Playnite's emulator if ${name(sys)} has none yet`:""}.
+2848|${c.count} [[${c.count===1?"":"s"}|jogo|jogos]] · ${c.dirs.length} [[${c.dirs.length===1?"":"s"}|pasta|pastas]]
+2849|${s.store} [[${s.store===1?"":"s"}|jogo de loja|jogos de loja]] (o Špajz lê essas lojas sozinho)
+2850|${s.hidden} ocultos
+2851|${s.link} abertos por um link
+2852|${s.nothing} sem nada para abrir
+2853|Deixados de fora
+2854|Importar
+2855|Adiciona o que está marcado acima. Remover o que foi importado (abaixo) tira tudo de novo.
+2856|Os jogos de PC dele
+2857|O programa dele não está neste PC
+2858|Remover o que foi importado do Playnite
+2859|Tira das suas estantes os jogos e as pastas de jogos que a importação do Playnite adicionou (nada é apagado do seu PC).
+2860|Aperte de novo para remover
+2861|Novo: Špajz ${upd.latest}
+2862|ainda não instalado
+2863|Baixar o Špajz
+2864|Baixar o Špajz ${upd.latest}
+2865|Baixar
+2866|Abre a página de download. Extraia por cima desta pasta: as suas configurações são mantidas.
+2867|Esta versão
+2868|Ainda sem notas
+2869|Não foi possível baixar o ajudante de trailers. Verifique a internet e tente de novo.
+2870|Baixando o ajudante de trailers… ${CLIP.pct}%
+2871|Baixar o ajudante de trailers (necessário)
+2872|Não deu para baixar da última vez: tente de novo
+2873|Ainda não instalado: os trailers de console estão esperando por ele
+2874|Trechos de trailers de console
+2875|${s.n} [[${s.n===1?"":"s"}|trecho guardado|trechos guardados]] (${mb(s.bytes||0)} MB).
+2876|Nenhum trecho guardado ainda: pare num jogo de console.
+2878|Trechos de trailers de console apagados
+2879|${s.n} [[${s.n===1?"":"s"}|trecho|trechos]] · ${mb(s.bytes||0)} MB
+2880|Pronto
+2881|Adicionando o Špajz à Steam…
+2882|Atualizar
+2883|A Steam ainda não foi configurada aqui
+2884|A Steam não fechou: feche você mesmo e tente de novo
+2885|Não foi possível gravar a lista da Steam
+2886|O Špajz está na Steam: abra pela sua Biblioteca (Não Steam), no Modo Jogo num Steam Deck
+2888|Já está na Steam
+2889|Recomendado num Steam Deck
+2890|Ainda não está na Steam
+2891|Procurando vídeos…
+2892|${c.total} [[${c.total===1?"":"s"}|jogo|jogos]]
+2893|Ainda não há arquivos de vídeo
+2894|Os jogos da Steam continuam ganhando os trailers deles, e os do YouTube se estiver ligado.
+2895|${s.n} de ${s.of}
+2896|jogos com vídeo
+2897|As suas pastas de vídeos
+2898|Pasta de vídeos
+2899|Os vídeos aqui dentro (ou numa subpasta com o nome do console) são ligados aos seus jogos. Selecione duas vezes para parar de usar (nada é apagado).
+2902|Aperte de novo para parar de usar esta pasta
+2903|Adicionar uma pasta de vídeos
+2904|Escolha uma pasta com vídeos de jogos
+2905|Procurar vídeos de novo
+2906|Olha de novo todas as pastas de vídeos (depois que você adicionou vídeos).
+2907|Trailers da Steam
+2908|Apagar os trechos de trailers da Steam
+2909|Os trechos curtos guardados dos trailers da Steam (${mb(c.steamBytes||0)} MB). Eles são baixados de novo na próxima vez que você parar num jogo.
+2910|Trechos de trailers da Steam apagados
+2911|Configura o seu controle como jogador 1, quando o emulador ainda está só com controles de teclado. Um mapeamento que você mesmo fez é mantido.
+2912|Coloca salvar, carregar, pausar e captura de tela nas teclas que o menu Home aperta, para o Salvar e o Carregar dele funcionarem nos seus jogos.
+2913|Aponta o emulador para uma pasta de BIOS compartilhada (Špajz\BIOS), só quando a pasta de BIOS dele está vazia.
+2914|Define a resolução pelo perfil de Gráficos abaixo.
+2915|Sem a pergunta "tem certeza?" quando um jogo é fechado.
+2916|O RetroArch salva quando você sai de um jogo e continua dali na próxima vez.
+2917|Ainda não para este emulador
+2918|✓ Configurado
+2919|Configura depois que você jogar uma vez
+2920|Abra o ${st.name} uma vez primeiro
+2921|Ainda não configurado
+2922|Verificando o emulador…
+2923|Escolha primeiro o emulador deste console
+2924|O Špajz ainda não sabe configurar este emulador
+2925|RetroArch, Dolphin, DuckStation, PCSX2 e PPSSPP, por enquanto.
+2926|O ${st.name} está configurado
+2927|Você mesmo configurou o ${st.name}
+2928|O ${st.name} ainda não está configurado
+2929|Ele é configurado na próxima vez que você jogar.
+2930|Desde ${new Date(st.done.at).toLocaleDateString()}: ${st.done.groups.map(g=>ES_NAME[g]||g).join(", ")}.
+2931|As suas configurações ficam como estão a menos que você configure aqui. Tudo o que muda ganha backup antes.
+2932|Tudo o que muda ganha backup antes, e Desfazer volta tudo.
+2933|Perfil de gráficos
+2934|Para este PC
+2935|Bonito
+2938|${ES_NAME[k.group]||k.group}: deixado como está
+2939|Configurar de novo
+2940|Configurar o ${st.name}
+2941|De novo
+2942|Aplica as opções acima ao ${st.name}. Os seus arquivos ganham backup antes.
+2943|${st.name} configurado: ${r.applied.map(g=>ES_NAME[g]||g).join(", ")}
+2944|O ${st.name} já está assim
+2945|problema desconhecido
+2946|Não foi possível configurar o ${st.name}: ${(r&&r.why)||"unknown problem"}
+2947|Mostrar o que vai mudar
+2948|Lista cada configuração que seria gravada, arquivo por arquivo, antes de você configurar qualquer coisa.
+2949|Volta as configurações do ${st.name} exatamente como eram antes de o Špajz configurar.
+2952|As configurações do ${st.name} voltaram a ser como eram
+2953|Aperte de novo para desfazer
+2954|Núcleo do RetroArch
+2955|Núcleo ${st.core.name}
+2956|Baixar
+2957|O RetroArch tem o núcleo ${st.core.name} que ele usa para este console.
+2958|Baixa o núcleo ${st.core.name} do libretro, o mesmo lugar que o Online Updater do RetroArch usa. Ele também é baixado sozinho na primeira vez que você jogar.
+2959|O núcleo ${r&&r.name||st.core.name} está pronto
+2960|Baixando… ${s.corePct}%
+2961|✓ Pronto
+2962|Ainda não baixado
+2963|Arquivos de BIOS
+2964|Faltando (um destes basta)
+2965|Faltando, opcional: ${st.bios.note}
+2966|Faltando${st.bios.note?` (${st.bios.note})`:""}
+2967|✓ Certo
+2968|Versão errada: não é a cópia conhecida que funciona
+2969|Arquivos de BIOS encontrados
+2970|Ainda não há arquivos de BIOS
+2971|O ${st.name} precisa de uma BIOS extraída do seu próprio console.
+2972|Abrir a pasta de BIOS
+2973|Abre a pasta de onde o ${st.name} lê os arquivos de BIOS${st.bios.dir?`: ${st.bios.dir}`:""}. Copie os arquivos do seu próprio console para lá e depois Verifique de novo.
+2974|Olha a pasta de BIOS de novo.
+2975|O que vai mudar
+2976|Nada, com estas opções
+2977|…e mais ${ch.length-60}
+2978|Ligado: ${s.title} está nesta estante.
+2979|Nova coleção
+2980|Um nome para uma estante nova sua. Enter cria, já com este jogo nela.
+2981|Cooperativo no sofá, Corrida, Zerados…
+2982|Esse é o máximo de coleções possível (50).
+2983|${s.title} está em ${v}
+2984|Ainda não há coleções
+2985|Abra os Detalhes de um jogo e escolha Coleções para criar uma.
+2986|O nome da estante (${c.ids.length} [[${c.ids.length===1?"":"s"}|jogo|jogos]]). Enter renomeia.
+2987|Apagar
+2988|Apagar ${c.name}
+2989|Remove esta estante (os jogos continuam em todos os outros lugares). Aperte duas vezes.
+2990|${c.name} apagada
+2991|Este jogo
+2992|Coleções: ${colState.title}
+2993|Coloque este jogo em estantes suas. Cada coleção é uma estante ao lado do Início.
+2994|Procurar uma capa
+2995|Capas para ${coverSearch.title} com outro nome.
+2996|Renomear ${cur}
+2997|O nome do arquivo: ${o.fileTitle}
+2998|Dê a este jogo o nome que você quer na estante.
+2999|Procurando jogos…
+3000|Biblioteca atualizada
+3001|${n1-n0} [[${n1-n0===1?"":"s"}|jogo novo encontrado|jogos novos encontrados]]
+3002|Nenhum jogo novo encontrado
+3003|Não disponível
+3004|Frente
+3005|Autêntico
+3006|Digitalizações reais da caixa e do disco originais para cada jogo
+3007|HD mais nítido
+3008|A arte de maior resolução para cada jogo, limpa e nítida
+3009|Todos os jogos na versão de uma região
+3010|Edições especiais
+3011|Caixas de colecionador e limitadas quando o jogo teve uma; senão, autêntico
+3012|Conjuntos completos
+3013|Frente, verso, lombada e disco de um mesmo lançamento, quando o jogo tem
+3014|Sua mistura
+3015|Escolha um visual por parte abaixo, ou por jogo
+3016|Špajz, a partir da capa
+3017|o seu arquivo atual
+3018|uma escolha anterior
+3019|Sem capa
+3020|Faltando uma parte
+3021|Suas escolhas
+3022|tem
+3023|sua escolha
+3024|Estilo da estante
+3025|Especial
+3026|Ed. especial
+3027|Escolha exata
+3028|Região:
+3029|Região: ${r}
+3031|Conjuntos completos ·
+3032|Conjuntos completos · ${st.setsHd?"HD":REG_S[st.region||"usa"]||"USA"}
+3033|Região ·
+3034|Região · ${REG_S[st.region||"usa"]||"USA"}
+3035|em uso
+3036|${e.label||"Re-fetch"}: pronto${e.msg?" · "+e.msg:""}
+3037|${e.label||"Re-fetch"}: parado
+3038|algo deu errado
+3039|${e.label||"Re-fetch"} parado: ${e.msg||"something went wrong"}
+3040|Buscando de novo · ${j.done||0} de ${j.total||"…"}
+3041|${j.done||0} de ${j.total||"…"}
+3043|Baixando… ${mb(p.got)} de ${mb(p.total)} MB · ${p.pct||0}%
+3044|Baixando… ${mb(p.got)} MB
+3045|Descompactando o banco de dados…
+3046|Lendo o banco de dados… ${p.pct||0}%
+3047|· índice de ${mb(i.bytes)} MB
+3048|Montado por último ${when(i.at)}${i.bytes?` · index ${mb(i.bytes)} MB`:""}
+3049|Ainda não montado
+3050|Atualizando o banco de capas (cerca de 110 MB)…
+3051|Banco de capas atualizado
+3052|Atualização parada · o banco antigo continua em uso
+3053|Montando o índice do LaunchBox (uma vez só, cerca de 110 MB)…
+3054|Índice do LaunchBox pronto
+3055|${t-n} de ${t} jogos têm capa · ${n} sem
+3056|Todos os ${t} jogos têm capa
+3057|Carregando os seus consoles…
+3058|Estúdio de capas: como as capas de cada console ficam.
+3059|Não foi possível carregar o Estúdio de capas
+3060|Ainda não há jogos em nenhuma estante
+3061|Adicione uma pasta de jogos para um console (Consoles) e ele aparece aqui.
+3062|${c.noCover} sem capa
+3064|Escolha como as capas de ${c.name} ficam (digitalizações autênticas, HD mais nítido, uma região ou edições especiais) e depois faça o ajuste fino de qualquer jogo.
+3066|${c.locked} [[${c.locked===1?" has":"s have"}|jogo tem uma mistura própria|jogos têm uma mistura própria]].
+3067|· ${c.locked} com escolhas ou travados
+3068|Baixar as capas que faltam
+3069|Estilo da estante ·
+3070|jogo travado
+3071|Não foi possível carregar os jogos:
+3072|Não foi possível carregar os jogos: ${e.err}
+3073|Carregando os jogos de ${esc(conName2(st.sys))}…
+3074|Todos os jogos aqui têm capa.
+3075|Nada faltando: todos os jogos têm frente, verso, lombada e
+3076|Nada faltando: todos os jogos têm frente, verso, lombada e ${mw.toLowerCase()}.
+3077|Nenhuma imagem em baixa resolução nesta estante.
+3078|Ainda não há jogos nesta estante.
+3080|· travado como está
+3087|PAL ·
+3088|PAL · ${tag}
+3090|EDIÇÃO DE COLECIONADOR
+3091|EM USO
+3092|Por parte, para a estante toda
+3093|· opcional
+3094|Cada parte segue o estilo acima a menos que você mude aqui, por exemplo frentes em HD com lombadas e versos autênticos. Mudar uma passa a estante para Sua mistura.
+3095|segue o estilo
+3096|Buscando de novo ${conName2(sys)}
+3097|buscando em segundo plano
+3098|Um momento…
+3099|Todas as partes ficam como estão. Os estilos de estante e a busca automática pulam este jogo.
+3100|Desligado: uma mudança de estilo substitui as escolhas também.
+3101|${PART_L[part]} segue o estilo da estante de novo
+3102|${PART_L[part]}: ${lookName(look)} · sua escolha
+3103|${PART_L[part]}: a imagem anterior voltou
+3104|${truncEnd(g.title,40)}: travado como está
+3105|· as suas escolhas ficam até o estilo da estante mudar
+3106|Destravado · escolhendo de novo ${r.repick} [[${r.repick===1?"":"s"}|parte|partes]] pelo estilo da estante${own}
+3107|Destravado${own}
+3108|Destravado · já está no estilo da estante
+3109|${PART_L[part]}: a sua própria imagem · sua escolha
+3110|Fonte
+3111|Digitalizações
+3112|Limpa
+3113|Edição
+3114|Original
+3115|Reimpressão
+3116|Desfazendo…
+3117|Escolher uma imagem…
+3118|Buscando…
+3119|Sua escolha
+3120|Sua própria imagem
+3121|Mantida de antes
+3122|Escolhida por você
+3123|Visual ${lookName(l.look)}
+3124|· jogo travado
+3125|· faltando
+3126|Faltando · jogo travado
+3127|Faltando · segue a estante
+3128|Jogo travado
+3129|Segue a estante
+3130|· baixa resolução
+3131|Minha imagem…
+3132|Recortada de uma caixa inteira…
+3133|Montar o índice do LaunchBox
+3134|Limpar filtros
+3135|Desfazer conjunto
+3136|Corrija a sua chave do SteamGridDB
+3137|Uma imagem sua · copiada, nunca movida
+3138|A caixa aberta e planificada: verso, lombada e frente
+3139|A imagem antes desta
+3140|Procurar versões de novo
+3141|Download único, cerca de 110 MB
+3142|Mostrar todas as versões de novo
+3143|As quatro partes como eram antes do conjunto
+3144|Mais pôsteres de frente, muitos em HD · chave gratuita
+3145|A chave não foi aceita · sem pôsteres até ser corrigida
+3146|Conjuntos
+3147|Frente, verso, lombada e disco que combinam
+3148|Todos os manuais encontrados para este jogo
+3149|Travar este jogo

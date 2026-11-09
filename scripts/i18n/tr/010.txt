@@ -1,0 +1,241 @@
+3520|Adiciona blocos para os seus apps de streaming na estante Mídia.
+3521|Programa ${a.name}
+3522|Procurar ${a.exeNames[0]}
+3523|Aperta F11 quando o app abre.
+3524|O analógico esquerdo move um ponteiro e o A clica, para apps sem suporte a controle. Deixe desligado quando o app tem o próprio (Stremio: Settings → Enable gamepad).
+3526|Atualizações recentes de manuais
+3527|Carregando…
+3528|cópia mais nítida (${x.oldW} → ${x.w} px de largura)
+3529|edição em inglês (era ${x.oldW} px, agora ${x.w} px)
+3531|Não foi possível ler a lista.
+3532|Adicione primeiro uma pasta de jogos para um console (Configurações → Consoles) e depois volte aqui.
+3533|${sys.filter(c=>manualPick.has(c.id)).length} de ${sys.length} consoles
+3535|${c.low} [[${c.low===1?"":"s"}|digitalização pequena|digitalizações pequenas]]
+3536|Em segundo plano, quando aparecem jogos novos. Só manuais em inglês garantidos.
+3537|Onde os manuais ficam guardados
+3538|${chosen.length} [[${chosen.length>1?"s":""}|console|consoles]]
+3539|até ${missing} [[${missing===1?"":"s"}|manual faltando|manuais faltando]] para encontrar
+3540|todos os jogos já têm um
+3541|Marque pelo menos um console para começar.
+3542|Os manuais que você já tem são mantidos. A busca manda os títulos dos seus jogos para esses sites.
+3543|Outro download está rodando
+3544|Manuais: ${manState.err}
+3545|pronto
+3547|Agora: ${p.game||""}
+3548|, ${miss} [[${miss===1?"":"s"}|jogo ainda sem manual|jogos ainda sem manual]]
+3551|nada novo
+3552|· ${x.had} já tinham um
+3553|${x.added.length} [[${x.added.length===1?"":"s"}|manual adicionado|manuais adicionados]]
+3554|${x.unsure.length} [[${x.unsure.length===1?"":"es"}|opção incerta pulada|opções incertas puladas]]
+3555|${x.none.length} não encontrados
+3556|${x.failed.length} falharam ao baixar
+3557|Voltar à lista de manuais
+3558|Disco / cartucho
+3559|${chosen.length} de ${sys.length} consoles
+3560|${c.front} de ${c.total} capas · ${missFront} faltando
+3561|Todas as ${c.total} capas
+3562|Faltam algumas contracapas, lombadas ou discos
+3563|Caixas completas
+3564|${lack||missFront?" · ":""}${low} em baixa resolução
+3565|Em segundo plano, quando aparecem jogos novos.
+3566|Escolher por console
+3567|Marcar ou desmarcar ${l} para todos os consoles
+3568|${low} em baixa resolução
+3569|${c.total} jogos
+3570|Cada caixinha é um console e um tipo de imagem, com quantas você tem. Marque exatamente o que baixar.
+3571|Onde as capas ficam guardadas
+3572|· até ${missing} [[${missing===1?"":"s"}|imagem faltando|imagens faltando]] para encontrar
+3573|e ${low} em baixa resolução para melhorar
+3574|— tudo o que você escolheu já está aqui
+3575|em HD
+3576|— tudo o que você escolheu já está aqui${hd?" in HD":""}
+3577|As imagens que você já tem são mantidas (Preferir digitalizações em HD só troca uma quando a nova é claramente mais nítida). O download manda os títulos dos seus jogos para esses sites. Na primeira vez também baixa o banco de dados do LaunchBox (cerca de 110 MB, uma vez só).
+3578|Capas: ${artState.err}
+3579|Baixando capas
+3580|· ${p.counts.got} novas · ${p.counts.upgraded} melhoradas
+3582|cancelado
+3583|, ${tot.up} melhoradas para HD
+3584|, ${tot.miss} [[${tot.miss===1?"":"s"}|jogo ainda tem|jogos ainda têm]] alguma coisa faltando
+3586|· ${x.upgraded} melhoradas
+3587|· ${x.had} já completos
+3588|${x.upgraded} melhoradas para HD
+3589|${x.got?x.got.length:0} [[${x.got&&x.got.length===1?"":"s"}|imagem nova|imagens novas]]
+3590|${x.missed.length} não encontrados${kinds?` (${kinds})`:""}
+3591|Não foi possível acessar o banco de dados do LaunchBox, então só as frentes do libretro foram tentadas:
+3592|Não foi possível acessar o banco de dados do LaunchBox, então só as frentes do libretro foram tentadas: ${r.launchboxError}
+3593|Voltar à lista de capas
+3599|Guia oficial da Prima
+3600|Guia da BradyGames
+3601|Guia da Nintendo Power
+3602|Guia da Piggyback
+3603|Guia de Zelda
+3604|Guia de Mario
+3605|Guia de Pokémon
+3606|Guia de Final Fantasy
+3607|página ${p.bytes} de ${p.total}
+3608|O seu cantinho de leitura no museu. Adicione os seus próprios arquivos ou procure digitalizações no Internet Archive.
+3609|Suas pastas
+3610|Abrir a pasta Revistas
+3611|Abrir a pasta Guias
+3612|Revistas: ${w.magazines} · Guias: ${w.guides}
+3613|Mostra só digitalizações que o Internet Archive deixa qualquer pessoa baixar (livros só para empréstimo ficam de fora). Elas continuam sendo obras com direitos autorais, então você decide o que guardar. A busca manda as suas palavras para o archive.org.
+3614|Um jogo ou uma editora, por exemplo guia Wind Waker
+3615|Uma revista e edição, por exemplo Game Informer 2008
+3616|Digite uma busca
+3617|, ${jobs.length-IA_PAR} esperando
+3618|O archive.org está ocupado: ainda verificando mais ${S.pending.length}…
+3619|O archive.org estava ocupado demais para verificar ${S.pending.length}.
+3620|(${S.skipped} só para empréstimo ou sem arquivo utilizável ficaram de fora)
+3621|· não só revistas
+3622|${S.items.length} que você pode baixar${S.skipped?` (${S.skipped} borrow-only or without a usable file were left out)`:""} · os mais baixados primeiro${S.plain&&S.kind==="magazine"?" · not only magazines":""}
+3623|edições
+3624|digitalizações de páginas
+3625|Verificando quais de mais ${S.checking} podem ser baixados…
+3626|Mostrar mais
+3627|Encontrei alguns — verificando quais de ${S.checking} podem ser baixados…
+3628|Nada baixável encontrado. Tente menos palavras, ou só o nome da revista.
+3629|Cancelar ${it.title}
+3630|Na sua pasta
+3631|Baixar ${it.title}
+3632|Ver ${it.title}
+3633|Esperando…
+3635|Já está na sua pasta
+3636|Salvo
+3637|Cancelado
+3638|Falhou
+3639|Tentar ${it.title} de novo
+3640|Digite primeiro o que procurar.
+3641|A busca não funcionou:
+3642|Verifique a sua conexão com a internet e tente de novo.
+3643|A busca não funcionou: ${iaMsg(e)}${/busy/i.test(iaMsg(e))?"":" Check your internet connection and try again."}
+3644|${r.name} (${r.count} arquivos)
+3645|Você já tem: ${j.it.title}
+3646|Salvo na sua pasta [[${j.kind==="guide"?"Guides":"Magazines"}|Guias|Revistas]]: ${j.it.title}
+3647|Procurando os vídeos que você já tem…
+3648|Vídeos encontrados para ${pvFound} dos seus jogos. Os jogos da Steam também ganham os trailers deles.
+3649|Nenhum arquivo de vídeo encontrado ainda: os jogos da Steam ganham os trailers deles, e os outros jogos os do YouTube.
+3650|Pare num jogo e a prévia dele toca, na estante e nos Detalhes: vídeos que você já tem (ES-DE, EmuDeck, RetroBat, LaunchBox), os trailers da Steam para jogos da Steam, e trailers do YouTube para o resto.
+3651|Tudo pronto
+3652|Aqui está a sua biblioteca
+3653|Você pode mudar qualquer coisa disso depois nas Configurações (aperte S, ou View no controle: Create num controle de PlayStation, − num controle de Switch).
+3654|Procurando…
+3655|O download das capas começa daqui a pouco…
+3656|Capas e manuais da internet
+3657|Procurar capas e manuais manda os títulos dos seus jogos (e os IDs de disco de GameCube/Wii) para as miniaturas do libretro, o LaunchBox Games Database, o GameTDB, o GamesDatabase.org e o Internet Archive. Nada mais sobre você ou o seu PC é enviado.
+3658|Configurando os seus emuladores…
+3659|Configurados: ${r.done.join(", ")}.
+3660|Configurados depois que você jogar uma vez: ${r.later.join(", ")}.
+3661|Deixados como você tinha: ${r.left.join(", ")} (Configurações → o console → Configurar para mim).
+3662|Os seus emuladores já estavam configurados.
+3663|A configuração dos emuladores não funcionou desta vez. Configurações → cada console → Configurar para mim pode tentar de novo.
+3664|Nada encontrado ainda. Volte e adicione um emulador ou uma pasta de jogos.
+3665|As capas são baixadas em segundo plano sempre que jogos são adicionados.
+3666|As capas estão prontas para ${i.got} [[${i.got===1?"":"s"}|jogo|jogos]]. Mude o visual de qualquer console em Configurações → Capas e manuais → Estúdio de capas.
+3667|Baixando capas · ${i.system||"games"}: ${i.done} de ${i.total}
+3668|Baixando capas…
+3669|Não foi possível acessar os bancos de capas agora. O Špajz tenta de novo na próxima vez que iniciar.
+3670|As capas estão prontas.
+3671|Quer um visual diferente para um console, ou para um jogo só? O Estúdio de capas tem todas as versões que o Špajz encontrou.
+3672|Abrir o Estúdio de capas
+3673|Termine a configuração para chegar à sua estante
+3706|Clássicos de PC
+3722|Cubo
+3755|Floresta
+3783|Mais fluido, manuais melhores e capas para todos os jogos personalizados
+3784|Mais fluido: o trabalho em segundo plano não faz mais a estante engasgar, e o Estúdio de capas abre mais rápido
+3785|Manuais: o manual certo para o jogo certo, coleções de digitalizações para 26 consoles, páginas mais limpas
+3786|Conecte as suas contas durante a configuração, com botões de Colar (o Colar do botão direito também funciona)
+3787|Capas para todos os seus jogos personalizados de uma vez: recomps, ports e programas que você adicionou
+3788|Windows: tudo acima, menos as partes do Thor.
+3789|Android (AYN Thor): prévias em vídeo nos Detalhes, ports e APKs personalizados, seis consoles a mais.
+3790|Capas para todos os jogos personalizados
+3791|Configurações → Jogos personalizados → Capas: passe por cada recomp, port e programa sem capa (as capas do SteamGridDB para cada um, A usa uma, Pular passa para o próximo), ou deixe o Špajz escolher a melhor opção para cada um de uma vez, com Desfazer. Precisa de uma chave gratuita do SteamGridDB.
+3792|Thor: prévias em vídeo
+3793|Vídeos ao lado dos seus jogos (uma pasta "videos", "media/videos" ou "snap" na pasta de jogos de um console) tocam atrás da caixa nos Detalhes, e os trailers do YouTube na aba Mídia. Desligado até você ligar: Configurações → Estante e museu → Prévias em vídeo.
+3794|Thor: ports e APKs personalizados
+3795|Configurações → Jogos → Ports e APKs personalizados: ligue os apps que são jogos (ports, recomps, um APK personalizado) e eles ganham uma estante Personalizados própria, fora da estante Apps.
+3796|Thor: seis consoles a mais
+3797|Sega CD, 32X, Atari 2600, Lynx, WonderSwan e DOS, pelo RetroArch (MD.emu para o Sega CD também), com capas, manuais e conquistas.
+3798|Steam Deck: saia de qualquer jogo
+3799|Segure Select + Start por um instante durante um jogo e o Špajz fecha ele, seja qual for o emulador.
+3800|Contas na configuração
+3801|A configuração inicial tem uma página opcional de Contas: RetroAchievements, SteamGridDB, ScreenScraper e fanart.tv, cada um com um link para a chave gratuita, um botão Colar e um Teste. Com controle, um teclado na tela. Pule e nada muda.
+3802|Manuais para muito mais consoles
+3803|Coleções de digitalizações para jogos de PlayStation, NES, SNES, N64, Game Boy, DS, 3DS, Sega, Atari, TurboGrafx-16 e Neo Geo, além dos manuais em alta resolução da Nintendo para Wii, GameCube, N64, DS e 3DS.
+3804|Melhorias
+3805|Mais fluido em todo lugar
+3806|O trabalho de capas, manuais e biblioteca em segundo plano reveza com a estante em vez de travar ela, as pastas de jogos são lidas uma vez em vez de várias, e voltar de um jogo não dispara mais uma nova busca completa.
+3807|O manual certo para o jogo certo
+3808|Comparação mais rigorosa: nada mais de manuais de continuações ou de outros consoles, nem folhetos promocionais. Os manuais escolhidos antes que não batem são deixados de lado (guardados na pasta de backup) e procurados de novo. Jogos sem manual em lugar nenhum dizem "nenhum manual encontrado online".
+3809|Páginas de manual mais limpas
+3810|Nada mais de "páginas" miniatura, digitalizações enormes ficam num tamanho razoável, e os manuais digitais e as artes completas das caixas não são mais cortados ao meio.
+3811|Consertar um manual
+3812|No leitor de manuais, Consertar manual (Y / W) oferece Jogo errado (deixa de lado e busca o certo, primeiro nas coleções de digitalizações) ou Consertar (o mesmo manual com a capa, as páginas e os tamanhos corrigidos). Na hora, só para aquele jogo.
+3813|O Estúdio de capas mostra a caixa inteira
+3814|A caixa no Estúdio de capas toma a forma da caixa do jogo, então as caixas de 3DS, PSP, Switch, Blu-ray e cartucho aparecem inteiras em vez de cortadas.
+3815|Manuais de Wii U abrem na caixa
+3816|Os manuais feitos a partir do manual eletrônico de um jogo de Wii U voltam a abrir na frente da caixa, de onde quer que o Špajz rode.
+3817|Colar com o botão direito
+3818|As caixas de texto têm o menu de sempre Recortar / Copiar / Colar.
+3819|As Configurações abrem a página certa
+3820|Os links para uma página própria (de um cartão ou da tela de baixo) agora caem naquela página, em todas as plataformas.
+3821|Prévias em vídeo, uma página de Detalhes nova e configuração mais fácil
+3822|Prévias em vídeo: pare num jogo e o trailer dele toca, na estante e nos Detalhes, jogos de console também
+3823|Uma página de Detalhes nova: o logo do jogo, estatísticas de jogo, abas e um botão Jogar grande
+3824|Adicione muitos jogos de uma vez: escolha vários, procure numa pasta ou importe do Playnite (experimental)
+3825|Dez consoles a mais, incluindo Saturn, Neo Geo, Arcade e DOS
+3826|Configurar para mim: uma opção configura RetroArch, Dolphin, DuckStation, PCSX2 e PPSSPP
+3827|Windows: tudo acima.
+3828|Linux / Steam Deck (experimental): tudo menos Configurar para mim, trailers de console, procurar numa pasta de jogos e a importação do Playnite. Num Steam Deck, adicione o Špajz à Steam (ele oferece) e jogue pelo Modo Jogo.
+3829|Pare num jogo e a prévia dele toca, suavemente atrás da estante e atrás da caixa nos Detalhes: os seus próprios vídeos (ES-DE, EmuDeck, RetroBat, LaunchBox ou uma pasta sua), os trailers da própria Steam para jogos da Steam, e trailers de console do YouTube. Configurações → Prévias em vídeo, que também define quando elas começam (de meio segundo a 15 segundos).
+3830|O trailer do YouTube de um jogo de console fica guardado como um trecho curto (cerca de 1 MB) na primeira vez que você para nele, para tocar na estante igual a um trailer da Steam. Ele precisa de um ajudante gratuito (yt-dlp), baixado uma vez com um toque: o Špajz pergunta na estante, ou em Configurações → Prévias em vídeo.
+3831|Uma página de Detalhes nova
+3832|O logo do jogo, o tempo jogado e o último jogado, um botão Jogar com Manual, Inspecionar e Mais ao lado, e abas: Resumo, Mídia e Sua cópia (LB / RB, ou Q / E). A arte do jogo ou a prévia preenche o fundo.
+3833|Adicione muitos jogos de uma vez
+3834|Configurações → Jogos personalizados → Adicionar jogos, ou o bloco Adicionar jogos no fim da estante Personalizados: escolha vários programas de uma vez, ou aponte o Špajz para uma pasta de jogos e marque os que quer adicionar.
+3835|Traga a sua biblioteca do Playnite de uma vez: os jogos que você adicionou à mão, com as capas, e as pastas dos seus jogos emulados. Você vê primeiro o que vai ser adicionado, e um toque remove tudo de novo. Conte como foi.
+3836|Steam Deck: Modo Jogo e Adicionar à Steam
+3837|O Špajz agora abre pela Steam e no Modo Jogo sozinho. Num Steam Deck no Modo Desktop, ele oferece se adicionar à Steam, para o seu controle funcionar como gamepad nos jogos (fora da Steam, o B é a tecla Esc, que fecha a maioria dos emuladores). A qualquer hora: Configurações → Sistema → Adicionar o Špajz à Steam.
+3838|Switch: Citron e Ryujinx
+3839|Encontrados e abertos tão bem quanto o Eden, então o emulador de Switch do EmuDeck funciona sem configurar nada.
+3840|Dez consoles a mais
+3841|Saturn, TurboGrafx-16, Neo Geo, Arcade, Sega CD, 32X, Atari 2600, Lynx, WonderSwan e DOS, pelo RetroArch, cada um com a própria caixa e cores. Os jogos de arcade mostram os nomes reais.
+3842|Configurar para mim
+3843|Configurações → um console → Configurar para mim: o seu controle configurado, as teclas de Salvar e Carregar do menu Home, uma pasta de BIOS compartilhada e gráficos adequados ao seu PC. Os seus arquivos ganham backup antes, e Desfazer volta tudo. A primeira configuração pode fazer isso por você.
+3844|Núcleos do RetroArch e arquivos de BIOS
+3845|Um núcleo do RetroArch que falta é baixado sozinho na primeira vez que você joga, e as Configurações verificam os arquivos de BIOS que cada console precisa.
+3846|Mais lojas de PC
+3847|Jogos do GOG, Ubisoft Connect, app da EA e Xbox / Game Pass se juntam à Steam e à Epic na estante de PC.
+3848|Ferramentas da biblioteca
+3849|Filtre por década, gênero, jogadores ou cooperativo, e crie coleções: estantes suas, em Detalhes → Mais → Coleções.
+3850|Notas da versão no app
+3851|Uma primeira configuração mais organizada
+3852|Mais fácil de achar
+3853|As prévias em vídeo ganharam um lugar próprio nas Configurações, e o Adicionar jogos uma página própria, então as páginas principais continuam curtas.
+3854|Correções
+3855|Os trailers tocam de novo
+3856|O YouTube parou de tocar trailers abertos sozinhos. Agora eles tocam no player do próprio Špajz.
+3857|Android: revistas e guias sempre aparecem
+3858|As suas mudanças ficam
+3859|Um jogo que você renomeou, ou um "Configurar para mim" concluído, podiam ser desfeitos ao mudar outra configuração na mesma visita.
+3860|Nada de segurar sem querer
+3861|Segurar A num disco, ou segurar Reiniciar / Desligar, agora para se você trocar de tela ou puxar a barra de notificações, em vez de terminar sozinho.
+3862|Capas e o museu
+3863|Uma página de login de Wi-Fi podia ser salva como capa de um jogo, e a câmera do museu pulava quando você mexia nos controles depois de deixar parado.
+3864|Android: toques depois de um deslize rápido
+3865|Depois de deslizar a estante ou a barra de consoles, o primeiro toque num jogo ou console não fazia nada. Agora funciona de primeira.
+3866|Agora no Android e no Linux, e transições de jogo limpas
+3867|Špajz no Android (AYN Thor) e no Linux / Steam Deck
+3868|Abrir e sair de um jogo não mostra nada além do jogo
+3869|Doze consoles retrô, do PlayStation ao Dreamcast
+3870|Android e Linux
+3871|Consoles retrô
+3872|PlayStation, NES, SNES, Nintendo 64, Game Boy, Game Boy Color, Game Boy Advance, DS, Mega Drive, Master System, Game Gear e Dreamcast.
+3873|Renomear e trocar capas
+3874|Dê a qualquer jogo o nome que você quiser, e escolha a capa dele entre todas as encontradas.
+3875|Transições de jogo limpas
+3876|Sem barra de tarefas, sem área de trabalho e sem buracos enquanto um jogo abre ou fecha: parece um console.
+3877|Manual do Wii U
+3880|· continuação
+3881|MANUAL DE INSTRUÇÕES
+3882|Conteúdo

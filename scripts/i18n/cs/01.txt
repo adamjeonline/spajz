@@ -1,0 +1,312 @@
+519|dvoustránkové skeny rozděleny na jednotlivé stránky
+520|přední strana krabice přidána jako obálka
+521|Stahuji…
+522|Hotovo
+523|Zastaveno ·
+524|Nejlepší anglický návod
+525|Nejostřejší kompletní anglický návod (jak Špajz vybíral vždycky)
+526|Angličtina · Evropa
+527|Brožurky PAL v angličtině
+528|Japonské brožurky
+529|Návody ve francouzštině
+530|Návody v němčině
+531|Návody ve španělštině
+532|Návody v italštině
+533|Ostré · ${w} px
+534|Dobré · ${w} px
+535|Ucházející · ${w} px
+536|Nízké rozlišení · ${w} px
+537|PDF · ${kb} KB na stránku
+540|Sbírka ·
+541|Sbírka · ${c.src.split('/')[0]}
+544|Vestavěný e-návod
+545|Návod na disku
+547|${side.label ? side.label + ' · ' : ''}Dřívější${when ? ` (${when[3]}/${when[2]}/${when[1]})` : ''}
+553|Oficiální digitální návod ·
+554|Sken ze sbírky ·
+555|(disk ${e.disc})
+556|Neúplné (podle nahrávajícího)
+557|Prázdných stránek: ${c.junk}
+558|Chybí stránek: ${want - c.pages}
+559|Jazyk neznámý
+560|ponechá se jen prvních ${PDF_CUT} stránek
+561|ponechá se jen prvních ${IA_CUT} stránek
+562|· jen prvních ${cut.max}${cut.of ? ' of ' + cut.of : ''} stránek
+563|Převádím PDF na stránky…
+564|Návod se nepodařilo umístit (
+565|). Není nějaká stránka otevřená v jiném programu? Starý zůstal zachován.
+566|Předchozí návod
+567|Tvůj předchozí návod
+568|(oříznuto na
+569|stránek)
+570|(oříznuto na ${cut.max} stránek)
+571|(starý uložen v
+572|(starý uložen v ${path.basename(r.keep)})
+573|Návod je na místě
+574|Návod je na místě${cutNote(r && r.cut)}
+575|Nepodařilo se vrátit (
+576|). Nic se nezměnilo.
+577|Tvůj vlastní návod pro ${g.game.title} (PDF)
+578|Převádím tvoje PDF na stránky…
+579|Tvoje PDF ·
+580|Tvoje PDF · ${name}
+581|(oříznuto na ${PDF_CUT} stránek)
+582|Tvůj návod je na místě
+583|Tvůj návod je na místě${cutNote(cut)}
+584|návody ·
+585|Návody ${def.name} · ${PREFS.find(p => p.id === pref).label}
+586|Prohlížím hry…
+587|změněno
+588|· změněno: ${changed}
+589|${job.done} z ${job.total}${changed ? ' · ' + changed + ' changed' : ''}
+590|Změněno návodů: ${changed}
+591|· vestavěné nebo ručně přidané ponechány beze změny: ${kept}
+592|· zatím neprohlédnuto: ${todo.length - JOB_MAX} (${JOB_MAX} za běh)
+593|Konzole ${name}
+594|Ve ${dir} není složka Stažené
+599|Tento .cia je šifrovaný: nainstaluj ho jednou v ${E} (Soubor → Instalovat CIA) a pak ho hraj odsud.
+600|Tento .cia je šifrovaný, takže ho Azahar nepoužije. Použij dešifrovanou kopii hry.
+601|Instaluji do ${E} · 0 %
+602|Instaluji do ${E} · ${p} %
+603|Spouštím v ${E}
+605|za ${Date.now() - t0} ms
+606|(bez mezipaměti, zkompiluje se při každém spuštění)
+608|(Windows odmítl)
+618|Hry
+619|hry pro PS4
+620|Tvoje současná volba
+621|Vybráno dříve
+622|Obal ze Steamu
+623|Z tvé knihovny Steam
+624|${a.name} na Steamu
+625|Z obchodu Steam
+627|Obchod Steam
+628|Aplikace
+629|špatná odpověď
+630|Videa
+631|Trailery
+633|Nahrávky
+634|RetroAchievements nepřijal tvůj webový klíč API. Zkontroluj ho v Nastavení → Účty.
+635|RetroAchievements neodpověděl (HTTP ${res.statusCode}). Zkus to za chvíli.
+636|seznam
+638|RetroAchievements: ${v.message.slice(0, 200)}
+639|RetroAchievements poslal neočekávanou odpověď. Zkus to za chvíli.
+640|(hra
+641|) selhala:
+642|stahovací server odpověděl
+643|USA a Evropa
+644|potřebují ho jen hry na CD
+645|hry běží i bez něj
+646|Flycast spustí většinu her i bez něj
+647|ve složce s hrami nebo ve složce BIOS
+648|Nastavení Dolphinu nenalezeno (jednou Dolphin spusť)
+649|Režim hardcore zapnutý
+650|Achievementy jsou v Dolphinu vypnuté
+651|V Dolphinu nejsi přihlášený do RetroAchievements
+652|Nastavení PPSSPP nenalezeno (jednou PPSSPP spusť)
+653|Achievementy jsou v PPSSPP vypnuté
+654|V PPSSPP nejsi přihlášený do RetroAchievements
+655|Nastavení PCSX2 nenalezeno (jednou PCSX2 spusť)
+656|Achievementy jsou v PCSX2 vypnuté
+657|V PCSX2 nejsi přihlášený do RetroAchievements
+658|Jen málo her pro Wii zatím má achievementy
+659|RetroAchievements tuto konzoli nepodporuje
+660|Pro tuto konzoli není nastavený ${emulator}
+661|Nastavení ${emulator} se nepodařilo přečíst
+662|${emulator} je přihlášený jako ${r.user}, ne ${raUser}
+663|neznámá chyba
+664|Nenainstalováno
+665|Asie
+666|Korea
+667|Hra pro Xbox 360
+668|Hra pro Xbox 360 ${stfs.titleId}
+669|Hra pro Wii U
+670|Hra pro Wii U ${idm ? idm[0] : path.basename(dir)}
+671|Hra pro Xbox 360 ${x.titleId}
+672|(Disk ${g.disc})
+673|Vývojářské přihlášení ScreenScraper nebylo přijato
+674|ScreenScraper je teď mimo provoz
+675|ScreenScraper: dnes příliš mnoho neznámých her
+676|ScreenScraper odpověděl
+677|ScreenScraper odpověděl ${status}
+678|Žádný účet ScreenScraper
+679|ScreenScraper odpovídal příliš dlouho
+680|Nepodařilo se spojit se ScreenScraperem
+681|ScreenScraper poslal něco neočekávaného
+682|ScreenScraper odpověděl ${r.status}
+683|Přední strana krabice
+684|Zadní strana krabice
+685|Vyříznuto z celého přebalu
+686|žádný účet
+687|žádné vývojářské přihlášení
+688|vývojářské přihlášení nepřijato
+689|Písničky
+691|Doba hraní
+706|aktualizováno v
+707|přidáno do
+708|Žádný klíč SteamGridDB
+709|SteamGridDB nás požádal o zpomalení
+711|SteamGridDB odpovídal příliš dlouho
+712|Nepodařilo se spojit se SteamGridDB
+713|Klíč SteamGridDB nebyl přijat
+714|SteamGridDB odpověděl
+715|SteamGridDB odpověděl ${r.status}
+716|SteamGridDB poslal něco neočekávaného
+721|žádný klíč
+722|Výchozí
+724|${out.length} titulů (z ${seen} položek) z ${from || 'nowhere'}
+725|úložiště nenalezeno (je Stremio 5 nainstalované a aspoň jednou otevřené?)
+738|Použij model .glb (nebo .gltf).
+739|Použij obrázek PNG, SVG, WebP nebo JPG.
+740|Použij video MP4, WebM nebo MOV.
+741|(novější)
+742|nejnovější ${latest}${last.newer ? ' (newer)' : ''}
+743|zatím žádná vydání
+744|VIBRACE
+745|Stránka ${num + 1}
+762|Pokračovat a oblíbené
+763|Domácí konzole
+764|Pohybová konzole
+765|Hybridní konzole
+766|Kapesní konzole
+767|Steam, Epic a další
+768|PC porty a rekompilace
+769|Streamování
+771|Nikdy
+772|Dnes
+773|Včera
+774|dní zpátky
+775|před ${days} dny
+776|Otevřít ${s.emulatorName}
+777|Přidat hry
+778|Překvap mě
+779|Rok vydání
+780|Naposledy hráno
+781|Nejhranější
+782|Hodnocení
+783|Žánr
+784|Všechny hry
+785|Oblíbené
+786|Hrané
+787|Ještě nehrané
+788|podle roku
+789|podle posledního hraní
+790|podle doby hraní
+791|podle hodnocení
+792|podle žánru
+793|Bez data
+794|Ostatní
+795|Tento týden
+796|Tento měsíc
+797|Letos
+798|Pod 1 h
+799|Bez hodnocení
+804|Domů si drží vlastní pořadí.
+805|Her na polici ${s.name}: ${n} ·
+806|${padWord("L1")} / ${padWord("R1")} skáče mezi sekcemi
+807|Z / C skáče mezi sekcemi
+808|· platí pro všechny police i muzeum
+810|Hlasitost ${Math.round(v*100)} %
+811|Tvoje sbírka
+812|hráno
+813|♥ Oblíbené
+814|♥ ${g.title} přidáno do oblíbených
+815|${g.title} odebráno z oblíbených
+822|Otevřít nastavení
+823|${okWord()} přidá víc najednou, celou složku nebo tvou knihovnu Playnite
+824|Zatím žádné hry ${s?s.name+" ":""}
+825|${okWord()} otevře nastavení ${s?s.name:"its"}, kde přidáš složku s hrami
+826|Náhodný výběr
+827|Zamíchat
+828|Zastaví se na náhodné hře
+829|Streamovací aplikace
+830|Odehráno ${(g.minutes/60).toFixed(1)} h
+831|Disků: ${g.discs.length}
+832|★ Dohráno na 100 %
+833|Tomuto filtru neodpovídá žádná hra
+834|Zatím tu nejsou žádné hry
+835|Podrž
+836|Podrž ${padWord("menu")}
+837|Stiskni G
+838|{} pro změnu filtru
+839|Stiskni ${okWord()} pro otevření nastavení Steamu
+840|Stiskni ${okWord()} pro otevření nastavení ${es.name} a přidání složky s hrami
+841|Náhodný výběr ·
+842|Náhodný výběr · ${(raw.pick.sh||shelves[raw.pick.shelf]).name}
+843|Spektrum
+845|Klasické spektrum
+846|Půlnoc
+848|Polární záře
+850|Klávesy
+853|Obrázky her
+854|Rozmazání
+864|${shown} z ${n} ${what}
+870|Program
+871|Nenastaveno
+872|Nalezené hry
+873|Zatím žádné
+874|Oprav to v
+875|Nastavení →
+876|Nastavení → ${s.name}
+877|Vybráno
+878|Vybírá z
+879|Všech polic
+880|Této police
+881|Změnit
+882|Nastavení → Police
+883|Vrací se
+884|Když zavřeš aplikaci
+885|Vydáno
+887|${(g.minutes/60).toFixed(1)} hodin
+888|Velikost instalace
+889|Steam ID
+890|Hráči
+891|(kooperace)
+892|Hodnocení komunity
+893|Neznámé
+894|disky
+895|· disků: ${g.discs.length}
+896|(stiskni levou páčku)
+897|${padWord("L3")} (stiskni levou páčku)
+898|Protočí tvoje hry a náhodně se zastaví na jedné. ${showPad()?padWord("L3")+" (press the left stick)":"R"} udělá totéž odkudkoli.
+899|Přidá další hry na polici Vlastní: několik programů najednou, celou složku her nebo tvou knihovnu Playnite.
+900|Pro ${s.name} zatím nebyly nalezeny žádné hry. Otevře jeho stránku v Nastavení, kde vybereš složku s hrami.
+901|Otevře samotný ${s.emulatorName}, abys mohl změnit ovladače, grafiku a další nastavení. Zavři ho a vrátíš se sem.
+902|Otevře ${g.title}. Zavři ho a vrátíš se na polici.
+903|Spouští se přes Steam, takže aktualizace, ukládání do cloudu i překryvná vrstva Steamu fungují jako obvykle.
+904|Otevře ${g.title}.
+905|· přes
+906|· přes ${cur().name}
+907|· ${gi+1} z ${gs.length}
+908|Číst dál
+911|Hráčů: ${i.players}
+914|Zatím ne
+915|Spuštění
+916|Formát
+917|Přední obal
+918|Zadní obal
+919|${man} stránek
+920|online nic nenalezeno
+921|Kompletní: celá krabice, disk i návod
+922|Obrázky celé krabice
+923|· bez obrázku disku
+924|· online nenalezen žádný návod
+925|· bez návodu
+927|Chybějící obrázky můžeš stáhnout v Nastavení → Obaly a návody → Stáhnout chybějící obrázky
+929|po spuštění konzole
+932|Hrát
+933|Otevřít
+934|Číst návod
+935|Číst brožurku
+936|Otevřít ${s.emulatorName||"emulator"}
+937|Vybrat návod…
+938|Najít návod…
+939|Špajz hledal online ${new Date(g.manualMiss).toLocaleDateString()} a pro tuto hru žádný návod nenašel. Vyhledej nebo přidej nějaký tady.
+940|Běží v ${own} (jen tato hra). Stiskni pro změnu.
+941|Běží v ${s.emulatorName||"emulator"} z police. Stiskni a vyber jinou verzi jen pro tuto hru.
+942|Podrobnosti:
+943|Podrobnosti: ${curGame().title}
+944|Video:
+945|Video: ${String(url).split(/[\\/]/).pop().slice(0,60)}
+946|Trailer ze Steamu
+947|Náhled

@@ -1,0 +1,165 @@
+2034|Otevřít web
+2035|Otevře stránku ke stažení ${a.name} v prohlížeči.
+2037|Konzole
+2038|Všechny konzole, které Špajz umí spustit. Vyber jednu a nastav její emulátor, složky s hrami a způsob spouštění.
+2039|Pro všechny konzole
+2040|Znovu najít emulátory
+2041|Hledám…
+2042|Prohledá obvyklá místa instalace a tvou složku Špajzu, jestli tam nejsou emulátory a složky s hrami, které jsi ještě nenastavil, a doplní je u konzolí, které nemají nic nastaveno.
+2043|Hry pro PC
+2044|Tvoje nainstalované hry ze Steamu na vlastní polici.
+2045|Zobrazit nainstalované hry ze Steamu
+2046|Přidá polici PC se všemi hrami, které má Steam nainstalované. Odinstalované hry vynechá.
+2047|Skrýt nástroje Steamu
+2048|Nechá Proton, Steamworks Common Redistributables a další nástroje mimo polici.
+2049|Složka Steamu
+2051|Vyber složku Steamu
+2052|Získat Steam
+2053|Otevře stránku ke stažení Steamu v prohlížeči.
+2054|Zobrazit nainstalované hry z Epic Games
+2055|Přidá na polici PC hry nainstalované přes Epic Games Launcher. Spouští se přes Epic launcher, takže přihlášení i ukládání do cloudu fungují jako obvykle.
+2056|Zobrazit nainstalované hry z GOG
+2057|Přidá na polici PC hry nainstalované přes GOG Galaxy. Hry z GOG nemají ochranu proti kopírování, takže je Špajz spouští sám, s menu Domů a kombinací pro ukončení jako u každé hry.
+2058|Zobrazit nainstalované hry od Ubisoftu
+2059|Přidá na polici PC hry nainstalované přes Ubisoft Connect. Spouští se přes Ubisoft Connect, takže přihlášení i ukládání do cloudu fungují jako obvykle.
+2060|Zobrazit nainstalované hry od EA
+2061|Přidá na polici PC hry nainstalované přes aplikaci EA. Spouští se přes aplikaci EA, takže přihlášení i ukládání do cloudu fungují jako obvykle.
+2062|Zobrazit nainstalované hry pro Xbox
+2063|Přidá na polici PC hry nainstalované přes aplikaci Xbox (včetně Game Passu). Spouští se jako každá hra z aplikace Xbox, přihlášené tvým účtem Microsoft.
+2064|Rekompilace, porty pro PC a jakékoli další programy na vlastní polici Vlastní.
+2065|Stremio a Nuvio, spouštěné z police Média.
+2066|Zobrazení
+2067|Jak police vypadá z gauče.
+2068|Velikost rozhraní
+2069|Standardní
+2070|Extra velké
+2071|Větší text a tlačítka pro televizi na druhém konci místnosti.
+2072|Velké se hodí pro většinu televizí od 55" na 2–3 m. Extra velké pro hodně vzdálené sezení.
+2073|Udělej motiv z libovolného obrázku nebo otevři složku, kde jsou tvoje motivy.
+2074|Z obrázku se stane motiv za tvými policemi.
+2075|Udělat motiv z obrázku
+2076|Vyber obrázek pro svůj motiv
+2077|tvůj obrázek
+2078|Nový motiv: ${t?t.name:"your picture"}
+2079|Motiv vytvořen. Uvidíš ho po Znovu najít motivy
+2080|Otevřít složku vlastních motivů
+2081|Znovu najít motivy
+2082|Najít
+2083|Znovu projde složku vlastních motivů, když nějaký motiv přidáš, změníš nebo odebereš.
+2084|Vlastních motivů: ${n}
+2085|Zatím žádné vlastní motivy
+2086|Hodiny
+2087|Den, datum a čas
+2088|Jen čas
+2089|Co se zobrazuje v horním rohu police.
+2090|Zobrazí 18:30 místo 6:30 PM.
+2091|Spodní obrazovka
+2092|Malá obrazovka pod policí ukazuje hru, na které jsi: její krabičku, kterou otočíš a otevřeš prstem, podrobnosti, trofeje a velká dotyková tlačítka. Během hraní dostane spodní obrazovku vždy hra, takže emulátory DS a 3DS i módy pro spodní obrazovku ji mají celou.
+2093|nejde o Thor
+2094|Byla nalezena druhá obrazovka${s.name?` (${s.name})`:""}. Na tomto zařízení (${s.device||"not a Thor"}) zůstane vypnutá, dokud ji nezapneš.
+2095|Spouštění
+2096|Úvodní animace
+2097|Logo + vlnění
+2098|Logo + prolnutí
+2099|Během načítání police se ukáže logo Špajzu a pak naběhnou hry: ta, na které jsi byl, jako první a ostatní se rozvlní do stran, nebo se celá police prolne najednou. Vypnuto začne rovnou na polici.
+2100|Otevřít do
+2101|Poslední police
+2102|Kam Špajz po spuštění půjde: na polici konzole, na které jsi byl naposledy, na Domů (pokračovat ve hraní a oblíbené), nebo rovnou do muzea.
+2103|Muzeum: po logu Špajzu se rozsvítí přehled muzea (spouští se o něco pomaleji než police). Tlačítkem B se kdykoli dostaneš na polici.
+2104|Obrazovka a pohyb
+2105|Která obrazovka, celá obrazovka, přizpůsobení obrazu televizi a omezení pohybu.
+2106|Nastav jednou pro svou televizi.
+2107|Spouštět na celou obrazovku
+2108|Otevře Špajz na celou obrazovku. Klávesou F11 to kdykoli přepneš.
+2109|Skrýt hlavní panel během her
+2110|Na obrazovce jen Špajz a tvoje hra: hlavní panel Windows se skryje, když se hra spouští, běží a zavírá, a na polici se vrátí.
+2111|Obrazovka
+2112|Na které obrazovce se Špajz otevře, pro počítač s monitorem i televizí. Hry se otevírají na stejné obrazovce.
+2113|Přizpůsobit TV
+2114|Trochu všechno zmenší, pokud tvoje televize ořezává okraje obrazu (overscan). Při změně sleduj rohy obrazovky.
+2115|Omezit pohyb
+2116|Zmírní vlnění při spuštění, vstup do muzea a pohyblivá pozadí motivů.
+2117|Výkon
+2118|Jedno nastavení, kolik Špajz chce po grafické kartě.
+2119|Automaticky
+2120|, a když snímky zpomalí, nechá muzeum vykreslovat o kousek měkčeji.
+2121|${perfWhy}, a když snímky zpomalí, nechá muzeum vykreslovat o kousek měkčeji.
+2122|Vysoký: vše zapnuto (odrazy, záře, stíny, plné rozlišení). Vyvážený: lehčí stíny, pozadí na 30 fps. Nízký: statické pozadí, bez rozmazání a stínů, muzeum na 0,8×. Kapesní (Android): bez odrazů a pulzující záře, bez stínů v muzeu, pozadí na 30 fps. Vizuální efekty a stíny v muzeu se řídí touto úrovní.
+2123|Zvuk
+2124|Zvuky rozhraní, hudba v menu, písničky a zvuk místnosti v muzeu.
+2125|Zvuky rozhraní
+2126|Cvakání, šustění a cinkání při pohybu.
+2127|Jak hlasité jsou vlastní zvuky Špajzu. Hry a aplikace to neovlivní.
+2128|Hlas
+2129|Tichá hudba v pozadí police, jako na domovské obrazovce konzole. Unášení: vzdušné a hřejivé. Noc: temnější a pomalejší. Záře: pomalá ukolébavka z hrací skříňky. Při spuštění hry se ztlumí.
+2130|Jak hlasitě hraje hudba v menu, pod ostatními zvuky Špajzu.
+2131|Znělka, která hraje s úvodní animací konzole.
+2132|Délka úvodní obrazovky
+2133|Krátká
+2134|Normální
+2135|Dlouhá
+2136|Výstupní zařízení
+2137|Kde hrají zvuky Špajzu. Hry používají nastavení zvuku svého emulátoru.
+2138|Další písnička
+2139|Přepne na další písničku.
+2140|Právě hraje:
+2141|Právě hraje: ${s.name}
+2142|Zvuk místnosti a písničky
+2143|Zvuk místnosti v muzeu a (s Melodií) tvoje vlastní písničky.
+2144|Tichý zvuk místnosti v muzeu a písničky, které hraje Melodie.
+2145|Zvuk místnosti v muzeu
+2146|Tichý zvuk místnosti, když procházíš muzeem.
+2147|Zahrnout vestavěné písničky
+2148|S Melodií hrají vlastní písničky Špajzu spolu se soubory MIDI ze tvé složky Písničky.
+2149|Složka Písničky
+2150|Vlož sem soubory .mid (skvěle fungují klavírní verze herních melodií) a stiskni Načíst znovu.
+2151|Znovu načíst písničky
+2152|Načíst znovu
+2153|Znovu projde tvou složku Písničky.
+2154|Načteno písniček: ${r.songs}
+2155|· nepodařilo se přečíst: ${r.skipped.length}
+2156|Jak se police chová: pořadí konzolí, náhodný výběr a předváděcí režim.
+2157|Pořadí konzolí
+2158|Přeuspořádat
+2159|Pořadí konzolí nahoře. Domů je vždy první.
+2160|Vlastní police s hrami z libovolných konzolí (hru přidáš přes Podrobnosti → Kolekce). Tady je můžeš přejmenovat nebo smazat.
+2161|Každá z nich je police vedle Domů.
+2162|Náhodný výběr ze všech polic
+2163|Překvap mě vybírá ze všech konzolí, ne jen z police, na které jsi.
+2164|Předváděcí režim
+2165|Po pár minutách nečinnosti se police sama prochází tvými krabičkami se ztlumeným rozhraním, jako výloha v obchodě.
+2166|Předváděcí režim začne po
+2167|Jak dlouho bez ovládání, než prohlídka začne.
+2168|Ztmavit obrazovku po
+2169|Po dlouhé nečinnosti ztmaví obrazovku do černa, aby chránila OLED televize. Probudí ji libovolné tlačítko.
+2170|Ráno denní světlo, odpoledne klasický, v noci večer.
+2171|Doladit světlo
+2172|Jas, teplota, reflektor na krabičku a prach ve světle.
+2173|Navíc ke scéně, kterou jsi vybral.
+2174|Celkový jas místnosti navíc ke scéně.
+2175|Studenější nebo teplejší světlo.
+2176|Jak silně je vybraná krabička nasvícená.
+2177|Smítka poletující ve světle lampy. (Nízký výkon je vypne.)
+2178|Televize CRT v místnosti, která pouští staré reklamy na tvoje hry, jejich trailery nebo to, co jsi naposledy hrál.
+2179|Vyber, co dávají
+2180|Otevřít program
+2181|Otevře muzeum u televize s jejím programem: reklamy, trailery, nedávno hrané nebo všechny tři zamíchané. Když je televize vypnutá, zapne ji.
+2182|Muzeum se otevírá z police
+2183|Televize a zvuk
+2184|Stolek televize, velikost, místo v místnosti, kanál, zvuk a vzhled CRT.
+2185|Jak retro televize vypadá a zní.
+2186|Dřevěný vozík s videorekordérem, nízká skříňka s pár konzolemi uvnitř, televize na nožkách nebo držák na zdi.
+2187|Malá, střední nebo velká.
+2188|Vlevo nebo vpravo v místnosti, nebo uprostřed mezi policemi a čtenářským koutkem (který se posune, aby uvolnil místo).
+2189|Hlasitost TV
+2190|Navíc k vlastní hlasitosti Špajzu.
+2191|Ztlumit TV
+2192|Jen obraz.
+2193|Zvuk zesílí, když se k televizi otočíš nebo k ní přijdeš, a zeslábne, když odejdeš.
+2194|Řádky, zakřivené sklo a záře na obrazu televize.
+2195|Obraz se po zapnutí rozvine z jasné čáry a po vypnutí se složí do tečky.
+2196|Stěny, galerie a návštěvy
+2197|Stěny, podlaha a police, galerijní prvky, jak návštěva začíná a obnovení místnosti.
+2198|Samotná místnost, prvky v ní a jak návštěva začíná.
+2199|Stěny místnosti.
+2200|Z čeho je podlaha.

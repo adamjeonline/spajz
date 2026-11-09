@@ -1,0 +1,258 @@
+706|atualizado em
+707|adicionado a
+708|Sem chave do SteamGridDB
+709|O SteamGridDB pediu para irmos mais devagar
+711|O SteamGridDB demorou demais para responder
+712|Não foi possível acessar o SteamGridDB
+713|A chave do SteamGridDB não foi aceita
+714|O SteamGridDB respondeu
+715|O SteamGridDB respondeu ${r.status}
+716|O SteamGridDB mandou algo inesperado
+721|sem chave
+722|Padrão
+724|${out.length} títulos (de ${seen} itens) de ${from || 'nowhere'}
+725|armazenamento não encontrado (o Stremio 5 está instalado e já foi aberto uma vez?)
+738|Use um modelo .glb (ou .gltf).
+739|Use uma imagem PNG, SVG, WebP ou JPG.
+740|Use um vídeo MP4, WebM ou MOV.
+741|(mais nova)
+742|mais nova ${latest}${last.newer ? ' (newer)' : ''}
+743|nenhuma versão lançada ainda
+744|VIBRAÇÃO
+745|Página ${num + 1}
+762|Continuar e favoritos
+763|Console de mesa
+764|Console de movimento
+765|Console híbrido
+766|Portátil
+767|Steam, Epic e outros
+768|Ports de PC e recomps
+769|Streaming
+771|Nunca
+772|Hoje
+773|Ontem
+774|dias atrás
+775|${days} dias atrás
+776|Abrir ${s.emulatorName}
+777|Adicionar jogos
+778|Me surpreenda
+779|Ano de lançamento
+780|Jogado por último
+781|Mais jogados
+782|Nota
+783|Gênero
+784|Todos os jogos
+785|Favoritos
+786|Jogados
+787|Ainda não jogados
+788|por ano
+789|por último jogado
+790|por tempo de jogo
+791|por nota
+792|por gênero
+793|Sem data
+794|Outros
+795|Esta semana
+796|Este mês
+797|Este ano
+798|Menos de 1 h
+799|Sem nota
+804|O Início mantém a própria ordem.
+805|${n} [[${n===1?"":"s"}|jogo|jogos]] em ${s.name} ·
+806|${padWord("L1")} / ${padWord("R1")} pulam entre as seções
+807|Z / C pulam entre as seções
+808|· vale para todas as estantes e para o museu
+810|Volume ${Math.round(v*100)}%
+811|Sua coleção
+812|jogados
+813|♥ Favorito
+814|♥ ${g.title} adicionado aos favoritos
+815|${g.title} removido dos favoritos
+822|Abrir configurações
+823|${okWord()} adiciona vários de uma vez, uma pasta inteira ou a sua biblioteca do Playnite
+824|Ainda não há jogos ${s?s.name+" ":""}
+825|${okWord()} abre as configurações de ${s?s.name:"its"} para adicionar uma pasta de jogos
+826|Escolha surpresa
+827|Embaralhar
+828|Cai num jogo aleatório
+829|App de streaming
+830|${(g.minutes/60).toFixed(1)} h jogadas
+831|${g.discs.length} discos
+832|★ Dominado
+833|Nenhum jogo corresponde a este filtro
+834|Ainda não há jogos aqui
+835|Segure
+836|Segure ${padWord("menu")}
+837|Aperte G
+838|{} para mudar o filtro
+839|Aperte ${okWord()} para abrir as configurações da Steam
+840|Aperte ${okWord()} para abrir as configurações de ${es.name} e adicionar uma pasta de jogos
+841|Escolha surpresa ·
+842|Escolha surpresa · ${(raw.pick.sh||shelves[raw.pick.shelf]).name}
+843|Espectro
+845|Espectro Clássico
+846|Meia-noite
+848|Aurora
+850|Teclas
+853|Arte
+854|Desfoque
+864|${shown} de ${n} ${what}
+870|Programa
+871|Não definido
+872|Jogos encontrados
+873|Nenhum ainda
+874|Corrija em
+875|Configurações →
+876|Configurações → ${s.name}
+877|Escolhido
+878|Escolhe de
+879|Todas as estantes
+880|Esta estante
+881|Mudar
+882|Configurações → Estante
+883|Volta
+884|Quando você fecha o app
+885|Lançamento
+887|${(g.minutes/60).toFixed(1)} horas
+888|Tamanho instalado
+889|ID da Steam
+890|Jogadores
+891|(cooperativo)
+892|Nota da comunidade
+893|Desconhecido
+894|discos
+895|· ${g.discs.length} discos
+896|(aperte o analógico esquerdo)
+897|${padWord("L3")} (aperte o analógico esquerdo)
+898|Gira pelos seus jogos e para num deles ao acaso. ${showPad()?padWord("L3")+" (press the left stick)":"R"} faz o mesmo de qualquer lugar.
+899|Coloca mais jogos na estante Personalizados: vários programas de uma vez, uma pasta inteira de jogos ou a sua biblioteca do Playnite.
+900|Ainda não foram encontrados jogos de ${s.name}. Abre a página dele nas Configurações, onde você escolhe a pasta onde estão os seus jogos.
+901|Abre o ${s.emulatorName} sozinho para você mudar controles, gráficos e outras configurações. Feche para voltar aqui.
+902|Abre ${g.title}. Feche para voltar à estante.
+903|Abre pela Steam, então atualizações, saves na nuvem e o overlay da Steam funcionam normalmente.
+904|Abre ${g.title}.
+905|· pelo
+906|· pelo ${cur().name}
+907|· ${gi+1} de ${gs.length}
+908|Ler mais
+911|${i.players} jogadores
+914|Ainda não
+915|Aberturas
+916|Formato
+917|Capa
+918|Contracapa
+919|${man} páginas
+920|nenhum encontrado online
+921|Completo: caixa inteira, disco e manual
+922|Arte completa da caixa
+923|· sem arte do disco
+924|· nenhum manual encontrado online
+925|· sem manual
+927|As imagens que faltam podem ser baixadas em Configurações → Capas e manuais → Baixar as capas que faltam agora
+929|depois da abertura
+932|Jogar
+933|Abrir
+934|Ler o manual
+935|Ler o livreto
+936|Abrir ${s.emulatorName||"emulator"}
+937|Escolher manual…
+938|Procurar um manual…
+939|O Špajz procurou online em ${new Date(g.manualMiss).toLocaleDateString()} e não encontrou manual para este jogo. Procure ou adicione um aqui.
+940|Roda no ${own} (só este jogo). Aperte para mudar.
+941|Roda no ${s.emulatorName||"emulator"} da estante. Aperte para escolher uma versão diferente só para este jogo.
+942|Detalhes:
+943|Detalhes: ${curGame().title}
+944|Vídeo:
+945|Vídeo: ${String(url).split(/[\\/]/).pop().slice(0,60)}
+946|Trailer da Steam
+947|Prévia
+948|Vídeo da estante:
+949|Vídeo da estante: ${String(url).split(/[\\/]/).pop().slice(0,60)}
+950|Novo: prévias em vídeo. Ligue em Configurações → Prévias em vídeo.
+951|Prévias em vídeo
+952|Os jogos de console também podem tocar trailers
+953|O Špajz precisa de um ajudante gratuito (yt-dlp, cerca de 25 MB) para salvar um trecho curto do trailer de cada jogo de console, para ele tocar na estante e nos Detalhes como nos jogos da Steam. Ele é baixado só uma vez.
+954|Baixar o ajudante
+955|Baixando o ajudante de trailers…
+956|Os trailers dos consoles estão prontos: pare num jogo de console para ver o trailer
+957|Não foi possível baixar o ajudante de trailers. Tente de novo em Configurações → Prévias em vídeo.
+958|Agora não
+959|Você pode baixar a qualquer hora em Configurações → Prévias em vídeo.
+960|Adicionando o Špajz à Steam (a Steam fecha e abre de novo)…
+961|A Steam ainda não foi configurada neste Deck
+962|O Špajz não está rodando pelo AppImage
+963|A Steam não fechou: feche e tente de novo em Configurações → Sistema
+964|ele já está na Steam
+965|A entrada do Špajz na Steam está atualizada. Abra pela Steam (Modo Jogo)
+966|O Špajz está na Steam agora: abra pela sua Biblioteca no Modo Jogo (Não Steam)
+967|Não foi possível adicionar o Špajz à Steam
+969|Mude para o Modo Jogo e abra o Špajz pela sua Biblioteca (Não Steam)
+970|Para sair de um jogo, segure Select + Start por um instante
+971|Adicione o Špajz à Steam (o botão abaixo faz isso para você)
+972|Mude para o Modo Jogo e abra pela sua Biblioteca (Não Steam)
+973|Abra o Špajz pela Steam para os controles dos seus jogos
+974|Aberto fora da Steam, o controle do Deck funciona aqui como teclado e mouse, então B é a tecla Esc e a maioria dos emuladores fecha o jogo com ela. Aberto pela Steam, B é só B.
+975|Entendi
+976|Adicionar o Špajz à Steam
+977|Você pode adicionar a qualquer hora em Configurações → Sistema.
+978|largo
+979|principal
+980|Saiu o Špajz ${r.latest}
+981|Uma versão nova está pronta para baixar.
+982|Ver as novidades
+983|Depois
+984|Novidades da ${v}
+985|Todas as notas
+986|Nenhuma das suas versões de Switch 2 abre jogos .nup. Adicione uma versão mais nova do Eglantine.
+987|Iniciar em qual versão?
+988|não abre jogos .nup
+989|${btnWord("a")} iniciar · ${btnWord("back")} voltar
+991|Escolher uma capa · ${batch.i+1} de ${batch.list.length}
+992|Procurando capas…
+993|${btnWord("a")} usar · ${btnWord("back")} voltar
+994|${btnWord("a")} usar · ${btnWord("back")} parar
+995|Pular este jogo
+996|Para o próximo
+997|O último
+998|Buscar pelo nome…
+999|Agora: ${term}
+1000|Outro nome para procurar
+1001|Uma imagem sua
+1002|JPG, PNG ou WebP
+1003|Capa automática
+1004|Voltar para ela
+1005|Adicionar o SteamGridDB
+1006|Dezenas de capas a mais · chave gratuita
+1007|para "${term}"
+1008|, e as da própria Steam
+1010|O SteamGridDB não tem nenhuma.
+1012|Nada encontrado para "${term}". Tente outro nome.
+1013|A capa da própria Steam. O SteamGridDB não tem nenhuma para este jogo.
+1014|O SteamGridDB não tem capas para este jogo. Busque pelo nome ou use uma imagem sua.
+1015|A capa da própria Steam. Para dezenas a mais, adicione uma chave gratuita do SteamGridDB.
+1016|Nenhuma capa com este nome na Steam. Busque pelo nome, use uma imagem sua ou adicione uma chave gratuita do SteamGridDB para ter dezenas a mais.
+1018|Capa nova para ${g.title}
+1019|${g.title} voltou para a capa automática
+1020|Baixando a capa…
+1021|Todos os jogos personalizados já têm capa
+1022|Capas novas para ${b.done} [[${b.done===1?"":"s"}|jogo|jogos]]
+1023|Nenhuma capa mudou
+1024|Procurando capas para ${L.length} [[${L.length===1?"":"s"}|jogo|jogos]]…
+1025|Adicione primeiro uma chave gratuita do SteamGridDB: Configurações → Contas e serviços
+1026|Capas novas para ${done.length} de ${L.length} [[${L.length===1?"":"s"}|jogo|jogos]]. Não gostou? Configurações → Jogos personalizados → Desfazer
+1027|O SteamGridDB não tinha capas para estes jogos
+1028|${L.length} [[${L.length===1?"":"s"}|capa restaurada|capas restauradas]]
+1031|Jogar:
+1032|Jogar: ${g?g.title:"?"}
+1033|Inspecionar
+1037|Livreto feito pelo Špajz · não é um manual original
+1038|LIVRETO DE INSTRUÇÕES
+1039|Edição Špajz · não é um manual original
+1040|Sobre este jogo
+1041|Ainda sem descrição. Baixe as capas e informações nas Configurações para preencher esta página.
+1042|Detalhes
+1043|Sistema
+1045|Série de TV
+1046|Filme
+1048|Os detalhes deste título ainda não estão disponíveis.
+1049|DIRIGIDO POR

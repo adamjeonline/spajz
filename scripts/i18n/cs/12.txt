@@ -1,0 +1,166 @@
+3511|Nejdřív nastav program Dolphin.
+3512|Možnosti spuštění
+3513|Možnosti jen pro emulátor
+3514|Sekundy skrytí emulátoru během spouštění
+3515|Možnosti při otevření samotného emulátoru
+3516|Skrýt emulátor během spouštění
+3517|Načítací obrazovka Špajzu zůstane vpředu takhle dlouho, abys neviděl okno ${def.emulatorName}, než hra přejde na celou obrazovku. Pokud pořád něco probliká, zvyš to, 0 to vypne. Výchozí: ${def.coverSeconds}.
+3518|Test: otevřít ${def.emulatorName}
+3519|Ukáže hry ze Steamu nainstalované na tomto PC s jejich skutečnými obaly a spouští je přes Steam.
+3520|Přidá na polici Média dlaždice tvých streamovacích aplikací.
+3521|Program ${a.name}
+3522|Najít ${a.exeNames[0]}
+3523|Jakmile se aplikace otevře, stiskne F11.
+3524|Levá páčka hýbe ukazatelem a A kliká, pro aplikace bez podpory ovladače. Nech vypnuté, když má aplikace vlastní (Stremio: Nastavení → Enable gamepad).
+3526|Nedávné aktualizace návodů
+3527|Načítám…
+3528|ostřejší kopie (${x.oldW} → ${x.w} px na šířku)
+3529|anglické vydání (bylo ${x.oldW} px, teď ${x.w} px)
+3531|Seznam se nepodařilo přečíst.
+3532|Nejdřív přidej složku s hrami pro nějakou konzoli (Nastavení → Konzole) a pak se sem vrať.
+3533|${sys.filter(c=>manualPick.has(c.id)).length} z ${sys.length} konzolí
+3535|Malých skenů: ${c.low}
+3536|Na pozadí, když přibydou nové hry. Jen jisté anglické návody.
+3537|Kde se uchovávají návody
+3538|Konzolí: ${chosen.length}
+3539|k nalezení až ${missing} chybějících návodů
+3540|každá hra už návod má
+3541|Pro začátek zaškrtni aspoň jednu konzoli.
+3542|Návody, které už máš, zůstanou. Hledání posílá názvy tvých her na ty stránky.
+3543|Běží jiné stahování
+3544|Návody: ${manState.err}
+3545|hotovo
+3547|Teď: ${p.game||""}
+3548|, her stále bez návodu: ${miss}
+3551|nic nového
+3552|· už měly: ${x.had}
+3553|Přidáno návodů: ${x.added.length}
+3554|Přeskočeno nejistých shod: ${x.unsure.length}
+3555|Nenalezeno: ${x.none.length}
+3556|Nepodařilo se stáhnout: ${x.failed.length}
+3557|Zpět na seznam návodů
+3558|Disk / kazeta
+3559|${chosen.length} z ${sys.length} konzolí
+3560|${c.front} z ${c.total} obalů · chybí ${missFront}
+3561|Všech ${c.total} obalů
+3562|Některé zadní strany, hřbety nebo disky chybí
+3563|Krabičky kompletní
+3564|${lack||missFront?" · ":""}v nízkém rozlišení: ${low}
+3565|Na pozadí, když přibydou nové hry.
+3566|Vybrat pro každou konzoli
+3567|Zaškrtnout nebo odškrtnout ${l} u všech konzolí
+3568|V nízkém rozlišení: ${low}
+3569|Her: ${c.total}
+3570|Každé políčko je jedna konzole a jeden typ obrázku i s tím, kolik jich máš. Zaškrtni přesně to, co chceš stáhnout.
+3571|Kde se uchovávají obaly
+3572|· k nalezení až ${missing} chybějících obrázků
+3573|a ${low} v nízkém rozlišení k vylepšení
+3574|— všechno, co jsi vybral, už tu je
+3575|v HD
+3576|— všechno, co jsi vybral, už tu je${hd?" in HD":""}
+3577|Obrázky, které už máš, zůstanou (Upřednostnit HD skeny vymění obrázek jen tehdy, když je nový zjevně ostřejší). Stahování posílá názvy tvých her na ty stránky. Napoprvé se stáhne i databáze LaunchBox (asi 110 MB, jednorázově).
+3578|Obaly: ${artState.err}
+3579|Stahuji obaly
+3580|· nových: ${p.counts.got} · vylepšených: ${p.counts.upgraded}
+3582|zrušeno
+3583|, vylepšeno na HD: ${tot.up}
+3584|, her, kterým ještě něco chybí: ${tot.miss}
+3586|· vylepšeno: ${x.upgraded}
+3587|· už kompletní: ${x.had}
+3588|Vylepšeno na HD: ${x.upgraded}
+3589|Nových obrázků: ${x.got?x.got.length:0}
+3590|Nenalezeno: ${x.missed.length}${kinds?` (${kinds})`:""}
+3591|Nepodařilo se spojit s databází LaunchBox, takže se zkoušely jen přední strany z libretro:
+3592|Nepodařilo se spojit s databází LaunchBox, takže se zkoušely jen přední strany z libretro: ${r.launchboxError}
+3593|Zpět na seznam obrázků
+3599|Oficiální průvodce Prima
+3600|Průvodce BradyGames
+3601|Průvodce Nintendo Power
+3602|Průvodce Piggyback
+3603|Průvodce Zelda
+3604|Průvodce Mario
+3605|Průvodce Pokémon
+3606|Průvodce Final Fantasy
+3607|stránka ${p.bytes} z ${p.total}
+3608|Tvůj čtenářský koutek v muzeu. Přidej vlastní soubory nebo najdi skeny na Internet Archive.
+3609|Tvoje složky
+3610|Otevřít složku časopisů
+3611|Otevřít složku průvodců
+3612|Časopisy: ${w.magazines} · Průvodci: ${w.guides}
+3613|Ukazuje jen skeny, které Internet Archive dovoluje stáhnout komukoli (knihy jen k vypůjčení se vynechají). Pořád jde o díla chráněná autorským právem, takže co si necháš, je na tobě. Hledání posílá tvoje slova na archive.org.
+3614|Hra nebo vydavatel, např. Wind Waker guide
+3615|Časopis a číslo, např. Game Informer 2008
+3616|Napiš, co hledat
+3617|, čeká: ${jobs.length-IA_PAR}
+3618|archive.org je přetížený: ještě kontroluji dalších ${S.pending.length}…
+3619|archive.org byl moc přetížený na kontrolu dalších ${S.pending.length}.
+3620|(vynecháno ${S.skipped} jen k vypůjčení nebo bez použitelného souboru)
+3621|· nejen časopisy
+3622|Ke stažení: ${S.items.length}${S.skipped?` (${S.skipped} borrow-only or without a usable file were left out)`:""} · nejstahovanější první${S.plain&&S.kind==="magazine"?" · not only magazines":""}
+3623|čísel
+3624|naskenované stránky
+3625|Kontroluji, které z dalších ${S.checking} jdou stáhnout…
+3626|Zobrazit víc
+3627|Něco se našlo — kontroluji, které z ${S.checking} jdou stáhnout…
+3628|Nenašlo se nic ke stažení. Zkus méně slov nebo jen název časopisu.
+3629|Zrušit ${it.title}
+3630|Ve tvé složce
+3631|Stáhnout ${it.title}
+3632|Zobrazit ${it.title}
+3633|Čekám…
+3635|Už je ve tvé složce
+3636|Uloženo
+3637|Zrušeno
+3638|Selhalo
+3639|Zkusit ${it.title} znovu
+3640|Nejdřív napiš, co hledat.
+3641|Hledání nefungovalo:
+3642|Zkontroluj připojení k internetu a zkus to znovu.
+3643|Hledání nefungovalo: ${iaMsg(e)}${/busy/i.test(iaMsg(e))?"":" Check your internet connection and try again."}
+3644|${r.name} (souborů: ${r.count})
+3645|Už máš: ${j.it.title}
+3646|Uloženo do tvé složky ${j.kind==="guide"?"Guides":"Magazines"}: ${j.it.title}
+3647|Hledám videa, která už máš…
+3648|Nalezena videa pro ${pvFound} tvých her. Hry ze Steamu dostanou i svoje trailery.
+3649|Zatím nenalezena žádná videa: hry ze Steamu dostanou svoje trailery a ostatní hry ty z YouTube.
+3650|Zastav se na hře a přehraje se její náhled, na polici i v Podrobnostech: videa, která už máš (ES-DE, EmuDeck, RetroBat, LaunchBox), trailery ze Steamu pro hry ze Steamu a trailery z YouTube pro ostatní.
+3651|Vše nastaveno
+3652|Tady je tvoje knihovna
+3653|Cokoli z toho můžeš později změnit v Nastavení (stiskni S, nebo View na ovladači: Create na ovladači PlayStation, − na ovladači Switch).
+3654|Prohledávám…
+3655|Stahování obalů začne za chvilku…
+3656|Obaly a návody z internetu
+3657|Hledání obrázků a návodů posílá názvy tvých her (a ID disků GameCube/Wii) do libretro thumbnails, LaunchBox Games Database, GameTDB, GamesDatabase.org a Internet Archive. Nic dalšího o tobě ani o tvém počítači se neposílá.
+3658|Nastavuji tvoje emulátory…
+3659|Nastaveno: ${r.done.join(", ")}.
+3660|Nastaví se, až si jednou zahraješ: ${r.later.join(", ")}.
+3661|Ponecháno, jak jsi je měl: ${r.left.join(", ")} (Nastavení → konzole → Nastavit za mě).
+3662|Tvoje emulátory už byly nastavené.
+3663|Nastavení emulátorů tentokrát nefungovalo. Nastavení → konzole → Nastavit za mě to může zkusit znovu.
+3664|Zatím nic nenalezeno. Vrať se a přidej emulátor nebo složku s hrami.
+3665|Obaly se stahují na pozadí, kdykoli přibydou hry.
+3666|Obaly jsou připravené pro hry: ${i.got}. Vzhled kterékoli konzole změníš v Nastavení → Obaly a návody → Art Studio.
+3667|Stahuji obaly · ${i.system||"games"}: ${i.done} z ${i.total}
+3668|Stahuji obaly…
+3669|Teď se nepodařilo spojit s databázemi obrázků. Špajz to zkusí znovu při příštím spuštění.
+3670|Obaly jsou připravené.
+3671|Chceš pro nějakou konzoli nebo hru jiný vzhled? V Art Studiu je každá verze, kterou Špajz našel.
+3672|Otevřít Art Studio
+3673|Dokonči nastavení a dostaneš se na polici
+3706|PC klasiky
+3722|Krychle
+3755|Les
+3783|Plynulejší, lepší návody a obaly pro každou vlastní hru
+3784|Plynulejší: práce na pozadí už polici nezadrhává a Art Studio se otevírá rychleji
+3785|Návody: správný návod ke správné hře, sbírky skenů pro 26 konzolí, čistší stránky
+3786|Připoj účty už při nastavení, s tlačítky Vložit (funguje i Vložit z pravého tlačítka myši)
+3787|Obaly pro všechny vlastní hry najednou: rekompilace, porty a programy, které jsi přidal
+3788|Windows: všechno výše kromě částí pro Thor.
+3789|Android (AYN Thor): videonáhledy v Podrobnostech, porty a vlastní APK, šest dalších konzolí.
+3790|Obaly pro každou vlastní hru
+3791|Nastavení → Vlastní hry → Obaly: projdi každou rekompilaci, port a program bez obalu (obaly ze SteamGridDB pro každý, A jeden použije, Přeskočit jde dál), nebo nech Špajz vybrat nejlepší shodu pro všechny najednou, s možností Vrátit. Potřebuje bezplatný klíč SteamGridDB.
+3792|Thor: videonáhledy
+3793|Videa u tvých her (složka „videos“, „media/videos“ nebo „snap“ ve složce s hrami konzole) se přehrávají za krabičkou v Podrobnostech a trailery z YouTube na kartě Média. Vypnuto, dokud je nezapneš: Nastavení → Police a muzeum → Videonáhledy.
+3794|Thor: porty a vlastní APK
+3795|Nastavení → Hry → Porty a vlastní APK: zapni aplikace, které jsou hry (porty, rekompilace, vlastní APK), a dostanou vlastní polici Vlastní mimo polici Aplikace.
+3796|Thor: šest dalších konzolí

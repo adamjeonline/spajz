@@ -1,0 +1,309 @@
+1616|Hledám reklamy…
+1617|Zatím žádné trailery. Přicházejí s údaji tvých her z LaunchBoxu.
+1618|Zatím nic nehráno. Hry, které hraješ, se objeví tady.
+1619|Pustit
+1620|Sledovat
+1621|Oblíbit
+1622|Teď běží: ${m.game||m.title} · ${TV_NAMES[tvS.ch]||""}
+1623|Nejdřív zapni retro televizi v menu Místnost
+1625|Rozbaluji…
+1626|Spouštím…
+1627|Pro sledování odsud zapni Stremio v Nastavení → Stremio a Nuvio
+1629|Hry ze Steamu se otevírají na polici: stiskni ${btnWord("back")} a pak Hrát
+1630|Osvětlení: ${name}
+1631|chyba pracovního vlákna
+1632|Písmeno
+1633|♥ podržet
+1634|Muzeum podržet
+1635|Řazení podržet
+1636|Karty
+1637|Menu
+1638|Řadit
+1639|Zobrazení
+1640|Možnosti
+1641|Sdílet
+1642|Kolečko
+1643|Křížek
+1644|tlačítko Xbox
+1645|tlačítko PS
+1646|losuje znovu
+1647|${showPad()?padWord("L3"):"R"} losuje znovu
+1648|Přeskočíš klávesou Enter, Esc, ${okWord()} nebo ${btnWord("back")}
+1650|Nastavit
+1651|Vybrat hru
+1653|DualShock 4 (bezdrátový adaptér)
+1656|Ovladač Access
+1657|Ovladač PlayStation
+1658|Switch Pro Controller
+1659|Switch 2 Pro Controller
+1662|Pár Joy-Conů
+1665|Ovladač SNES
+1666|Ovladač GameCube
+1667|Adaptér GameCube
+1668|Wii ovladač
+1669|Ovladač Nintendo
+1670|Ovladač Xbox
+1672|Ovladač ve stylu Xbox (XInput)
+1673|(přes Steam / DS4Windows)
+1674|${n} (přes Steam / DS4Windows)
+1675|Žádný ovladač
+1676|${padName_(id)} připojen
+1677|bez mapování
+1678|Ovladač odpojen
+1679|Her: ${n} · polic: ${allShelves.filter(s=>s.kind!=="home").length}
+1680|Menu Domů otevřeno (z
+1681|Menu Domů otevřeno (z ${mode})
+1682|Zahraj si něco nebo dej hře ♥ a police Domů se zaplní
+1683|efekty zapnuté
+1684|efekty vypnuté
+1685|, už běží
+1686|celá obrazovka, v klidu
+1687|celá obrazovka, posouvání
+1688|celá obrazovka, ploché krabičky
+1689|maximalizované okno, v klidu
+1690|maximalizované okno, posouvání
+1691|poloviční okno, v klidu
+1692|poloviční okno, posouvání
+1693|znovu celá obrazovka, v klidu
+1694|znovu celá obrazovka, posouvání
+1695|Test plynulosti: měřím obrazovku… (zastavíš ho libovolným tlačítkem)
+1696|(automaticky)
+1698|Test plynulosti ${i+1} z ${V.length}: ${name} (zastavíš ho libovolným tlačítkem)
+1699|Test plynulosti zastaven
+1700|Test plynulosti hotový: výsledky jsou v logu
+1706|Zastavuji…
+1707|· pozastaveno
+1708|${n(Math.min(ARTC.done,ARTC.total))} z ${n(ARTC.total)}${ARTC.paused?" · paused":""}
+1709|Připravuji…
+1711|Menu: pozastavit nebo zrušit
+1712|Nepodařilo se spojit se stránkami s obaly. Zkus to znovu z Nastavení → Obaly
+1713|Obaly: přidáno ${got.toLocaleString()}
+1714|Žádné nové obaly nenalezeny
+1716|méně než minuta
+1717|Zobrazit méně
+1720|Zvukový výstup
+1721|Zvukový výstup ${++n}
+1722|${title} je zpátky na polici
+1723|Skryto: ${title}
+1724|Vrátit
+1725|${g.title} teď běží v ${emuLabel(own)}
+1726|${g.title} zase běží v emulátoru police
+1727|Spouštět tuto hru v jiné verzi emulátoru než zbytek police
+1728|Vyber obrázky krabice této hry: přední strana, zadní strana, hřbet a disk
+1730|Vyber obal této hry
+1731|Přejmenovat
+1732|Dej této hře název, který chceš mít na polici
+1733|Všechny návody nalezené pro tuto hru vedle sebe: vyber jiný jazyk, region nebo sken, nebo přidej vlastní PDF
+1734|Skrýt z police
+1735|Skrýt tuto hru ze všech polic (vrátíš to v Nastavení → Skryté hry)
+1736|Kolekce
+1737|Dát tuto hru na vlastní police
+1738|Testovací hra
+1741|hry
+1743|Otevírám aplikaci…
+1744|Tu aplikaci se nepodařilo otevřít
+1748|Knihovna
+1749|Chyba ${r.status}
+1750|PIN má 6 číslic.
+1752|Spárováno jako ${r.name}
+1753|Zatím žádné hry. Nastav své konzole v Nastavení Špajzu na televizi.
+1754|„${query}“ nic neodpovídá.
+1755|Zobrazeno 600 z ${list.length}. Zbytek najdeš hledáním.
+1756|Věková hranice
+1757|Číst návod · stránek: ${n}
+1758|Otevřít na TV
+1759|Hrát na TV
+1760|{} / {} b.
+1761|Zavírám hru a pak spustím ${g.t}…
+1762|Spouštím ${g.t} na TV…
+1763|Běžící hra se nezavřela. Zkus znovu Ukončit.
+1764|Hra
+1765|${r.title||"A game"} běží
+1766|Ukončit ji a spustit ${g.t}? Neuložený postup v běžící hře se ztratí.
+1767|${g.manual.length} stránek
+1768|Stránka ${i+1}
+1769|Hraje se ${running.title}
+1770|Běží hra
+1771|Ukončit ${t}?
+1772|Neuložený postup se ztratí.
+1773|Ukončit
+1774|Ukončit a hrát
+1775|Zavírám hru…
+1776|tlačítka
+1777|Vytvořit
+1778|Ovladač
+1779|Hledat
+1780|Vymazat
+1781|Klávesnice
+1782|Spárovat se Špajzem
+1783|Zadej šestimístný PIN, který ukazuje TV v
+1784|Nastavení → Telefon jako ovladač
+1785|Spárovat
+1786|Funguje na polici, v Podrobnostech, v Nastavení, v muzeu i v menu Domů.
+1787|Co sem napíšeš, objeví se ve vyhledávacím poli na TV (hledání v Nastavení, v muzeu, v archivu).
+1788|⌫ Smazat
+1789|Návod této hry je PDF: otevři ho na TV (Prohlédnout → Návod).
+1791|Pojmenuj tento telefon (nepovinné)
+1792|Název telefonu
+1793|Hledat ve hrách
+1794|Kříž
+1795|Dolů
+1796|Tlačítka
+1797|Napiš…
+1798|Text pro TV
+1799|Sekce
+1800|Špajz – ovladač v telefonu
+1804|Otevři na TV vyhledávací pole, ať do něj můžeš psát (hledání v Nastavení, v muzeu)
+1805|Konzole
+1806|Paměťová karta
+1807|Kabel
+1808|Další díl
+1809|Další díl ${n++}
+1815|OTEVŘÍT NASTAVENÍ
+1816|Menu Domů
+1817|Hra pozastavena
+1820|Uložit stav
+1821|Načíst stav
+1822|Snímek obrazovky
+1823|Ukončit na polici
+1824|Police Domů
+1825|Restartovat
+1826|Ukončit Špajz
+1827|${m} min
+1828|Hraješ ${fmtFor(Date.now() - info.startedAt)}
+1829|zavře hru · podrž ${glyph('ok')}
+1830|podrž ${glyph('ok')}
+1831|pozice ${info.slot}
+1832|uloží a pak uspí
+1833|hra zůstane pozastavená
+1834|hra poběží dál
+1835|hra pořád běží
+1836|Průvodce
+1837|Právě hraješ
+1838|Nástroje obrázků
+1839|kazeta nevytvořena
+1840|zadní strana nevytvořena
+1841|hřbet nevytvořen
+1842|zadní strana nenalezena
+1843|hřbet nenalezen
+1849|Více
+1850|Otevřít emulátor
+1851|Systémy
+1853|Na polici zatím nic není
+1854|Připoj své emulátory a složky s hrami
+1855|Nastavení najde, co dokáže, a zbytek ti nechá vyhledat.
+1856|Spustit nastavení
+1857|Uspořádej své police
+1858|Tvoje kopie
+1859|Informace o hře
+1860|Spouštěcí příkaz
+1861|Pustit trailer na celou obrazovku
+1862|Pro tuto hru zatím není náhled, trailer ani snímky obrazovky.
+1863|Vzhled tvých konzolí
+1864|Loga, 3D konzole a úvodní videa, jeden systém po druhém.
+1865|Q / E přepíná systém.
+1866|Na polici můžeš také přetáhnout soubor: z obrázku se stane logo té police, z videa její úvodní animace.
+1867|Přeskočíš klávesou Enter, Esc, Křížkem nebo Kolečkem
+1868|Libovolné tlačítko přeskočí
+1869|Drž dál a Špajz se ukončí
+1870|Ztlumit nebo zesílit
+1871|Řazení a filtr
+1872|Ovládání
+1873|Zavřít (B / Esc)
+1874|Číst návod
+1875|Drž krabičku: otevři ji, čti brožurku
+1876|Více: obaly, přejmenování, kolekce, emulátor…
+1877|Ovládání prohlížení
+1878|Ovládání muzea
+1881|PAMĚŤOVÁ KARTA
+1884|WebGL není k dispozici
+1885|${w} vzít · znovu pro otevření
+1886|vezmi to a otevři
+1900|Her: ${n} · hráno: ${row.stats.played} · ${row.stats.hours}
+1901|Her: ${n} · zatím nic nehráno
+1902|Nejhranější: ${row.stats.top}
+1903|Oblíbených: ${row.stats.fav}
+1904|Přidej themes\${row.id}\console.glb a ukáže se tvoje konzole
+1906|komunita
+1907|naposledy hráno ${g.last}
+1909|Ve tvé sbírce od
+1910|Ve tvé sbírce od ${d}
+1911|✓ Návod
+1912|Bez návodu
+1913|✓ Celá krabice
+1914|Obrázky krabice neúplné
+1915|✓ Obrázek disku
+1916|Bez obrázku disku
+1917|(připraveno předem)
+1918|(načteno teď)
+1921|Polic: ${names.length}
+1924|SBĚRATELSKÁ BEDNA
+1925|↑ TOUTO STRANOU NAHORU ↑
+1926|DODACÍ LIST
+1927|Her: ${n}
+1928|DORUČENO DO
+1929|Sbírka
+1930|Továrně zapečetěno
+1931|Doručeno
+1932|Doručeno ${date}
+1933|SBĚRATELSKÁ ZÁSILKA
+1934|Č. ${String(rec.no).padStart(4, '0')}
+1935|ZACHÁZEJ OPATRNĚ
+1940|Odehráno ${hrs.toFixed(1)} h
+1941|Odehráno ${Math.round(ms / 6e4)} min
+1942|Her: ${r.games.length}
+1943|Filmů: ${mv}
+1944|Seriálů: ${u.shows}
+1945|Zatím nic
+1946|SERIÁL
+1963|SERIÁLY
+1964|Seriály
+1965|Filmy
+1966|PRÁVĚ DÁVAJÍ
+1967|NEDÁVNO HRANÉ
+1968|STRATEGICKÉ PRŮVODCE
+1969|Žádní průvodci
+1970|Žádné časopisy
+1971|Vyber tento stojan a
+1972|najdi nějaké na
+1973|Strategičtí průvodci
+1974|Stránka ${L + 1}
+1975|Stránky ${L + 1}–${R + 1}
+1976|(vypršel čas)
+1982|Stránky návodu
+1983|bez WebGL
+1984|softwarové vykreslování
+1985|Kapesní zařízení s Androidem
+1986|Grafika Steam Decku
+1987|Grafika Intel HD/UHD
+1988|integrovaná grafika
+1989|jader
+1990|GB paměti
+1991|${mem} GB paměti
+1992|samostatná grafika
+2003|Police skrytá
+2004|Připraveno · her: ${g}
+2005|Připraveno · složek: ${n}
+2006|Přidat složku s hrami
+2007|Potřebuje ${c.emulatorName||"its emulator"}
+2012|Nalezeno
+2013|Složka nalezena
+2014|Nelze najít
+2015|Otevřeno v prohlížeči
+2016|Otevírání odkazů potřebuje novější Špajz
+2017|Stiskni znovu pro potvrzení
+2018|Vysoký
+2019|Vyvážený
+2020|Automaticky volí pro tento počítač ${({high:"High",balanced:"Balanced",low:"Low",handheld:"Handheld"})[d.tier]||d.tier}${d.why?" ("+d.why+")":""}
+2021|Automatická volba pro tento počítač
+2023|Nastavení ${a.name}: jestli se zobrazuje na polici Média, jak se spouští a kde je nainstalovaná.
+2024|Spouští se z police Média.
+2025|Zobrazit ${a.name}
+2026|Dá Stremio na polici Média a tvou knihovnu Stremio na filmové police v muzeu.
+2027|Dá ${a.name} na polici Média.
+2028|Po spuštění přepnout na celou obrazovku
+2029|Jakmile se okno aplikace objeví, stiskne jeho klávesu pro celou obrazovku.
+2030|Ovladač jako myš
+2031|Levá páčka hýbe ukazatelem a A kliká, pro aplikace bez podpory ovladače. Nech vypnuté, když má aplikace vlastní podporu (Stremio: Nastavení → Enable gamepad support).
+2032|Nalezeno automaticky. Pokud je nainstalovaná jinde, ukaž na ${(a.exeNames||[a.name+".exe"])[0]}.
+2033|Získat ${a.name}
