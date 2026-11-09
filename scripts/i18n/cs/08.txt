@@ -1,0 +1,232 @@
+2542|${emu} spouští hry ${def.name}.
+2543|Vlastní nástroje ${emu}, jak ho Špajz spouští a výjimečně potřebná nastavení pro ${def.name}.
+2544|Pořadí polic nahoře. Domů je vždy první. Vezmi jednu, přesuň ji a polož.
+2545|Vezmi ji a posuň ji v seznamu nahoru nebo dolů.
+2546|Obnovit výchozí pořadí
+2547|Vrátí police do vlastního pořadí Špajzu.
+2548|Výchozí pořadí
+2549|Stiskni znovu pro obnovení pořadí polic
+2550|Obaly
+2551|Zadní strany
+2552|Hřbety
+2553|Disky a kazety
+2554|Stahuji obaly
+2555|${dn} z ${tot}
+2556|Hotovo
+2557|Teď:
+2558|Teď: ${p.game}
+2559|Čeká
+2560|Zastaví se po rozpracovaných hrách. Už stažené obrázky zůstanou.
+2561|Zastavím po rozpracovaných hrách…
+2562|Zastavím po rozpracovaných hrách
+2563|Stahování obalů nedoběhlo
+2564|Stahování zrušeno
+2565|Vše hotovo
+2566|trvalo
+2567|Nových obrázků: ${t.got}
+2568|, ostřejších: ${t.up}
+2569|Her, kterým ještě něco chybí: ${t.miss}
+2570|Všechno, co jsi vybral, bylo nalezeno
+2571|Nové obrázky se na polici ukážou, až zavřeš Nastavení.
+2572|Opravit v Art Studiu
+2573|${parts.length?parts.join(", ")+" · ":""}Opravit v Art Studiu
+2574|Nic nového
+2575|Nenalezeno: ${miss}${kinds?` (${kinds})`:""}
+2576|Zaostřeno: ${x.upgraded}
+2577|Nikde nenalezeno:
+2579|Nepodařilo se spojit s LaunchBoxem
+2580|Tentokrát se zkoušely jen obaly z libretro
+2581|Zpět na seznam
+2582|Tvoje konzole a co jim ještě chybí.
+2583|Kontroluji, co máš…
+2584|Zatím žádné hry
+2585|Nejdřív přidej složku s hrami pro nějakou konzoli (Konzole)
+2586|Vybráno ${sys.filter(c=>(p[c.id]||[]).length).length} z ${sys.length}
+2587|${c.front} z ${c.total} obalů · chybí ${miss}
+2588|Všech ${c.total} obalů · některé zadní strany, hřbety nebo disky chybí
+2589|Kompletní · her: ${c.total}
+2590|· v nízkém rozlišení: ${low}
+2591|Zapnuto: tato konzole je ve stahování. Dostane části zapnuté níže.
+2592|Vybrat vše
+2593|Všechny konzole v tomto stahování.
+2594|Zrušit výběr
+2595|Žádná konzole v tomto stahování.
+2596|Co stáhnout
+2597|Obrázky disků, nebo kazety pro hry Switch, Switch 2 a 3DS.
+2599|Začít stahovat
+2600|Probíhá…
+2601|Obrázky, které už máš, zůstanou. Hledání posílá názvy tvých her do LaunchBoxu, libretro a GameTDB. Napoprvé se stáhne i databáze LaunchBox (asi 110 MB, jednorázově).
+2602|Zapni aspoň jednu konzoli
+2603|Konzolí: ${s.n} · chybí až ${s.missing} obrázků
+2604|a v nízkém rozlišení: ${s.lowN}
+2605|Nejdřív nejostřejší skeny
+2606|Vezme nejostřejší dostupnou verzi a vymění obrázky v nízkém rozlišení, které už máš. Hra jen s malými skeny si nechá ten nejlepší a vylepší se, až se objeví ostřejší.
+2607|Už probíhá stahování
+2608|Obaly:
+2609|Obaly: ${errMsg(e)}
+2610|Obaly: ${AG.err}
+2611|Stahování obalů zrušeno
+2612|Stahování obalů dokončeno
+2613|Kontroluji tvoje návody
+2614|${MC.done} z ${MC.total} konzolí
+2615|Zatím
+2616|Prohlédnuto: ${MC.checked} · odloženo: ${MC.moved}
+2617|Zastaví se v dalším kroku. Co se zatím odložilo, se vyhledá při příštím průchodu na pozadí.
+2618|Zastavuji
+2619|Kontrola nedoběhla
+2620|Prohlédnuto: ${r.checked||0}
+2621|Nahrazeno: ${r.got||0}
+2622|Odloženo zatím bez náhrady: ${r.moved-(r.got||0)}
+2623|Zmenšeno: ${r.shrunk}
+2624|Kontrola zastavena
+2625|Návody zkontrolovány
+2626|Zastaveno · ${bits.join(" · ")}
+2627|✓ Všech ${r.checked||0} návodů vypadá dobře
+2628|Zastaveno v půlce
+2629|Změny se ukážou, až zavřeš Nastavení
+2630|Nic nebylo potřeba opravit
+2631|Odložené návody zůstávají ve složce .manual-originals u hry, nikdy se nemažou.
+2632|Stahuji návody
+2633|Hledám návody
+2634|Prohledáno
+2635|Přestane hledat. Nic se nestáhne.
+2636|Stahování návodů nedoběhlo
+2637|Přidáno návodů: ${added}
+2638|Her stále bez návodu: ${miss}
+2639|Každá vybraná hra návod má
+2640|Ukážou se, až zavřeš Nastavení.
+2641|Přidáno: ${x.added.length}
+2642|Už měly: ${x.had}
+2643|Nejisté přeskočeno: ${x.unsure.length}
+2644|bez tištěného návodu
+2645|Selhalo: ${x.failed.length}
+2646|Vybráno ${sys.filter(c=>MG.pick.has(c.id)).length} z ${sys.length}
+2647|Zapnuto: hledat návody této konzole.
+2648|${c.have} z ${c.total} návodů · chybí ${miss}
+2649|Všech ${c.total} návodů
+2650|· malých skenů: ${c.low}
+2651|Návody, které už máš, zůstanou. Hledání posílá názvy tvých her na Internet Archive a GamesDatabase.org.
+2652|Konzolí: ${s.n} · chybí až ${s.missing} návodů
+2653|Každá vybraná hra už návod má
+2654|Všechny konzole.
+2655|Žádná konzole.
+2656|Vypnuto vezme pro každou hru nejlepší shodu, i nejistou.
+2657|Tvoje návody
+2658|Zkontrolovat moje návody
+2659|Všechny konzole · návody, které už máš na policích
+2660|Návody:
+2661|Návody: ${MC.err}
+2662|Kontrola návodů zastavena
+2663|Kontrola návodů dokončena
+2664|Návody: ${errMsg(e)}
+2665|Stahuji návody: ${pick.length}…
+2666|Není co stahovat
+2667|Návody: ${MG.err}
+2668|Stahování návodů dokončeno
+2669|Výsledky pro „${query}“
+2670|Zobrazeno ${results.length} z ${resultTotal}
+2671|Nalezeno nastavení: ${results.length}
+2673|Napiš slovo, třeba „stíny“, „hlasitost“ nebo „overscan“.
+2674|Účty
+2675|Nainstalováno: ${pcSt[k]}
+2676|Nic nenainstalováno
+2678|Zobrazit hry z Quiveru
+2679|Špajz hledá tam, kde Quiver obvykle drží svou knihovnu. Přenosnou kopii (rozbalenou kdekoli) najde Najít, nebo vyber její složku.
+2680|Hledám Quiver Launcher…
+2681|Quiver Launcher nalezen v
+2682|Quiver Launcher nalezen v ${folderName(d)}
+2683|Složka Quiver Launcheru nastavena
+2684|Hledám…
+2685|Zatím nenalezeno · stiskni pro hledání
+2686|Tvoje hry (${pc.custom.length})
+2687|Tvoje hry
+2688|Několik programů najednou, celá složka her, tvoje knihovna Playnite nebo jeden program.
+2689|Všechny způsoby, jak dát hry na polici Vlastní. Než se cokoli přidá, uvidíš, co se našlo.
+2690|Několik najednou, složka, Playnite nebo jeden program
+2691|Vybrat obaly jeden po druhém
+2692|Projde všechny vlastní hry bez vlastního obalu: obaly ze SteamGridDB pro každou (s bezplatným klíčem SteamGridDB, Nastavení → Účty a služby) nebo tvůj obrázek. A jeden použije, Přeskočit jde dál, B zastaví.
+2693|Her bez obalu: ${n}
+2694|Každá hra obal má
+2695|Použít nejlepší obal pro každou
+2696|Vybere najednou nejlepší obal ze SteamGridDB pro každou vlastní hru, která ho nemá. Rekompilace může mít stejný název jako jiná hra: projdi je a Vrátit je všechny vrátí zpět.
+2697|Hledám obaly…
+2698|Potřebuje klíč SteamGridDB
+2699|Vrátit právě nalezené obaly (${S.coverUndoCount()})
+2700|Vrátí vymyšlené krabičky, které ty hry měly předtím.
+2701|Její název na polici. Program: ${c.exe}
+2702|Na které polici tato hra je: Vlastní (hry, které jsi přidal) nebo PC (s tvými hrami ze Steamu a obchodů). Stiskni pro přesun.
+2703|Hra
+2705|tato hra
+2706|Odebrat ${c.title||"this game"}
+2707|Sundá ji z police. Nic se nesmaže.
+2710|Odebráno z police Vlastní (nic se nesmazalo)
+2711|Stiskni znovu pro odebrání
+2712|✓ Vybráno
+2713|Hrát ukáže seznam verzí, počínaje tou, kterou jsi pro tu hru použil naposledy.
+2714|Hrát ukáže seznam
+2715|Nalezeno verzí: ${L.length}
+2716|Zatím žádné verze: přidej verzi nebo složku s verzemi níže
+2717|✓ Vždy
+2718|Vždy používat
+2719|Vždy spouštět hry pro Switch 2 v této verzi. ${b.exe}
+2721|· otevře .nup
+2722|· Hrát ji nabídne jako první
+2723|Verze uložené jinde
+2724|Přidat složku s verzemi
+2725|Procházet…
+2726|Složka s několika verzemi (tvými forky). Špajz v ní hledá do hloubky čtyř složek.
+2727|Vyber složku s verzemi Eglantine
+2728|Ta složka už v seznamu je
+2729|Hledám verze v
+2730|Hledám verze v ${folderName(d)}
+2731|Přidat verzi
+2732|Vyber verzi Eglantine
+2733|Ta verze už v seznamu je
+2734|Verze přidána
+2735|odebráno ze seznamu (nic se nesmazalo)
+2736|${what} odebráno ze seznamu (nic se nesmazalo)
+2737|Složka ·
+2738|Složka · ${folderName(d)}
+2740|Verze ·
+2741|Verze · ${progName(x)}
+2743|Stiskni znovu pro odebrání této verze
+2744|Hry › Konzole
+2746|Účty a služby › ${p.name}${grp?" › "+grp:""}
+2747|Konzole › ${c.name}${adv?" › "+p.name:""}${grp&&grp!==c.emulatorName?" › "+grp:""}
+2748|Otevře stránku této konzole.
+2750|Motiv:
+2751|Motiv: ${o[i][1]}
+2752|Uprav pomocí ◀ ▶
+2753|Uprav pomocí ← →
+2754|${r.label} vráceno na výchozí
+2755|Tady není k dispozici
+2756|Nalezeno a doplněno nových věcí: ${n}
+2757|Nic nového nenalezeno
+2758|Testování tu není k dispozici
+2759|RetroAchievements připojeno
+2760|${SVC_N[s]||s} funguje
+2761|· dnes zbývá vyhledávání: ${st.left}
+2762|Nejdřív vyplň účet
+2763|To nefungovalo:
+2764|To nefungovalo: ${st.msg||""}
+2765|Špajz se spouští s Windows
+2766|Odebráno ze spouštění
+2767|Získat ${upd.latest}
+2768|Aktuální
+2769|Zkontrolovat teď
+2770|Hledám novější betu…
+2771|Nepodařilo se spojit se stránkou bety. Zkus to později
+2772|Vyšel Špajz ${upd.latest}: stiskni znovu a stáhni ho
+2773|Máš nejnovější betu
+2774|Zatím nevyšly žádné bety
+2775|Uloženo:
+2776|Uloženo: ${String(r.file||"").split(/[\\/]/).pop()}
+2777|Nastavení obnoveno
+2778|Balím log…
+2779|Uloženo na plochu:
+2780|Uloženo na plochu: ${String(r.file||"").split(/[\\/]/).pop()}
+2781|Nepodařilo se vytvořit
+2782|Nepodařilo se vytvořit${r&&r.error?": "+r.error:""}
+2783|Nepodařilo se vymazat
+2784|Přizpůsobit se otevírá z police dané konzole
+2785|Z dřívější složky Špajzu

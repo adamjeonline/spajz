@@ -1,0 +1,253 @@
+2996|Přejmenovat ${cur}
+2997|Název jejího souboru: ${o.fileTitle}
+2998|Dej této hře název, který chceš mít na polici.
+2999|Hledám hry…
+3000|Knihovna aktualizována
+3001|Nalezeno nových her: ${n1-n0}
+3002|Žádné nové hry nenalezeny
+3003|Není k dispozici
+3004|Přední strana
+3005|Autentické
+3006|Skutečné skeny původní krabice a disku pro každou hru
+3007|Nejostřejší HD
+3008|Obrázky v nejvyšším rozlišení pro každou hru, čisté a ostré
+3009|Každá hra ve verzi jednoho regionu
+3010|Speciální edice
+3011|Sběratelské a limitované krabičky, pokud je hra měla, jinak autentické
+3012|Kompletní sady
+3013|Přední a zadní strana, hřbet i disk z jednoho vydání, pokud je hra má
+3014|Tvůj mix
+3015|Vyber vzhled pro každou část níže, nebo pro každou hru
+3016|Špajz, z obalu
+3017|tvůj současný soubor
+3018|dřívější výběr
+3019|Bez obalu
+3020|Chybí část
+3021|Tvoje výběry
+3022|má to
+3023|tvůj výběr
+3024|Styl police
+3025|Speciální
+3026|Speciální ed.
+3027|Přesný výběr
+3028|Region:
+3029|Region: ${r}
+3031|Kompletní sady ·
+3032|Kompletní sady · ${st.setsHd?"HD":REG_S[st.region||"usa"]||"USA"}
+3033|Region ·
+3034|Region · ${REG_S[st.region||"usa"]||"USA"}
+3035|teď zapnuto
+3036|${e.label||"Re-fetch"}: hotovo${e.msg?" · "+e.msg:""}
+3037|${e.label||"Re-fetch"}: zastaveno
+3038|něco se pokazilo
+3039|${e.label||"Re-fetch"} zastaveno: ${e.msg||"something went wrong"}
+3040|Znovu stahuji · ${j.done||0} z ${j.total||"…"}
+3041|${j.done||0} z ${j.total||"…"}
+3043|Stahuji… ${mb(p.got)} z ${mb(p.total)} MB · ${p.pct||0} %
+3044|Stahuji… ${mb(p.got)} MB
+3045|Rozbaluji databázi…
+3046|Čtu databázi… ${p.pct||0} %
+3047|· index ${mb(i.bytes)} MB
+3048|Naposledy sestaveno ${when(i.at)}${i.bytes?` · index ${mb(i.bytes)} MB`:""}
+3049|Zatím nesestaveno
+3050|Obnovuji databázi obrázků (asi 110 MB)…
+3051|Databáze obrázků obnovena
+3052|Obnovení zastaveno · dál se používá stará databáze
+3053|Sestavuji index LaunchBox (jednorázově, asi 110 MB)…
+3054|Index LaunchBox je připravený
+3055|${t-n} z ${t} her má obal · bez obalu: ${n}
+3056|Všech ${t} her má obal
+3057|Načítám tvoje konzole…
+3058|Art Studio: jak vypadají obaly každé konzole.
+3059|Art Studio se nepodařilo načíst
+3060|Zatím žádné hry na žádné polici
+3061|Přidej složku s hrami pro nějakou konzoli (Konzole) a objeví se tady.
+3062|Bez obalu: ${c.noCover}
+3064|Vyber, jak vypadají obaly ${c.name} (autentické skeny, nejostřejší HD, jeden region nebo speciální edice), pak dolaď kteroukoli hru.
+3066|Her s vlastním mixem: ${c.locked}.
+3067|· s výběry nebo zamčených: ${c.locked}
+3068|Stáhnout chybějící obrázky
+3069|Styl police ·
+3070|zamčená hra
+3071|Hry se nepodařilo načíst:
+3072|Hry se nepodařilo načíst: ${e.err}
+3073|Načítám hry ${esc(conName2(st.sys))}…
+3074|Každá hra tu má přední obal.
+3075|Nic nechybí: každá hra má přední a zadní stranu, hřbet a
+3076|Nic nechybí: každá hra má přední a zadní stranu, hřbet a ${mw.toLowerCase()}.
+3077|Na této polici nejsou žádné obrázky v nízkém rozlišení.
+3078|Na této polici zatím nejsou žádné hry.
+3080|· zamčeno, jak je
+3087|PAL ·
+3088|PAL · ${tag}
+3090|SBĚRATELSKÁ EDICE
+3091|POUŽÍVÁ SE
+3092|Podle části, pro celou polici
+3093|· nepovinné
+3094|Každá část se řídí stylem výše, pokud ho tady nezměníš, např. HD přední strany s autentickými hřbety a zadními stranami. Změna jedné přepne polici na Tvůj mix.
+3095|podle stylu
+3096|Znovu stahuji ${conName2(sys)}
+3097|stahuje se na pozadí
+3098|Moment…
+3099|Všechny části zůstanou, jak jsou. Styly polic a automatické stahování ji přeskočí.
+3100|Vypnuto: změna stylu nahradí i výběry.
+3101|${PART_L[part]} se zase řídí stylem police
+3102|${PART_L[part]}: ${lookName(look)} · tvůj výběr
+3103|${PART_L[part]}: předchozí obrázek je zpátky
+3104|${truncEnd(g.title,40)}: zamčeno, jak je
+3105|· tvoje výběry zůstanou, dokud se styl police nezmění
+3106|Odemčeno · znovu vybírám částí pro styl police: ${r.repick}${own}
+3107|Odemčeno${own}
+3108|Odemčeno · už odpovídá stylu police
+3109|${PART_L[part]}: tvůj vlastní obrázek · tvůj výběr
+3110|Zdroj
+3111|Skeny
+3112|Čisté
+3113|Edice
+3114|Původní
+3115|Dotisk
+3116|Vracím…
+3117|Vybrat obrázek…
+3118|Stahuji…
+3119|Tvůj výběr
+3120|Tvůj vlastní obrázek
+3121|Ponecháno z dřívějška
+3122|Vybráno tebou
+3123|Vzhled ${lookName(l.look)}
+3124|· hra zamčena
+3125|· chybí
+3126|Chybí · hra zamčena
+3127|Chybí · řídí se policí
+3128|Hra zamčena
+3129|Řídí se policí
+3130|· nízké rozlišení
+3131|Můj obrázek…
+3132|Vyříznout z celé krabice…
+3133|Sestavit index LaunchBox
+3134|Vymazat filtry
+3135|Vrátit sadu
+3136|Oprav svůj klíč SteamGridDB
+3137|Tvůj vlastní obrázek · zkopíruje se, nikdy nepřesune
+3138|Rozložená krabice: zadní strana, hřbet a přední strana
+3139|Obrázek před tímto
+3140|Znovu hledat verze
+3141|Jednorázové stažení, asi 110 MB
+3142|Znovu ukázat všechny verze
+3143|Všechny čtyři části, jak byly před sadou
+3144|Víc předních plakátů, mnoho v HD · klíč zdarma
+3145|Klíč nebyl přijat · dokud se neopraví, žádné plakáty
+3146|Sady
+3147|Přední a zadní strana, hřbet a disk, které patří k sobě
+3148|Všechny návody nalezené pro tuto hru
+3149|Zamknout tuto hru
+3151|Odpovídající sady
+3152|Hledám přední a zadní stranu, hřbet a disk, které patří k sobě…
+3153|Žádný zdroj nemá přední a zadní stranu, hřbet a disk z jednoho vydání. Vyber každou část zvlášť.
+3154|Pro tuto hru zatím není kompletní sada
+3155|Hledám všechny verze {}…
+3156|Smíšené zdroje
+3157|{} · kompletní
+3159|disk
+3160|Sestavuji…
+3161|Tvůj současný soubor
+3162|Dřívější výběr
+3163|Verze
+3164|čekej
+3165|Ostré
+3166|Velikost …
+3167|selhalo
+3168|{} Filtry
+3169|Tady je jen jeden druh verzí · není co filtrovat
+3170|Nalezeno kompletních sad: ${S.list.length}
+3171|Zatím žádná kompletní sada
+3174|žádnou se nepodařilo stáhnout · zkontroluj připojení a pak Zkusit znovu
+3175|index LaunchBox ještě není sestavený
+3176|připravuji index LaunchBox…
+3177|pro tuto část zatím nic nenalezeno · použij vlastní obrázek
+3178|žádnou se nepodařilo stáhnout · zkontroluj připojení
+3179|pro tuto hru jen jeden zdroj
+3180|· index LaunchBox ještě není sestavený
+3181|Verzí: ${nc} · nejlepší shoda pro styl police první${c.note==="noindex"?" · LaunchBox index not built yet":""}
+3182|hledám…
+3183|Kompletních sad: ${n2} · A vloží všechny čtyři části najednou
+3184|žádná kompletní sada: vyber každou část zvlášť
+3185|${nf} z ${c.list.length} verzí · filtrováno
+3186|Všechny návody pro tuto hru · A je otevře
+3188|Používá se · tvůj výběr
+3189|Používá se
+3190|Nejlepší shoda
+3191|Na tvé polici
+3192|, zadní strana a hřbet z jednoho celého skenu
+3194|Obrázek HQ
+3195|čistý obrázek
+3197|Používá se · tvůj výběr: automatické stahování ho nechá, změna stylu police ho nahradí, pokud hra není zamčená.
+3198|Teď se používá.
+3199|Nejlepší shoda pro ${lookName(c.look)}.
+3200|Má pruh dotisku.
+3201|Zkouším · ${btnLabel("a")} ho použije
+3202|Vkládám ${x.label.replace(/ · complete$/,"")}…
+3203|${x.label.replace(/ · complete$/,"")}: všechny čtyři části vloženy · tvůj výběr
+3204|Čtyři části jsou zpátky, jak byly
+3205|Už se používá
+3206|tato verze
+3207|${PART_L[st.part]}: ${x.label||"this version"} · tvůj výběr
+3208|Sady se nefiltrují
+3209|Pro tuto část není co filtrovat
+3210|Vyber část a vrať ji ke stylu police
+3211|${PART_L[st.part]} se už řídí stylem police
+3212|Zkouším znovu…
+3213|Tu se nepodařilo stáhnout
+3214|Chybí
+3215|Neúplné
+3216|Má
+3217|Teď se používá
+3218|Sbírka návodů
+3219|Tvoje PDF
+3220|Moje PDF…
+3221|Tvoje vlastní PDF · zkopíruje se, nikdy nepřesune
+3222|Návod před tímto
+3223|Znovu hledat návody
+3225|Načítám návody podle konzolí…
+3226|Všechny návody nalezené pro každou hru podle konzole.
+3227|Návody ${c.name}
+3228|${c.have} z ${c.total}
+3230|Všechny návody nalezené pro každou hru ${c.name} vedle sebe: jiný jazyk, region, ostřejší sken nebo vlastní PDF. Automatické stahování se řídí volbou ${c.name} (teď: ${prefName(c.pref)}) a nikdy nenahradí návod, který jsi vybral.
+3231|Řídím se novou volbou · ${j.done||0} z ${j.total||"…"}
+3232|· zamčeno: ${c.locked}
+3233|Návody ·
+3234|Má
+3235|Načítám hry ${esc(mName(st.sys))}…
+3236|Každá hra má návod.
+3237|Na této polici nejsou žádné neúplné návody.
+3238|Zatím není zamčený žádný návod. ${btnLabel("y")} na hře zamkne ten, který má.
+3239|Návod zamčen · automatické stahování ho nechá, jak je
+3240|Návod odemčen · zase se řídí volbou konzole
+3241|Návody ${mName(sys)}
+3242|${mName(sys)}: ${prefName(id)} · automatické stahování se tím řídí
+3243|Zamknout tento návod
+3244|První stránka
+3245|Stránek ?
+3248|PDF · zatím nepřevedeno na stránky
+3249|Pracuji…
+3250|Chybí ·
+3251|Chybí · ${prefName(c.pref)}
+3252|Řídí se
+3253|Řídí se ${prefName(c.pref)}
+3254|Automatické stahování ani nová volba konzole ho nezmění.
+3255|Vypnuto: nová volba konzole nahradí i výběry.
+3256|Vypnuto: automatické stahování ho může vyměnit za lepší shodu.
+3257|${mName(st.sys)}: ${prefName((mCon(st.sys)||{}).pref||(c&&c.pref))} · změnit
+3258|Zatím ${n} · ještě hledám…
+3259|nepodařilo se spojit se stránkami s návody · zkontroluj připojení a pak Zkusit znovu
+3260|online nenalezen žádný návod · přidej vlastní PDF
+3261|Návodů: ${n} · nejlepší shoda pro ${prefName(c.pref)} první
+3262|Používá se · zamčeno
+3263|Používá se a je zamčený: nic automatického ho nenahradí.
+3264|Návod: ${mShort(x)} · tvůj výběr
+3265|Předchozí návod je zpátky
+3266|Vybrat PDF…
+3267|Tvoje PDF je teď návod této hry · tvůj výběr
+3268|Obaly a návody › Návody ${nm}
+3269|Návody ${nm}
+3270|· zamčeno: ${lk}
+3272|Obaly a návody › Návody ${nm} › Volba

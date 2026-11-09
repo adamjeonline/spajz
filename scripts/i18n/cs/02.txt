@@ -1,0 +1,251 @@
+948|Video na polici:
+949|Video na polici: ${String(url).split(/[\\/]/).pop().slice(0,60)}
+950|Novinka: videonáhledy. Zapni je v Nastavení → Videonáhledy.
+951|Videonáhledy
+952|I hry pro konzole můžou přehrávat trailery
+953|Špajz potřebuje bezplatného pomocníka (yt-dlp, asi 25 MB), aby uložil krátký úryvek traileru každé hry pro konzoli. Ten se pak přehrává na polici a v Podrobnostech jako u her ze Steamu. Stáhne se jen jednou.
+954|Stáhnout pomocníka
+955|Stahuji pomocníka pro trailery…
+956|Trailery pro konzole jsou připravené: zastav se na hře a uvidíš její trailer
+957|Pomocníka pro trailery se nepodařilo stáhnout. Zkus to znovu v Nastavení → Videonáhledy.
+958|Teď ne
+959|Můžeš ho kdykoli stáhnout v Nastavení → Videonáhledy.
+960|Přidávám Špajz do Steamu (Steam se zavře a znovu otevře)…
+961|Steam na tomto Decku ještě není nastavený
+962|Špajz neběží ze svého AppImage
+963|Steam se nezavřel: zavři ho a zkus to znovu v Nastavení → Systém
+964|už je ve Steamu
+965|Položka Špajzu ve Steamu je aktuální. Spusť ho ze Steamu (herní režim)
+966|Špajz je teď ve Steamu: spusť ho z Knihovny v herním režimu (Mimo Steam)
+967|Špajz se nepodařilo přidat do Steamu
+969|Přepni do herního režimu a spusť Špajz z Knihovny (Mimo Steam)
+970|Hru ukončíš podržením Select + Start
+971|Přidej Špajz do Steamu (udělá to tlačítko níže)
+972|Přepni do herního režimu a spusť ho z Knihovny (Mimo Steam)
+973|Spouštěj Špajz ze Steamu, aby ovládání her fungovalo
+974|Když se spustí mimo Steam, ovladač Decku tu funguje jako klávesnice a myš, takže B je klávesa Esc a většina emulátorů na ni hru ukončí. Spuštěný ze Steamu je B prostě B.
+975|Rozumím
+976|Přidat Špajz do Steamu
+977|Můžeš ho kdykoli přidat v Nastavení → Systém.
+978|široký
+979|hlavní
+980|Vyšel Špajz ${r.latest}
+981|Nová verze je připravená ke stažení.
+982|Co je nového
+983|Později
+984|Co je nového ve verzi ${v}
+985|Všechny poznámky
+986|Žádná z tvých verzí pro Switch 2 neotevře hry .nup. Přidej novější verzi Eglantine.
+987|Spustit v které verzi?
+988|neotevře hry .nup
+989|${btnWord("a")} spustit · ${btnWord("back")} zpět
+991|Vyber obal · ${batch.i+1} z ${batch.list.length}
+992|Hledám obaly…
+993|${btnWord("a")} použít · ${btnWord("back")} zpět
+994|${btnWord("a")} použít · ${btnWord("back")} zastavit
+995|Přeskočit tuto hru
+996|Na další
+997|Poslední
+998|Hledat podle názvu…
+999|Teď: ${term}
+1000|Hledat pod jiným názvem
+1001|Vlastní obrázek
+1002|JPG, PNG nebo WebP
+1003|Automatický obal
+1004|Vrátit se k němu
+1005|Přidat SteamGridDB
+1006|Desítky dalších obalů · klíč zdarma
+1007|pro „${term}“
+1008|, a vlastní ze Steamu
+1010|SteamGridDB žádné nemá.
+1012|Pro „${term}“ nic nenalezeno. Zkus jiný název.
+1013|Vlastní obal Steamu. SteamGridDB pro tuto hru žádný nemá.
+1014|SteamGridDB pro tuto hru nemá žádné obaly. Hledej podle názvu nebo použij vlastní obrázek.
+1015|Vlastní obal Steamu. Pro desítky dalších přidej bezplatný klíč SteamGridDB.
+1016|Pod tímto názvem na Steamu žádný obal není. Hledej podle názvu, použij vlastní obrázek nebo přidej bezplatný klíč SteamGridDB pro desítky dalších.
+1018|Nový obal pro ${g.title}
+1019|${g.title} má zase automatický obal
+1020|Stahuji obal…
+1021|Všechny vlastní hry už obal mají
+1022|Nové obaly pro hry: ${b.done}
+1023|Žádné obaly se nezměnily
+1024|Hledám obaly pro hry: ${L.length}…
+1025|Nejdřív přidej bezplatný klíč SteamGridDB: Nastavení → Účty a služby
+1026|Nové obaly pro ${done.length} z ${L.length} her. Nelíbí se ti? Nastavení → Vlastní hry → Vrátit
+1027|SteamGridDB pro tyto hry nemá žádné obaly
+1028|Vráceno obalů: ${L.length}
+1031|Hrát:
+1032|Hrát: ${g?g.title:"?"}
+1033|Prohlédnout
+1037|Brožurka vytvořená Špajzem · není to originální návod
+1038|NÁVOD K POUŽITÍ
+1039|Edice Špajz · není to originální návod
+1040|O této hře
+1041|Zatím bez popisu. Stáhni obaly a informace v Nastavení a stránka se zaplní.
+1042|Podrobnosti
+1043|Systém
+1045|Seriál
+1046|Celovečerní film
+1048|Podrobnosti o tomto titulu zatím nejsou k dispozici.
+1049|REŽIE
+1050|SÉRIÍ: ${ss.length} · DÍLŮ: ${ss.reduce((a,n)=>a+m.seasons[n].length,0)}
+1051|Z TVÉ KNIHOVNY STREMIO
+1052|DISK BLU-RAY
+1053|Vložka vytvořená Špajzem z katalogových údajů titulu
+1054|SBĚRATELSKÁ VLOŽKA · SERIÁL
+1055|SBĚRATELSKÁ VLOŽKA
+1056|Příběh
+1057|Pro tento titul zatím není k dispozici žádný popis.
+1058|Délka
+1059|Hodnocení IMDb
+1060|Země
+1061|Ocenění
+1062|Herci a štáb
+1063|Režie
+1064|Scénář
+1065|Hrají
+1066|Průvodce díly
+1067|Série
+1068|dílů
+1069|Série ${n} · dílů: ${e.length}
+1070|Díl
+1071|Díl ${ep.n}
+1072|…a
+1073|další
+1074|…a dalších ${e.length-24}
+1075|Vytvářím brožurku pro tuto hru…
+1076|Brožurku pro tuto hru se nepodařilo vytvořit
+1077|Čekám, až se stahování návodů na pozadí pozastaví…
+1078|Opravuji návod…
+1079|Hledám správný návod pro ${fixRun.g.title}…
+1080|Stahuji nový návod · stránka ${m[1]} z ${m[2]}
+1081|Opraveno. Načítám stránky…
+1082|✓ Návod opraven: ${r.what}
+1083|V tomto návodu není co opravovat. Pokud patří jiné hře, použij Špatná hra
+1084|Návod se nepodařilo opravit:
+1085|Návod se nepodařilo opravit: ${(e&&e.message)||e}
+1086|Odkládám ten návod…
+1087|Nalezeno. Načítám stránky…
+1088|✓ Nový návod pro ${g.title}
+1089|Návod se nepodařilo nahradit:
+1090|Návod se nepodařilo nahradit: ${(e&&e.message)||e}
+1091|Obálka · ${n} stránek
+1092|Stránky ${rd.i+1}${right?"–"+(rd.i+2):""} z ${n}
+1095|Zavřeno
+1096|Disk venku
+1097|Otevřít krabičku
+1098|Vytáhnout kazetu
+1099|Vytáhnout disk
+1100|Podrž pro hraní
+1101|Otočit stránku
+1102|Mezerník
+1103|Další stránka
+1104|Vrátit návod
+1105|Špatná hra: najít správný
+1106|Opravit (obálka, stránky)
+1107|Opravit návod…
+1108|Otočit
+1109|Další strana
+1110|Přiblížit
+1111|Obrátit
+1112|Vrátit zpět
+1113|Zavřít
+1114|, skryté
+1118|Spouštím ${(WORDMARKS[s.id]||[s.name])[0]}
+1120|Spouštím v ${s.emulatorName}
+1123|Tvoji 3D konzoli se nepodařilo použít: ${ConsoleModel.error()||"unknown error"}
+1124|Spouštím ${s.emulatorName}
+1125|Nejdřív přidej na tuto polici hru, pak testuj
+1126|Načítám tvůj 3D model…
+1127|Nastavení ${s.emulatorName}
+1131|, během testu plynulosti
+1132|Spouštím přes
+1133|Spouštím přes ${L}
+1134|Běží přes
+1135|Běží přes ${L}. Stiskni
+1136|pro návrat na polici.
+1137|Spouštím z Quiveru
+1138|Spouštím z GOG
+1139|Spouštím
+1141|Spouštím přes Steam
+1142|Běží přes Steam. Stiskni
+1143|Otevírám aplikaci
+1144|Otevírám ${s.emulatorName}
+1145|Nastavení emulátoru
+1147|Hraje se · zavři hru a vrátíš se sem
+1148|Hraje se · stiskni ${padWord("guide")} pro menu Domů
+1149|Stiskni
+1150|pro návrat.
+1151|Zpět ze hry
+1152|Nepodařilo se spustit: ${info.error||"unknown error"}.
+1153|(kód ${info.code})
+1154|${e} se hned zavřel${info.code?` (code ${info.code})`:""}.
+1155|Otevři samotný ${e} a zkontroluj jeho nastavení: obvyklou příčinou je chybějící BIOS, klíče nebo firmware.
+1156|Zavři hru nebo aplikaci a vrátíš se
+1157|Achievementy
+1158|Načítám z RetroAchievements…
+1159|Achievementy se nenačetly
+1160|RetroAchievements neodpověděl.
+1161|Zkusit znovu
+1162|RetroAchievements pro tuto hru nemá žádnou sadu (nebo její název žádné neodpovídá).
+1163|Zobrazit vše
+1164|Dohráno na 100 %
+1165|Dokončeno
+1166|Odemčeno ${p.earned} z ${p.total} · ${p.pointsEarned} / ${p.points} bodů
+1167|Odemčené
+1168|Zamčené
+1169|Načítám achievementy…
+1170|RetroAchievements neodpověděl
+1171|Pro tuto hru není žádná sada achievementů
+1172|Odemčeno ${p.earned} z ${p.total} · ještě zamčeno ${p.total-p.earned} · ${p.pointsEarned} / ${p.points} bodů${p.mastered?" · "+p.mastered:""}
+1173|Vše · Odemčené · Zamčené
+1174|Procházet
+1175|Zatím nic odemčeno. Všechny achievementy jsou v Zamčených.
+1176|Vše odemčeno. Tady už není co získat.
+1177|zamčeno
+1178|· hardcore
+1179|Odemčeno ${a.date?a.date.slice(0,10):""}${a.hardcore?" · hardcore":""}
+1180|· ${a.rarity} % hráčů
+1181|Achievement odemčen ·
+1182|Achievement odemčen · ${a.points} b.
+1183|${r.file} nainstalován jako 3D model konzole ${r.name}
+1184|a dalších ${list.length-2}
+1185|Vyměněny ostřejší nebo anglické návody pro hry (${list.length}): ${names}
+1186|Nové a vylepšené návody pro hry (${list.length}): ${names}
+1187|Přidány návody pro hry (${list.length}): ${names}
+1188|✓ Návody zkontrolovány: ${info.rechecked.moved} odloženo a znovu vyhledáno
+1189|Přidány obaly pro nové hry: ${info.covers}
+1190|Přidán vestavěný návod pro hry Wii U: ${info.manuals}
+1191|Přidány návody pro hry: ${info.onlineManuals}
+1192|Nalezeno nových her: ${n}
+1193|· čeká
+1194|· čekají
+1195|na tebe v poště muzea
+1198|Hledám loga {}…
+1199|Pro ${name} teď žádná loga nenalezena.
+1200|vypnuto
+1201|tmavé
+1202|Ukládám…
+1203|Oficiální loga z Wikimedia Commons, volně k použití.
+1204|Loga se nepodařilo vyhledat
+1205|Nové logo pro ${name}. Obnovit předchozí vrátí to staré
+1206|To logo se nepodařilo použít
+1208|Logo
+1209|Tvůj obrázek
+1210|Vestavěný nápis
+1211|Nahradit
+1212|Přidat obrázek
+1213|Najít logo
+1214|Obnovit předchozí
+1215|Odebrat
+1216|Najít logo: oficiální loga z Wikimedia Commons, volně k použití
+1217|Tvůj 3D model
+1218|Přidat model
+1219|Najít model
+1220|Usadit na polici
+1221|Test
+1222|Zobrazuje se v úvodní animaci a na jeho polici v muzeu
+1223|Stojí na své polici v muzeu (Usadit na polici tě tam vezme)
+1224|Obrázek konzole
+1225|Žádný
+1226|Plochý obrázek, použije se, když není 3D model

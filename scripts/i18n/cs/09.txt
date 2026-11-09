@@ -1,0 +1,196 @@
+2786|Přenést je z ${o.root}
+2787|${readCopy.done} / ${readCopy.total} · Zastavit
+2788|Kopíruji… · Zastavit
+2789|Kopírovat
+2790|Zastavuji kopírování…
+2795|hlavní obrazovka
+2796|Automaticky (${prim.label||"main display"})
+2797|Obrazovka ${i+1}${d.primary?" (main)":""}${d.width?` · ${d.width}×${d.height}`:""}
+2798|Výchozí podle Windows
+2799|Název hry na polici, na krabičce a ve vyhledávání. Podle něj se hledají i obaly a návody. Samotný soubor se nemění. Enter ho uloží.
+2800|Použít název souboru
+2801|Zpět na „${s.file}“.
+2802|Zpět na název souboru
+2803|Přejmenováno na ${v}
+2804|Hledat jako
+2805|Název, pod kterým hledat na SteamGridDB místo „${s.title}“. Enter hledá. Vlastní název hry zůstane, jak je (ten mění Přejmenovat).
+2806|Tam se žádné hry nenašly
+2807|Na polici Vlastní přidáno her: ${n}
+2808|Nic nového k přidání
+2809|Vyber programy her (podrž Ctrl pro výběr více)
+2810|Vyber složku, kde máš hry (třeba D:\Games)
+2811|Vyber program hry
+2812|Ta hra už na polici Vlastní je
+2813|Přidáno: ${title}. Pokud chceš, přejmenuj ji ve Vlastních hrách.
+2814|, složky s hrami pro tvoje konzole: ${dirs}
+2816|a složky s hrami: ${d}
+2818|Přidat několik programů
+2819|Vybrat…
+2820|Vyber programy mnoha her najednou (v okně souborů podrž Ctrl nebo Shift). Než se přidají, zkontroluješ jejich názvy.
+2821|Prohledat složku
+2822|Vybrat složku…
+2823|Importovat z Playnite (experimentální)
+2824|Importovat…
+2825|Najít…
+2826|Přenese tvou knihovnu Playnite najednou: hry, které jsi tam přidal ručně, i s obaly na polici Vlastní, a složky emulovaných her na polici jejich konzole. Hry ze Steamu, Epicu, GOG Galaxy a dalších obchodů se vynechají: ty Špajz čte z obchodů sám. Experimentální: nedalo se vyzkoušet s každou verzí Playnite, tak dej vědět, když něco chybí.
+2827|Nalezeno v
+2828|Nalezeno v ${folderName(ADD.pnFound.app)}
+2829|Nenalezeno · vyber jeho složku
+2830|Hledám Playnite…
+2831|Přidat jeden program
+2832|Jakýkoli program: rekompilace, port pro PC, hra z jiného spouštěče. Dostane krabičku na polici Vlastní a spouští se ze své složky.
+2833|Nalezeno her: ${L.length}
+2834|Zaškrtnuto: ${L.filter(x=>x.on&&!x.have).length}
+2835|Už je na polici Vlastní
+2836|Přidat zaškrtnuté hry
+2837|Přidat ${n}
+2838|Dá zaškrtnuté hry na polici Vlastní. Obaly se pro ně najdou jako pro každou hru pro PC a každou můžeš v Podrobnostech přejmenovat nebo jí dát jiný obal.
+2839|Vymazat tento seznam
+2840|Zapomene tento seznam, aniž by cokoli přidal.
+2841|Z Playnite
+2842|Her v Playnite: ${P.total}
+2843|Hry, které jsi do Playnite přidal ručně: každá dostane krabičku na polici Vlastní se svým programem, možnostmi spuštění a obalem.
+2844|Her: ${P.pc.length}
+2845|Hry ${name(sys)}
+2846|, a emulátor z Playnite, pokud ${name(sys)} ještě žádný nemá
+2847|Přidá ${c.dirs.join(", ")} jako složky s hrami ${name(sys)}${c.emulatorDir?`, and Playnite's emulator if ${name(sys)} has none yet`:""}.
+2848|Her: ${c.count} · složek: ${c.dirs.length}
+2849|Her z obchodů: ${s.store} (ty Špajz čte z obchodů sám)
+2850|Skrytých: ${s.hidden}
+2851|Spouštěných odkazem: ${s.link}
+2852|Bez čehokoli ke spuštění: ${s.nothing}
+2853|Vynecháno
+2854|Importovat
+2855|Přidá, co je výše zaškrtnuté. Odebrat importované (níže) to zase všechno odebere.
+2856|Jeho hry pro PC
+2857|Jeho program na tomto PC není
+2858|Odebrat, co se importovalo z Playnite
+2859|Sundá z polic hry a složky s hrami, které přidal import z Playnite (z počítače se nic nesmaže).
+2860|Stiskni znovu pro odebrání
+2861|Novinka: Špajz ${upd.latest}
+2862|zatím nenainstalováno
+2863|Získat Špajz
+2864|Získat Špajz ${upd.latest}
+2865|Stáhnout
+2866|Otevře jeho stránku ke stažení. Rozbal ho přes tuto složku: nastavení zůstanou.
+2867|Tato verze
+2868|Zatím bez poznámek
+2869|Pomocníka pro trailery se nepodařilo stáhnout. Zkontroluj připojení k internetu a zkus to znovu.
+2870|Stahuji pomocníka pro trailery… ${CLIP.pct} %
+2871|Stáhnout pomocníka pro trailery (potřeba)
+2872|Minule se nepodařilo stáhnout: zkus to znovu
+2873|Zatím nenainstalováno: trailery konzolových her na něj čekají
+2874|Klipy trailerů konzolových her
+2875|Uložených klipů: ${s.n} (${mb(s.bytes||0)} MB).
+2876|Zatím žádné uložené klipy: zastav se na konzolové hře.
+2878|Klipy trailerů konzolových her vymazány
+2879|Klipů: ${s.n} · ${mb(s.bytes||0)} MB
+2880|Připraveno
+2881|Přidávám Špajz do Steamu…
+2882|Aktualizovat
+2883|Steam tu ještě není nastavený
+2884|Steam se nezavřel: zavři ho sám a zkus to znovu
+2885|Seznam Steamu se nepodařilo zapsat
+2886|Špajz je ve Steamu: spusť ho z Knihovny (Mimo Steam), na Steam Decku v herním režimu
+2888|Už je ve Steamu
+2889|Doporučeno na Steam Decku
+2890|Zatím není ve Steamu
+2891|Hledám videa…
+2892|Her: ${c.total}
+2893|Zatím žádná videa
+2894|Hry ze Steamu pořád dostanou svoje trailery, a z YouTube, pokud je zapnutý.
+2895|${s.n} z ${s.of}
+2896|her s videem
+2897|Tvoje složky s videi
+2898|Složka s videi
+2899|Videa v této složce (nebo v podsložce pojmenované podle konzole) se přiřadí k tvým hrám. Vyber ji dvakrát a přestane se používat (nic se nesmaže).
+2902|Stiskni znovu a tato složka se přestane používat
+2903|Přidat složku s videi
+2904|Vyber složku s videi her
+2905|Znovu najít videa
+2906|Znovu projde všechny složky s videi (když jsi videa přidal).
+2907|Trailery ze Steamu
+2908|Vymazat klipy trailerů ze Steamu
+2909|Krátké klipy uložené z trailerů Steamu (${mb(c.steamBytes||0)} MB). Stáhnou se znovu, až se příště zastavíš na hře.
+2910|Klipy trailerů ze Steamu vymazány
+2911|Namapuje tvůj ovladač jako hráče 1, pokud má emulátor ještě jen ovládání klávesnicí. Mapování, které sis udělal sám, zůstane.
+2912|Dá uložení, načtení, pozastavení a snímek obrazovky na klávesy, které mačká menu Domů, aby jeho Uložit a Načíst fungovaly ve tvých hrách.
+2913|Nasměruje emulátor na jednu sdílenou složku BIOS (Špajz\BIOS), jen když je jeho vlastní složka BIOS prázdná.
+2914|Nastaví rozlišení podle grafické předvolby níže.
+2915|Žádný dotaz „opravdu?“ při zavírání hry.
+2916|RetroArch při ukončení hry uloží a příště pokračuje odtamtud.
+2917|Pro tento emulátor zatím ne
+2918|✓ Nastaveno
+2919|Nastaví se, až si jednou zahraješ
+2920|Nejdřív jednou otevři ${st.name}
+2921|Zatím nenastaveno
+2922|Kontroluji emulátor…
+2923|Nejdřív vyber emulátor této konzole
+2924|Tento emulátor zatím Špajz nastavit neumí
+2925|Zatím RetroArch, Dolphin, DuckStation, PCSX2 a PPSSPP.
+2926|${st.name} je nastavený
+2927|${st.name} sis nastavil sám
+2928|${st.name} zatím není nastavený
+2929|Nastaví se, až budeš příště hrát.
+2930|Od ${new Date(st.done.at).toLocaleDateString()}: ${st.done.groups.map(g=>ES_NAME[g]||g).join(", ")}.
+2931|Tvoje nastavení zůstane, jak je, dokud to tady nenastavíš. Všechno, co se změní, se nejdřív zálohuje.
+2932|Všechno, co se změní, se nejdřív zálohuje a Vrátit to vrátí zpět.
+2933|Grafická předvolba
+2934|Pro tento počítač
+2935|Hezká
+2938|${ES_NAME[k.group]||k.group}: ponecháno, jak je
+2939|Nastavit znovu
+2940|Nastavit ${st.name}
+2941|Znovu
+2942|Použije přepínače výše na ${st.name}. Tvoje soubory se nejdřív zálohují.
+2943|${st.name} nastaven: ${r.applied.map(g=>ES_NAME[g]||g).join(", ")}
+2944|${st.name} už odpovídá
+2945|neznámý problém
+2946|${st.name} se nepodařilo nastavit: ${(r&&r.why)||"unknown problem"}
+2947|Ukázat, co se změní
+2948|Než cokoli nastavíš, vypíše každé nastavení, které by zapsal, soubor po souboru.
+2949|Vrátí nastavení ${st.name} přesně do stavu, než ho Špajz nastavil.
+2952|Nastavení ${st.name} je zpátky, jak bylo
+2953|Stiskni znovu pro vrácení
+2954|Jádro RetroArch
+2955|Jádro ${st.core.name}
+2956|Stáhnout
+2957|RetroArch má jádro ${st.core.name}, které pro tuto konzoli používá.
+2958|Stáhne jádro ${st.core.name} z libretro, ze stejného místa, které používá Online Updater v RetroArchu. Napoprvé se stáhne i samo, když začneš hrát.
+2959|Jádro ${r&&r.name||st.core.name} je připravené
+2960|Stahuji… ${s.corePct} %
+2961|✓ Připraveno
+2962|Zatím nestaženo
+2963|Soubory BIOS
+2964|Chybí (stačí jeden z těchto)
+2965|Chybí, nepovinné: ${st.bios.note}
+2966|Chybí${st.bios.note?` (${st.bios.note})`:""}
+2967|✓ V pořádku
+2968|Špatná verze: není to známá dobrá kopie
+2969|Soubory BIOS nalezeny
+2970|Zatím žádné soubory BIOS
+2971|${st.name} potřebuje BIOS vytažený z tvé vlastní konzole.
+2972|Otevřít složku BIOS
+2973|Otevře složku, ze které ${st.name} čte soubory BIOS${st.bios.dir?`: ${st.bios.dir}`:""}. Zkopíruj tam soubory ze své konzole a pak dej Zkontrolovat znovu.
+2974|Znovu se podívá do složky BIOS.
+2975|Co se změní
+2976|S těmito přepínači nic
+2977|…a dalších ${ch.length-60}
+2978|Zapnuto: ${s.title} je na této polici.
+2979|Nová kolekce
+2980|Název nové vlastní police. Enter ji vytvoří i s touto hrou.
+2981|Kooperace na gauči, Závodní, Dohrané…
+2982|Víc kolekcí už mít nejde (50).
+2983|${s.title} je na ${v}
+2984|Zatím žádné kolekce
+2985|Otevři Podrobnosti hry a vyber Kolekce, tím jednu vytvoříš.
+2986|Název police (her: ${c.ids.length}). Enter ji přejmenuje.
+2987|Smazat
+2988|Smazat ${c.name}
+2989|Odebere tuto polici (hry zůstanou všude jinde). Stiskni dvakrát.
+2990|${c.name} smazána
+2991|Tato hra
+2992|Kolekce: ${colState.title}
+2993|Dej tuto hru na vlastní police. Každá kolekce je police vedle Domů.
+2994|Hledat obal
+2995|Obaly pro ${coverSearch.title} pod jiným názvem.

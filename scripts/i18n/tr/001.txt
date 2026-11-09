@@ -1,0 +1,255 @@
+330|Procurando capas de ${def.name}…
+331|${def.name}: ${done} de ${games.length}
+334|Meu tema
+335|Colinas ao pôr do sol
+336|Espaço profundo
+337|Oceano ao entardecer
+338|Para um console só, adicione uma imagem com o nome da estante dele: gc, wii, wiiu, sw, sw2, ps2, ps3, ps4, ps5, psp, x360, n3ds, pc.
+339|shade: quanto a imagem fica mais escura (de 0 a 0.9), para a estante continuar fácil de ler.
+340|blur: true suaviza a imagem. glow: o brilho da luz embaixo da estante (de 0 a 1).
+341|Depois, no Špajz: Configurações > Tela > Procurar temas de novo. Temas são só imagens e configurações, nunca programas.
+342|Iniciar
+344|Configuração
+353|Digitar
+354|Controle
+355|Configurações
+356|Pastas
+357|Atalhos do menu Home
+358|Pasta da BIOS
+359|Gráficos
+360|Sem perguntas ao sair
+361|Continuar de onde parou
+363|a pasta de sistema dele já tem arquivos de BIOS
+364|abra o Dolphin uma vez primeiro
+365|um controle já está configurado
+366|abra o DuckStation uma vez primeiro
+367|a pasta de BIOS dele já tem arquivos
+368|abra o PCSX2 uma vez primeiro
+369|ainda não há BIOS de PS2 na pasta de BIOS
+370|abra o PPSSPP uma vez primeiro
+371|o emulador não está mais lá
+373|não foi possível gravar ${path.basename(file)} (${e.code || e.message})
+374|nada para mudar
+375|o download falhou
+376|só
+377|jogos lidos
+379|Menu Home do Špajz
+382|(não foi possível pausar)
+384|Estado carregado
+385|tirar a captura de tela
+386|salvar o estado
+387|carregar o estado
+388|Não foi possível ${action === 'shot' ? 'take the screenshot' : action === 'save' ? 'save the state' : 'load the state'}
+389|Não foi possível despausar o jogo
+390|· slot ${k.slot}
+393|o programa
+394|${n} já está rodando. Feche ele primeiro.
+395|Alguma coisa já está rodando. Feche primeiro.
+396|Desenvolvedora
+397|Distribuidora
+398|Região
+399|Gêneros
+400|Nome
+401|Resumo
+414|Revistas
+415|Guias
+416|Não foi possível acessar o Wikimedia Commons. Verifique a internet e tente de novo.
+418|Logotipo do GameCube
+419|Domínio público
+420|Símbolo do cubo do GameCube
+421|Logo do Wii
+422|Logo do Wii U
+423|Logo do Switch, largo
+424|Logo do Switch, empilhado
+425|Logo do Switch, vermelho
+426|Logo do New 3DS
+427|Logo do PS2
+428|Logotipo do PlayStation 2
+429|Logo do PS3
+430|Logo do PS3, largo
+431|Logotipo de lançamento do PlayStation 3
+432|Logo do PS4 com símbolo
+433|Logo do PS4
+434|Logo do PSP
+435|Logo do Xbox 360
+436|Logo do Xbox 360 com TM
+437|Logo do Xbox 360, alternativo
+438|O Wikimedia Commons respondeu
+439|demorou demais
+442|sem páginas
+443|pouco detalhe
+444|não muito mais nítido
+445|${cnt} de ${collCount} páginas
+449|trocou uma digitalização pequena por uma mais nítida (${old.width}px -> ${neu.width}px)
+450|baixado de novo em resolução total (${old.width}px -> ${neu.width}px)
+451|em branco
+453|substituiu um manual incompleto (${old.count} páginas${old.junk ? ', ' + old.junk + ' blank' : ''})
+454|melhorado (${old.width}px -> ${neu.width}px)
+455|trocado pela edição em inglês (${old.width}px -> ${neu.width}px)
+456|(${n} digitalizações, páginas duplas separadas)
+458|(mais ${jobs.length - batch.length} na próxima vez)
+459|Manual
+491|Inglês
+492|Francês
+493|Alemão
+494|Espanhol
+495|Italiano
+496|Japonês
+502|Procurando manuais… ${done} de ${all.length}
+504|${base}: página ${done} de ${total}
+505|${base}: página ${i + 1} de ${imgs.length}
+506|${finished} de ${choices.length} prontos ·
+507|"${seen.title}" é de outra edição
+508|"${seen.title}" não corresponde (${s.toFixed(1)})
+509|${tiny} [[${tiny === 1 ? '' : 's'}|página miniatura|páginas miniatura]]
+510|, ${shrunk} reduzidas
+513|Não foi possível mover o manual (
+514|). Alguma página está aberta em outro programa?
+515|(fonte desconhecida)
+516|nenhuma página para consertar
+517|${tiny.length} [[${tiny.length === 1 ? '' : 's'}|página miniatura retirada|páginas miniatura retiradas]]
+518|${shrunk} [[${shrunk === 1 ? '' : 's'}|página grande demais reduzida|páginas grandes demais reduzidas]]
+519|digitalizações de duas páginas cortadas em páginas únicas
+520|a frente da caixa adicionada como capa
+521|Baixando…
+522|Concluído
+523|Parado ·
+524|Melhor manual em inglês
+525|O manual completo em inglês mais nítido (como o Špajz sempre escolheu)
+526|Inglês · Europa
+527|Livretos PAL em inglês
+528|Livretos japoneses
+529|Manuais em francês
+530|Manuais em alemão
+531|Manuais em espanhol
+532|Manuais em italiano
+533|Nítido · ${w} px
+534|Bom · ${w} px
+535|Razoável · ${w} px
+536|Baixa resolução · ${w} px
+537|PDF · ${kb} KB por página
+540|Coleção ·
+541|Coleção · ${c.src.split('/')[0]}
+544|Manual eletrônico embutido
+545|O manual no disco
+547|${side.label ? side.label + ' · ' : ''}Anterior${when ? ` (${when[3]}/${when[2]}/${when[1]})` : ''}
+553|Manual digital oficial ·
+554|Digitalização da coleção ·
+555|(disco ${e.disc})
+556|Incompleto (segundo quem enviou)
+557|${c.junk} [[${c.junk === 1 ? '' : 's'}|página em branco|páginas em branco]]
+558|${want - c.pages} [[${want - c.pages === 1 ? '' : 's'}|página faltando|páginas faltando]]
+559|Idioma desconhecido
+560|só as primeiras ${PDF_CUT} páginas são mantidas
+561|só as primeiras ${IA_CUT} páginas são mantidas
+562|· só as primeiras ${cut.max}${cut.of ? ' of ' + cut.of : ''} páginas
+563|Transformando o PDF em páginas…
+564|Não foi possível colocar o manual no lugar (
+565|). Alguma página está aberta em outro programa? O antigo foi mantido.
+566|Manual de antes
+567|Seu manual de antes
+568|(cortado em
+569|páginas)
+570|(cortado em ${cut.max} páginas)
+571|(o antigo foi guardado em
+572|(o antigo foi guardado em ${path.basename(r.keep)})
+573|Manual no lugar
+574|Manual no lugar${cutNote(r && r.cut)}
+575|Não foi possível desfazer (
+576|). Nada foi alterado.
+577|Seu próprio manual para ${g.game.title} (PDF)
+578|Transformando o seu PDF em páginas…
+579|Seu PDF ·
+580|Seu PDF · ${name}
+581|(cortado em ${PDF_CUT} páginas)
+582|Seu manual está no lugar
+583|Seu manual está no lugar${cutNote(cut)}
+584|manuais ·
+585|Manuais de ${def.name} · ${PREFS.find(p => p.id === pref).label}
+586|Olhando os jogos…
+587|alterados
+588|· ${changed} alterados
+589|${job.done} de ${job.total}${changed ? ' · ' + changed + ' changed' : ''}
+590|${changed} [[${changed === 1 ? '' : 's'}|manual alterado|manuais alterados]]
+591|· ${kept} embutidos ou adicionados à mão mantidos como estão
+592|· ${todo.length - JOB_MAX} ainda não verificados (${JOB_MAX} por vez)
+593|Console ${name}
+594|Nenhuma pasta Downloads em ${dir}
+599|Este .cia é criptografado: instale ele uma vez dentro do ${E} (Arquivo → Instalar CIA) e depois jogue daqui.
+600|Este .cia é criptografado, então o Azahar não consegue usar. Use uma cópia descriptografada do jogo.
+601|Instalando no ${E} · 0%
+602|Instalando no ${E} · ${p}%
+603|Iniciando no ${E}
+605|em ${Date.now() - t0} ms
+606|(sem cache, vai compilar a cada abertura)
+608|(o Windows recusou)
+618|Jogos
+619|jogos de PS4
+620|Sua escolha agora
+621|Escolhida antes
+622|A capa da Steam
+623|Da sua biblioteca da Steam
+624|${a.name} na Steam
+625|Da loja da Steam
+627|Loja da Steam
+628|Apps
+629|resposta ruim
+630|Vídeos
+631|Trailers
+633|Gravações
+634|O RetroAchievements não aceitou a sua chave da API web. Confira em Configurações → Contas.
+635|O RetroAchievements não respondeu (HTTP ${res.statusCode}). Tente de novo daqui a pouco.
+636|uma lista
+638|RetroAchievements: ${v.message.slice(0, 200)}
+639|O RetroAchievements mandou uma resposta inesperada. Tente de novo daqui a pouco.
+640|(jogo
+641|) falhou:
+642|o servidor de download disse
+643|EUA e Europa
+644|só jogos em CD precisam
+645|os jogos rodam sem ela
+646|o Flycast roda a maioria dos jogos sem ela
+647|na pasta de jogos ou na pasta de BIOS
+648|Configurações do Dolphin não encontradas (abra o Dolphin uma vez)
+649|Modo hardcore ligado
+650|As conquistas estão desligadas no Dolphin
+651|Sem login no RetroAchievements no Dolphin
+652|Configurações do PPSSPP não encontradas (abra o PPSSPP uma vez)
+653|As conquistas estão desligadas no PPSSPP
+654|Sem login no RetroAchievements no PPSSPP
+655|Configurações do PCSX2 não encontradas (abra o PCSX2 uma vez)
+656|As conquistas estão desligadas no PCSX2
+657|Sem login no RetroAchievements no PCSX2
+658|Poucos jogos de Wii já têm conquistas
+659|O RetroAchievements não cobre este console
+660|Nenhum ${emulator} configurado para este console
+661|Não foi possível ler as configurações do ${emulator}
+662|O ${emulator} está conectado como ${r.user}, não ${raUser}
+663|erro desconhecido
+664|Não instalado
+665|Ásia
+666|Coreia
+667|Jogo de Xbox 360
+668|Jogo de Xbox 360 ${stfs.titleId}
+669|Jogo de Wii U
+670|Jogo de Wii U ${idm ? idm[0] : path.basename(dir)}
+671|Jogo de Xbox 360 ${x.titleId}
+672|(Disco ${g.disc})
+673|O login de desenvolvedor do ScreenScraper não foi aceito
+674|O ScreenScraper está fora do ar por enquanto
+675|ScreenScraper: jogos desconhecidos demais hoje
+676|O ScreenScraper respondeu
+677|O ScreenScraper respondeu ${status}
+678|Sem conta no ScreenScraper
+679|O ScreenScraper demorou demais para responder
+680|Não foi possível acessar o ScreenScraper
+681|O ScreenScraper mandou algo inesperado
+682|O ScreenScraper respondeu ${r.status}
+683|Frente da caixa
+684|Verso da caixa
+685|Recortada da arte completa
+686|sem conta
+687|sem login de desenvolvedor
+688|login de desenvolvedor não aceito
+689|Músicas
+691|Tempo de jogo

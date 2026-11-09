@@ -1,0 +1,360 @@
+1227|Momentálně se nikde nezobrazuje (byl pro starou úvodní animaci)
+1228|Nic nepřidáno
+1229|Úvodní video
+1230|Tvoje video
+1231|Vestavěné intro
+1232|Přidat video
+1233|Přehraje se při spuštění
+1234|Při spuštění vypnuto
+1235|Žádné video nepřidáno: se zapnutou úvodní obrazovkou (Nastavení → tato konzole) se hry spouští s ní místo vestavěného intra
+1236|Vestavěné herní PC
+1237|Soubory
+1238|Otevřít složku
+1239|Vyber logo pro ${name}
+1240|Vyber obrázek konzole ${name} (nejlépe průhledné PNG)
+1241|Vyber úvodní video pro ${name}
+1242|Logo pro ${name} nastaveno
+1243|Obrázek konzole ${name} nastaven
+1244|Úvodní video pro ${name} nastaveno
+1245|Vyber 3D model ${name} (.glb)
+1246|Pro ${name} vráceno předchozí logo
+1247|Vyber model ovladače ${name} (.glb)
+1248|Ovladač pro ${name} nastaven. Leží na polici v muzeu před jmenovkou
+1249|Nepodařilo se spustit
+1251|Model pro ${name} nastaven. Prohlédni si hru a uvidíš ho.
+1252|Nejdřív nastav ${name} v Nastavení
+1253|Klasický
+1254|Aero
+1255|Melodie
+1256|Hrací skříňka
+1257|Unášení
+1258|Noc
+1259|Záře
+1260|Tiché
+1261|Jemné
+1262|Plné
+1263|Jemné rozmazání
+1264|Obrázky her
+1265|Zvonění
+1266|Krystal
+1267|Puls
+1268|Obzor
+1269|Vlnění
+1270|Prolínání
+1271|Loga, 3D konzole a úvodní videa
+1272|Vlastní 3D
+1273|Vestavěné 3D
+1274|Bez 3D
+1275|Vlastní logo
+1276|Nápis
+1277|Rychlé menu
+1278|Art Studio
+1279|Tato konzole
+1280|· všechny hry
+1281|${shelfFor(g).name||"This console"} · všechny hry
+1282|Hlasitost
+1283|Přizpůsobit
+1284|Motiv
+1285|Zvuky
+1286|Písnička
+1287|Tato písnička
+1288|${(Sound.song()||{}).name||"This song"} · Další ›
+1289|Hudba v menu
+1290|Hlasitost hudby
+1291|Zvuk při spuštění
+1292|Řazení a filtr
+1293|Řadit podle
+1294|Zobrazit
+1295|Trofeje
+1296|Nepřipojeno
+1297|· ${RA.profile.points.toLocaleString()} b.
+1298|${RA.profile.points.toLocaleString()} bodů
+1299|Přihlas se jednou a Špajz bude sledovat každé odemčení.
+1300|Připojit RetroAchievements ›
+1301|Achievementy této hry ›
+1302|Muzeum
+1303|Projdi si svou sbírku
+1304|Stahování obalů
+1305|Pokračovat
+1306|Pozastavit
+1307|Aktualizace
+1308|Napájení
+1309|Ukončit Špajz
+1310|Uspat
+1311|Restartovat PC
+1312|Vypnout
+1313|· Hudba:
+1314|${qsName(QM_SOUNDS,ui.soundTheme||"aero")} · Hudba: ${qsName(QM_MUSIC,mmPick())}
+1315|Prvky
+1316|naposledy hráno
+1317|naposledy hráno ${fmtDay(h.last/1000)}
+1318|V oblíbených
+1319|Oblíbit
+1320|Obal
+1321|Skrýt
+1322|v oblíbených
+1323|Ztlumeno
+1324|★ Dohráno na 100 % ·
+1325|Odemčeno ${r.earned} z ${r.total}
+1326|Pro tuto hru zatím žádné trofeje
+1327|Tvoje trofeje
+1328|${pr.user} · ${pr.points.toLocaleString()} bodů
+1329|Přihlášen
+1331|· současné
+1334|Ponechat
+1335|Vybrat
+1336|Přesunout
+1337|Kontroluji…
+1338|Vyšla verze ${qsUpd.latest} · otevřít její stránku
+1339|Aktuální · ${qsUpd.cur}
+1340|Kontrola selhala · zkus to znovu
+1341|Zkontrolovat novější betu
+1342|Otevírám stránku ke stažení verze ${qsUpd.latest} v prohlížeči
+1344|Špajz se spustí bez loga
+1345|Zobrazí se při příštím spuštění Špajzu
+1346|Nový obal pro ${g.title}
+1347|Vypínám…
+1348|Restartuji…
+1349|přepnutí systému.
+1350|${showPad()?`${padWord("L1")} / ${padWord("R1")}`:"Q / E"} přepíná systém.
+1351|Ten soubor se nepodařilo přečíst
+1352|Použij obrázek (PNG, SVG, WebP) nebo video (MP4, WebM)
+1353|Úvodní animace jsou pro police konzolí
+1354|Logo pro ${s.name} nastaveno
+1355|Úvodní video pro ${s.name} nastaveno
+1357|Přidal jsi ji v Nastavení → Vlastní hry. Špajz ji spouští z její vlastní složky.
+1358|Spouští se přes aplikaci EA, takže přihlášení i ukládání do cloudu fungují jako obvykle.
+1359|Aplikace EA
+1360|Na této polici není co míchat
+1361|Hru se z telefonu nepodařilo spustit: Špajz byl zaneprázdněný
+1362|Ta hra
+1363|${c.p.title||"That game"} teď na polici není
+1364|Denní světlo
+1365|Večer
+1366|Neonová noc
+1367|Galerie s reflektory
+1368|Zhasnuto
+1369|Osvětlení
+1370|Scéna
+1371|Klasický je původní vzhled. Zhasnuto nechá svítit jen televizi a police.
+1372|Podle denní doby
+1373|Ráno denní světlo, odpoledne klasický, v noci večer
+1374|Světla se rozsvítí, když vejdeš
+1375|Vypnuto: místnost se otevře s rozsvícenými lampami
+1376|Jas, teplota, reflektor a prach navíc ke scéně
+1377|Jas
+1378|Teplota
+1379|Teplé ${Math.round(v*100)} %
+1380|Studené ${Math.round(-v*100)} %
+1381|Neutrální
+1382|Reflektor na krabičku
+1383|Prach ve světle
+1384|Retro televize
+1385|Obrazovka CRT, která pouští staré reklamy, trailery tvých her nebo to, co jsi hrál naposledy
+1386|Co dávají v televizi…
+1387|Dovede tě k televizi a otevře její program (když je vypnutá, zapne ji)
+1388|Stolek
+1389|Dřevěný vozík na televizi
+1390|Nízká skříňka
+1391|Televize na nožkách
+1392|Držák na zeď
+1393|V nízké skříňce je pár konzolí
+1394|Velikost
+1395|Malá
+1396|Střední
+1397|Velká
+1398|Umístění
+1399|Vlevo
+1400|Uprostřed
+1401|Vpravo
+1402|Uprostřed: mezi policemi a čtenářským koutkem, který se posune, aby uvolnil místo
+1403|Kanál
+1404|Staré reklamy
+1405|Trailery her
+1406|Nedávno hrané
+1407|Zamíchat vše
+1408|U televize přepínáš kanály i nahoru a dolů. Zamíchat vše míchá ostatní tři
+1409|Navíc k vlastní hlasitosti Špajzu
+1410|Ztlumit
+1411|Zvuk jen když se na ni dívám
+1412|Zesílí, když se k televizi otočíš nebo k ní přijdeš, a zeslábne, když odejdeš
+1413|Efekt CRT
+1414|Řádky, zakřivené sklo a záře
+1415|Animace zapnutí a vypnutí
+1416|Místnost
+1417|Stěny
+1418|Tmavá omítka
+1419|Dřevěné obložení
+1420|Cihly
+1421|Tapeta
+1422|Zelená
+1423|Vínová
+1424|Námořnická modrá
+1425|Podlaha
+1426|Kámen
+1427|Prkna
+1428|Koberec
+1429|Šachovnice
+1430|Police
+1431|Ořech
+1432|Černá
+1433|Bílá
+1434|Galerijní prvky
+1435|Podstavce
+1436|Sametové provazy
+1437|Lavička v muzeu
+1438|Plakáty tvých oblíbených
+1439|Nové hry přicházejí poštou
+1440|Od příští návštěvy
+1441|Na policích
+1442|Usadit konzoli této police…
+1443|Najít časopisy a návody…
+1444|Znovu zabalit vše, co jsi otevřel
+1446|v pořádku
+1447|Skrýt ‹
+1448|Otevřít ›
+1449|Nic neotevřeno
+1450|Stiskni znovu pro zabalení
+1451|Otevřeno: ${n} ›
+1452|Tady není žádný 3D model
+1455|Vybrat
+1456|Hotovo
+1457|Znovu zabaleno: ${done}. Všechno je zpátky ve fólii
+1458|Přidej 3D model této konzole v Nastavení → Přizpůsobit
+1460|Usadit konzoli
+1461|Načítám model…
+1462|Natočení
+1463|· automaticky
+1464|Úhel ovladače
+1467|Zobrazeno
+1468|Zpět na automatiku
+1469|(z modelu)
+1470|Tvůj controller.glb
+1471|Usazení: konzole ${f.name}
+1472|Kříž: výběr · vlevo/vpravo: změna · ${btnWord("back")}: hotovo
+1473|↑↓ výběr · ←→ změna · Esc: hotovo
+1474|Nepodařilo se uložit:
+1475|Nepodařilo se uložit: ${e.message}
+1476|Zpět na automatické usazení
+1477|Na té polici zatím není žádný 3D model
+1479|Stránka ${rdr.s+1} z ${rdr.n}
+1480|Obálka · ${rdr.n} stránek
+1481|Stránka ${L+1} z ${rdr.n}
+1482|Stránky ${L+1}–${R+1} z ${rdr.n}
+1483|· Vložka
+1484|Otevírám…
+1485|Tohle se nepodařilo otevřít:
+1486|Tohle se nepodařilo otevřít: ${e&&e.message||e}
+1489|Tato stránka se nenačetla
+1494|objeví se
+1495|objeví se
+1496|Stahování pokračuje (${n}): ${n>1?"they turn":"it turns"} na stojanu, až bude hotovo
+1497|Muzeum potřebuje WebGL, které tu není k dispozici
+1498|Na policích zatím nic není
+1501|Muzeum se nepodařilo spustit (WebGL)
+1502|zapnout ji
+1503|${c.wide.sub} · ${okWord()} pro ${c.wide.on?"watch":"turn it on"}
+1504|Čtenářský koutek
+1505|· ${okWord()} pro přiblížení
+1506|Krabice s návody
+1507|Krabice s časopisy
+1508|${okWord()} pro listování
+1509|${f.i+1} z ${f.n}
+1510|Seriál
+1511|Film
+1512|Ve tvé knihovně Stremio · ${okWord()} pro vzetí do ruky
+1513|Strategický průvodce
+1514|Časopis
+1515|Retro televize ·
+1516|Retro televize · ${TV_NAMES[ch]}
+1517|Zatím žádné trailery
+1518|Zatím nic nehráno
+1519|${okWord()} pro přehrání traileru
+1520|${okWord()} pro spuštění
+1521|Trailery přicházejí s údaji tvých her z LaunchBoxu
+1522|Hry, které hraješ, se objeví tady
+1523|Zatím nic nedávají
+1524|Ladím…
+1525|z Internet Archive
+1526|Zatím nenalezeny žádné reklamy: Špajz je ještě hledá na pozadí (poprvé to chvíli trvá)
+1527|napříč ${v.shelf}
+1528|pro tvou polici ${v.shelf}
+1529|Nové přírůstky
+1530|Nový přírůstek
+1531|Pošta!
+1532|Do sbírky něco přišlo…
+1533|Vybaluji…
+1534|nové hry
+1535|Nové hry: ${v.n}
+1536|Nová hra
+1538|Přišla bedna
+1539|Přišel balík
+1541|Konzole ${r.name}
+1542|· nejhranější:
+1543|· nejhranější: ${r.stats.top}
+1544|Her na této polici: ${r.games.length} · ${r.stats.hours}${r.stats.top?" · most played: "+r.stats.top:""}
+1545|Nová akvizice
+1546|Položka č.
+1547|Položka č. ${aq.no} ·
+1549|Stále zapečetěno
+1550|ještě nehráno
+1551|♥ oblíbená
+1552|${st.pageLabel} · ${st.pages} stránek
+1553|Posunout stránku
+1554|Dočteno
+1555|Otočit
+1556|Vrátit disk
+1557|Vyndat disk
+1558|Zavřít krabičku
+1559|Podrž pro rozbalení
+1560|Pustit reklamu
+1561|Další reklama
+1562|Další
+1563|Pustit trailer
+1564|Hrát tuto hru
+1565|TV program
+1566|Vypnout
+1567|Přeskočit
+1568|Podrž pro otevření
+1571|Posouvat
+1572|Sekce
+1573|Skrýt klávesnici
+1574|Vyber sekci
+1575|Najít nějaké
+1576|Přiblížit
+1577|Najít další
+1578|Zpět na polici
+1579|Obrátit
+1580|Rok
+1581|Přeskočit 10
+1582|Číst
+1583|Pustit ve Stremiu
+1584|Vyndat disk
+1585|Číst vložku
+1586|Vrátit disk
+1587|Položit
+1588|Krabička
+1589|Listovat
+1590|Vzít do ruky
+1591|Podrž ${okWord()} a otevři svůj balík
+1592|Ještě v sáčku: podrž ${okWord()} a otevři ho
+1593|Trailer otevřen v prohlížeči
+1594|To je reklama na konzoli: žádná hra ke spuštění
+1595|Ta hra na tvých policích není
+1596|Přidej filmy a seriály ve Stremiu: objeví se tady
+1597|Pro tuto hru zatím není návod
+1598|TV: nepodařilo se stáhnout
+1599|TV: nepodařilo se přehrát
+1602|Trailer ·
+1603|pro přehrání
+1604|Trailer · ${okWord()} pro přehrání
+1605|trailer
+1607|Hráno ${fmtDay(h.last/1000)}
+1608|sezení
+1609|Reklamy
+1610|Reklama na konzoli
+1611|Reklama
+1612|Zamíchat všechno
+1613|Reklamy, trailery a to, co jsi naposledy hrál, dohromady
+1614|★ Oblíbené
+1615|Zatím nenalezeny žádné reklamy. Špajz je ještě hledá na pozadí (poprvé to chvíli trvá).

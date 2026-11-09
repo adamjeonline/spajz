@@ -1,0 +1,338 @@
+3151|Conjuntos que combinam
+3152|Procurando frente, verso, lombada e disco que combinam…
+3153|Nenhuma fonte tem frente, verso, lombada e disco do mesmo lançamento. Escolha cada parte separadamente.
+3154|Ainda não há conjunto completo para este jogo
+3155|Procurando todas as versões de {}…
+3156|Fontes misturadas
+3157|{} · completo
+3159|disco
+3160|Montando…
+3161|O seu arquivo atual
+3162|Uma escolha anterior
+3163|Versão
+3164|espere
+3165|Nítida
+3166|Tamanho …
+3167|falhou
+3168|{} Filtros
+3169|Só um tipo de versão aqui · nada para filtrar
+3170|${S.list.length} [[${S.list.length===1?"":"s"}|conjunto completo encontrado|conjuntos completos encontrados]]
+3171|Ainda não há conjunto completo
+3174|não foi possível baixar nenhuma · verifique a conexão e Tente de novo
+3175|o índice do LaunchBox ainda não foi montado
+3176|preparando o índice do LaunchBox…
+3177|nada encontrado para esta parte ainda · use uma imagem sua
+3178|não foi possível baixar nenhuma · verifique a conexão
+3179|só uma fonte para este jogo
+3180|· índice do LaunchBox ainda não montado
+3181|${nc} [[${nc===1?"":"s"}|versão|versões]] · a que mais combina com o estilo da estante primeiro${c.note==="noindex"?" · LaunchBox index not built yet":""}
+3182|procurando…
+3183|${n2} [[${n2===1?"":"s"}|conjunto completo|conjuntos completos]] · A coloca as quatro partes de uma vez
+3184|nenhum conjunto completo: escolha cada parte separadamente
+3185|${nf} de ${c.list.length} versões · filtradas
+3186|Todos os manuais deste jogo · A abre
+3188|Em uso · sua escolha
+3189|Em uso
+3190|Melhor opção
+3191|Na sua estante
+3192|, verso e lombada de uma única digitalização completa
+3194|imagem de alta qualidade
+3195|imagem limpa
+3197|Em uso · sua escolha: a busca automática deixa como está, uma mudança de estilo da estante substitui a menos que o jogo esteja travado.
+3198|Em uso agora.
+3199|Melhor opção para ${lookName(c.look)}.
+3200|Tem uma faixa de reimpressão.
+3201|Testando · ${btnLabel("a")} usa esta
+3202|Colocando ${x.label.replace(/ · complete$/,"")}…
+3203|${x.label.replace(/ · complete$/,"")}: as quatro partes colocadas · sua escolha
+3204|As quatro partes voltaram a ser como eram
+3205|Já está em uso
+3206|esta versão
+3207|${PART_L[st.part]}: ${x.label||"this version"} · sua escolha
+3208|Conjuntos não são filtrados
+3209|Nada para filtrar nesta parte
+3210|Escolha uma parte para voltar ao estilo da estante
+3211|${PART_L[st.part]} já segue o estilo da estante
+3212|Tentando de novo…
+3213|Não foi possível baixar essa
+3214|Faltando
+3215|Incompleto
+3216|Tem
+3217|Em uso agora
+3218|Coleção de manuais
+3219|Seu PDF
+3220|Meu PDF…
+3221|Um PDF seu · copiado, nunca movido
+3222|O manual antes deste
+3223|Procurar manuais de novo
+3225|Carregando manuais por console…
+3226|Todos os manuais encontrados para cada jogo, por console.
+3227|Manuais de ${c.name}
+3228|${c.have} de ${c.total}
+3230|Todos os manuais encontrados para cada jogo de ${c.name}, lado a lado: outro idioma, região ou digitalização mais nítida, ou um PDF seu. Os downloads automáticos seguem a escolha de ${c.name} (agora: ${prefName(c.pref)}) e nunca substituem um manual que você escolheu.
+3231|Seguindo a nova escolha · ${j.done||0} de ${j.total||"…"}
+3232|· ${c.locked} travados
+3233|Manuais ·
+3234|Tem
+3235|Carregando os jogos de ${esc(mName(st.sys))}…
+3236|Todos os jogos têm manual.
+3237|Nenhum manual incompleto nesta estante.
+3238|Nenhum manual travado ainda. ${btnLabel("y")} num jogo trava o que ele tem.
+3239|Manual travado · os downloads automáticos deixam como está
+3240|Manual destravado · ele segue a escolha do console de novo
+3241|Manuais de ${mName(sys)}
+3242|${mName(sys)}: ${prefName(id)} · os downloads automáticos seguem isso
+3243|Travar este manual
+3244|Primeira página
+3245|Páginas ?
+3248|PDF · ainda não transformado em páginas
+3249|Trabalhando…
+3250|Faltando ·
+3251|Faltando · ${prefName(c.pref)}
+3252|Segue
+3253|Segue ${prefName(c.pref)}
+3254|Os downloads automáticos e uma nova escolha de console deixam como está.
+3255|Desligado: uma nova escolha de console substitui as escolhas também.
+3256|Desligado: os downloads automáticos podem trocar por uma opção melhor.
+3257|${mName(st.sys)}: ${prefName((mCon(st.sys)||{}).pref||(c&&c.pref))} · mudar
+3258|${n} até agora · ainda procurando…
+3259|não foi possível acessar os sites de manuais · verifique a conexão e Tente de novo
+3260|nenhum manual encontrado online · adicione um PDF seu
+3261|${n} [[${n===1?"":"s"}|manual|manuais]] · a melhor opção para ${prefName(c.pref)} primeiro
+3262|Em uso · travado
+3263|Em uso e travado: nada automático substitui.
+3264|Manual: ${mShort(x)} · sua escolha
+3265|O manual anterior voltou
+3266|Escolher um PDF…
+3267|O seu PDF agora é o manual deste jogo · sua escolha
+3268|Capas e manuais › Manuais de ${nm}
+3269|Manuais de ${nm}
+3270|· ${lk} travados
+3272|Capas e manuais › Manuais de ${nm} › Escolha
+3273|Quais manuais para ${nm}?
+3274|Um toque. Os downloads automáticos do Špajz seguem isso, agora e para jogos novos.
+3275|Capas e manuais › ${nm} › ${truncEnd(full,40)} › Manual
+3276|Procurando todos os manuais deste jogo…
+3277|Todos os manuais encontrados para este jogo, lado a lado. Ainda procurando online…
+3278|A usa um como sua escolha e deixa o antigo de lado (Desfazer traz de volta).
+3279|Escolha do console
+3280|Escolher manual
+3281|Destravar
+3282|Travar
+3283|Filtrar
+3284|Usar para ${mName(st.sys)}
+3285|Escolha um manual
+3286|Usar este
+3287|Capas e manuais › ${nm}
+3288|Capas de ${nm}
+3289|· ${nc} sem capa
+3290|· ${lk} com escolhas ou travados
+3292|Capas e manuais › ${nm} › Estilo da estante
+3293|Como ${nm} deve ficar?
+3294|Capas e manuais › ${nm} › ${title}
+3295|Este jogo está travado como está: nada automático muda ele. As suas mudanças aqui continuam funcionando.
+3296|Procurando todas as versões de ${pl}…
+3298|Escolher capa
+3299|Destravar jogo
+3300|Travar jogo
+3301|Região ou HD
+3302|Conjuntos completos para ${conName2(st.sys)}
+3303|Parte
+3304|Estilo
+3305|Mudar o visual
+3306|Usar para ${conName2(st.sys)}
+3307|Por parte
+3308|Parar a nova busca
+3309|Usar este conjunto
+3310|Escolha um conjunto
+3311|Escolher versões
+3312|Filtros
+3313|Voltar ao estilo da estante
+3314|Versões
+3315|Filtros · ligados
+3316|Partes
+3317|Parar
+3321|Pesquisar nas configurações
+3322|Špajz {}
+3323|· ${st.points} pts
+3324|Conectado · ${st.user||gp("ra.user")}${st.points!=null?` · ${st.points} pts`:""}
+3325|Ainda não disponível
+3326|Precisa de login de desenvolvedor
+3327|Login não aceito
+3328|Chave não aceita
+3329|Não funcionou
+3330|Aperte de novo para remover
+3331|Movendo · ▲▼
+3339|(ou Pronto) para ir até eles.
+3340|É só digitar — os resultados atualizam enquanto você digita. Para baixo ou Enter vai para os resultados, Esc limpa.
+3341|Direita ou
+3342|Direita ou ${btnName("a")}
+3343|→ ou Enter
+3344|{} abre esta página
+3345|Usa o ${c.emulatorName||"its emulator"}. ${conStatus(c)}.
+3346|Verificado ${when(x.at)}
+3347|${btnLabel("a")} de novo abre o ${e.emulator||"the emulator"}
+3348|${btnLabel("a")} mostra como · depois abre o ${e.emulator||"the emulator"}
+3349|As prévias ficam atrás desta página
+3350|As estantes atualizam quando você fecha as Configurações
+3351|Alterado · ${btnLabel("y")} volta para ${defLabel(R)}
+3352|Quadrado
+3353|Triângulo
+3354|Fechar o teclado
+3355|Limpar a pesquisa
+3356|Resultados
+3357|Ligar
+3358|Como corrigir
+3359|Ajustar
+3360|Editar
+3361|Ir para a configuração
+3362|Caixa de pesquisa
+3363|Menos
+3364|Saiba mais
+3366|Boas-vindas
+3367|Seus consoles
+3368|Terminar a configuração
+3369|Stremio e Nuvio
+3370|Concluir
+3371|Configuração do Špajz
+3372|Špajz ${info.version}
+3373|Todos os consoles que o Špajz consegue rodar. Escolha um para definir o emulador e as pastas de jogos.
+3374|${(sc.romDirs||[]).length} [[${(sc.romDirs||[]).length===1?"":"s"}|pasta|pastas]] · pronto
+3375|Apontar para o emulador
+3377|${n} prontos
+3378|${n} [[${n===1?"":"s"}|pasta|pastas]] · pronto
+3379|Escolha o app do emulador
+3380|${c.emulatorName||"Emulator"} não encontrado
+3381|Estes já conseguem rodar neste aparelho. Escolha um para conferir o emulador e adicionar a pasta com os jogos dele.
+3382|Nenhum app de emulador encontrado ainda. Instale um (como Dolphin, RetroArch ou DuckStation) e aperte Procurar de novo, ou configure um console à mão abaixo.
+3383|Mais consoles (${others})
+3384|O RetroArch consegue rodar estes
+3385|Nenhum app de emulador encontrado
+3386|Abrir o Špajz
+3387|Procurar de novo
+3388|Pular por enquanto
+3389|‹ Todos os consoles
+3393|Site oficial:
+3394|Baixar ${n} ↗
+3396|Biblioteca de capas
+3397|Onde as capas e os manuais ficam guardados. Escolha uma pasta e cada console ganha uma pasta própria dentro dela, com capas e manuais, fácil de fazer backup ou reaproveitar numa instalação nova. As capas que já estão ao lado dos jogos são copiadas para lá em segundo plano (nada é movido, apagado ou baixado de novo). Deixe vazio para manter as capas ao lado dos jogos de cada console.
+3398|Vamos conectar os seus emuladores e jogos
+3399|Boas-vindas ao Špajz
+3400|Vamos encontrar os seus jogos
+3401|O Špajz procura os seus emuladores, jogos, a biblioteca da Steam e os apps de streaming. Depois você escolhe quais consoles joga, e em um minuto está pronto.
+3402|Pasta do Špajz
+3403|Encontrar meus emuladores e jogos
+3404|Encontrar automaticamente
+3405|Vou escolher eu mesmo
+3406|Configurar à mão
+3407|· ${n} [[${n===1?"":"s"}|pasta de jogos|pastas de jogos]]
+3408|${e} encontrado${n?` · ${n} game folder${n===1?"":"s"}`:""}
+3409|Jogos encontrados · ${e} ainda não encontrado
+3410|${e} não encontrado
+3411|Steam encontrada · os seus jogos de PC
+3412|Steam não encontrada
+3413|${a.name} encontrado · estante Mídia
+3414|${a.name} não encontrado
+3415|Retrô e arcade
+3416|Xbox, PC e apps
+3417|Passo 1 de 3
+3418|Quais consoles você joga?
+3419|O Špajz ainda não encontrou nenhum emulador. Marque os consoles que você joga e depois aponte para o emulador e os jogos deles.
+3420|Marque os consoles que você joga. Depois você aponta para o emulador e os jogos de cada um.
+3421|Mais consoles e apps (${rest.length})
+3422|O RetroArch está instalado, então ele consegue rodar qualquer um dos consoles retrô aqui. Marque só os que você joga.
+3423|Os seus jogos do Playnite vêm de uma vez: os jogos que você adicionou à mão vão para uma estante Personalizados, e as pastas dos jogos emulados para os consoles deles. Você vê o que foi encontrado antes de qualquer coisa ser adicionada.
+3424|${n} [[${n===1?"f":"ves"}|estante escolhida|estantes escolhidas]].
+3425|Nada escolhido ainda.
+3426|Passo 2 de 3
+3427|Algumas coisas para terminar
+3428|Tudo pronto
+3429|Só o que falta para as estantes que você escolheu. O que você pular agora pode ser feito depois nas Configurações.
+3430|Todas as estantes que você escolheu têm emulador e jogos. Agora, as capas.
+3432|Nenhuma estante por enquanto
+3433|Procurar ${def.exeNames[0]}
+3434|Procurar…
+3435|Baixar ${OFFICIAL[def.id][0][0]} ↗
+3436|Ainda não encontrado
+3437|Escolha a pasta com os seus jogos de ${def.name}
+3438|Adicionar outra
+3439|Adicionar pasta
+3440|A pasta com os seus jogos de ${def.name} (subpastas também contam)
+3441|Jogos encontrados aqui
+3442|Usar
+3443|Baixar ${def.name} ↗
+3444|Configurar os meus emuladores para mim
+3445|Recomendado
+3446|${setupKinds().join(", ")}: o seu controle configurado, as teclas de Salvar e Carregar do menu Home, uma pasta de BIOS e gráficos adequados a este PC. Os emuladores que você já usou ficam como estão. Tudo ganha backup antes, e Configurações → cada console → Configurar para mim pode desfazer.
+3447|Caixas originais
+3448|A caixa de verdade do lançamento de cada jogo.
+3449|Uma região
+3450|Todas as caixas da região que você escolher: EUA, Europa ou Japão.
+3451|Arte mais nítida
+3452|As imagens de maior resolução, e pôsteres feitos por fãs onde não há digitalização da caixa.
+3453|Passo 3 de 3
+3454|Baixar as capas?
+3455|O Špajz consegue encontrar online as capas, contracapas, lombadas, discos e manuais dos seus jogos. Para isso ele manda os títulos dos seus jogos (e os IDs de disco de GameCube / Wii) para o LaunchBox, libretro, GameTDB e a Super Mario Wiki. Nada mais sobre você ou o seu PC é enviado.
+3456|Sim, baixar as capas
+3457|Você pode mudar isso a qualquer hora em Configurações → Capas e manuais.
+3458|Como as suas caixas devem ficar?
+3459|O Špajz encontra online as capas, contracapas, lombadas e discos dos seus jogos.
+3460|Manda os títulos dos seus jogos (e os IDs de disco de GameCube / Wii) para o LaunchBox, libretro, GameTDB e a Super Mario Wiki para encontrar imagens (e para o SteamGridDB também, se você adicionar uma chave depois). Nada mais sobre você ou o seu PC é enviado.
+3462|Contracapas, lombadas e discos também. O Špajz cria as que nenhuma fonte tem, e troca por uma digitalização de verdade quando aparecer uma.
+3463|Manuais dos jogos, quando disponíveis, para ler a partir da caixa do jogo.
+3464|Mais opções
+3465|Onde guardar capas e manuais
+3466|Você pode mudar qualquer console, ou um jogo só, depois no Estúdio de capas.
+3467|Conquistas e o seu progresso nos detalhes de cada jogo, e um resumo depois que você joga.
+3468|Entre e depois vá em Settings → Keys → Web API Key.
+3469|Pôsteres feitos pela comunidade para os seus jogos no Estúdio de capas, ao lado das digitalizações reais das caixas.
+3470|Entre com a Steam (grátis) e depois vá em Preferences → API.
+3471|Versos das caixas, lombadas e arte de disco ou cartucho por região, no Estúdio de capas.
+3472|Criar uma conta gratuita
+3473|Uma conta gratuita permite um número fixo de consultas por dia.
+3474|Uma chave pessoal gratuita.
+3475|Conectado · ${Number(st.points).toLocaleString()} pts
+3476|Funcionando · ${st.left} consultas restantes hoje
+3477|Opcional
+3478|Conecte as suas contas
+3479|Logins gratuitos que acrescentam mais ao Špajz. Preencha os que quiser ou pule esta página: todos ficam depois em Configurações → Contas e serviços.
+3480|Mais serviços
+3481|As chaves ficam guardadas criptografadas neste PC e só são enviadas para o próprio serviço.
+3482|Esconder o teclado
+3483|Digite ${label.toLowerCase()}
+3484|⌨ Digitar
+3485|Cole ${label.toLowerCase()}
+3486|Colar
+3487|Não funcionou: ${st.msg||"not accepted"}
+3488|Teclado na tela
+3489|Letras minúsculas
+3490|Maiúsculas e símbolos
+3491|Nada para colar: copie a chave primeiro
+3492|Preencha primeiro ${s.fields.map(f=>f[0].toLowerCase()).join(" and ")}
+3493|${s.name} conectado
+3494|Usar o Dolphin do GameCube
+3495|Usar o Dolphin do Wii
+3496|Programa ${def.emulatorName}
+3497|Também encontrado: ${det.systems[def.id].emulator}
+3498|Ainda não há pastas. Adicione a pasta com os seus jogos de ${def.name} (${def.hint||def.extensions.slice(0,4).map(e=>"."+e).join(", ")+"…"}). As subpastas também são procuradas.
+3499|Encontrado:
+3500|Encontrado: ${d}
+3501|Pastas de jogos
+3502|Procurar e baixar
+3503|A sua própria pasta de capas (opcional)
+3504|Toca o vídeo de abertura que você adicionou para este console (Personalizar) em vez da tela de abertura. Sem vídeo, a introdução embutida só toca quando a tela de abertura está desligada.
+3505|Segundos para esconder o Dolphin quando a inicialização está ligada
+3506|Abrir pasta (EUA)
+3507|Esconder o Dolphin por
+3508|Segundos que a janela do Dolphin fica escondida enquanto a inicialização toca. Menor mostra mais dela, mas pode piscar o Dolphin. Padrão 2,5.
+3509|Como "IPL file is not a known good dump".
+3510|Encontrado: ${r.found.map(x=>x.region).join(", ")}
+3511|Defina primeiro o programa do Dolphin.
+3512|Opções de abertura
+3513|Opções só do emulador
+3514|Segundos para esconder o emulador enquanto ele abre
+3515|Opções ao abrir o emulador sozinho
+3516|Esconder o emulador enquanto ele abre
+3517|A tela de carregamento do Špajz fica na frente por esse tempo para você não ver a janela do ${def.emulatorName} antes de o jogo entrar em tela cheia. Aumente se ainda aparecer uma piscada; 0 desliga. Padrão: ${def.coverSeconds}.
+3518|Teste: abrir o ${def.emulatorName}
+3519|Mostra os jogos da Steam instalados neste PC com as capas de verdade, e abre eles pela Steam.

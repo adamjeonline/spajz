@@ -1,0 +1,80 @@
+# (T)rustyShelf: the check that runs on every push to t-rustyshelf. It reads the pushed commit's message
+# (scripts/release-version.js) and decides one of three things:
+#   none     a normal commit: this run finishes here, nothing else runs
+#   build    "For build…" → calls build.yml: the Windows, Linux and Android builds, kept as the run's downloads
+#   release  "For version A.B.C" → calls release.yml: the same builds, then a GitHub release vA.B.C.0
+# The version is A.B.C.DDDD (DDDD the build of A.B.C). Desktop builds carry it as A.B.C+DDDD (npm and electron-builder
+# take that form) and show it as A.B.C.DDDD; Android as its versionName, with a versionCode that grows with every build.
+name: Build/release check
+
+on:
+  push:
+    branches: [t-rustyshelf]
+
+# the called workflows inherit these: the release job needs to write (create the release)
+permissions:
+  contents: write
+
+concurrency:
+  group: release # (one at a time, none cancelled: each build counts from the release before it)
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Read the commit message
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      kind: ${{ steps.v.outputs.kind }}
+      version: ${{ steps.v.outputs.version }}
+      tag: ${{ steps.v.outputs.tag }}
+      semver: ${{ steps.v.outputs.semver }}
+      code: ${{ steps.v.outputs.code }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Decide what this commit is for
+        id: v
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          set -o pipefail
+          git fetch --tags --force --quiet
+          git tag -l 'v*' > "$RUNNER_TEMP/tags.txt"
+          node scripts/release-version.js "$MSG" "$RUNNER_TEMP/tags.txt" "$(node -p "require('./package.json').version")" | tee -a "$GITHUB_OUTPUT"
+
+      - name: Summary
+        env:
+          KIND: ${{ steps.v.outputs.kind }}
+          VERSION: ${{ steps.v.outputs.version }}
+          REASON: ${{ steps.v.outputs.reason }}
+        run: |
+          case "$KIND" in
+            release) echo "### Release (T)rustyShelf $VERSION: builds, then the release" >> "$GITHUB_STEP_SUMMARY" ;;
+            build) echo "### Build (T)rustyShelf $VERSION: builds, kept as this run's downloads" >> "$GITHUB_STEP_SUMMARY" ;;
+            *) echo "### Nothing to build: $REASON" >> "$GITHUB_STEP_SUMMARY" ;;
+          esac
+
+  build:
+    name: Build
+    needs: check
+    if: needs.check.outputs.kind == 'build'
+    uses: ./.github/workflows/build.yml
+    with:
+      version: ${{ needs.check.outputs.version }}
+      semver: ${{ needs.check.outputs.semver }}
+      code: ${{ needs.check.outputs.code }}
+
+  release:
+    name: Release
+    needs: check
+    if: needs.check.outputs.kind == 'release'
+    uses: ./.github/workflows/release.yml
+    with:
+      version: ${{ needs.check.outputs.version }}
+      semver: ${{ needs.check.outputs.semver }}
+      code: ${{ needs.check.outputs.code }}
+      tag: ${{ needs.check.outputs.tag }}
+      notes: ${{ github.event.head_commit.message }}

@@ -1,0 +1,203 @@
+1|Início
+4|Personalizados
+5|Mídia
+8|Estante
+11|Escolher uma capa
+12|Cancelar
+13|O emulador
+14|Imagens
+17|Ocultos
+18|o emulador dele
+19|Não configurado
+20|Não encontrado
+21|Jogos personalizados
+22|Temas personalizados
+23|Imagens
+24|Ainda não verificado
+25|não encontrado
+26|Programas
+27|Histórico de jogo apagado
+29|busca
+30|Trabalhando
+33|Chave de API
+34|Conectado
+35|A chave funciona
+36|não aceita
+38|$1 um celular pareado
+39|$1 um celular $3
+40|a estante
+41|uma página auxiliar
+42|página desconhecida
+49|(sem resposta)
+50|de volta à estante
+53|(teve que ser forçado)
+63|nada criado
+64|Escolher um emulador…
+65|Usar ${name(sugg)} (feito para este jogo)
+66|Usar o ${def.emulatorName} da estante
+67|Este jogo roda em: ${cur}
+68|(não configurado)
+69|Este jogo roda no ${def.emulatorName} da estante: ${shelfExe || '(not set up)'}
+70|Escolha uma versão diferente só para este jogo, por exemplo um fork ajustado para ele.
+72|Emulador para este jogo
+73|Qual emulador este jogo deve usar?
+74|Emulador para este jogo (${def.emulatorName} ou uma versão dele)
+75|Todos os arquivos
+76|padrão da estante
+77|Deste jogo
+78|Adicionado
+81|(atualização mais recente)
+82|Baixando o núcleo ${nm} do RetroArch…
+83|Baixando o núcleo ${nm} do RetroArch… ${p}%
+84|o jogo não abriu
+85|um emulador em janela própria
+86|um app em janela
+87|o app não abriu
+88|Confira no Quiver Launcher.
+89|Confira no GOG Galaxy.
+90|Remova em Configurações → Jogos personalizados e adicione de novo.
+91|para um nome próprio
+92|de volta ao nome do arquivo
+93|resposta inesperada
+95|Não foi possível pegar esse logo
+96|Terminando primeiro o download das capas em segundo plano…
+99|Terminando primeiro o download dos manuais em segundo plano…
+100|Ignorar
+101|Por enquanto só no Windows
+102|nenhum que o Špajz já saiba configurar
+103|Transformando manuais em PDF em páginas…
+104|não foi possível transformar o PDF em páginas
+105|trocado pela digitalização limpa de
+106|trocado pela digitalização limpa de ${c.from}
+107|Verificando manuais ·
+108|Verificando manuais · ${p.system}
+109|Procurando os jogos deixados de lado…
+111|nenhum motivo informado
+112|Escolher capa
+113|Manuais em PDF
+114|Tela ${i + 1} — ${w}×${h}
+115|Fazer backup das configurações do Špajz
+116|Configurações do Špajz
+117|Isso não é um backup de configurações do Špajz.
+118|Esse backup não tem versão do Špajz.
+119|Esse backup não tem configurações.
+120|O histórico de jogo nesse backup está danificado.
+121|Restaurar configurações do Špajz
+122|Esse arquivo é grande demais para ser um backup de configurações.
+123|Não foi possível ler esse arquivo como backup de configurações.
+133|(um jogo está rodando)
+142|Relatório de problema do Špajz ${stamp()}
+143|O Špajz não conseguiu iniciar
+144|${e && e.message || e} Os detalhes estão em data\boxshelf.log. O Špajz precisa conseguir gravar na própria pasta.
+145|emulador encontrado
+146|sem emulador
+147|pasta(s) de jogos
+148|archive.org respondeu
+150|Emulador
+151|Arquivo
+152|Jogo
+153|Essa pasta não existe
+155|Não foi possível copiar a biblioteca do Playnite (
+157|páginas
+158|Cancelado.
+164|O archive.org está ocupado agora. Tente de novo em um minuto.
+165|O archive.org não respondeu (${e.message}).
+166|(só texto)
+168|(${Math.round(n / 1048576)} MB guardados para continuar)
+169|Não foi possível salvar o arquivo (o disco está cheio?).
+170|O Internet Archive não deixa baixar este arquivo (ele pode ser restrito).
+171|Esse arquivo não existe no Internet Archive.
+172|O download travou. Tente de novo em um minuto.
+173|O download não terminou. Verifique sua conexão e tente de novo.
+174|Sem título
+177|(já estava lá)
+178|arquivos,
+179|Não foi possível acessar o archive.org (${e.message}).
+180|arquivos:
+182|Esse arquivo tem mais de 2 GB.
+183|o archive.org está ocupado
+184|nenhum arquivo utilizável
+185|Anterior
+187|Nada para desfazer
+188|Europa
+189|Japão
+191|região:
+192|Nada precisava mudar
+196|Atual
+198|Cartucho feito a partir da capa
+200|Contracapa feita pelo Špajz
+201|Lombada feita pelo Špajz
+202|Anterior${dateWord(r.stamp) ? ' · ' + dateWord(r.stamp) : ''}
+203|· completo
+204|${label} · completo
+205|Mudando o estilo de ${def.name}
+206|${notFound} não encontrados
+207|${failed} falharam
+208|${netErr} [[${netErr === 1 ? '' : 's'}|erro|erros]] de conexão
+209|Não foi possível acessar os sites de capas. Verifique a internet e tente de novo.
+210|${changed} [[${changed === 1 ? '' : 's'}|imagem alterada|imagens alteradas]]
+211|Nada para mudar
+212|Nada mudou
+213|· ${j.locked} [[${j.locked === 1 ? '' : 's'}|jogo travado ignorado|jogos travados ignorados]]
+214|${j.sets.full} [[${j.sets.full === 1 ? '' : 's'}|conjunto completo|conjuntos completos]] · ${j.sets.partial} parciais · ${j.sets.skipped} ignorados (travados)
+215|Voltar ao estilo da estante
+216|${changed} [[${changed === 1 ? '' : 's'}|parte escolhida|partes escolhidas]] de novo
+217|Não foi possível baixar imagens novas: as atuais continuam
+218|contracapa
+219|Uma imagem da caixa inteira para recortar a lombada: ${g.game.title}
+220|Sua própria ${PL} para ${g.game.title}
+221|(lombada recortada de uma caixa inteira)
+253|Pareie este celular primeiro.
+254|o jogo
+255|Celular
+256|Celular Android
+257|Vá um pouco mais devagar.
+258|Use o endereço mostrado no Špajz.
+259|Origem errada.
+260|Não encontrado.
+261|Esse jogo não existe mais. Puxe para atualizar.
+262|Não permitido.
+263|Botão desconhecido.
+264|Tecla desconhecida.
+265|Nada para digitar.
+266|Algo deu errado.
+267|O Špajz está ocupado. Tente de novo daqui a pouco.
+268|Grande demais.
+269|PINs errados demais. Tente de novo em alguns minutos.
+270|PINs errados demais. O pareamento está bloqueado por ${min} minutos.
+271|Esse PIN não está certo. ${left} [[${left === 1 ? 'try' : 'tries'}|tentativa restante|tentativas restantes]].
+272|Nenhuma rede de casa encontrada. Conecte este PC ao seu roteador (Wi-Fi ou cabo).
+273|A porta ${want} está sendo usada por outro programa, então a ${port} é usada no lugar.
+274|Não foi possível iniciar: ${e.message}
+275|As portas ${want}–${want + 9} estão todas em uso. Escolha outra porta.
+276|ligado
+277|desligado
+278|Coleção
+286|Arcade
+287|Cartucho
+288|Disco
+289|Lombada
+290|Voltar
+291|Capa
+292|Mundo
+293|Finalizando…
+294|América do Norte
+295|Estados Unidos
+297|Reino Unido
+299|Baixando o banco de dados de jogos do LaunchBox (só uma vez, cerca de um minuto)…
+300|Baixando o banco de dados de jogos do LaunchBox… ${pct}%
+301|Descompactando o banco de dados de jogos…
+302|Lendo o banco de dados de jogos… 0%
+303|Lendo o banco de dados de jogos… ${pct}%
+306|Organizando o banco de dados de jogos por console…
+307|Esperando a montagem que já está rodando…
+308|Baixando o banco de dados de jogos do LaunchBox…
+309|Austrália
+319|Recortada da caixa inteira
+320|Arte de fã
+321|Reconstrução limpa
+322|Digitalização da caixa
+323|Capa limpa
+327|Capa em HD
+328|Da capa inteira do GameTDB
+329|Recortada da capa inteira

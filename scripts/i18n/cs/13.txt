@@ -1,0 +1,145 @@
+3797|Sega CD, 32X, Atari 2600, Lynx, WonderSwan a DOS přes RetroArch (Sega CD i přes MD.emu), s obaly, návody a achievementy.
+3798|Steam Deck: odejdi z jakékoli hry
+3799|Během hry na chvíli podrž Select + Start a Špajz ji zavře, ať je emulátor jakýkoli.
+3800|Účty při nastavení
+3801|První nastavení má nepovinnou stránku Účty: RetroAchievements, SteamGridDB, ScreenScraper a fanart.tv, každý s odkazem na bezplatný klíč, tlačítkem Vložit a Testem. S ovladačem klávesnice na obrazovce. Když ji přeskočíš, nic se nezmění.
+3802|Návody pro mnoho dalších konzolí
+3803|Sbírky skenů pro hry PlayStation, NES, SNES, N64, Game Boy, DS, 3DS, Sega, Atari, TurboGrafx-16 a Neo Geo a k tomu návody Nintenda ve vysokém rozlišení pro Wii, GameCube, N64, DS a 3DS.
+3804|Lepší
+3805|Všude plynulejší
+3806|Práce s obaly, návody a knihovnou na pozadí se střídá s policí, místo aby ji zmrazila, složky s hrami se čtou jednou místo pořád dokola a návrat ze hry už nespouští celé nové prohledání.
+3807|Správný návod ke správné hře
+3808|Přísnější párování: už žádné návody k pokračováním nebo jiným konzolím, žádné reklamní letáky. Dříve vybrané návody, které nesedí, se odloží (zůstanou v záložní složce) a vyhledají znovu. Hry, které nikde návod nemají, ukážou „online nenalezen žádný návod“.
+3809|Čistší stránky návodů
+3810|Už žádné miniaturní „stránky“, obří skeny dostaly rozumnou velikost a digitální návody a přebaly krabic se už nepřepůlí.
+3811|Oprava návodu
+3812|Ve čtečce návodů Opravit návod (Y / W) nabízí Špatná hra (odloží ho a najde správný, nejdřív ve sbírkách skenů) nebo Opravit (stejný návod se správnou obálkou, stránkami a velikostmi). Hned a jen pro tu hru.
+3813|Art Studio ukazuje celou krabici
+3814|Krabička v Art Studiu má tvar krabice hry, takže krabice 3DS, PSP, Switch, Blu-ray a kazet se ukazují celé místo oříznutých.
+3815|Návody Wii U se otevírají na krabici
+3816|Návody vytvořené z vlastního e-návodu hry Wii U se zase otevírají na přední straně krabice, ať Špajz běží odkudkoli.
+3817|Vložit z pravého tlačítka
+3818|Textová pole mají obvyklé menu Vyjmout / Kopírovat / Vložit.
+3819|Nastavení otevře správnou stránku
+3820|Odkazy na vlastní stránku (z karty nebo spodní obrazovky) teď vedou na tu stránku, na všech platformách.
+3821|Videonáhledy, nová stránka Podrobností a snazší nastavení
+3822|Videonáhledy: zastav se na hře a přehraje se její trailer, na polici i v Podrobnostech, i u konzolových her
+3823|Nová stránka Podrobností: logo hry, statistiky hraní, karty a jedno velké tlačítko Hrát
+3824|Přidej spoustu her najednou: vyber několik, prohledej složku nebo importuj z Playnite (experimentální)
+3825|Deset dalších konzolí včetně Saturnu, Neo Geo, arkád a DOSu
+3826|Nastavit za mě: jeden přepínač nastaví RetroArch, Dolphin, DuckStation, PCSX2 a PPSSPP
+3827|Windows: všechno výše.
+3828|Linux / Steam Deck (experimentální): všechno kromě Nastavit za mě, trailerů konzolových her, prohledání složky her a importu z Playnite. Na Steam Decku přidej Špajz do Steamu (sám to nabídne) a hraj v herním režimu.
+3829|Zastav se na hře a přehraje se její náhled, jemně za policí a za krabičkou v Podrobnostech: tvoje vlastní videa (ES-DE, EmuDeck, RetroBat, LaunchBox nebo vlastní složka), trailery Steamu pro hry ze Steamu a trailery konzolových her z YouTube. Nastavení → Videonáhledy, kde nastavíš i to, jak brzy začnou (půl vteřiny až 15 sekund).
+3830|Trailer konzolové hry z YouTube se při prvním zastavení uloží jako krátký klip (asi 1 MB), takže se pak na polici přehrává stejně jako trailer ze Steamu. Potřebuje bezplatného pomocníka (yt-dlp), který se jedním stisknutím jednou stáhne: Špajz se zeptá na polici, nebo Nastavení → Videonáhledy.
+3831|Nová stránka Podrobností
+3832|Logo hry, odehraný čas a kdy naposledy, jedno tlačítko Hrát a vedle něj Návod, Prohlédnout a Více, a karty: Přehled, Média a Tvoje kopie (LB / RB, nebo Q / E). Pozadí vyplní obrázek hry nebo její náhled.
+3833|Přidej spoustu her najednou
+3834|Nastavení → Vlastní hry → Přidat hry, nebo dlaždice Přidat hry na konci police Vlastní: vyber několik programů najednou, nebo ukaž Špajzu na složku s hrami a zaškrtni ty, které chceš přidat.
+3835|Přenes svou knihovnu Playnite najednou: ručně přidané hry i s obaly a složky emulovaných her. Nejdřív uvidíš, co se přidá, a jedním stisknutím to zase všechno odebereš. Dej vědět, jak to šlo.
+3836|Steam Deck: herní režim a Přidat do Steamu
+3837|Špajz se teď sám spouští ze Steamu i v herním režimu. Na Steam Decku v režimu plochy nabídne, že se přidá do Steamu, aby ovladač ve hrách fungoval jako gamepad (mimo Steam je B klávesa Esc, která ukončí většinu emulátorů). Kdykoli: Nastavení → Systém → Přidat Špajz do Steamu.
+3838|Switch: Citron a Ryujinx
+3839|Najdou se a spouští stejně jako Eden, takže emulátor Switche z EmuDecku funguje bez nastavování.
+3840|Deset dalších konzolí
+3841|Saturn, TurboGrafx-16, Neo Geo, arkády, Sega CD, 32X, Atari 2600, Lynx, WonderSwan a DOS přes RetroArch, každá s vlastní krabičkou a barvami. Arkádové hry ukazují svoje skutečné názvy.
+3842|Nastavit za mě
+3843|Nastavení → konzole → Nastavit za mě: namapovaný ovladač, klávesy Uložit a Načíst pro menu Domů, jedna sdílená složka BIOS a grafika vhodná pro tvůj počítač. Tvoje soubory se nejdřív zálohují a Vrátit je vrátí zpět. Při prvním spuštění to může udělat za tebe.
+3844|Jádra RetroArch a soubory BIOS
+3845|Chybějící jádro RetroArch se při prvním hraní stáhne samo a Nastavení zkontroluje soubory BIOS, které každá konzole potřebuje.
+3846|Další obchody pro PC
+3847|Hry z GOG, Ubisoft Connect, aplikace EA a Xbox / Game Pass se přidají ke Steamu a Epicu na polici PC.
+3848|Nástroje knihovny
+3849|Filtruj podle desetiletí, žánru, počtu hráčů nebo kooperace a vytvářej kolekce: vlastní police, přes Podrobnosti → Více → Kolekce.
+3850|Poznámky k vydání v aplikaci
+3851|Úhlednější první spuštění
+3852|Snáz k nalezení
+3853|Videonáhledy mají v Nastavení vlastní místo a Přidat hry vlastní stránku, takže hlavní stránky zůstávají krátké.
+3854|Opraveno
+3855|Trailery zase hrají
+3856|YouTube přestal přehrávat samostatně otevřené trailery. Teď hrají ve vlastním přehrávači Špajzu.
+3857|Android: časopisy a průvodci se vždy ukážou
+3858|Tvoje změny zůstanou
+3859|Přejmenovaná hra nebo dokončené „Nastavit za mě“ se mohly vrátit změnou jiného nastavení během stejné návštěvy.
+3860|Žádné nechtěné podržení
+3861|Podržení A na disku nebo podržení Restartovat / Vypnout se teď zastaví, když přepneš jinam nebo stáhneš oznámení, místo aby se samo dokončilo.
+3862|Obaly a muzeum
+3863|Přihlašovací stránka Wi-Fi se mohla uložit jako obal hry a kamera v muzeu poskočila, když jsi po nečinnosti sáhl na ovládání.
+3864|Android: ťuknutí po rychlém švihnutí
+3865|Po švihnutí policí nebo lištou konzolí první ťuknutí na hru nebo konzoli nic neudělalo. Teď to funguje napoprvé.
+3866|Teď na Androidu a Linuxu a čisté přechody do her
+3867|Špajz na Androidu (AYN Thor) a Linuxu / Steam Decku
+3868|Spuštění i ukončení hry ukazuje jen hru
+3869|Dvanáct retro konzolí, od PlayStationu po Dreamcast
+3870|Android a Linux
+3871|Retro konzole
+3872|PlayStation, NES, SNES, Nintendo 64, Game Boy, Game Boy Color, Game Boy Advance, DS, Mega Drive, Master System, Game Gear a Dreamcast.
+3873|Přejmenování a změna obalů
+3874|Dej kterékoli hře název, který chceš, a vyber její obal ze všech nalezených.
+3875|Čisté přechody do her
+3876|Žádný hlavní panel, žádná plocha a žádné mezery, když se hra spouští nebo zavírá: působí to jako konzole.
+3877|Návod Wii U
+3880|· pokračování
+3881|NÁVOD K POUŽITÍ
+3882|Obsah
+=Platform|Plošinovka
+=Platformer|Plošinovka
+=Racing|Závody
+=Puzzle|Hlavolam
+=Action|Akce
+=Shooter|Střílečka
+=Sports|Sport
+=Fighting|Bojovka
+=Strategy|Strategie
+=Simulation|Simulace
+=Role-Playing|RPG
+=Music|Hudební
+=Party|Party
+=Horror|Horor
+=Stealth|Stealth
+=Beat 'em Up|Mlátička
+=Sandbox|Sandbox
+=Education|Vzdělávací
+=Board Game|Desková hra
+=Compilation|Kompilace
+=Construction and Management Simulation|Budovatelská a manažerská simulace
+=Life Simulation|Simulace života
+=Vehicle Simulation|Simulace vozidel
+=Flight Simulator|Letecký simulátor
+=Rhythm|Rytmická
+=Pinball|Pinball
+=Casino|Kasino
+=Quiz|Kvíz
+=Shoot 'em up|Shoot 'em up
+=Visual Novel|Vizuální román
+=Adventure|Adventura
+=Action-Adventure|Akční adventura
+=Action Adventure|Akční adventura
+=after the boot video|po úvodním videu
+=after the boot intro|po úvodním intru
+=Look & sound|Vzhled a zvuk
+=Update available|Je k dispozici aktualizace
+=Updated|Aktualizováno
+=Choose a build|Vyber verzi
+=Startup|Spouštění
+=Starts through the Epic Games Launcher, so its sign-in, cloud saves and overlay work as usual.|Spouští se přes Epic Games Launcher, takže přihlášení, ukládání do cloudu i překryvná vrstva fungují jako obvykle.
+=Starts through Ubisoft Connect, so its sign-in and cloud saves work as usual.|Spouští se přes Ubisoft Connect, takže přihlášení i ukládání do cloudu fungují jako obvykle.
+=An Xbox app game (Game Pass included). It starts like any Xbox app game, signed in with your Microsoft account.|Hra z aplikace Xbox (včetně Game Passu). Spouští se jako každá hra z aplikace Xbox, přihlášená tvým účtem Microsoft.
+=Xbox app|Aplikace Xbox
+=RPCS3 runs PS3 games. Install the PS3 system software in RPCS3 first.|RPCS3 spouští hry pro PS3. Nejdřív v RPCS3 nainstaluj systémový software PS3.
+=Azahar runs 3DS games: decrypted .3ds / .cci / .cxi, or decrypted .cia files (installed into Azahar the first time you play).|Azahar spouští hry pro 3DS: dešifrované .3ds / .cci / .cxi nebo dešifrované soubory .cia (při prvním hraní se nainstalují do Azaharu).
+=RetroArch's Beetle Saturn core runs Saturn games (.cue, .chd, .m3u for several discs). It needs the Saturn BIOS files in RetroArch's system folder.|Jádro Beetle Saturn v RetroArchu spouští hry pro Saturn (.cue, .chd, .m3u pro více disků). Potřebuje soubory BIOS Saturnu v systémové složce RetroArchu.
+=Checks the account and shows your points.|Zkontroluje účet a ukáže tvoje body.
+=Checks the key.|Zkontroluje klíč.
+=Signs in and shows how many lookups the account has left today.|Přihlásí se a ukáže, kolik vyhledávání účtu dnes zbývá.
+=Click|Klik
+=Folder|Složka
+=Build|Verze
+=Done typing|Dopsáno
+=Search now|Hledat teď
+=Steam controller|Ovladač Steam
+=Pick a free, downloadable ${name} model in your browser — check its licence — and save the .glb (or .zip) to Downloads. Špajz installs it as soon as it lands.|Vyber v prohlížeči bezplatný model ${name} ke stažení — zkontroluj jeho licenci — a ulož .glb (nebo .zip) do složky Stažené. Špajz ho nainstaluje, jakmile tam dorazí.
+=· saved in themes\${f.id}\console.json|· uloženo v themes\${f.id}\console.json
+=Dolphin runs GameCube games. Point to Dolphin.exe.|Dolphin spouští hry pro GameCube. Ukaž na Dolphin.exe.
+=Dolphin also runs Wii games. It can be the same Dolphin.exe as GameCube.|Dolphin spouští i hry pro Wii. Může to být stejný Dolphin.exe jako pro GameCube.
+=Cemu runs Wii U games: .wua, .wud / .wux or extracted game folders. Disc images need your keys.txt set up in Cemu.|Cemu spouští hry pro Wii U: .wua, .wud / .wux nebo rozbalené složky her. Obrazy disků potřebují v Cemu nastavený keys.txt.

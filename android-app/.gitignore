@@ -1,0 +1,4 @@
+# Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
+# android-app/.gitignore apart from the app's name ((T)rustyShelf).
+/node_modules
+/www

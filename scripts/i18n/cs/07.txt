@@ -1,0 +1,169 @@
+2369|Co je nového
+2370|Změny v každé verzi: nejnovější vydaná a ta, kterou máš.
+2371|Co se změnilo v každé verzi Špajzu. Vyber položku a dozvíš se víc.
+2372|Vyšla verze ${upd.latest}
+2373|Poznámky k vydání
+2374|Aktualizace bety
+2375|Podívá se na stránku bety, jestli není novější Špajz. Když je, otevře jeho stránku ke stažení: rozbal ho přes tuto složku a nastavení zůstanou.
+2376|Kontrolovat nové bety
+2377|Při každém spuštění se Špajz jednou zeptá stránky bety na GitHubu, jestli nevyšla novější beta, a napíše to na polici. Nic se samo nestahuje.
+2378|Pokročilé
+2379|Znovu spustit nastavení, složka aplikace, vymazání historie hraní a obnovení nastavení emulátorů.
+2380|Nastavení, složky a obnovení, které potřebuješ jen výjimečně.
+2381|Znovu spustit průvodce
+2382|Provede tě prvním nastavením.
+2383|Složka aplikace
+2384|Nastavení, obaly a log, který zaznamenává spouštění, stahování a chyby.
+2385|Vymazat historii hraní
+2386|Zapomene, kdy a jak dlouho se hrála každá hra (Nedávno hrané a Nejhranější začnou znovu).
+2387|Stiskni znovu pro vymazání historie hraní
+2388|Obnovit nastavení emulátorů
+2389|Obnovit
+2390|Vrátí vlastní nastavení Edenu, PCSX2 a RPCS3 do stavu před tím, než je Špajz poprvé změnil.
+2391|Obnoveno souborů s nastavením emulátorů: ${r.length}
+2392|Není co obnovit
+2393|Úplně ukončí Špajz. Uspat, Restartovat a Vypnout najdeš v menu Domů.
+2394|Emulátory:
+2395|Emulátory: ${t}
+2396|Tvůj účet RetroAchievements a přihlášení v každém emulátoru (achievementy se odemykají jen tam, kde je přihlášený i emulátor).
+2397|Zobrazovat achievementy
+2398|Postup v podrobnostech každé hry a souhrn po hraní.
+2399|Uživatelské jméno
+2400|Tvoje uživatelské jméno v RetroAchievements.
+2401|Webový klíč API
+2402|Na retroachievements.org → Settings → Keys. Čte jen tvůj veřejný profil a postup. Uloženo šifrovaně.
+2403|Získat klíč
+2404|Otevře v prohlížeči tvou stránku nastavení RetroAchievements (Keys → Web API Key).
+2405|Přihlášení v emulátorech
+2406|Zkontrolovat znovu
+2407|Zkontrolovat
+2408|Znovu zkontroluje přihlášení k achievementům v každém emulátoru.
+2409|Oficiální obrázky disků a loga pro filmy na filmových policích muzea. Bez klíče se disky vytisknou z loga a obrázků každého titulu.
+2410|Tvůj osobní klíč API pro fanart.tv. Uloženo šifrovaně.
+2411|Získat klíč
+2412|Otevře stránku fanart.tv pro bezplatný osobní klíč.
+2413|Tvůj klíč API pro SteamGridDB. Uloženo šifrovaně.
+2414|Získat klíč zdarma
+2415|Přihlas se na steamgriddb.com (zdarma přes Steam), pak Preferences → API → zkopíruj klíč a vlož ho výše.
+2416|Přední a zadní strany krabic, celé přebaly (Špajz z nich vyřízne hřbet) a obrázky disků nebo kazet podle regionu v Art Studiu. Nepovinné a potřebuje bezplatný účet ScreenScraper. ScreenScraper odpovídá jen registrovaným aplikacím: dokud registrace Špajzu není hotová, test hlásí „Zatím nedostupné“ a žádný účet se nepřihlásí (pokud nemáš vlastní vývojářské přihlášení, viz níže). Obaly se mezitím dál stahují z libretro, LaunchBoxu a SteamGridDB.
+2417|Tvoje uživatelské jméno na screenscraper.fr. Uloženo šifrovaně.
+2418|Heslo
+2419|Tvoje heslo na screenscraper.fr. Uloženo šifrovaně, posílá se jen ScreenScraperu.
+2420|ID vývojáře
+2421|Jen pokud ti ScreenScraper dal vlastní vývojářské přihlášení (devid). Jinak Špajz použije vlastní registraci, až ji bude mít.
+2422|Jen pokud nějaké máš
+2423|Heslo vývojáře
+2424|Heslo vývojáře (devpassword), které patří k tvému ID vývojáře. Uloženo šifrovaně.
+2425|Získat účet zdarma
+2426|Požádat o vývojářský přístup
+2427|Otevře fórum ScreenScraperu, kde vývojáři žádají o ID a heslo vývojáře. Jen pro použití vlastního vývojářského přihlášení.
+2428|Telefon jako ovladač je vypnutý
+2429|Telefon jako ovladač je zapnutý: naskenuj kód telefonem
+2430|Telefon jako ovladač se nepodařilo spustit
+2431|Stránka pro telefon je teď na ${phone.url}
+2432|Nový PIN vytvořen
+2433|Všechny telefony zapomenuty
+2434|Telefon zapomenut
+2435|Zatím žádné spárované telefony
+2436|Zapni telefon jako ovladač a naskenuj kód fotoaparátem telefonu.
+2437|Zapomenout
+2438|Zapomenout zruší spárování tohoto telefonu: aby mohl Špajz používat, musí znovu naskenovat kód.
+2439|· naposledy použit ${when(p.seen)}
+2440|Spárováno ${when(p.added)}${p.seen?` · last used ${when(p.seen)}`:""}
+2441|tento telefon
+2442|Stiskni znovu pro zapomenutí: ${p.name||"this phone"}
+2443|Naskenuj fotoaparátem telefonu, nebo otevři
+2444|a zadej PIN
+2445|Po 5 špatných PINech je párování zamčené na {} min
+2446|Napoprvé se Windows může zeptat, jestli Špajz pustit do sítě: vyber Soukromé sítě a pak Povolit.
+2447|Zkontrolováno
+2448|emulátor
+2449|Přihlášen jako ${e.user||gp("ra.user")||"you"}
+2450|Přihlášen někdo jiný
+2451|Vypnuto v ${em}
+2452|Zatím nepřihlášen
+2453|Žádný emulátor nenastaven
+2454|Zatím žádné sady achievementů
+2455|Nejdřív emulátor jednou otevři
+2456|Připraveno ${L.filter(e=>e.state==="ok").length} z ${L.length} konzolí
+2457|Pro ${conName(sys)} zatím nejsou žádné sady RetroAchievements.
+2458|Nejdřív nastav emulátor pro ${conName(sys)}: Konzole → ${conName(sys)} → Emulátor.
+2459|Vše nastaveno: achievementy získané v ${em} se ukážou v podrobnostech každé hry.
+2460|jiný účet
+2461|, ale Špajz používá ${me}. Tam se nejdřív odhlas a pak se přihlas jako ${me}.
+2463|${em} ještě neuložil svoje nastavení: jednou ho otevři a pak se vrať.
+2464|Přihlas se do RetroAchievements v nastavení ${em}.
+2465|Kontroluji přihlášení k achievementům v tomto emulátoru.
+2466|Achievementy se v tomto emulátoru odemykají a ukážou se ve Špajzu.
+2467|Tato konzole zatím nemá žádné sady achievementů.
+2468|Dokud se to neopraví, achievementy se tu neodemknou.
+2469|Otevírám ${e.emulator||"the emulator"}…
+2470|Žádné skryté hry
+2471|Hru skryješ v jejích Podrobnostech (Skrýt). Pak se objeví tady, abys ji mohl vrátit.
+2472|Zobrazit
+2473|Skrytá ze všech polic, muzea, náhodného výběru i předváděcího režimu. Zobrazit ji vrátí zpět.
+2474|${g.title||"Game"} je zpátky na své polici
+2476|Zobrazit tuto polici
+2477|Vypni konzoli, aniž bys přišel o její nastavení.
+2478|Emulátor Switche, který tato police používá: Eden, Citron nebo Ryujinx. Jedna hra může používat jiný: Podrobnosti → Emulátor.
+2479|Program ${emu}, který tato police používá.
+2480|Najít ${exe}
+2481|Ukázat na ${exe}
+2482|Najde se automaticky, když je ve tvé složce Špajzu nebo na obvyklém místě instalace. Znovu najít emulátory (Konzole) se podívá ještě jednou.
+2483|Verze
+2484|Která verze Eglantine spouští tvoje hry pro Switch 2: každá verze, kterou Špajz našel (stejný seznam jako u Hrát), Ptát se pokaždé, a verze v jiných složkách.
+2485|Ptát se pokaždé
+2486|Hledám verze…
+2487|Nalezeno verzí: ${sw2b.length}
+2488|Zatím žádné verze · přidej nějakou tady
+2489|Použít nalezený emulátor
+2490|Špajz našel tuto kopii. Použij ji pro tuto polici.
+2491|Použít Dolphin z ${twin==="gc"?"GameCube":"Wii"}
+2492|Složka s hrami ${i+1}
+2493|Složka s hrami
+2494|Kde jsou hry této konzole. Prohledávají se i podsložky. Vyber ji dvakrát a odebereš ji z této police (nic se nesmaže).
+2497|Složka odebrána z této police (nic se nesmazalo)
+2498|Stiskni znovu pro odebrání této složky
+2499|Přidat nalezenou složku
+2500|Špajz tu našel hry pro tuto konzoli.
+2501|Nastavit ${emu} za mě
+2502|Ovladač, klávesové zkratky menu Domů, jedna složka BIOS a grafické předvolby pro ${emu}: nejdřív se zálohuje a Vrátit to vrátí zpět.
+2503|Přidat další složku s hrami
+2504|Další složka, kde hledat hry této konzole${def.hint?` (${def.hint})`:def.extensions?` (${def.extensions.slice(0,4).map(e=>"."+e).join(", ")}…)`:""}.
+2505|Vyber složku s hrami pro ${def.name}
+2506|Když stiskneš Hrát
+2507|Úvodní obrazovka s obalem hry
+2508|Úvodní vzhled konzole s obalem hry a ukazatelem průběhu, zatímco se emulátor otevírá.
+2509|Tvoje úvodní video před hrami
+2510|Před hrou přehraje úvodní video, které jsi přidal pro tuto konzoli (Přizpůsobit), místo úvodní obrazovky. Bez videa se vestavěné intro přehraje jen při vypnuté úvodní obrazovce.
+2511|Otevřít samotný emulátor
+2512|Spustí emulátor bez hry, abys mohl změnit jeho grafiku nebo ovládání.
+2513|Získat ${emu}
+2514|Otevře oficiální stránku ke stažení ${emu}.
+2515|Možnosti emulátoru
+2516|Co Špajz předá, když otevírá samotný emulátor.
+2517|Spuštění GameCube
+2518|Přehrát skutečné spuštění GameCube
+2519|Přeskočit varovná okna Dolphinu
+2520|Délka úvodní animace
+2521|Jak dlouho načítací obrazovka zůstane přes skutečné spuštění GameCube. Nižší ukáže víc z něj, ale může probliknout Dolphin.
+2522|Spouštět hry přes Kyty launcher
+2523|Vypnuto: Hrát spustí hru hned, s nastavením, které jsi vybral v Kyty launcheru (a předvolbou KytyJets). Zapnuto: Hrát otevře Kyty launcher a hru spustíš tam (nedá se mu říct, kterou hru otevřít).
+2524|Spouštění
+2525|Nejdelší načítací obrazovka
+2526|Možnosti spuštění hry
+2527|Výchozí:
+2528|Výchozí: ${def.gameArgs||"(none)"}
+2529|Obnovit výchozí možnosti spuštění
+2530|Vrátí možnosti spuštění na výchozí hodnoty Špajzu.
+2531|Možnosti spuštění vráceny na výchozí
+2532|Vlastní složka obrázků
+2533|(používá knihovnu obrázků)
+2534|Vyber složku s obaly
+2535|Obaly (Art Studio)
+2536|Skočí na hry ${def.name} v Art Studiu: styl jeho police a všechny verze obrázků libovolné hry (návody jsou o řádek vedle).
+2537|Přizpůsobit (3D, logo, úvodní video)
+2538|Jeho logo, 3D konzole, modely ovladače a disku a úvodní video (obrazovka Přizpůsobit).
+2539|Emulátor a pokročilé
+2540|a skutečné spuštění GameCube
+2541|Otevřít samotný ${emu}, možnosti spuštění, nejdelší načítací obrazovka${id==="gc"&&iplCap()?" and the real GameCube startup":""}.

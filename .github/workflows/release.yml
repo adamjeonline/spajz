@@ -1,0 +1,55 @@
+# (T)rustyShelf release: the builds (build.yml), then a GitHub release vA.B.C.0 with them, as the latest release. Called by
+# build-release-check.yml for a "For version A.B.C" commit.
+name: Release
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        required: true
+      semver:
+        type: string
+        required: true
+      code:
+        type: string
+        required: true
+      tag:
+        type: string
+        required: true
+      notes:
+        type: string
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build
+    uses: ./.github/workflows/build.yml
+    with:
+      version: ${{ inputs.version }}
+      semver: ${{ inputs.semver }}
+      code: ${{ inputs.code }}
+
+  publish:
+    name: Publish the release
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTES: ${{ inputs.notes }}
+          TAG: ${{ inputs.tag }}
+          VERSION: ${{ inputs.version }}
+          TARGET: ${{ github.sha }}
+        run: |
+          printf '%s\n' "$NOTES" > notes.md
+          gh release create "$TAG" out/* --repo "$GITHUB_REPOSITORY" --target "$TARGET" --title "(T)rustyShelf $VERSION" --notes-file notes.md
