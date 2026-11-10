@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adamjeonline.github.io/spajz/sitemap.xml
