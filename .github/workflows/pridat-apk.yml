@@ -1,0 +1,18 @@
+name: Přidat APK k vydání
+on:
+  push:
+    paths: ['.github/workflows/pridat-apk.yml']
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stáhnout APK z webu a přiložit k vydání v1.0.0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -fsSL -o Spajz-1.0.0-android.apk https://adamjeonline.github.io/spajz/stahnout/Spajz-1.0.0-android.apk
+          echo "c1e3e1468f90bac3101113737572497e3dcd86c8f7c73785a8bd4554acaa5d2f (podpisový certifikát)"
+          ls -la Spajz-1.0.0-android.apk
+          gh release upload v1.0.0 Spajz-1.0.0-android.apk --clobber -R "$GITHUB_REPOSITORY"
