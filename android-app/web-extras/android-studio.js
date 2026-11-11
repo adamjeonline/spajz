@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-studio.js apart from the app's name ((T)rustyShelf).
-/* (T)rustyShelf on Android: the handheld Art Studio (added to the Android build only by copy-web.js; Windows keeps the
+/* Špajz on Android: the handheld Art Studio (added to the Android build only by copy-web.js; Windows keeps the
    Settings picker). One game's four pictures, laid out for a 6" screen held in two hands:
    - a big row per part (Front, Back, Spine, Disc), and above them (0.3.5) Sets: whole matching sets (USA / Europe / Japan
      / HD, all four parts from one release) and the looks (the sharpest of each part, or every part from one region). The

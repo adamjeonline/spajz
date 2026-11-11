@@ -1,9 +1,9 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-wizard.js apart from the app's name ((T)rustyShelf).
-// (T)rustyShelf on Android: the first-run wizard's own questions (setup.js shows them right after Welcome).
+// Špajz on Android: the first-run wizard's own questions (setup.js shows them right after Welcome).
 // One question per page, with big choices that work with a finger and with the controller (D-pad + A), and a short plain
 // explanation each: where your games are, box art (download it? full cases? where to keep it?), the bottom screen and
-// (T)rustyShelf as the Home app. Every answer can be changed later in Settings. The Windows wizard never loads this file.
+// Špajz as the Home app. Every answer can be changed later in Settings. The Windows wizard never loads this file.
 (function () {
   const api = window.trustyshelf;
   if (!api || typeof api.romRoot !== 'function') return; // the Android adapter isn't running (a plain browser)
@@ -55,7 +55,7 @@
   function gamesPage(b, x) {
     if (!root && busy) { x.head(b, 'Your games', 'Looking through your folder…', 'Matching each folder to its console.'); b.append(x.el('div', { class: 'wz-wait' }, x.el('span', { class: 'scanning' }), ' Looking…')); return; }
     if (!root) {
-      x.head(b, 'Your games', 'Where are your games?', 'Most people keep one ROMs folder with a folder for each console inside (like ROMs/gc, ROMs/psx). Pick that one folder and (T)rustyShelf finds every console in it, by folder name or by the games inside.');
+      x.head(b, 'Your games', 'Where are your games?', 'Most people keep one ROMs folder with a folder for each console inside (like ROMs/gc, ROMs/psx). Pick that one folder and Špajz finds every console in it, by folder name or by the games inside.');
       b.append(choices(x,
         choice(x, { title: 'Pick your main ROMs folder', note: 'One folder, every console found for you', rec: true, primary: true, click: () => pickRoot(x) }),
         choice(x, { title: 'Pick folders per console', note: 'Advanced: you set each console’s folder after these questions', click: () => x.next() })));
@@ -81,22 +81,22 @@
   }
 
   // ---------- box art ----------
-  const artPage = (b, x) => yesNo(b, x, { kicker: 'Box art', title: 'Download box art automatically?', lead: '(T)rustyShelf finds a cover for each game in the background, while you\'re not scrolling. It sends game file names to libretro and GameTDB (free, no account). Art you already have is never downloaded again.',
+  const artPage = (b, x) => yesNo(b, x, { kicker: 'Box art', title: 'Download box art automatically?', lead: 'Špajz finds a cover for each game in the background, while you\'re not scrolling. It sends game file names to libretro and GameTDB (free, no account). Art you already have is never downloaded again.',
     value: ui(x).autoCovers === false ? false : ui(x).autoCovers === true ? true : undefined, yes: ['Yes, get box art', 'Covers appear on their own', true], no: ['No thanks', 'Plain cases with the game\'s name'], set: v => { ui(x).autoCovers = v; } });
   const fullPage = (b, x) => yesNo(b, x, { kicker: 'Box art', title: 'Full case art (backs and spines) too?', lead: 'The back and spine of each case as well, where a source has them, so a case looks complete when you turn it around. Takes a bit more space. ' +
       'Fronts come from libretro for every console; backs, spines and discs from GameTDB (GameCube and Wii) or a ScreenScraper account (Settings → Accounts & services). Copying your PC\'s ROMS\\<console>\\covers folders onto this device works too.',
     value: ui(x).fullArt === true ? true : ui(x).fullArt === false ? false : undefined, yes: ['Yes, full cases', 'Front, back and spine'], no: ['Just the fronts', 'Smaller and quicker'], set: v => { ui(x).fullArt = v; } });
   function wherePage(b, x) {
     const w = ui(x).artWhere === 'app' ? 'app' : 'roms';
-    x.head(b, 'Box art', 'Where should art be saved?', 'Art you already have in a "TrustyShelf Art" folder is used either way.');
+    x.head(b, 'Box art', 'Where should art be saved?', 'Art you already have in a "Spajz Art" folder is used either way.');
     const set = v => { ui(x).artWhere = v; x.changed(); x.next(); };
     b.append(choices(x,
-      choice(x, { title: 'Next to my ROMs', note: 'A "TrustyShelf Art" folder in each ROMs folder. Keeps art with your games and survives reinstalling (T)rustyShelf.', on: w === 'roms', rec: true, click: () => set('roms') }),
-      choice(x, { title: 'Inside (T)rustyShelf', note: 'Private to the app; nothing is written to your games folders. Removed if you uninstall.', on: w === 'app', click: () => set('app') })));
+      choice(x, { title: 'Next to my ROMs', note: 'A "Spajz Art" folder in each ROMs folder. Keeps art with your games and survives reinstalling Špajz.', on: w === 'roms', rec: true, click: () => set('roms') }),
+      choice(x, { title: 'Inside Špajz', note: 'Private to the app; nothing is written to your games folders. Removed if you uninstall.', on: w === 'app', click: () => set('app') })));
   }
 
   // ---------- game manuals (0.3.0): yes = every console with games; pick them one by one later in Settings ----------
-  const manualPage = (b, x) => yesNo(b, x, { kicker: 'Manuals', title: 'Download game manuals too?', lead: 'Each game\'s instruction booklet from the Internet Archive, as pages you can read in Inspect. Fetched in the background and saved in a "TrustyShelf Manuals" folder beside your games. Manuals you copied from your PC are used either way.',
+  const manualPage = (b, x) => yesNo(b, x, { kicker: 'Manuals', title: 'Download game manuals too?', lead: 'Each game\'s instruction booklet from the Internet Archive, as pages you can read in Inspect. Fetched in the background and saved in a "Spajz Manuals" folder beside your games. Manuals you copied from your PC are used either way.',
     value: ui(x).autoManuals === true ? true : ui(x).autoManuals === false ? false : undefined, yes: ['Yes, get manuals', 'For every console found'], no: ['Not now', 'Choose consoles later in Settings'],
     set: v => { ui(x).autoManuals = v; for (const [id, s] of Object.entries(x.cfg.systems || {})) if (s && (s.romDirs || []).length) ui(x)['manual_' + id] = v; } });
 
@@ -107,15 +107,15 @@
     set: v => { ui(x).bottomScreen = v ? 'on' : 'off'; try { api.bottomScreen.set(v); } catch {} } });
   let isHome = false;
   function homePage(b, x) {
-    x.head(b, 'Home screen', 'Use (T)rustyShelf as the Home screen?', isHome ? '(T)rustyShelf is already your Home screen: the Home button brings you here.' : 'The Home button then opens (T)rustyShelf, like a console. Android shows its own list next: pick (T)rustyShelf there. Your old launcher stays one press away in the quick menu.');
+    x.head(b, 'Home screen', 'Use Špajz as the Home screen?', isHome ? 'Špajz is already your Home screen: the Home button brings you here.' : 'The Home button then opens Špajz, like a console. Android shows its own list next: pick Špajz there. Your old launcher stays one press away in the quick menu.');
     b.append(choices(x,
-      choice(x, { title: isHome ? 'Change Home app' : 'Yes, choose (T)rustyShelf', note: 'Opens Android\'s Home app list', primary: !isHome, click: async () => { try { await api.openHomeSettings(); } catch (e) { x.toast((e && e.message) || String(e)); } x.next(); } }),
+      choice(x, { title: isHome ? 'Change Home app' : 'Yes, choose Špajz', note: 'Opens Android\'s Home app list', primary: !isHome, click: async () => { try { await api.openHomeSettings(); } catch (e) { x.toast((e && e.message) || String(e)); } x.next(); } }),
       choice(x, { title: isHome ? 'Keep it' : 'Not now', note: 'Change it any time in Settings', click: () => x.next() })));
   }
 
   // ---------- welcome ----------
   function welcome(b, x) {
-    x.head(b, 'Welcome', 'Let\'s set up your (T)rustyShelf', 'A few quick questions: where your games are, box art and your screens. (T)rustyShelf finds your emulator apps by itself. Everything can be changed later in Settings.');
+    x.head(b, 'Welcome', 'Let\'s set up your Špajz', 'A few quick questions: where your games are, box art and your screens. Špajz finds your emulator apps by itself. Everything can be changed later in Settings.');
     b.append(x.el('div', { class: 'wz-choices one' }, choice(x, { title: 'Get started', note: 'Finds your emulators, then asks about your games', primary: true, rec: false, click: async () => { await x.detect(); x.next(); } })));
   }
 
@@ -132,7 +132,7 @@
       { id: 'wz-home', label: 'Home screen', render: homePage }
     ]
   };
-  // the Home screen question knows whether (T)rustyShelf already is it
+  // the Home screen question knows whether Špajz already is it
   if (api.homeStatus) Promise.resolve().then(() => api.homeStatus()).then(h => { isHome = !!(h && h.isDefault); }).catch(() => {});
 
   // looks: big, even cards two across (one across on a narrow screen), plain enough for a TV-style launcher

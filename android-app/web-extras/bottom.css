@@ -1,6 +1,6 @@
 /* Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
    android-app/web-extras/bottom.css apart from the app's name ((T)rustyShelf). */
-/* (T)rustyShelf bottom screen (AYN Thor's second display). Laid out once on a 620 x 540 stage and zoomed to fit the screen
+/* Špajz bottom screen (AYN Thor's second display). Laid out once on a 620 x 540 stage and zoomed to fit the screen
    (1240 x 1080 on the Thor), so it looks the same at any pixel density. Every animation is transform / opacity only
    (the compositor runs them): this page shares the WebView's main thread with the shelf on the top screen. */
 :root{--bg:#0b0b14;--ink:#f3f5fb;--dim:rgba(243,245,251,.64);--faint:rgba(243,245,251,.4);--line:rgba(255,255,255,.1);

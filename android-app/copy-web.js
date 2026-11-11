@@ -1,5 +1,5 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): most of this file is Boxshelf's
-// android-app/copy-web.js; modified for (T)rustyShelf (see the git history).
+// android-app/copy-web.js; modified for Špajz (see the git history).
 // Copies the shared UI (../renderer) into www/ for the Android build. renderer/ stays the single source of truth:
 // never edit files in www/, they are overwritten on every build.
 const fs = require('fs'), path = require('path');

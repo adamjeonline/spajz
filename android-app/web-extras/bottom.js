@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/bottom.js apart from the app's name ((T)rustyShelf).
-// (T)rustyShelf bottom screen (AYN Thor's second display; Android build only). Shows the game the shelf on the top screen has
+// Špajz bottom screen (AYN Thor's second display; Android build only). Shows the game the shelf on the top screen has
 // settled on: its case in 3D (closed at first: turn it any way with a finger, flick it, then open it and take the disc
 // out), a few facts, trophies and a few big touch buttons that act on the shelf. In the museum it becomes the museum's
 // companion: the row on the wall as a shelf of cases, the chosen one, and shrink-wrap you can tear off by touch.
@@ -137,7 +137,7 @@
   const short = t => t && String(t).replace(/(\d+) h (\d+) min/, '$1h $2m').replace(/^under a minute$/, '< 1 min'); // fits the small box
   function paintSide(same) {
     const box = $('sideTxt'), g = game;
-    const html = !g ? '<div class="kick">(T)rustyShelf</div><h1 class="title">Nothing selected</h1>' :
+    const html = !g ? '<div class="kick">Špajz</div><h1 class="title">Nothing selected</h1>' :
       `<div class="kick">${esc(g.system && g.system.name || '')}</div>
        <h1 class="title${g.title.length > 38 ? ' long' : ''}">${esc(g.title)}</h1>
        <div class="meta">${facts(g).slice(0, 4).map(t => `<span>${esc(t)}</span>`).join('')}</div>
@@ -995,7 +995,7 @@
       style: { ratio: 0.712, depth: 0.105, rc: 0.03, re: 0.2, edge: 0.022, pack: 'keep', caseColor: '#16161b', caseSide: '#0b0b0e', spineInk: '#e8e8f0', band: { bg: '#26262e', fg: '#c3c3cf', label: 'GAMECUBE' },
         spineBand: { bg: '#2c2c35', fg: '#c3c3cf', label: 'GCN' }, glow: '#9d8cff', tint: ['#3a2a86', '#120d2c'] },
       media: { kind: 'disc', size: 0.62 }, art: { front: demoCover('#ff9f6b', '#7a3fd1', 'STARLIGHT', 'COURIER'), back: null, spine: null, disc: null },
-      year: 2003, genre: 'Adventure', dev: 'Lantern Works', pub: '(T)rustyShelf Demo', players: '1', rating: 4.4, region: 'USA', size: '1.3 GB', discs: 0,
+      year: 2003, genre: 'Adventure', dev: 'Lantern Works', pub: 'Špajz Demo', players: '1', rating: 4.4, region: 'USA', size: '1.3 GB', discs: 0,
       desc: 'Deliver the last letters of a fading kingdom by glider, across islands that drift a little further apart every night. A demo game, shown when this page is opened on its own.',
       played: '6 h 20 min', plays: 9, last: 'Yesterday', fav: true, manual: true, ach: { earned: 23, total: 40, mastered: false }, achOn: true };
   }

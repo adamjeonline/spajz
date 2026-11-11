@@ -1,6 +1,6 @@
 {
-  "appId": "io.github.trustyshelf",
-  "appName": "(T)rustyShelf",
+  "appId": "io.github.adamjeonline.spajz",
+  "appName": "Špajz",
   "webDir": "www",
   "loggingBehavior": "none",
   "android": {
@@ -10,6 +10,8 @@
     "webContentsDebuggingEnabled": false
   },
   "plugins": {
-    "SplashScreen": { "launchShowDuration": 0 }
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
   }
 }

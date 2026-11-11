@@ -2,7 +2,7 @@
   <img src="renderer/brand/trustyshelf-logo-dark.svg" alt="ŠPAJZ" width="480">
 </h1>
 
-<p align="center"><b>Česká herní polička pro tvoje emulátory, Steam a Game Pass.</b><br>
+<p align="center"><b>Česká herní polička pro tvoje emulátory, Steam a Game Pass. Pro Windows, Linux, Steam Deck a Android.</b><br>
 Skutečné krabice her na 3D policích, návody ke čtení, achievementy a jeden ovladač na všechno.</p>
 
 <p align="center"><img src="docs/spajz/hero.jpg" alt="Špajz" width="100%"></p>
@@ -25,6 +25,16 @@ Hotové verze najdeš na stránce [Releases](https://github.com/adamjeonline/spa
   *Další informace → Přesto spustit* (program není digitálně podepsaný).
 - **Linux a Steam Deck:** `Spajz-<verze>-linux.AppImage`. Povol spouštění (*Vlastnosti → Oprávnění → Je spustitelný*,
   nebo `chmod +x Spajz-*.AppImage`) a spusť. Nastavení se ukládá do `~/TrustyShelf`.
+- **Android:** `Spajz-<verze>-android.apk` ([přímé stažení verze 1.0.0](https://adamjeonline.github.io/spajz/stahnout/Spajz-1.0.0-android.apk)).
+  Otevři ho v telefonu nebo handheldu a povol instalaci z neznámých zdrojů.
+
+### Android
+
+- Funguje na telefonech, tabletech a herních handheldech s Androidem 7 nebo novějším (nejlépe na šířku s ovladačem).
+- Při prvním spuštění tě provede nastavením: vybereš hlavní složku s ROM a Špajz sám najde konzole i nainstalované
+  emulátory (RetroArch, Dolphin, AetherSX2/NetherSX2, PPSSPP, Azahar a další).
+- Na zařízeních se dvěma displeji (třeba AYN Thor) umí využít spodní obrazovku na podrobnosti o hře a dotyková tlačítka.
+- Špajz si můžeš nastavit jako domovskou obrazovku, takže se zařízení chová jako konzole.
 
 ### Steam Deck (herní režim)
 
@@ -43,6 +53,15 @@ npm install
 npm run dist:win      # Windows: dist/Spajz-<verze>-win-portable.exe
 npm run dist:linux    # Linux:   dist/Spajz-<verze>-linux.AppImage
 npm start             # spuštění bez sestavení
+```
+
+Android (potřebuješ ještě JDK 21 a Android SDK):
+
+```
+cd android-app
+npm install
+npm run sync
+cd android && ./gradlew assembleRelease
 ```
 
 Překlad je ve složce `scripts/i18n/cs` (řádky `číslo|text` a `=anglický text|český text`). Po úpravě spusť

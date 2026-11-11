@@ -1,6 +1,6 @@
 {
   "name": "trustyshelf-android",
-  "version": "1.82.0-beta.10",
+  "version": "1.0.0",
   "private": true,
   "description": "Android (AYN Thor) shell for (T)rustyShelf: packages ../renderer with Capacitor",
   "scripts": {

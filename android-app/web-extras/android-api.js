@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): most of this file is Boxshelf's
-// android-app/web-extras/android-api.js; modified for (T)rustyShelf (see the git history).
-// (T)rustyShelf on Android: the real window.trustyshelf (the Windows build gets it from preload.js).
+// android-app/web-extras/android-api.js; modified for Špajz (see the git history).
+// Špajz on Android: the real window.trustyshelf (the Windows build gets it from preload.js).
 // Loaded after mock.js, which provides harmless defaults for everything not listed here; this file replaces the calls
 // that matter on Android: settings, finding emulators, picking folders, scanning, launching and coming back.
 // In a normal browser it does nothing (the demo stays), unless the page has ?fakeNative=1 (a pretend phone, for testing).
@@ -11,7 +11,7 @@
     (window.Capacitor && Capacitor.getPlatform && Capacitor.getPlatform() === 'android'));
   const fake = /[?&]fakeNative=1/.test(location.search);
   if (!isNative && !fake) { status('off (not on a device: ' + (window.Capacitor ? 'Capacitor present, platform ' + (Capacitor.getPlatform && Capacitor.getPlatform()) : 'no Capacitor') + ')'); return; }
-  try { setup(); } catch (e) { status('FAILED: ' + (e && e.message || e)); console.error('(T)rustyShelf Android adapter failed', e); }
+  try { setup(); } catch (e) { status('FAILED: ' + (e && e.message || e)); console.error('Špajz Android adapter failed', e); }
   function setup() {
   const api = window.trustyshelf, A = window.BS_ANDROID, T = window.BSTitles;
   window.BS_WORDMARK_OVERRIDES = { media: ['Apps', 'On this device'] }; // the apps shelf's title on Android (systems-extra.js applies it)
@@ -98,7 +98,7 @@
   const ytOff = () => { const f = document.getElementById('bsYt'); if (f) { f.src = 'about:blank'; f.remove(); } };
   const ytPlace = (f, r, show) => { f.style.left = r.x + 'px'; f.style.top = r.y + 'px'; f.style.width = r.w + 'px'; f.style.height = r.h + 'px'; f.style.visibility = show ? 'visible' : 'hidden'; };
   const vkey = n => String(n || '').toLowerCase().replace(/\.[a-z0-9]{2,4}$/, '').replace(/\s*[([][^)\]]*[)\]]/g, '').replace(/-(video|01|02|trailer)$/i, '').replace(/[^a-z0-9]+/g, '');
-  // ((T)rustyShelf) a PC game's store and id: the store from its file's type (.steam, .epic, .gog, .amazon, .pcgame), the id
+  // (Špajz) a PC game's store and id: the store from its file's type (.steam, .epic, .gog, .amazon, .pcgame), the id
   // from a name ending in [id], else from the file itself (GameNative's Frontend sync writes just the id). Kept per file
   // (its address, size and date), so a rescan doesn't read every file again
   const storeIdMemo = new Map();
@@ -150,16 +150,16 @@
     for (const s of SYS) { const c = st.config.systems[s.id]; if (!c || !c.enabled || (!c.emulator && !(c.romDirs || []).length)) continue;
       const e = emuFor(pkgOf(c.emulator)) || E[s.emus[0]];
       out.push({ id: s.id, kind: 'console', name: s.name, emulatorName: e ? e.name : '', hasEmulator: !!c.emulator, emulator: c.emulator, gameArgs: '', bootOnLaunch: c.bootOnLaunch !== false, games: await scanSystem(s, c) }); }
-    // Apps shelf: every app on the device with a launcher icon (Thor tools, store, media apps…), (T)rustyShelf itself left out
+    // Apps shelf: every app on the device with a launcher icon (Thor tools, store, media apps…), Špajz itself left out
     // (beta.9) ports, recomps and custom APKs picked in Settings → Games → Ports & custom APKs: a Custom shelf of their own
     // (and off the Apps shelf, so nothing shows twice). Stored per app as config.portsOn["com_example_game"] = true
     const portOn = p => !!(st.config.portsOn && st.config.portsOn[portKey(p)]);
     try { const inst = await apps(true);
-      const ports = [...inst].filter(([p]) => p !== 'io.github.trustyshelf' && portOn(p)).sort((x, y) => String(x[1]).localeCompare(String(y[1]), undefined, { sensitivity: 'base' }))
+      const ports = [...inst].filter(([p]) => p !== 'io.github.adamjeonline.spajz' && portOn(p)).sort((x, y) => String(x[1]).localeCompare(String(y[1]), undefined, { sensitivity: 'base' }))
         .map(([p, label]) => ({ kind: 'app', id: 'port-' + p, appId: p, title: String(label), path: p, art: {} }));
       if (ports.length) out.push({ id: 'custom', kind: 'apps', name: 'Custom', games: ports }); } catch (e) { log('ports shelf', e && e.message); }
     if (st.config.apps.android === undefined || st.config.apps.android.enabled !== false) { try { const inst = await apps(true);
-      const list = [...inst].filter(([p]) => p !== 'io.github.trustyshelf' && !portOn(p)).sort((x, y) => String(x[1]).localeCompare(String(y[1]), undefined, { sensitivity: 'base' }))
+      const list = [...inst].filter(([p]) => p !== 'io.github.adamjeonline.spajz' && !portOn(p)).sort((x, y) => String(x[1]).localeCompare(String(y[1]), undefined, { sensitivity: 'base' }))
         .map(([p, label]) => ({ kind: 'app', id: 'app-' + p, appId: p, title: String(label), path: p, art: {} }));
       if (list.length) out.push({ id: 'media', kind: 'apps', name: 'Apps', games: list }); } catch (e) { log('apps shelf', e && e.message); } }
     applyArt(out); applyManuals(out); st.library = out; store('library.json', out); // (saved at once: a delayed save was lost if the app closed or reloaded right after a scan; tested in beta.8)
@@ -172,7 +172,7 @@
   // ---------- launching ----------
   let onExit = () => {}, running = null, justBack = 0;
 
-  // ---------- the Home screen: (T)rustyShelf as the Thor's launcher, and the way back to the old one ----------
+  // ---------- the Home screen: Špajz as the Thor's launcher, and the way back to the old one ----------
   // Same logic as the other front ends that can be the Home app (Cocoon, Daijisho, ES-DE): Home always comes back here;
   // the launcher you had before is remembered so one press takes you back to it; Android's own screen picks the default.
   let home = { isDefault: false, launchers: [] };
@@ -190,7 +190,7 @@
       else if (list.length > 1) { const r = await N.chooseApp({ title: 'Go to which home screen?', items: list }); if (!r || r.canceled) return; p = { pkg: r.pkg, label: r.label }; st.home.prev = p; store('home.json', st.home); } }
     await N.launchHome(p ? { pkg: p.pkg } : {});
   }
-  // Home key (only reaches (T)rustyShelf while it's the Home app): back from a game = just the shelf; on the shelf = quick menu
+  // Home key (only reaches Špajz while it's the Home app): back from a game = just the shelf; on the shelf = quick menu
   if (N.addListener) Promise.resolve().then(() => N.addListener('home', () => {
     if (running || Date.now() - justBack < 1500) return;
     try { window.Shelf && Shelf.homeButton && Shelf.homeButton(); } catch (e) { log('home button', e && e.message); }
@@ -201,11 +201,11 @@
     let pkg = pkgOf(c.emulator);
     if (!pkg) { const inst = await apps(); for (const id of s.emus) { pkg = findInstalled(id, inst); if (pkg) break; } }
     if (!pkg) throw new Error(`No emulator for ${s ? s.name : systemId} is installed. Pick one in Settings → ${s ? s.name : 'Consoles'}.`);
-    // (beta.10) an app (T)rustyShelf has no launch data for: its own start screen, handed the game the standard way (VIEW with
+    // (beta.10) an app Špajz has no launch data for: its own start screen, handed the game the standard way (VIEW with
     // the game's document), which most emulators take; one that doesn't simply opens on its own screen
     const e = emuFor(pkg); if (!e) log('launch: no launch data for', pkg, '- handing it the game as VIEW');
     let spec = e ? Object.assign({}, e.launch, (e.variants || {})[pkg] || {}) : { action: 'android.intent.action.VIEW', data: 'doc' };
-    // ((T)rustyShelf) a PC game is started by its store id: one the app can't start (DroidDeck: Steam only) says so
+    // (Špajz) a PC game is started by its store id: one the app can't start (DroidDeck: Steam only) says so
     if (s && s.storeGames && game) {
       if (!game.storeId) throw new Error(`${game.title} has no game id: its ${game.ext} file should hold one (GameNative's Frontend sync writes it), or end its name with [id].`);
       if (e && e.stores && !e.stores.includes(game.store)) throw new Error(`${e.name} starts ${e.stores.map(x => x[0] + x.slice(1).toLowerCase()).join(', ')} games only. Pick GameNative for this one in Settings → PC.`);
@@ -254,7 +254,7 @@
   // spines, full wraps and discs for most consoles), libretro's thumbnail library (fronts, named like No-Intro / Redump
   // files), plus SteamGridDB posters when a key is set. (LaunchBox's database, Windows' main source for backs and spines,
   // is a 110 MB download and a 500 MB file to index: too much for a handheld, so it isn't used here.)
-  // The native side downloads (no CORS, never on the UI thread) and saves the original in "TrustyShelf Art" inside the
+  // The native side downloads (no CORS, never on the UI thread) and saves the original in "Spajz Art" inside the
   // games folder the player picked, with the Windows build's names (<game>.png, -back, -spine, -disc; a full wrap is kept
   // whole as <game>-full), plus ~512 px display copies in the app's own storage that the shelf shows. A wrap is cut into
   // its back, spine and front natively (no big picture ever reaches the page).
@@ -283,9 +283,9 @@
   const libretroSafe = s => s.replace(/[&*/:`<>?\\|"]/g, '_');
   const baseOf = file => String(file).split('/').pop().replace(/\.[^.]+$/, '');
   const fileUrl = p => (isNative && window.Capacitor && Capacitor.convertFileSrc) ? Capacitor.convertFileSrc(p) : p; // https://localhost/_capacitor_file_/… (same origin: the CSP's 'self')
-  // where new originals are saved (Settings / the setup wizard): 'roms' = a "TrustyShelf Art" folder beside the games (kept
-  // when (T)rustyShelf is reinstalled), 'app' = only inside (T)rustyShelf's own storage (nothing is ever written into the games
-  // folders). Either way, pictures already in a "TrustyShelf Art" (or the PC's "covers") folder are still used.
+  // where new originals are saved (Settings / the setup wizard): 'roms' = a "Spajz Art" folder beside the games (kept
+  // when Špajz is reinstalled), 'app' = only inside Špajz's own storage (nothing is ever written into the games
+  // folders). Either way, pictures already in a "Spajz Art" (or the PC's "covers") folder are still used.
   const artWhere = () => (st.config && st.config.ui && st.config.ui.artWhere) === 'app' ? 'app' : 'roms';
   const saveTree = tree => artWhere() === 'app' ? '' : tree; // no tree: the native side keeps it in the app's storage
   // full box art (backs and spines) is on unless switched off in Settings; it needs a source that has it for the console
@@ -302,7 +302,7 @@
   const musBusy = () => { try { return !!(window.Shelf && Shelf.getMode && Shelf.getMode() === 'museum' && Shelf.idleMs && Shelf.idleMs() < 1500); } catch { return false; } };
   const quiet = () => !running && !art.paused && !document.hidden && !(window.BS_BUSY && window.BS_BUSY()) && !musBusy();
   const sleep = ms => new Promise(r => setTimeout(r, ms));
-  // wait for a quiet moment: no game running, (T)rustyShelf in front, the shelf not sliding; then an idle slot of the page.
+  // wait for a quiet moment: no game running, Špajz in front, the shelf not sliding; then an idle slot of the page.
   // Checked every 250 ms (a timer that only reads a few numbers): work starts again soon after the shelf stops
   // maxMs (beta.7): the longest to wait for quiet, for light work that must not wait forever (the reading corner's folder
 // listing is answered by the native side, off this thread). Without it the wait has no end: on a device (or the build
@@ -366,7 +366,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     return n > 1 ? (sysById[sysId] || {}).name || sysId : '';
   }
   // → how many pictures were queued. force (Fetch missing art now): also the games nothing was found for lately.
-  // only: just these keys (display copies to re-make from originals (T)rustyShelf already has: no download, so even with
+  // only: just these keys (display copies to re-make from originals Špajz already has: no download, so even with
   // automatic art switched off)
   function queueArt(reason, force, only) {
     if (!st.library || !st.config) return 0;
@@ -456,7 +456,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   }
   const cardOn = () => !(st.config && st.config.ui && st.config.ui.artProgress === false); // the progress card says it instead of the toasts
   function startToast() { if (art.toastAt >= 3 && !cardOn()) shelfToast(`Fetching box art for ${art.toastAt} games in the background`); art.toastAt = 0; }
-  // a picture already in the games folder's "TrustyShelf Art" under one of the picture types → { name, uri } or null
+  // a picture already in the games folder's "Spajz Art" under one of the picture types → { name, uri } or null
   const inFolder = (have, name) => { for (const e of PIC_EXT) { const uri = have.get((name + '.' + e).toLowerCase()); if (uri) return { name: name + '.' + e, uri }; } return null; };
   // one group of addresses (one source) through the native download; ScreenScraper's through its limits
   const fetchGroup = (grp, o) => grp.ss ? ssFetch(Object.assign({}, o, { urls: grp.urls })) : gated(hostOf(grp.urls[0]), () => N.fetchArt(Object.assign({}, o, { urls: grp.urls })));
@@ -469,7 +469,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     const old = art.stale[j.k];
     if (old) { delete art.stale[j.k];
       try { const r = await N.artThumb({ src: old.f, key: sysId, name, maxH: DISPLAY_H }); if (r && r.display) return found(j, r.display, old.f, old.w); } catch (e) { log('box art: original gone', name, e && e.message); } }
-    // 1. already in the games folder's "TrustyShelf Art" (an earlier install, the PC, or put there by hand): no download.
+    // 1. already in the games folder's "Spajz Art" (an earlier install, the PC, or put there by hand): no download.
     // found() keeps the original's address (not just its name), so a lost display copy can be made again from it
     if (tree) { const f = inFolder(await folderFiles(tree, sub), name);
       if (f) try { const r = await N.artThumb({ src: f.uri, key: sysId, name, maxH: DISPLAY_H }); if (r && r.display) return found(j, r.display, f.uri, 'folder'); } catch (e2) { log('box art: unreadable', name, e2 && e2.message); } }
@@ -496,7 +496,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       try { const r = await N.artThumb(Object.assign({ src: old.f, key: sysId, name: base + SUFFIX[whole ? 'full' : p], maxH: DISPLAY_H }, whole ? Object.assign({ split: true, want: [p], dname: base }, shape) : {}));
         const d = whole ? r && r.parts && r.parts[p] : r && r.display; if (d) found(j, d, old.f, old.w, p); } catch (e) { log('box art: original gone', base + SUFFIX[p], e && e.message); } }
     if (!need().length) return;
-    // 1. already in "TrustyShelf Art": the whole wrap (<game>-full), or a back / spine of its own (from the PC, say)
+    // 1. already in "Spajz Art": the whole wrap (<game>-full), or a back / spine of its own (from the PC, say)
     if (tree) { const have = await folderFiles(tree, sub), full = inFolder(have, base + SUFFIX.full);
       if (full) try { const r = await N.artThumb(Object.assign({ src: full.uri, key: sysId, name: base + SUFFIX.full, split: true, want: need(), dname: base, maxH: DISPLAY_H }, shape));
         if (r && r.parts) for (const p of need()) if (r.parts[p]) found(j, r.parts[p], full.uri, 'folder', p); } catch (e) { log('box art: unreadable', base + SUFFIX.full, e && e.message); }
@@ -527,7 +527,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     const k = tree + '|' + sub, m = new Map(); art.folders[k] = m;
     try { const r = await N.artList({ tree, sub }); for (const f of (r && r.files) || []) m.set(String(f.name).toLowerCase(), f.uri); } catch (e) { log('box art: folder list', e && e.message); }
     // the Windows build's "covers" folder beside the games (same names): art scraped on the PC and copied over with the
-    // games is used as it is, never downloaded again. Read only; "TrustyShelf Art" wins where both have a picture
+    // games is used as it is, never downloaded again. Read only; "Spajz Art" wins where both have a picture
     try { const r = await N.artList({ tree, sub: '', folder: 'covers' }); for (const f of (r && r.files) || []) { const k = String(f.name).toLowerCase(); if (!m.has(k)) m.set(k, f.uri); } } catch {}
     return m;
   }
@@ -549,7 +549,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     saveArt(); ready.then(() => queueArt('restore', false, only)); // once the library is loaded
     return gone.size;
   }
-  // (0.3.2) display copies made before at 512 px are made again at DISPLAY_H from the originals (T)rustyShelf already has: nothing
+  // (0.3.2) display copies made before at 512 px are made again at DISPLAY_H from the originals Špajz already has: nothing
   // is downloaded. Nearest the game in focus first, one at a time and only in quiet moments; each case keeps its old copy
   // until the sharper one is ready. The old copies are deleted at the next start (a case scrolling back into view this
   // session may still ask for one). A record's h says the size its copy was made at.
@@ -682,7 +682,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
 
   // ---------- game manuals (0.3.0): a console's manuals, fetched on the device ----------
   // Per console (Settings → Art & manuals, or the setup wizard), each game's manual from the Internet Archive as page
-  // pictures, saved beside the games in "TrustyShelf Manuals" with the Windows build's names (<game>-manual-01.jpg …), so the
+  // pictures, saved beside the games in "Spajz Manuals" with the Windows build's names (<game>-manual-01.jpg …), so the
   // reader in Inspect shows them as it does on the PC. Pages already there (an earlier run, or the PC's "covers" /
   // "manuals" folders copied over with the games) are used as they are and never downloaded again. In the background, in
   // quiet moments and after the box art, through the same progress card, one archive.org download per game at a time.
@@ -712,7 +712,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     saveMan();
   }
   function saveMan(now) { clearTimeout(man.saveT); man.saveT = 0; if (now && quiet()) { store('manuals.json', man.db); return; } man.saveT = setTimeout(() => saveMan(true), now ? 1500 : 4000); }
-  // the files of one games folder that could be manual pages: "TrustyShelf Manuals" first, then the PC's "covers" and "manuals"
+  // the files of one games folder that could be manual pages: "Spajz Manuals" first, then the PC's "covers" and "manuals"
   function manFolder(tree, sub) { const k = tree + '|' + sub; return man.folders[k] || (man.folders[k] = (async () => {
     const m = new Map(), add = (r, under) => { for (const f of (r && r.files) || []) { const n = String(f.name).toLowerCase(); if (!under || !m.has(n)) m.set(n, f.uri); } };
     try { add(await N.artList({ tree, sub, folder: 'manuals' })); } catch {}
@@ -763,7 +763,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   window.__bsManNext = q => { const was = man.q; man.q = q.slice(); try { return [manNext(), man.q]; } finally { man.q = was; } }; // browser tests: which manual goes next
   async function manJob(j) {
     const { g, sysId } = j, tree = g.romTree, sub = subFor(sysId, tree), base = baseOf(g.file), rec = man.db.games[g.id] || {};
-    // 1. already in a folder (complete, as far as (T)rustyShelf knows; a manual set aside as the wrong one is replaced instead)
+    // 1. already in a folder (complete, as far as Špajz knows; a manual set aside as the wrong one is replaced instead)
     const have = await manFolder(tree, sub), there = pagesIn(have, base, rec.want); man.looked.add(g.id);
     if (there.length && !rec.rejected && !(rec.want > there.length)) { manIn(g, there); if (j.net) man.added++; return; }
     if (!j.net) return;
@@ -944,7 +944,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   // (unsure: the source couldn't be asked, offline say, so an empty answer doesn't mean "there's none")
   function artGroups(sysId, g, part) {
     const out = [];
-    // ((T)rustyShelf) a Steam game on the PC shelf: Steam's own cover, by its id
+    // (Špajz) a Steam game on the PC shelf: Steam's own cover, by its id
     if (part === 'front' && g.store === 'STEAM' && g.storeId) out.push(async () => ({ urls: [
       `https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/${g.storeId}/library_600x900_2x.jpg`,
       `https://cdn.cloudflare.steamstatic.com/steam/apps/${g.storeId}/library_600x900_2x.jpg`,
@@ -1079,7 +1079,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     return (lb.job = (async () => {
       await ready; const plats = lbWanted();
       if (!plats.length) throw new Error('No consoles with games that LaunchBox knows yet');
-      if (!N.lbIndex) throw new Error('This version of (T)rustyShelf can\'t download the LaunchBox database');
+      if (!N.lbIndex) throw new Error('This version of Špajz can\'t download the LaunchBox database');
       lbEmit({ phase: 'start' });
       const r = await N.lbIndex({ plats });
       lb.meta = undefined; lb.shards = {}; await lbMeta(); cands.lists = {}; // (the studio's lists from before have no LaunchBox versions)
@@ -1167,7 +1167,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   const JEWEL = new Set(['psx', 'saturn', 'dreamcast', 'pcengine']); // CD cases: back insert with the spines on it
   const SS_MEDIA = { front: ['box-2D'], back: ['box-2D-back'], spine: ['box-2D-side'], wrap: ['box-texture'], disc: ['support-2D'] };
   const SS_REGION = r => { r = String(r || '').toLowerCase(); return r === 'us' || r === 'cus' ? 'usa' : r === 'jp' ? 'jpn' : r === 'wor' ? 'world' : /^(eu|fr|de|es|it|uk|nl|pt|se|dk|fi|no|pl|gr|ru|au|nz)$/.test(r) ? 'eur' : ''; };
-  const SS_MSG = { rate: 'ScreenScraper asked us to slow down', quota: "Today's ScreenScraper lookups are used up", closed: 'ScreenScraper is closed to apps right now', auth: 'The ScreenScraper login was not accepted', blocked: 'ScreenScraper has blocked this version of (T)rustyShelf', net: "Couldn't reach ScreenScraper" };
+  const SS_MSG = { rate: 'ScreenScraper asked us to slow down', quota: "Today's ScreenScraper lookups are used up", closed: 'ScreenScraper is closed to apps right now', auth: 'The ScreenScraper login was not accepted', blocked: 'ScreenScraper has blocked this version of Špajz', net: "Couldn't reach ScreenScraper" };
   const ss = { until: 0, why: '', bad: '', threads: 1, spacing: 0, lastAt: 0, active: 0, waiting: [], cache: null, saveT: 0, dirty: false };
   const ssKeys = () => { const k = (st.config && st.config.keys) || {}; return { user: String(k.ssUser || '').trim(), pass: String(k.ssPass || ''), devId: String(k.ssDevId || '').trim(), devPass: String(k.ssDevPass || '') }; };
   const ssSig = () => { const c = ssKeys(); return fp([c.user, c.pass, c.devId, c.devPass].join('\0')); };
@@ -1325,7 +1325,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   // ---------- Art Studio on Android: the Windows studio's screens (Settings → Art & manuals → Art Studio, or a game's
   // "Change art"), backed by the sources above. Every version of a part, from every source, is listed at once; the small
   // cards then arrive one by one as the native side downloads each version once into the app's cache (two at a time,
-  // ScreenScraper's within its limits). Picking one saves it into "TrustyShelf Art" with the Windows names (a face cut from a
+  // ScreenScraper's within its limits). Picking one saves it into "Spajz Art" with the Windows names (a face cut from a
   // wrap: as a JPEG) and swaps it onto the shelf; the picture it replaced is kept (Undo). "My picture…" is Android's own
   // picture picker. Per-console looks are remembered; LaunchBox's scans, matching sets and re-fetch jobs are Windows-only.
   const LOOKS = ['shelf', 'authentic', 'hd', 'region:usa', 'region:eur', 'region:jpn', 'special'];
@@ -1595,12 +1595,12 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
 
   // Settings → Art & manuals on Android: the toggles say what happens here, and "Download box art now" (Windows' planner)
   // becomes "Fetch missing art now" with the progress under it
-  // "Where art is saved" (asked in the setup wizard too): beside the games, or only inside (T)rustyShelf
+  // "Where art is saved" (asked in the setup wizard too): beside the games, or only inside Špajz
   // where each kind of picture comes from (Accounts & services, and the setup wizard's full case art question)
-  const ART_HELP = 'Box art: libretro (no account) only has front covers. Backs, spines and discs come from GameTDB for GameCube and Wii (no account), or from a ScreenScraper account for every other console. You can also copy your PC\'s ROMS\\<console>\\covers folders onto this device, next to the games: (T)rustyShelf uses those pictures as they are.';
+  const ART_HELP = 'Box art: libretro (no account) only has front covers. Backs, spines and discs come from GameTDB for GameCube and Wii (no account), or from a ScreenScraper account for every other console. You can also copy your PC\'s ROMS\\<console>\\covers folders onto this device, next to the games: Špajz uses those pictures as they are.';
   const whereRow = () => { const S = window.Settings; if (!S || !S.bindv) return null;
-    return Object.assign({ t: 'choice', label: 'Where box art is saved', opts: [['roms', 'Next to my ROMs'], ['app', 'Inside (T)rustyShelf']],
-      info: 'Next to my ROMs: a "TrustyShelf Art" folder in each games folder; it stays with your games and is used again if you reinstall (T)rustyShelf. Inside (T)rustyShelf: private to the app and removed when you uninstall it; nothing is written into your games folders. Art already in a "TrustyShelf Art" folder is used either way.',
+    return Object.assign({ t: 'choice', label: 'Where box art is saved', opts: [['roms', 'Next to my ROMs'], ['app', 'Inside Špajz']],
+      info: 'Next to my ROMs: a "Spajz Art" folder in each games folder; it stays with your games and is used again if you reinstall Špajz. Inside Špajz: private to the app and removed when you uninstall it; nothing is written into your games folders. Art already in a "Spajz Art" folder is used either way.',
       keys: 'art folder save location storage roms' }, S.bindv('ui.artWhere', 'roms')); };
   // the LaunchBox database row: says the size before anything comes down, shows the download and sorting, can stop (a
   // stopped download picks up where it left off)
@@ -1627,7 +1627,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
         continue; }
       if (r && r.label === 'Fetch manuals for new games') {
         rows.push(Object.assign(r, { label: 'Fetch manuals automatically', keys: 'manual booklet instructions automatic',
-          info: 'Manuals for the consoles switched on below, in the background while the shelf is quiet: each game\'s manual from the Internet Archive (archive.org), as pages you read in Inspect. Saved in a "TrustyShelf Manuals" folder beside the games and never downloaded twice. Manuals copied over from the PC (its "covers" or "manuals" folders) are used as they are, whatever is switched on here.' }));
+          info: 'Manuals for the consoles switched on below, in the background while the shelf is quiet: each game\'s manual from the Internet Archive (archive.org), as pages you read in Inspect. Saved in a "Spajz Manuals" folder beside the games and never downloaded twice. Manuals copied over from the PC (its "covers" or "manuals" folders) are used as they are, whatever is switched on here.' }));
         if (bind) for (const sh of (st.library || []).filter(s => s && s.kind === 'console' && (s.games || []).length)) {
           const b = bind('ui.manual_' + sh.id, false), set0 = b.set; b.set = v => { set0(v); if (v) setTimeout(() => manQueue('settings'), 1500); }; // switched on: its manuals start coming (with automatic on)
           rows.push(Object.assign({ t: 'toggle', label: `Manuals: ${sh.name}`, keys: 'manual booklet console ' + sh.name, info: `Fetch the manuals of your ${sh.name} games (${sh.games.length}).` }, b)); }
@@ -1656,22 +1656,22 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
         { keys: 'port ports apk apks recomp recomps custom shelf android games add', sub: () => { const n = Object.values(st.config.portsOn || {}).filter(Boolean).length; return { text: n ? `${n} on the Custom shelf` : 'None yet' }; } });
       con.rows = [...con.rows, { t: 'head', text: 'Ports & custom APKs' }, page];
     }
-    const acct = sections.find(s => s && s.id === 'acct'); // (keys live in (T)rustyShelf's private storage here, not Windows' encrypted store)
-    if (acct) acct.lead = 'Sign-ins and keys that add extra art and features. Kept in TrustyShelf\'s private storage on this device. ' + ART_HELP;
+    const acct = sections.find(s => s && s.id === 'acct'); // (keys live in Špajz's private storage here, not Windows' encrypted store)
+    if (acct) acct.lead = 'Sign-ins and keys that add extra art and features. Kept in Špajz\'s private storage on this device. ' + ART_HELP;
     // IGDB (0.3.1, Android): official HD covers in Art Studio, with a free Twitch developer app's Client ID + Secret
     const S_ = window.Settings;
     if (acct && S_ && S_.bindv) {
       const at = acct.rows.findIndex(r => r && r.status === 'screenscraper'), ig = [
         { t: 'head', text: 'IGDB' },
         Object.assign({ t: 'text', label: 'IGDB Client ID', info: 'Official HD covers (up to 1080p) for most games, offered in Art Studio on the Front. Free: sign in at dev.twitch.tv with a Twitch account, Your Console → Applications → Register (any name; OAuth redirect http://localhost; category Application Integration), then copy its Client ID here and make a New Secret for the next line.', ph: 'Not set', keys: 'igdb twitch client id covers hd art studio' }, S_.bindv('keys.igdbId', ''), { d: undefined }),
-        Object.assign({ t: 'text', label: 'IGDB Client Secret', info: 'The Secret of the same Twitch app. Kept in TrustyShelf\'s private storage on this device and only ever sent to Twitch, to sign in for IGDB.', secret: true, ph: 'Not set', keys: 'igdb twitch secret' }, S_.bindv('keys.igdbSecret', ''), { d: undefined }),
+        Object.assign({ t: 'text', label: 'IGDB Client Secret', info: 'The Secret of the same Twitch app. Kept in Špajz\'s private storage on this device and only ever sent to Twitch, to sign in for IGDB.', secret: true, ph: 'Not set', keys: 'igdb twitch secret' }, S_.bindv('keys.igdbSecret', ''), { d: undefined }),
         { t: 'action', label: 'Test IGDB', btn: 'Test', info: 'Signs in with the Client ID and Secret and asks IGDB one question.', run: () => api.testApi('igdb').then(() => S_.repaint && S_.repaint()), sub: () => apiSt.igdb ? { text: apiSt.igdb.msg, cls: apiSt.igdb.state === 'ok' ? '' : 'warn' } : null, keys: 'igdb test' }];
       acct.rows.splice(at < 0 ? acct.rows.length : at + 1, 0, ...ig);
     }
     // LaunchBox (0.3.3): one row in Accounts & services and in Art & manuals (where "More art sources" and box art lead)
     if (acct) acct.rows.push({ t: 'head', text: 'LaunchBox' }, lbRow());
     const fetchAt = sec.rows.findIndex(r => r && r.label === 'Fetch missing art now'); sec.rows.splice(fetchAt < 0 ? sec.rows.length : fetchAt + 1, 0, lbRow());
-    const walk = rows => (rows || []).forEach(r => { if (!r || typeof r !== 'object') return; if (typeof r.info === 'string') r.info = r.info.replace('Stored encrypted.', 'Kept in TrustyShelf\'s private storage on this device.'); for (const k of Object.keys(r)) if (Array.isArray(r[k])) walk(r[k]); });
+    const walk = rows => (rows || []).forEach(r => { if (!r || typeof r !== 'object') return; if (typeof r.info === 'string') r.info = r.info.replace('Stored encrypted.', 'Kept in Špajz\'s private storage on this device.'); for (const k of Object.keys(r)) if (Array.isArray(r[k])) walk(r[k]); });
     sections.forEach(sec => sec && walk(sec.rows)); // (Windows encrypts saved keys; here they're plain text in the app's private storage)
     return sections;
   };
@@ -1696,10 +1696,10 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     add('neogeo', 'neogeo', 'neo geo'); add('arcade', 'arcade', 'mame', 'fbneo', 'fba', 'finalburn neo');
     add('segacd', 'segacd', 'sega cd', 'megacd', 'mega cd'); add('sega32x', 'sega32x', '32x', 'sega 32x'); add('atari2600', 'atari2600', 'atari 2600', '2600', 'a2600');
     add('atarilynx', 'atarilynx', 'lynx', 'atari lynx'); add('wonderswan', 'wonderswan', 'wonderswancolor', 'wonderswan color', 'wsc', 'ws'); add('ngp', 'ngp', 'neogeopocket', 'neo geo pocket', 'neo-geo pocket'); add('ngpc', 'ngpc', 'neogeopocketcolor', 'neo geo pocket color', 'neo-geo pocket color'); add('dos', 'dos', 'msdos', 'ms-dos', 'pc dos'); // (beta.9)
-    add('pc', 'pc', 'windows', 'steam', 'gamenative', 'pc games'); // ((T)rustyShelf)
+    add('pc', 'pc', 'windows', 'steam', 'gamenative', 'pc games'); // (Špajz)
     for (const s of SYS) add(s.id, s.id, s.name, ...(ALIASES[s.id] || []));
     return m; })());
-  // "Nintendo GameCube ROMs" → gc; null when the name says nothing (T)rustyShelf knows
+  // "Nintendo GameCube ROMs" → gc; null when the name says nothing Špajz knows
   const consoleForName = name => { const k = fkey(name), m = FOLDER_NAMES_(); return m[k] || m[k.replace(/^(nintendo|sony|sega|nec|snk)/, '')] || null; };
   // by the games inside: the one console whose file types fit every game here (disc tracks and archives say nothing)
   const NEUTRAL = new Set(['zip', '7z', 'bin', 'img', 'wav', 'ape', 'raw', 'sub', 'mdf', 'm3u', 'txt', 'nfo', 'png', 'jpg', 'jpeg', 'xml', 'dat', 'sav', 'srm', 'state']);
@@ -1711,7 +1711,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
   const ALL_EXTS = [...new Set(SYS.flatMap(s => s.extensions))];
   // → { path, found: [{ id, name, dir, folder, games, by: 'name' | 'files' }], other: [{ folder, why }] }
   async function mapRoot(path, counts) {
-    const uri = st.folders[path]; if (!uri) throw new Error('(T)rustyShelf has no access to ' + path + ' any more. Pick it again.');
+    const uri = st.folders[path]; if (!uri) throw new Error('Špajz has no access to ' + path + ' any more. Pick it again.');
     const dirs = ((await N.listDirs({ uri })) || {}).dirs || [], found = [], other = [], taken = new Set();
     for (const d of dirs) {
       if (fkey(d.name) === 'trustyshelfart' || /^(bios|system|saves?|states?|screenshots?)$/i.test(d.name)) continue;
@@ -1729,12 +1729,12 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     return { path, found: found.sort((a, b) => SYS.indexOf(sysById[a.id]) - SYS.indexOf(sysById[b.id])), other };
   }
 
-  // (beta.10) a picked folder Android wouldn't let (T)rustyShelf keep reads now but not after a restart: said plainly (on
+  // (beta.10) a picked folder Android wouldn't let Špajz keep reads now but not after a restart: said plainly (on
   // Settings' message line while it's open, else the shelf's) instead of the pick quietly "working"
   const sayNow = m => { try { const t = document.querySelector('#bss.on .bss-toast'); if (t) { t.textContent = m; t.classList.add('on'); clearTimeout(sayNow.t); sayNow.t = setTimeout(() => t.classList.remove('on'), 7000); return; }
     if (window.Shelf && Shelf.toast) Shelf.toast(m); } catch {} };
   async function pickTree() { const r = await N.pickFolder(); if (!r || r.canceled || !r.uri) return null;
-    if (r.persisted === false) { log('folder: Android kept no lasting permission', r.persistError || ''); sayNow("Android didn't let (T)rustyShelf keep access to that folder: it works now, but not after a restart. Pick a folder on the device's storage or SD card instead."); }
+    if (r.persisted === false) { log('folder: Android kept no lasting permission', r.persistError || ''); sayNow("Android didn't let Špajz keep access to that folder: it works now, but not after a restart. Pick a folder on the device's storage or SD card instead."); }
     const p = idToPath(r.docId || treeIdOf(r.uri)); st.folders[p] = r.uri;
     if (st.foldersOff.includes(p)) { st.foldersOff = st.foldersOff.filter(x => x !== p); store('folders-off.json', st.foldersOff); } // (picked again: wanted again)
     await store('folders.json', st.folders); return p; }
@@ -1796,8 +1796,8 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       const sys = SYS.find(s => (E[s.emus[0]] || {}).name === want) || null;
       const known = new Set(); const items = [];
       for (const id of (sys ? sys.emus : Object.keys(E))) { const e = E[id]; for (const [p, label] of inst) if ((e.packages || []).includes(p) || (e.match && e.match.test(p))) if (!known.has(p)) { known.add(p); items.push({ pkg: p, label: `${label} — ${e.name}` }); } }
-      // (beta.10) the rest: (T)rustyShelf hands them the game the standard way, which not every app takes; the label says so
-      for (const [p, label] of [...inst].sort((a, b) => String(a[1]).localeCompare(String(b[1])))) if (!known.has(p) && p !== 'io.github.trustyshelf') items.push({ pkg: p, label: emuFor(p) ? label : `${label} (may open without the game)` });
+      // (beta.10) the rest: Špajz hands them the game the standard way, which not every app takes; the label says so
+      for (const [p, label] of [...inst].sort((a, b) => String(a[1]).localeCompare(String(b[1])))) if (!known.has(p) && p !== 'io.github.adamjeonline.spajz') items.push({ pkg: p, label: emuFor(p) ? label : `${label} (may open without the game)` });
       const r = await N.chooseApp({ title: o && o.title || 'Choose the emulator app', items }); if (!r || r.canceled) return null;
       const e = emuFor(r.pkg); return e ? fmtEmu(e, r.pkg) : `${String(r.label || r.pkg).replace(/ — .*$/, '').replace(/ \(may open without the game\)$/, '')} (${r.pkg})`;
     },
@@ -1839,7 +1839,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     launchEmulator: systemId => start(systemId, null),
     // (0.3.5) the apps on the device with a launcher icon (the bottom screen's Shortcuts: Spotify, a browser, any app)
     androidApps: async () => { await ready; const inst = await apps(true);
-      return [...inst].filter(([p]) => p !== 'io.github.trustyshelf').map(([pkg, label]) => ({ pkg, label: String(label || pkg) })).sort((a, b) => a.label.localeCompare(b.label)); },
+      return [...inst].filter(([p]) => p !== 'io.github.adamjeonline.spajz').map(([pkg, label]) => ({ pkg, label: String(label || pkg) })).sort((a, b) => a.label.localeCompare(b.label)); },
     launchApp: async appId => { running = { at: Date.now() }; try { await N.launch({ pkg: appId, grant: [] }); } catch (err) { running = null; throw new Error((err && err.message) || String(err)); } return {}; },
     onExited: fn => { onExit = fn; },
     onRunReady: fn => { window.__bsRunReady = fn; },
@@ -1849,13 +1849,13 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     log: m => log(String(m).slice(0, 500)),
     // quick menu → Power, and Settings → System
     powerOptions: () => [['exitHome', 'Exit to ' + ((prevLauncher() || {}).label || 'device home')], ['androidSettings', 'Android settings'],
-      ['homeSettings', home.isDefault ? 'Stop using (T)rustyShelf as Home' : 'Use (T)rustyShelf as Home'], ['quit', 'Close (T)rustyShelf']],
+      ['homeSettings', home.isDefault ? 'Stop using Špajz as Home' : 'Use Špajz as Home'], ['quit', 'Close Špajz']],
     power: async kind => {
       if (kind === 'exitHome') return exitHome();
       if (kind === 'androidSettings') return N.openAndroidSettings();
       if (kind === 'homeSettings') return N.openHomeSettings();
       return true; },
-    quit: async () => { await refreshHome(); if (home.isDefault) return exitHome(); return N.closeApp(); }, // as the Home app, closing would just reopen (T)rustyShelf
+    quit: async () => { await refreshHome(); if (home.isDefault) return exitHome(); return N.closeApp(); }, // as the Home app, closing would just reopen Špajz
     homeStatus: async () => { await ready; await refreshHome(); const p = prevLauncher(); return { isDefault: !!home.isDefault, previous: p, previousLabel: p ? p.label : '' }; },
     openHomeSettings: () => N.openHomeSettings(),
     // not on Android yet: return nothing instead of the demo's pretend data
@@ -1915,7 +1915,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     n64: ['nintendo 64'], dreamcast: ['dc'], saturn: [], megadrive: ['genesis', 'md'], mastersystem: ['sms', 'master system'], gamegear: ['gg', 'game gear'], snes: ['super nintendo', 'sfc'],
     nes: ['famicom', 'fc'], gba: ['game boy advance'], gbc: ['game boy color'], gb: ['game boy'], pcengine: ['tg16', 'turbografx', 'pce'], neogeo: ['neo geo'], arcade: ['mame', 'fbneo'],
     segacd: ['megacd', 'sega cd'], sega32x: ['32x'], atari2600: ['2600', 'a2600'], atarilynx: ['lynx'], wonderswan: ['wsc', 'ws', 'wonderswancolor'], dos: ['msdos'], ngp: ['neogeopocket'], ngpc: ['neogeopocketcolor'] };
-  // Keyboards: (T)rustyShelf has its own on-screen keyboard for the controller, and Android's popping up on top of it fought
+  // Keyboards: Špajz has its own on-screen keyboard for the controller, and Android's popping up on top of it fought
   // over the buttons (reading room search on the Thor). A text field focused by the controller keeps Android's keyboard
   // away (inputmode=none); a field you tap with a finger gets it, as you'd expect on a touchscreen.
   let touchedAt = 0;
@@ -1944,7 +1944,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       'primary:ROMs/Discs': ['Something (USA).iso'], 'primary:ROMs/BIOS': ['scph1001.bin'], 'primary:ROMs/Extras': [] };
     // ?fakeMany=1: a bigger library (tests of the art queue's order and its download limits)
     if (/[?&]fakeMany=1\b/.test(location.search)) for (let i = 1; i <= 30; i++) { lib['primary:ROMs/snes'].push(`Snes Game ${i} (USA).sfc`); lib['primary:ROMs/psx'].push(`Psx Game ${i} (USA).chd`); }
-    // ((T)rustyShelf) ?fakePc=1: a PC folder first (the first folder picked), with GameNative's Frontend sync files (an id
+    // (Špajz) ?fakePc=1: a PC folder first (the first folder picked), with GameNative's Frontend sync files (an id
     // inside each) and one named with its id; GameNative and DroidDeck installed
     const fakePc = /[?&]fakePc=1\b/.test(location.search);
     if (fakePc) { const rest = { ...lib }; for (const k of Object.keys(lib)) delete lib[k];
@@ -1953,10 +1953,10 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     let pickN = 0; const order = Object.keys(lib).slice(0, 3);
     window.__fakeLaunches = [];
     // box art: "downloads" answer with a few local test pictures (__art/0-3.jpg, served by the device test); folders made
-    // inside the picked trees are recorded. The SNES folder already has a cover in its "TrustyShelf Art", to be re-used.
+    // inside the picked trees are recorded. The SNES folder already has a cover in its "Spajz Art", to be re-used.
     // The ROM folders are on the "SD card": what's saved there outlives the app's own storage (fake:dirs), like on a device.
     // (covers: the Windows build's folder, read only)
-    let dirs = { 'primary:ROMs/snes/TrustyShelf Art': new Set(['Super Metroid (Japan, USA).png']), 'primary:ROMs/snes/covers': new Set(['Chrono Trigger (USA).png']),
+    let dirs = { 'primary:ROMs/snes/Spajz Art': new Set(['Super Metroid (Japan, USA).png']), 'primary:ROMs/snes/covers': new Set(['Chrono Trigger (USA).png']),
       'primary:ROMs/psx/covers': new Set(['Crash Bandicoot (USA)-manual-01.jpg', 'Crash Bandicoot (USA)-manual-02.jpg']) }; // (a manual copied over from the PC, already made into pages there)
     try { const d = JSON.parse(localStorage.getItem('fake:dirs') || 'null'); if (d) dirs = Object.fromEntries(Object.entries(d).map(([k, v]) => [k, new Set(v)])); } catch {}
     const saveDirs = () => { try { localStorage.setItem('fake:dirs', JSON.stringify(Object.fromEntries(Object.entries(dirs).map(([k, v]) => [k, [...v]])))); } catch {} };
@@ -1978,12 +1978,12 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
     // a picked folder, or a folder inside one (…/tree/<picked>/document/<sub folder>), as TrustyShelfNativePlugin.startId reads it
     const idOfTree = t => decodeURIComponent((/\/document\/([^/]+)/.exec(t) || /\/tree\/([^/]+)/.exec(t) || [])[1] || '');
     const treeOnly = t => String(t).replace(/\/document\/.*$/, '');
-    // a save: into the folder's "TrustyShelf Art" (kept), or with no tree into the app's own storage
+    // a save: into the folder's "Spajz Art" (kept), or with no tree into the app's own storage
     const fakeSave = (tree, sub, name) => { if (!tree) return { saved: 'app', file: '/data/app-art-full/' + name + '.png' };
       const d = artDir(tree, sub); if (!dirs[d]) { dirs[d] = new Set(); __fakeArt.dirs.push(d); } const had = dirs[d].has(name + '.png'); dirs[d].add(name + '.png'); saveDirs();
       return { saved: 'folder', had, file: 'content://fake/' + encodeURIComponent(d + '/' + name + '.png') }; };
-    const artDir = (t, sub) => idOfTree(t) + '/TrustyShelf Art' + (sub ? '/' + sub : '');
-    const manDir = (t, sub) => idOfTree(t) + '/TrustyShelf Manuals' + (sub ? '/' + sub : '');
+    const artDir = (t, sub) => idOfTree(t) + '/Spajz Art' + (sub ? '/' + sub : '');
+    const manDir = (t, sub) => idOfTree(t) + '/Spajz Manuals' + (sub ? '/' + sub : '');
     const pic = name => { let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) >>> 0; return keep('__art/' + (h % 4) + '.jpg?n=' + h); }; // one path per picture, like files/art/…
     let bottomOn = true; window.__fakeBottom = [];
     addEventListener('message', e => { if (e.data && typeof e.data.bsBottom === 'string') (listeners.bottom || []).forEach(f => f({ msg: e.data.bsBottom })); });
@@ -2003,7 +2003,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       openUrl: async ({ url }) => { window.__fakeCalls = (window.__fakeCalls || []).concat(['openUrl:' + url]); }, // (beta.10)
       dropPdf: async ({ path }) => { (__fakeMan.dropped = __fakeMan.dropped || []).push(String(path)); return { removed: true }; }, // (beta.10)
       copyPreview: async ({ uri }) => { window.__copied = (window.__copied || []).concat(String(uri)); return { ok: true, path: window.__previewUrl || '/__test/preview.webm' }; }, // (beta.9: the video played from the app's cache)
-    readDoc: async ({ uri }) => ({ text: (window.__fakeDocs || {})[decodeURIComponent(String(uri)).split('/').pop()] || '' }), // ((T)rustyShelf: a PC game's export file, by its name)
+    readDoc: async ({ uri }) => ({ text: (window.__fakeDocs || {})[decodeURIComponent(String(uri)).split('/').pop()] || '' }), // (Špajz: a PC game's export file, by its name)
     listFiles: async ({ uri }) => { const id = idOfTree(uri); return { files: (lib[id] || []).map(n => ({ name: n, docId: id + '/' + n, dir: '', ext: n.split('.').pop().toLowerCase(), uri: treeOnly(uri) + '/document/' + encodeURIComponent(id + '/' + n), size: 1e8, mtime: 1.7e12 })) }; },
       listDirs: async ({ uri }) => { const id = idOfTree(uri), kids = new Set();
         for (const k of [...Object.keys(lib), ...Object.keys(dirs)]) if (k.startsWith(id + '/')) kids.add(k.slice(id.length + 1).split('/')[0]);
@@ -2011,7 +2011,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       artExists: async ({ paths }) => ({ missing: (paths || []).filter(p => !shown.has(p)) }),
       artForget: async ({ paths }) => { (__fakeArt.forgot = __fakeArt.forgot || []).push(...(paths || [])); return { removed: (paths || []).length }; },
       chooseApp: async ({ items }) => ({ pkg: items[0].pkg, label: items[0].label }),
-      homeStatus: async () => ({ isDefault: !!window.__fakeIsHome, current: window.__fakeIsHome ? { pkg: 'io.github.trustyshelf', label: 'TrustyShelf' } : { pkg: 'com.cocoon.launcher', label: 'Cocoon' },
+      homeStatus: async () => ({ isDefault: !!window.__fakeIsHome, current: window.__fakeIsHome ? { pkg: 'io.github.adamjeonline.spajz', label: 'TrustyShelf' } : { pkg: 'com.cocoon.launcher', label: 'Cocoon' },
         launchers: [{ pkg: 'com.cocoon.launcher', label: 'Cocoon' }, { pkg: 'com.ayn.launcher', label: 'AYN Launcher' }] }),
       openHomeSettings: async () => { window.__fakeCalls = (window.__fakeCalls || []).concat(['openHomeSettings']); },
       openAndroidSettings: async () => { window.__fakeCalls = (window.__fakeCalls || []).concat(['openAndroidSettings']); },
@@ -2021,7 +2021,7 @@ window.BS_QUIET = () => ({ running: !!running, artPaused: !!art.paused, hidden: 
       artIndex: async () => { __fakeArt.index++; return { status: 200, names: Object.values(lib).flat().map(n => n.replace(/\.[^.]+$/, '').replace(/ \(Disc \d+\)/, '')) }; },
       artList: async ({ tree, sub, folder }) => { const d = folder === 'covers' ? idOfTree(tree) + '/covers' : folder === 'pcmanuals' ? idOfTree(tree) + '/manuals' : folder === 'manuals' ? manDir(tree, sub) : artDir(tree, sub), set = dirs[d];
         return { exists: !!set, files: set ? [...set].map(n => ({ name: n, uri: /-manual-\d+\./.test(n) ? pic(d + '/' + n) : 'content://fake/' + encodeURIComponent(d + '/' + n) })) : [] }; }, // (manual pages: a test picture, so the reader can show them)
-      // manuals: a page "download" into the folder's "TrustyShelf Manuals" (or the app's storage with no tree); __fakeMan.miss: pages that 404
+      // manuals: a page "download" into the folder's "Spajz Manuals" (or the app's storage with no tree); __fakeMan.miss: pages that 404
       fetchFile: async ({ tree, sub, folder, name, url, pdf }) => { __fakeMan.fetch.push({ name, url, tree, folder, pdf: !!pdf }); await new Promise(r => setTimeout(r, 20));
         if (__fakeMan.busy) return { ok: false, busy: true };
         if (pdf) return /\/Manual\/Metroid_Prime\.pdf$/.test(url) ? { ok: true, name: name + '.pdf', file: 'data:application/pdf;base64,' + btoa(fakePdf(2)) } : { ok: false, missing: true };

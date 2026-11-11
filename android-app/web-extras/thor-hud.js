@@ -43,7 +43,7 @@
       const sys = (S || []).find(s => s && (s.id === 'sys' || (s.alias || []).includes('sys'))); if (!sys || !Array.isArray(sys.rows)) return S;
       if (sys.rows.some(r => r && r.label === 'Test meter')) return S;
       const row = { t: 'toggle', label: 'Test meter', d: false, keys: 'fps meter hud performance test frames memory',
-        info: 'A small panel in the corner with the frame rate, slow frames, memory and the controller in use, for checking how smoothly (T)rustyShelf runs. Tap it to make it smaller, then to tuck it away.',
+        info: 'A small panel in the corner with the frame rate, slow frames, memory and the controller in use, for checking how smoothly Špajz runs. Tap it to make it smaller, then to tuck it away.',
         get: () => view !== 'off', set: v => setView(v ? 'big' : 'off') };
       const i = sys.rows.findIndex(r => r && r.label === 'Smoothness test'); sys.rows.splice(i >= 0 ? i + 1 : sys.rows.length, 0, row);
     } catch (e) { console.error('test meter row', e); }

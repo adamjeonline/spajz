@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-ra.js apart from the app's name ((T)rustyShelf).
-// (T)rustyShelf on Android (0.3.5): RetroAchievements. Until now the Android adapter answered every RetroAchievements call
+// Špajz on Android (0.3.5): RetroAchievements. Until now the Android adapter answered every RetroAchievements call
 // with "not here" (raEnabled → off, Test → "Not used on Android yet"), so the shelf never asked for anything. This file
 // backs the same calls the Windows build has (main/ra.js): raEnabled, raProfile, raShelf, raProgress, onRaUnlocks, and
 // Settings → Accounts → RetroAchievements → Test, with the RetroAchievements Web API (username + web API key).
@@ -12,9 +12,9 @@
 //   - Answers are cached (the API is rate-limited): console game lists for a week, your completion list and profile for
 //     a few hours, a game's achievements for a day; whatever you just played is asked again when you come back, along
 //     with the achievements you unlocked meanwhile (shown on the shelf, as on Windows).
-//   - Nothing runs while the shelf slides (window.BS_BUSY), and hashing waits while (T)rustyShelf is in the background.
+//   - Nothing runs while the shelf slides (window.BS_BUSY), and hashing waits while Špajz is in the background.
 // The emulators' own sign-in (RetroArch, Dolphin, PPSSPP, DuckStation, NetherSX2) can't be set from here on Android:
-// their settings live in each app's private storage, and their sign-in needs your password ((T)rustyShelf only has the web
+// their settings live in each app's private storage, and their sign-in needs your password (Špajz only has the web
 // API key). Settings says to sign in inside the emulator. Windows never loads this file.
 (function () {
   'use strict';
@@ -22,7 +22,7 @@
   if (!C || !api || !C.N) return; // only with the Android adapter (on the device, or the ?fakeNative=1 pretend device)
   const { N, st, ready, load, store, log, isNative } = C;
   const API = 'https://retroachievements.org/API/', MEDIA = 'https://media.retroachievements.org', SITE = 'https://retroachievements.org';
-  // RetroAchievements' console ids for the shelves (T)rustyShelf has on Android (Neo Geo sets are in its Arcade list)
+  // RetroAchievements' console ids for the shelves Špajz has on Android (Neo Geo sets are in its Arcade list)
   const CONSOLE_ID = { megadrive: 1, n64: 2, snes: 3, gb: 4, gba: 5, gbc: 6, nes: 7, pcengine: 8, mastersystem: 11, psx: 12, gamegear: 15, gc: 16, nds: 18,
     wii: 19, ps2: 21, arcade: 27, neogeo: 27, saturn: 39, dreamcast: 40, psp: 41, segacd: 9, sega32x: 10, atari2600: 25, atarilynx: 13, wonderswan: 53, ngp: 14, ngpc: 14 }; // (beta.9; DOS has no RetroAchievements)
   // how a console's games are hashed natively (RaHash.java); disc consoles are matched by title only
@@ -40,7 +40,7 @@
   const enabled = () => !!(user() && hasKey() && acc().enabled !== false);
 
   // ---------- quiet moments ----------
-  // never while the shelf slides; bg (hashing): not while (T)rustyShelf is behind a game either
+  // never while the shelf slides; bg (hashing): not while Špajz is behind a game either
   async function calm(bg) { while ((window.BS_BUSY && window.BS_BUSY()) || (bg && document.hidden)) await sleep(150); }
   let lastYield = 0; // long loops (matching a whole shelf) give the page a frame every ~8 ms
   async function tick() { const t = performance.now(); if (t - lastYield > 8) { await sleep(0); await calm(); lastYield = performance.now(); } }
@@ -59,14 +59,14 @@
       if (s === 401 || s === 403) throw err("RetroAchievements didn't accept your username or web API key. Check them in Settings → Accounts.", 'auth');
       if (s !== 200) throw err(`RetroAchievements didn't answer (HTTP ${s}). Try again in a moment.`, 'http');
       await calm(); // (a big console list is read in a quiet moment)
-      try { return JSON.parse(r.text); } catch { throw err("RetroAchievements sent an answer (T)rustyShelf couldn't read. Try again in a moment.", 'bad'); }
+      try { return JSON.parse(r.text); } catch { throw err("RetroAchievements sent an answer Špajz couldn't read. Try again in a moment.", 'bad'); }
     };
     const p = chain.then(run, run); chain = p.catch(() => {}); return p;
   }
   // the site answers some failures with 200 and an object ({ message, errors })
   const need = v => { if (Array.isArray(v)) return v; throw err(v && typeof v === 'object' && typeof v.message === 'string' && v.message ? 'RetroAchievements: ' + v.message.slice(0, 200) : 'RetroAchievements sent an unexpected answer. Try again in a moment.', 'bad'); };
 
-  // ---------- cache: memory, then a file in (T)rustyShelf's storage, then the site; offline / busy: the last copy ----------
+  // ---------- cache: memory, then a file in Špajz's storage, then the site; offline / busy: the last copy ----------
   const mem = new Map(), inflight = new Map(), failed = new Map(), expired = new Set();
   function keep(name, j) { mem.set(name, j); if (mem.size > 90) for (const k of mem.keys()) if (/^ra-game-/.test(k) && k !== name) { mem.delete(k); break; } }
   function saveSoon(name, j) { calm().then(() => store(name, j)); }
@@ -312,7 +312,7 @@
   window.BS_SETTINGS_PATCH = (sections, h) => {
     let s = sections; if (typeof prevPatch === 'function') { try { s = prevPatch(sections, h) || sections; } catch (e) { console.error('settings patch', e); } }
     try { const acct = (s || []).find(x => x && x.id === 'acct'), row = acct && (acct.rows || []).find(r => r && r.status === 'ra');
-      if (row) row.info = 'Achievements for your games: progress on the shelf, in Details, the quick menu and the bottom screen, and what you unlocked when you come back from a game. Needs your username and web API key. Achievements only unlock where the emulator is signed in too: sign in inside each one (RetroArch: Settings → Achievements; Dolphin, PPSSPP, DuckStation, NetherSX2: their Achievements settings). Android doesn\'t let (T)rustyShelf do that for them.';
+      if (row) row.info = 'Achievements for your games: progress on the shelf, in Details, the quick menu and the bottom screen, and what you unlocked when you come back from a game. Needs your username and web API key. Achievements only unlock where the emulator is signed in too: sign in inside each one (RetroArch: Settings → Achievements; Dolphin, PPSSPP, DuckStation, NetherSX2: their Achievements settings). Android doesn\'t let Špajz do that for them.';
     } catch (e) { console.error('settings patch (RetroAchievements)', e); }
     return s;
   };

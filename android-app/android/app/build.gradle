@@ -6,7 +6,7 @@ android {
     namespace = "io.github.trustyshelf"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.github.trustyshelf"
+        applicationId "io.github.adamjeonline.spajz"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode((System.getenv("TRUSTYSHELF_VERSION_CODE") ?: System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInteger()) // every GitHub build is newer than the last ((T)rustyShelf's releases: from A.B.C.DDDD, release.yml)
@@ -22,7 +22,17 @@ android {
     // part of the public source: without it, a build is signed with Android's own debug key (a build of your own can't
     // install over the official APK, which is the point).
     def fixedKey = file('../../ci/debug.keystore')
+    // (Špajz) release key: path and password from SPAJZ_KEYSTORE / SPAJZ_KEY_PASS (kept outside the repo)
+    def relKey = System.getenv("SPAJZ_KEYSTORE")
     signingConfigs {
+        if (relKey && file(relKey).exists()) {
+            spajz {
+                storeFile file(relKey)
+                storePassword System.getenv("SPAJZ_KEY_PASS")
+                keyAlias(System.getenv("SPAJZ_KEY_ALIAS") ?: "spajz")
+                keyPassword System.getenv("SPAJZ_KEY_PASS")
+            }
+        }
         if (fixedKey.exists()) {
             fixed {
                 storeFile fixedKey
@@ -38,6 +48,7 @@ android {
         }
         release {
             minifyEnabled false
+            if (relKey && file(relKey).exists()) signingConfig signingConfigs.spajz
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

@@ -48,7 +48,7 @@ import java.util.zip.ZipInputStream;
  * Magazines & guides (0.3.2): the Internet Archive store's downloads, and the reading corner's files.
  * - download: one archive.org file straight to a file (never through the page), up to four ranged connections at once
  *   when the server allows them, resumed after an interruption (the half file and where each connection got to are kept
- *   in the app's storage), progress events, cancel. When complete it goes into "TrustyShelf Reading/Magazines|Guides/<series>"
+ *   in the app's storage), progress events, cancel. When complete it goes into "Spajz Reading/Magazines|Guides/<series>"
  *   beside the ROMs (Storage Access Framework), or the app's own storage when there's no folder it may write.
  * - local: the magazines and guides kept in the app's own storage.
  * - cover: a cover picture (from archive.org, or drawn by the page) saved in the app's storage.
@@ -58,7 +58,7 @@ import java.util.zip.ZipInputStream;
 final class ReadingStore {
     interface Events { void emit(String event, JSObject data); }
 
-    private static final String READ_DIR = "TrustyShelf Reading";
+    private static final String READ_DIR = "Spajz Reading";
     private static final int CONNS = 4;                          // ranged connections per file
     private static final long MIN_SPLIT = 8L * 1024 * 1024;      // smaller files come down in one piece
     private static final long MAX_BYTES = 4L * 1024 * 1024 * 1024;
@@ -584,7 +584,7 @@ final class ReadingStore {
         }
         File f = new File(src);
         String p = f.getCanonicalPath(), mine = ctx.getFilesDir().getCanonicalPath();
-        if (!p.startsWith(mine + File.separator)) throw new IOException("Not (T)rustyShelf's file"); // only the app's own files by path
+        if (!p.startsWith(mine + File.separator)) throw new IOException("Not Špajz's file"); // only the app's own files by path
         return new FileInputStream(f);
     }
 

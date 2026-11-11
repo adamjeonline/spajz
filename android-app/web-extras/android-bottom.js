@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-bottom.js apart from the app's name ((T)rustyShelf).
-// (T)rustyShelf on Android: the AYN Thor's bottom screen, main-page side. The bottom page itself is bottom.html, shown on the
+// Špajz on Android: the AYN Thor's bottom screen, main-page side. The bottom page itself is bottom.html, shown on the
 // second display by BottomScreen.java. This file sends it the game the shelf has settled on and runs what its touch
 // buttons ask for (play, favourite, inspect, manual, shuffle, previous / next…). In the museum it sends the row on the
 // wall instead (Shelf.bottomMuseum), and the bottom page's touches choose a case there or unwrap it (mpick / unwrap).

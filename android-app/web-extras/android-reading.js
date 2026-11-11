@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-reading.js apart from the app's name ((T)rustyShelf).
-/* (T)rustyShelf on Android (0.3.2): magazines & guides. Added to the Android build only by copy-web.js; the Windows build has
+/* Špajz on Android (0.3.2): magazines & guides. Added to the Android build only by copy-web.js; the Windows build has
    its own (main/archive.js, main/library.js, the finder in setup.js).
    - The store: free scans of classic game magazines and strategy guides from the Internet Archive (archive.org), as a
      cover grid laid out for the Thor's top screen. Ready-made shelves (Nintendo Power, EGM, GamePro… and strategy guides,
@@ -9,10 +9,10 @@
      A / B / X / Y, L / R) and touch (tap a cover to look at it, tap again or Download to get it) both work. Opened from
      Settings → Magazines & guides, and from the museum's reading corner (X there).
    - Downloads: native (ReadingStore.java), straight to a file, several ranged connections, resumable, cancellable,
-     two at a time. Saved in a "TrustyShelf Reading" folder beside the ROMs (Magazines/ and Guides/, a sub-folder per
-     series), or inside (T)rustyShelf when "Where box art is saved" says so or no folder can be written.
+     two at a time. Saved in a "Spajz Reading" folder beside the ROMs (Magazines/ and Guides/, a sub-folder per
+     series), or inside Špajz when "Where box art is saved" says so or no folder can be written.
    - The reading corner: window.trustyshelf.library / libraryCover / libraryPages for the museum (app.js reads them), from
-     "TrustyShelf Reading" and PC-style "Magazines" / "Guides" folders copied next to the ROMs, plus the app's own storage.
+     "Spajz Reading" and PC-style "Magazines" / "Guides" folders copied next to the ROMs, plus the app's own storage.
      PDFs open in the museum's reader (pdf.js, which draws while the museum is paused under it); comic archives (.cbz)
      are unpacked natively; a folder of page pictures is read as it is.
    Performance: nothing runs while the shelf slides or the museum is being moved (idleTurn); the store has no animation
@@ -120,7 +120,7 @@
   let saveT = 0;
   function saveDb(soon) { clearTimeout(saveT); saveT = setTimeout(async () => { saveT = 0; await idleTurn(20000); store('reading.json', db); }, soon ? 300 : 2500); }
 
-  // ---------- where: "TrustyShelf Reading" beside the ROMs (the main ROMs folder, else the first games folder), or inside (T)rustyShelf ----------
+  // ---------- where: "Spajz Reading" beside the ROMs (the main ROMs folder, else the first games folder), or inside Špajz ----------
   const ui = () => (st.config && st.config.ui) || {};
   function romTree() {
     const c = st.config || {}, rr = c.romRoot;
@@ -129,7 +129,7 @@
     return null;
   }
   function saveRoot() { const t = romTree(); return ui().artWhere === 'app' || !t ? { tree: '', where: 'app' } : { tree: t.tree, where: 'roms', path: t.path }; }
-  const whereText = () => { const r = saveRoot(); return r.where === 'app' ? 'Inside (T)rustyShelf' : `${String(r.path).split('/').filter(Boolean).pop() || 'ROMs'}/TrustyShelf Reading`; };
+  const whereText = () => { const r = saveRoot(); return r.where === 'app' ? 'Inside Špajz' : `${String(r.path).split('/').filter(Boolean).pop() || 'ROMs'}/Spajz Reading`; };
 
   // ---------- the reading corner's list: every magazine and guide on the device ----------
   const IMG = /\.(jpe?g|png|webp|gif)$/i, BOOK = /\.(pdf|cbz|zip)$/i, EXTS = ['pdf', 'cbz', 'zip', 'jpg', 'jpeg', 'png', 'webp', 'gif'];
@@ -167,7 +167,7 @@
         group(k.kind, files.map(f => ({ name: f.name, dir: f.dir || '', src: f.uri, size: f.size })), out);
       }
     }
-    try { // inside (T)rustyShelf (no writable games folder, or "Inside (T)rustyShelf")
+    try { // inside Špajz (no writable games folder, or "Inside Špajz")
       const r = await N.readingLocal(), by = { magazine: [], guide: [] };
       for (const f of (r && r.files) || []) if (by[f.kind]) by[f.kind].push({ name: f.name, dir: f.dir || '', src: f.path, size: f.size });
       group('magazine', by.magazine, out); group('guide', by.guide, out);
@@ -735,7 +735,7 @@
         run: find && typeof find.run === 'function' ? find.run : () => open({ from: 'settings' }), sub: storeSub },
       { t: 'head', text: 'On this device' },
       { t: 'action', label: 'Your magazines & guides', btn: () => lib.scanning ? 'Looking…' : 'Look again', keys: 'reading corner folder magazines guides trustyshelf reading pdf cbz',
-        info: 'Saved in a "TrustyShelf Reading" folder next to your ROMs (Magazines and Guides, a folder per series), or inside (T)rustyShelf when "Where box art is saved" says so. Magazines and Guides folders copied over from the PC (next to the ROMs) are read too: PDF, CBZ, or a folder of page pictures per issue.',
+        info: 'Saved in a "Spajz Reading" folder next to your ROMs (Magazines and Guides, a folder per series), or inside Špajz when "Where box art is saved" says so. Magazines and Guides folders copied over from the PC (next to the ROMs) are read too: PDF, CBZ, or a folder of page pictures per issue.',
         run: () => { lib.at = 0; rescan().then(repaintSettings, repaintSettings); repaintSettings(); }, sub: libSub }];
     if (!lib.at && !lib.scanning) rescan().then(repaintSettings, () => {});
     return sections;
@@ -824,7 +824,7 @@
     const saveFs = () => { try { localStorage.setItem('fake:reading', JSON.stringify(F.fs)); } catch {} };
     const idOfTree = t => decodeURIComponent((/\/document\/([^/]+)/.exec(t) || /\/tree\/([^/]+)/.exec(t) || [])[1] || '');
     const treeOnly = t => String(t).replace(/\/document\/.*$/, '');
-    const isReading = id => /\/(TrustyShelf Reading|Magazines|Guides)(\/|$)/.test(id);
+    const isReading = id => /\/(Spajz Reading|Magazines|Guides)(\/|$)/.test(id);
     // the archive: shelves answer with a few issues each; "zelda" finds a guide (PDF), a comic (CBZ), a borrow-only one
     // and one with page scans only; nothing else is found
     const CAT = { 'fk-zelda-guide': ['The Legend of Zelda Official Strategy Guide', '1998-11', 'pdf', 42e6], 'fk-zelda-comic': ['Zelda Comic Collection', '1990', 'cbz', 18e6],
@@ -858,7 +858,7 @@
       for (let k = 1; k <= steps; k++) { await sleep(F.lat); if (F.cancelled.includes(o.id)) { F.cancelled = F.cancelled.filter(x => x !== o.id); return { ok: false, cancelled: true, error: 'Cancelled.' }; }
         F.listeners.forEach(f => f({ id: o.id, bytes: Math.round(total * k / steps), total, conns: 4 })); }
       const kd = o.kind === 'guide' ? 'Guides' : 'Magazines', file = `${o.name}.${o.ext}`;
-      const dir = o.tree ? `${idOfTree(o.tree)}/TrustyShelf Reading/${kd}${o.series ? '/' + o.series : ''}` : `/data/reading/${kd}${o.series ? '/' + o.series : ''}`, p = dir + '/' + file;
+      const dir = o.tree ? `${idOfTree(o.tree)}/Spajz Reading/${kd}${o.series ? '/' + o.series : ''}` : `/data/reading/${kd}${o.series ? '/' + o.series : ''}`, p = dir + '/' + file;
       const had = F.fs.find(x => x.p === p); if (!had) { F.fs.push({ p, size: total }); saveFs(); } F.saved.push(p);
       return { ok: true, file: o.tree ? 'content://fake/' + encodeURIComponent(p) : p, name: file, saved: o.tree ? 'folder' : 'app', size: total, existed: !!had };
     };

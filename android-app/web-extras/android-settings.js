@@ -1,6 +1,6 @@
 // Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
 // android-app/web-extras/android-settings.js apart from the app's name ((T)rustyShelf).
-// (T)rustyShelf on Android (0.3.4): Settings regrouped for the handheld, as the mock (Settings mock, 2026-10-24): seven plain
+// Špajz on Android (0.3.4): Settings regrouped for the handheld, as the mock (Settings mock, 2026-10-24): seven plain
 // sections instead of thirteen, Art Studio second, everything for one thing in one place.
 //   Games            consoles (each opens its own page), Magazines & guides
 //   Art Studio       open the studio, the downloads for every console, sources (LaunchBox), manuals (per console on a sub-page)

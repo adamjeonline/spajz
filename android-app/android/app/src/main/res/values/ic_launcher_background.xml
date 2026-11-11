@@ -2,5 +2,5 @@
 <!-- Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
      android-app/android/app/src/main/res/values/ic_launcher_background.xml apart from the app's name ((T)rustyShelf). -->
 <resources>
-    <color name="ic_launcher_background">#27323E</color>
+    <color name="ic_launcher_background">#F4E8D0</color>
 </resources>

@@ -49,12 +49,12 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * The AYN Thor's second (bottom) screen. While (T)rustyShelf is in front it shows a small page of its own there
+ * The AYN Thor's second (bottom) screen. While Špajz is in front it shows a small page of its own there
  * (bottom.html: the selected game's case to turn and open, its details, trophies and a few big buttons), in an
  * android.app.Presentation holding a second WebView.
  *
  * Why it's built this way:
- *  - The Presentation belongs to (T)rustyShelf's window, so it's hidden the moment (T)rustyShelf pauses (a game starts, Android's
+ *  - The Presentation belongs to Špajz's window, so it's hidden the moment Špajz pauses (a game starts, Android's
  *    settings open…) and comes back on resume. The bottom screen is therefore always free for DS / 3DS emulators and
  *    bottom-screen mods while a game runs.
  *  - Its window can't take key focus (FLAG_NOT_FOCUSABLE): touching the bottom screen must never steal the controller

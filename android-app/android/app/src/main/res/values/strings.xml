@@ -2,8 +2,8 @@
 <!-- Based on Boxshelf by sassiestrhihno (https://github.com/sassiestrhihno/boxshelf-source, GPL-3.0): this file is the same as Boxshelf's
      android-app/android/app/src/main/res/values/strings.xml apart from the app's name ((T)rustyShelf). -->
 <resources>
-    <string name="app_name">(T)rustyShelf</string>
-    <string name="title_activity_main">(T)rustyShelf</string>
-    <string name="package_name">io.github.trustyshelf</string>
-    <string name="custom_url_scheme">io.github.trustyshelf</string>
+    <string name="app_name">Špajz</string>
+    <string name="title_activity_main">Špajz</string>
+    <string name="package_name">io.github.adamjeonline.spajz</string>
+    <string name="custom_url_scheme">io.github.adamjeonline.spajz</string>
 </resources>
