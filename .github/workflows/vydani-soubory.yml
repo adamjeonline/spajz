@@ -1,0 +1,31 @@
+name: Obnovit soubory vydání v1.0.0
+on:
+  push:
+    paths: ['.github/workflows/vydani-soubory.yml']
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Sestavit Linux a Windows
+        run: |
+          npx electron-builder --linux AppImage --publish never || true
+          npx electron-builder --win portable --publish never || true
+          ls -la dist
+          test -s dist/Spajz-1.0.0-linux.AppImage
+          test -s dist/Spajz-1.0.0-win-portable.exe
+          mv dist/Spajz-1.0.0-win-portable.exe dist/Spajz-1.0.0-windows.exe
+      - name: Android z webu
+        run: curl -fsSL -o dist/Spajz-1.0.0-android.apk https://adamjeonline.github.io/spajz/stahnout/Spajz-1.0.0-android.apk
+      - name: Vyměnit soubory u vydání
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v1.0.0 dist/Spajz-1.0.0-linux.AppImage dist/Spajz-1.0.0-windows.exe dist/Spajz-1.0.0-android.apk --clobber -R "$GITHUB_REPOSITORY"
+          gh release delete-asset v1.0.0 Spajz-1.0.0-windows.1.exe -y -R "$GITHUB_REPOSITORY" || true
