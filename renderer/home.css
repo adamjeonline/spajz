@@ -68,4 +68,4 @@ body.shelf .paused{display:none}
 body.shelf .now{margin-bottom:22px}
 .foot b.guide{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:0 8px}
 .item.sel .hold{background:linear-gradient(90deg,rgba(229,72,77,.45),rgba(229,72,77,.7));border-right:3px solid #e5484d}
-.brand{font-family:'Bungee','Lexend',sans-serif}.brand .rust{color:#e4503a} /* (the logo: RUSTY in rust) */
+.brand{font-family:'Fraunces Spajz','Lexend',serif;font-weight:900;text-transform:none;letter-spacing:.01em}.brand .rust{color:#e4503a} /* (the logo: RUSTY in rust) */

@@ -1486,7 +1486,7 @@ function makeBooklet(g){
       x.font="500 18px Lexend, sans-serif";x.globalAlpha=.7;x.fillText("Špajz edition · not an original manual",40,bot+82);x.globalAlpha=1;
       // the Špajz mark: its rack (two uprights, three boards, two cases) in a rounded badge, where the console's logo would sit
       {const bx=W-40-64,by=bot+22;x.strokeStyle=fg;x.lineWidth=3;x.beginPath();x.roundRect(bx,by,64,64,12);x.stroke();x.fillStyle=fg;x.fillRect(bx+14,by+12,5,40);x.fillRect(bx+45,by+12,5,40);[22,35,48].forEach(y=>x.fillRect(bx+19,by+y,26,3));x.fillRect(bx+22,by+13,5,9);x.fillRect(bx+29,by+15,5,7);
-        x.font="600 14px Lexend, sans-serif";x.textAlign="right";x.fillText("ŠPAJZ",bx-12,by+38)}
+        x.font="900 17px 'Fraunces Spajz', Lexend, serif";x.textAlign="right";x.fillText("Špajz",bx-12,by+38)}
       x.textAlign="left"},true);
     await page(async x=>{band(x);x.fillStyle="#1d1810";x.font="700 40px Lexend, sans-serif";x.fillText("About this game",60,170);x.font="400 27px Lexend, sans-serif";x.fillStyle="#2b2418";
       wrap(x,i.overview||"No description yet. Download box art and info in Settings to fill this page.",60,230,W-120,40,22)});
